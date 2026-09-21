@@ -1,0 +1,1064 @@
+# Role Group: AWS Data Engineer
+# Posted By: N/A
+# Emails: tejasai.a@i-q.co, nagaraju05@kingswellit.com
+# Jobs included: 2
+# Companies: unknown
+# Generated: 2026-09-21 13:36:21
+======================================================================
+
+## 🚨 HIRING ALERT – LEAD AWS DATA ENGINEER 🚨 | unknown
+🚨 HIRING ALERT – LEAD AWS DATA ENGINEER 🚨
+We are looking for experienced Lead AWS Data Engineers to join our team!
+🔹 Role: Lead AWS Data Engineer
+🔹 Experience: 10+ Years
+🔹 Location: Bangalore / Chennai
+🔹 Notice Period: Immediate Joiners Only
+🔑 Required Skills:
+✅ AWS
+✅ Databricks
+✅ Data Warehouse
+✅ Python
+✅ PySpark
+✅ SQL
+✅ ETL
+📩 Interested candidates can share their updated resume at:
+tejasai.a@i-q.co
+#Hiring
+#AWS
+#AWSDataEngineer
+#DataEngineer
+#Databricks
+#PySpark
+#Python
+#SQL
+#ETL
+#DataWarehouse
+#BangaloreJobs
+#ChennaiJobs
+#ImmediateJoiner
+#ITJobs
+#TechJobs
+
+## Role : AWS Redshift Engineer | unknown
+Hi Guys,
+We Have Urgent requirement With One of Our Direct Client,
+Role : AWS Redshift Engineer
+Skills : data engineering or warehousing with a focus on Amazon
+Redshift. And SQL,
+Locations : Pan India
+Exp: 8+ Years
+• 5+ years of experience in data engineering or warehousing with a focus on Amazon Redshift.
+• Strong proficiency in SQL, with ability to write and optimize complex queries for large datasets.
+• Solid understanding of dimensional modeling, Star Schema, and OLAP vs OLTP data structures.
+• Experience in designing analytical data marts and transforming raw/transactional data into structured analytical formats.
+• Hands-on experience with ETL tools (e.g., AWS Glue).
+• Familiarity with Amazon Redshift Spectrum, RA3 nodes, and data distribution/sort keys best practices.
+• Comfortable working in cloud-native environments, particularly AWS (S3, Lambda, CloudWatch, IAM, etc.).
+IF JD is Comfortbale Please Share your Updated Resumes to
+nagaraju05@kingswellit.com
+Thanks
+
+# Role Group: Data Engineer
+# Posted By: Neha Dhoot
+# Emails: meghana@sidraforce.com, hrmeenugoyalhelpmate@gmail.com, opportunity@dtcinfo.co.in, hr.tejasurya@gmail.com, nidhi.kumari12@ibm.com, vanitha.s@thriventree.com, queentina@vrdella.com, deepa@vrdella.com, afrin@liveconnections.in, aastha.mh08@gmail.com, Nilofar.s@apideltech.com, shubhrajyoti.m@rapinnotech.com, debarati.das@ubique-systems.com, nithind@upwardiq.com, geetashri@srssolutions.co.in, careers@clkedge.com, rosalinda.gomes@in.experis.com, connect@infosprucetech.com, SivaJyothiM@mkgtalent.com, anusha.a@martinettechnologies.com, pravallika.chirla@infyshine.com, sreya@ashudividend.com, keerthi@vrdella.com
+# Jobs included: 29
+# Companies: unknown
+# Generated: 2026-09-21 13:36:21
+======================================================================
+
+## HIRING | Data Engineer I041 | unknown
+HIRING | Data Engineer I041
+Experience:
+3–5 Years
+Location:
+Bangalore / Hyderabad
+Work Mode:
+On-site
+Key Skills:
+• SQL
+• Data Modelling
+• Pipeline Migration
+• Python / Java
+Interested candidates can share their updated CV with
+meghana@sidraforce.com
+.
+#Hiring
+#DataEngineer
+#SQL
+#DataEngineering
+#Jobs
+
+## Data Engineer (AWS) | unknown
+We're Hiring
+Data Engineer (AWS)
+Experience: 6–9 Years
+CTC: Up to ₹42 LPA
+Location: Bangalore
+Work Mode: 5 Days/Week
+Notice Period: Immediate / Maximum 15 Days
+Mandatory Skills
+✅ Data Engineering
+✅ AWS Data Services
+✅ Python / Java / Scala
+✅ SQL & Data Warehousing
+✅ SQL / NoSQL
+✅ Big Data
+✅ ETL Pipelines
+✅ Data Quality
+✅ Pipeline Monitoring
+✅ Data Governance
+✅ Data Security
+✅
+B.Tech
+/ B.E. /
+M.Tech
+AWS Services: S3, Glue, EMR, Lambda, Redshift
+Preferred Skills
+- Apache Airflow
+- Docker
+- Kubernetes
+share updated CV
+hrmeenugoyalhelpmate@gmail.com
+
+## 🔥 Azure Data Engineer Career Opportunity | DTC Infotech | unknown
+🔥 Azure Data Engineer Career Opportunity | DTC Infotech
+Job ID: AZURE-DE-BLR-26-015
+Are Azure Data Engineering, Databricks, Spark and Snowflake your strengths? Explore this opportunity with DTC Infotech.
+Location: Bangalore, Sarjapur Road
+Experience: 4–15 Years
+Relevant Experience: 4–15 Years
+Full-time, On-site | India Time
+Key skills:
+• 4+ years data transformation, databases, governance and quality
+• Relational database design; multi-TB data
+• T-SQL, Microsoft SQL, Oracle
+• Azure Data Engineering stack
+• Azure Blob, Azure Databricks, Azure Data Factory
+• Apache Spark
+• Snowflake
+• Data Warehousing and Data Modelling
+• Star Schema and Snowflake Schema
+• ETL and DataOps
+• Orchestration, monitoring and CI/CD
+• Qlik, Tableau, Power BI or SAS VA
+• Big Data and global collaboration
+The role also covers POCs, scalable databases, data porting and business insight solutions.
+Send your profile to DTC Infotech:
+opportunity@dtcinfo.co.in
+Include Experience, Current CTC, Expected CTC, Notice Period and Preferred Location. Please refer suitable candidates. In-person discussions required.
+…
+more
+
+## 🧑‍💻 Azure Data Engineer Experts – Apply to DTC Infotech | unknown
+🧑‍💻 Azure Data Engineer Experts – Apply to DTC Infotech
+Job ID: AZURE-DE-BLR-26-014
+DTC Infotech is inviting profiles for an Azure Data Engineering opportunity in Bangalore, Sarjapur Road.
+Experience: 4–15 Years
+Relevant Experience: 4–15 Years
+Full-time, On-site | India Time
+Responsibilities:
+1. Develop prototypes/POCs using data sources, AI/ML and Big Data
+2. Implement scalable structured/unstructured databases
+3. Port data across sources and DB systems
+4. Create solutions combining disparate information into business insights
+5. Build workflows and pipelines for analytics and ML
+Technical expectations:
+• 4+ years transformation, databases, governance and quality
+• Multi-TB relational data; T-SQL, SQL, Oracle
+• Azure Data Engineering, Blob, Databricks, Data Factory and Spark
+• Snowflake and Data Warehousing
+• Data Modelling, Star/Snowflake Schema
+• ETL and DataOps
+• Orchestration, monitoring and CI/CD
+• BI tools, Big Data and global communication
+Send your updated profile to DTC Infotech at
+opportunity@dtcinfo.co.in
+with Experience, Current CTC, Expected CTC, Notice Period and Preferred Location.
+In-person discussions required.
+
+## We’re on the lookout for skilled GCP Data Engineers 🚀 | unknown
+🔥 KITTNE AADMI THE? 😎
+Apparently, not enough for our IT MNC client!
+We’re on the lookout for skilled GCP Data Engineers 🚀
+☁️ Role: GCP Data Engineer
+💼 Experience: 3–15 Years
+💰 CTC: Up to 50 LPA
+📍 Location: Pan India
+Key Skills: GCP | BigQuery | PySpark | Python | SQL | Data Engineering
+If you’re ready for your next big data opportunity, this one’s for you!
+📩 Interested Candidates:
+Share your updated resume at
+hr.tejasurya@gmail.com
+
+## We are hiring for GCP Data Engineer at Gurgaon Location | unknown
+We are hiring for GCP Data Engineer at Gurgaon Location
+Experienced Google Cloud Data Engg with Big query, Hadoop, Hive, Spark, PySpark, Strong SQL
+6+ Years experience
+Location only Gurgaon
+Reach out to me on
+nidhi.kumari12@ibm.com
+
+## WE ARE HIRING – GCP Data Engineer | unknown
+🚀
+WE ARE HIRING – GCP Data Engineer
+📍
+Location:
+Chennai
+🏢
+Work Mode:
+Hybrid – 4 Days WFO
+💼
+Experience:
+7+ Years
+📄
+Contract Role
+Key Skills:
+• GCP / BigQuery
+• Python / PySpark
+• Dataflow / Dataproc
+• Data Fusion / Dataform
+• Airflow / Cloud Composer
+• Cloud SQL / PostgreSQL
+• Terraform / Tekton
+• API / Kafka / Pub/Sub
+🎓
+Bachelor’s Degree Required
+📩
+Share your CV:
+meghana@sidraforce.com
+#Hiring
+#GCP
+#DataEngineer
+#BigQuery
+#Python
+#ChennaiJobs
+#DataEngineering
+
+## Urgent Hiring – Senior Data Engineer | unknown
+🚨
+Urgent Hiring – Senior Data Engineer
+📍
+Location:
+Bangalore
+💼
+Experience:
+15+ Years
+⏳
+Notice Period:
+Immediate Joiners ONLY
+📩
+Share CVs:
+vanitha.s@thriventree.com
+🔑
+Mandatory Skills:
+Strong Oil & Gas domain experience
+DCS/ECS Engineering & Commissioning
+OPC UA / OPC DA, OT/IT Integration
+OT Data Ingestion & Cybersecurity
+DCS/PLC Vendor Experience
+International Experience
+🎓
+Qualification:
+Bachelor’s/Master’s degree in relevant field.
+
+## Hiring Alert – AZURE DATA ENGINEER | unknown
+🚨
+Hiring Alert – AZURE DATA ENGINEER
+🚨
+📍
+Bellandur, Bangalore.
+💼
+4+ Years
+|
+Date: 24th Sep ⏰
+10:00 AM
+| 🤝
+F2F (Scheduled Interview)
+🔴
+MUST HAVE
+Databricks
+Python
+SQL
+Azure Data Engineering
+ETL & Data Transformation
+Data Warehousing & Data Modelling
+Apache Spark
+🟢
+GOOD TO HAVE
+Azure Data Factory
+Snowflake
+Azure Blob Storage
+DataOps / CI-CD
+Power BI / Tableau / Qlik
+Big Data experience
+📩
+Interested candidates, please share your updated profile at
+queentina@vrdella.com
+#Hiring
+#AzureDataEngineer
+#Databricks
+#Python
+#SQL
+#DataEngineering
+#BangaloreJobs
+
+## Hiring: Azure Data Engineer | unknown
+🚨
+Hiring: Azure Data Engineer
+📍
+Location:
+Electronic City, Bangalore
+💼
+Experience:
+4+ Years
+🤝
+Interview:
+Face-to-Face
+🔑
+Mandatory Skills:
+Databricks | Python | SQL
+Key Requirements:
+->4+ years of experience in
+Data Engineering
+.
+->Strong hands-on experience with
+Azure Data Engineering
+.
+->Expertise in
+Azure Databricks, Python, SQL & Apache Spark
+.
+->Experience with
+Azure Data Factory, Azure Blob Storage & Snowflake
+.
+->Strong understanding of
+ETL/ELT and Data Warehousing
+concepts.
+->Knowledge of
+Data Modelling, Star Schema & Snowflake Schema
+.
+->Experience with
+DataOps, CI/CD and data pipelines
+.
+->Exposure to
+Power BI/Tableau/Qlik
+is an added advantage.
+->Strong analytical, communication and collaboration skills.
+📩
+Interested candidates can share their updated resumes to
+deepa@vrdella.com
+#Hiring
+#AzureDataEngineer
+#Databricks
+#Python
+#SQL
+#Azure
+#DataEngineering
+#Snowflake
+#ApacheSpark
+#BangaloreJobs
+#ITJobs
+
+## Hiring: Data Engineer | Chennai | unknown
+🚨
+Hiring: Data Engineer | Chennai
+📍
+Location:
+Chennai
+💼
+Experience:
+3–8 Years
+Key Skills:
+• Advanced SQL
+• Python / PySpark
+• Data Analytics & Data Engineering
+• ETL / Data Pipelines
+• Power BI / Tableau / Qlik
+• Data Modeling
+• Data Quality & Validation
+• Snowflake / Databricks
+Interested candidates can share their updated CV at:
+📧
+afrin@liveconnections.in
+#Hiring
+#DataEngineer
+#DataEngineering
+#ChennaiJobs
+#SQL
+#Python
+#PySpark
+#ETL
+#PowerBI
+#Tableau
+#Databricks
+#Snowflake
+
+## Big Data Engineer | Databricks | Remote | | unknown
+Big Data Engineer | Databricks | Remote |
+aastha.mh08@gmail.com
+Seeking 4+ years of Azure, ETL/ELT, Python, R, SQL, CI/CD and 3+ years of Databricks, Apache Spark, Delta Lake, Unity Catalog, and Azure Data Factory. Remote role with mandatory first-day equipment pickup and occasional meetings in Austin, TX.
+…
+more
+
+## Big Data Engineer | Databricks | Remote | | unknown
+Big Data Engineer | Databricks | Remote |
+aastha.mh08@gmail.com
+Seeking 4+ years of Azure, ETL/ELT, Python, R, SQL, CI/CD and 3+ years of Databricks, Apache Spark, Delta Lake, Unity Catalog, and Azure Data Factory. Remote role with mandatory first-day equipment pickup and occasional meetings in Austin, TX.
+
+## 🚀 We’re Hiring | Azure Data Engineer – Microsoft Cloud | unknown
+🚀 We’re Hiring | Azure Data Engineer – Microsoft Cloud
+We are looking for an experienced Azure Data Engineer / Microsoft Cloud Developer for a contractual opportunity in Bangalore.
+🔹 Experience: 5+ Years
+🔹 Location: Bangalore
+🔹 Interview: F2F Mandatory
+🔹 Employment: Contract – Minimum 1 Year, Extendable
+🔹 Joining: Immediate / Short Notice Preferred
+Key Skills:
+• Microsoft Fabric
+• Azure Synapse Analytics
+• Azure Data Factory (ADF) / ETL
+• Azure Storage / ADLS
+• Azure Key Vault
+• Azure Functions / Logic Apps
+• Event Hubs / Stream Analytics
+• Azure Databricks / PySpark
+Looking for candidates with strong hands-on experience in Azure Data Engineering, data pipelines, ETL and Microsoft Cloud technologies.
+📩 Interested candidates can share their updated CV on
+Nilofar.s@apideltech.com
+Neha Dhoot
+Roshani K.
+Rishabh Yadav
+Afzal Saiyed
+Radhika Pandya
+Piyusha Rathod
+Nikita Maru
+Shradha Sakpal
+#Hiring
+#Azure
+#AzureDataEngineer
+#MicrosoftFabric
+#AzureSynapse
+#AzureDataFactory
+#ADF
+#DataEngineering
+#MicrosoftCloud
+#BangaloreJobs
+#ImmediateJoiner
+#ContractJobs
+…
+more
+
+## Agent Data Engineer / AI Agent Engineer | unknown
+🚨
+Hiring: AI Architect / Senior AI Agent Engineer / AI Agent Engineer
+📍
+Location:
+[Hyderabad, Bangalore, Pune, Chennai, Gurgaon]
+💼
+Experience:
+10+ Years
+💰
+Budget:
+Up to ₹45 LPA
+🕐
+Role:
+Agent Data Engineer / AI Agent Engineer
+We are looking for an experienced
+AI/GenAI Engineer
+to build, orchestrate, and maintain agentic frameworks that automate the
+Data Engineering lifecycle
+.
+🔹
+Key Responsibilities:
+• Develop agentic workflows using
+Snowflake CoCo (CoCo) harness
+• Integrate
+LLMs, Cortex AI models & orchestration logic
+• Build
+Specification Driven Development (SDD)
+capabilities
+• Develop autonomous patterns for data engineering workflows
+• Drive data product delivery across
+Discover → Build → Test → Deploy
+• Work with
+SQL Stored Procedures, DBT models &
+DataOps.Live
+• Support automated engineering lifecycle from ingestion to deployment
+• Ensure code quality and alignment with enterprise governance standards
+🔹
+Essential Skills:
+✅
+Cortex Skills, LLM, RAG
+✅
+Agentic Frameworks – CoCo CLI, MCP
+✅ Strong
+SQL & Python
+✅ Advanced
+DBT &
+DataOps.Live
+✅ Strong
+Snowflake ecosystem
+knowledge
+✅
+Bronze / Silver / Gold
+data architecture
+✅ Enterprise Data Product Lifecycle
+📩
+Share your updated resume at:
+shubhrajyoti.m@rapinnotech.com
+#Hiring
+#AIJobs
+#GenAI
+#AIAgent
+#AIEngineer
+#Snowflake
+#DataEngineering
+#LLM
+#RAG
+#MCP
+#DBT
+#DataOps
+#TechHiring
+#Recruitment
+
+## 🚀 We’re Hiring: AI and Data Engineer | unknown
+🚀 We’re Hiring: AI and Data Engineer
+We are looking for an experienced AI and Data Engineer with strong hands-on expertise in Agentic AI, Generative AI, Data Engineering, and modern enterprise data platforms.
+The ideal candidate will have experience designing and building AI agents that combine Large Language Models (LLMs), prompt and context engineering, Retrieval-Augmented Generation (RAG), APIs, enterprise data sources, and governed tool execution to automate data, reporting, testing, and operational workflows.
+The role involves working closely with technology and business stakeholders to build and enhance critical enterprise data applications across on-premises and AWS cloud environments, leveraging modern data platforms such as Snowflake and Starburst.
+🔧 Key Skills Required:
+• 2+ years of hands-on experience with GitHub Copilot or similar AI-assisted engineering tools across the software development lifecycle, including requirements analysis, coding, refactoring, testing, debugging, documentation, code review, and verification.
+• 2+ years of hands-on experience designing and building Agentic AI solutions, including:
+LLMs
+Prompt engineering
+Context engineering
+RAG / Retrieval-Augmented Generation
+Structured tool/function calling
+APIs
+Memory/state management
+Human-in-the-loop controls
+AI governance and responsible AI practices
+• Strong programming experience with Python, Java, TypeScript, and SQL.
+• Ability to design and develop agent tools, API clients, MCP servers, command-line workflows, typed data contracts, and automated tests.
+• Experience integrating AI agents with enterprise authentication, APIs, databases, knowledge repositories, BI platforms, and browser automation.
+• Experience protecting credentials, sensitive data, and enterprise audit trails.
+• Demonstrated experience evaluating AI/agent quality through unit, integration, behavioral, and end-to-end testing.
+• Ability to diagnose hallucinations, tool failures, retrieval issues, and workflow failures and improve prompts, context, retrieval, and agent workflows based on evidence.
+📍 Location: PAN India
+💼 Total experience: 6+
+📢 If you’re excited about the opportunity, we’d love to hear from you!
+📩 Feel free to share your resume at
+debarati.das@ubique-systems.com
+
+## 🔹 Position: Lead Data Engineer | unknown
+We're Hiring: Lead Data Engineer | Chennai (Parry's Corner)
+🔹 Position: Lead Data Engineer
+🔹 Experience: 10-14 Years
+🔹 Location: Chennai (Parry's Corner)
+🔹 Work Mode: Work From Office
+🔹 Education:
+B.Tech
+(Mandatory) or P.G
+✅ Required Skills:
+AWS
+PySpark
+Lead Data Engineering Concepts
+ETL/Data Pipeline Development
+Big Data Technologies
+🎯 Key Responsibilities:
+Design and develop scalable data pipelines.
+Build and optimize data processing workflows using PySpark.
+Leverage AWS services for data storage, processing, and analytics.
+Ensure data quality, reliability, and performance.
+Collaborate with cross-functional teams to deliver data-driven solutions.
+📩 Interested candidates can share their updated resume to [
+nithind@upwardiq.com
+].
+#Hiring
+#LeadDataEngineer
+#AWS
+#PySpark
+#LeadDataEngineeringJobs
+#ChennaiJobs
+#TechHiring
+#BigData
+#ETL
+#CloudComputing
+#LinkedInJobs
+#JobOpening
+#HiringNow
+#LeadDataJobs
+#CareerOpportunity
+.
+
+## 🚀 Hiring: Senior Data Engineer | Python + PySpark + SQL | unknown
+🚀 Hiring: Senior Data Engineer | Python + PySpark + SQL
+We are looking for experienced Data Engineers with strong hands-on expertise in Python, PySpark, and SQL to build and optimize scalable data engineering solutions.
+📍 Locations: Chennai | Pune | Mumbai | Bangalore | Hyderabad
+💼 Experience & CTC: 4–12 Years: Up to ₹29 LPA
+Good to have:
+• Spark / Spark SQL
+• ETL/ELT
+• Databricks / Lakehouse
+• Delta Lake / Iceberg
+• S3 / ADLS
+• Airflow
+• Data Modelling & Performance Optimization
+📩 Interested candidates can share their updated resume at
+geetashri@srssolutions.co.in
+| 📞 7350956710
+#Hiring
+#DataEngineer
+#Python
+#PySpark
+#SQL
+#DataEngineering
+#Spark
+#Databricks
+#Airflow
+#TechHiring
+…
+more
+
+## Sr. Snowflake Data Engineer | unknown
+Sr. Snowflake Data Engineer
+Experience:
+6–10 Years
+Locations:
+Hyderabad / Bangalore / Pune / Chennai
+Work Mode:
+Hybrid
+Timing:
+11:00 AM – 8:00 PM
+Budget:
+₹15–30 LPA
+Mandatory Skills:
+Snowflake
+SQL
+Python
+Airflow
+AWS
+Interview Process:
+1 Internal – Virtual
+1 Client – In Person
+1 Client – Virtual
+Share CV to
+careers@clkedge.com
+and mention the job title in the subject line.
+
+## : Scala Spark Data Engineer | Bengaluru | unknown
+#Hiring
+: Scala Spark Data Engineer | Bengaluru
+Experience: 9-12 Years
+Location: Bengaluru
+Required Skills:
+- Scala
+- Apache Spark
+- SQL
+- GCP Cloud
+Good to Have:
+- Kafka
+Looking for Immediate Joiners/ Candidates serving notice period only
+Interested candidates can share their updated resume at
+rosalinda.gomes@in.experis.com
+with the subject line: "Scala Spark Data Engineer - Bengaluru"
+
+## 🚀 We are hiring : Lead Data Engineer | Multiple Locations👇🏻 | unknown
+🚀 We are hiring : Lead Data Engineer | Multiple Locations👇🏻
+Infospruce Technologies is hiring an experienced Lead Data Engineer for a reputed client.
+📍 Locations: Chennai | Bangalore | Hyderabad | Pune | Nagpur
+🏢 Work Model: Hybrid
+🕐 Employment: Full-Time
+🎯 Experience: 10+ Years
+⚡ Joining: Immediate joiners preferred
+🔑 Key Skills
+• SQL & Python – Advanced
+• Snowflake – DDL, DML, Query Optimization & Data Sharing
+• DBT – Strong hands-on experience
+• ETL/ELT – Fivetran
+• Data Quality & Data Profiling
+• Data Onboarding & Cleansing
+• ETL/ELT Pipeline Development
+• SQL Query Optimization
+• Data Transformation & Pipeline Design
+📌 Automotive/Dealer domain experience and SnowPro Core certification are preferred.
+📩 Interested candidates can share their updated resume at:
+📧
+connect@infosprucetech.com
+Please share the following details:
+• Full Name:
+• Contact Number:
+• Current Location:
+• Total Experience:
+• Relevant Experience:
+• Current Company:
+• Current CTC:
+• Expected CTC:
+• Notice Period:
+• Last Working Date:
+• Offer Details (if applicable):
+• Offer Amount:
+• Joining Date:
+🌐 Follow Infospruce Technologies👇🏻
+🔗 Website:
+www.infosprucetech.com
+🔗 LinkedIn:
+https://lnkd.in/dmsrJ7Bh
+📢 Know someone who fits this opportunity?
+#Hiring
+#Recruitment
+#TechJobs
+#IndiaJobs
+#Infospruce
+#HiringNow
+#LeadDataEngineer
+#DataEngineer
+#DataEngineering
+#Snowflake
+#DBT
+#SQL
+#Python
+#Fivetran
+#ETL
+#HiringIndia
+
+## 🚀 Hiring: AI Data Engineer | Hiringhood AI Talent Network | unknown
+📢 LinkedIn Hiring Post – AI Data Engineer
+🚀 Hiring: AI Data Engineer | Hiringhood AI Talent Network
+We are looking for AI Data Engineers with strong experience in Data Engineering, Cloud, Big Data, and AI/ML technologies.
+📍 Locations: Bengaluru | Hyderabad | Chennai | Pune | Mumbai | Gurugram | Noida
+🏢 Work Mode: Work From Office (WFO)
+💼 Experience: 1–10 Years
+⏰ Timings: 9:30 AM – 6:30 PM
+⚡ Notice Period: Immediate
+🔑 Must-Have Skills
+Python | SQL | Data Engineering | ETL/ELT | Data Pipelines | PySpark | Apache Spark | Airflow | Kafka | Databricks | Snowflake | BigQuery | AWS | Azure | GCP
+⭐ Good to Have
+dbt | Delta Lake | Iceberg | Kubernetes | Terraform | MLflow | MLOps | Vector Databases | LLMs | RAG | LangChain | Generative AI
+📝 Selection Process
+1️⃣ Coding Assessment
+2️⃣ AI Technical Interview
+3️⃣ Verified Profile
+4️⃣ Employer Matching through Match Day
+📩 Interested candidates can share their updated resume along with:
+SivaJyothiM@mkgtalent.com
+Total Experience
+| Current CTC
+Expected CTC
+Notice Period
+Current Location
+Preferred Location
+#Hiring
+#AIDataEngineer
+#DataEngineer
+#Python
+#PySpark
+#Databricks
+#Snowflake
+#AWS
+#Azure
+#GCP
+#DataEngineering
+#BigData
+#AIJobs
+#TechJobs
+#Bengaluru
+#Hyderabad
+#Chennai
+#Pune
+#Mumbai
+#Gurugram
+#Noida
+
+## 🚀 We are hiring : Senior Snowflake Data Engineer | Multiple Locations👇🏻 | unknown
+🚀 We are hiring : Senior Snowflake Data Engineer | Multiple Locations👇🏻
+Infospruce Technologies is hiring an experienced Senior Snowflake Data Engineer for a reputed client.
+📍 Locations: Chennai | Bangalore | Hyderabad | Pune | Nagpur
+🏢 Work Model: Hybrid
+⚡ Joining: Immediate joiners preferred
+🔍 What We’re Looking For:
+1. 8+ years of experience in Data Engineering
+2. Minimum 4 years of hands-on Snowflake experience
+3. 2+ years of experience with dbt Core / dbt Cloud
+4. Strong skills in Python & SQL
+5. Experience designing and developing ETL/ELT pipelines
+6. Strong knowledge of SQL performance tuning & query optimization
+7. Good understanding of Data Warehousing & Dimensional Modeling
+8. Experience with modern cloud-based data platforms
+9. Strong analytical, problem-solving, and communication skills
+10.Bachelor’s/Master’s degree in Computer Science, Engineering, IT, or related discipline
+📩 Interested candidates can share their updated resume at:
+📧
+connect@infosprucetech.com
+Please share the following details:
+• Full Name:
+• Contact Number:
+• Current Location:
+• Total Experience:
+• Relevant Experience:
+• Current Company:
+• Current CTC:
+• Expected CTC:
+• Notice Period:
+• Last Working Date:
+• Offer Details (if applicable):
+• Offer Amount:
+• Joining Date:
+🌐 Follow Infospruce Technologies👇🏻
+🔗 Website:
+www.infosprucetech.com
+🔗 LinkedIn:
+https://lnkd.in/dmsrJ7Bh
+📢 Know someone who fits this opportunity?
+#Hiring
+#Recruitment
+#TechJobs
+#IndiaJobs
+#Infospruce
+#HiringNow
+#Snowflake
+#SnowflakeDataEngineer
+#DataEngineering
+#SeniorDataEngineer
+#dbt
+#Python
+#SQL
+#ETL
+#DataWarehouse
+#TechHiring
+
+## Hiring: Data Engineer | Chennai | unknown
+🚨
+Hiring: Data Engineer | Chennai
+📍
+Location:
+Chennai
+💼
+Experience:
+3–8 Years
+Key Skills:
+• Advanced SQL
+• Python / PySpark
+• Data Analytics & Data Engineering
+• ETL / Data Pipelines
+• Power BI / Tableau / Qlik
+• Data Modeling
+• Data Quality & Validation
+• Snowflake / Databricks
+Interested candidates can share their updated CV at:
+📧
+afrin@liveconnections.in
+#Hiring
+#DataEngineer
+#DataEngineering
+#ChennaiJobs
+#SQL
+#Python
+#PySpark
+#ETL
+#PowerBI
+#Tableau
+#Databricks
+#Snowflake
+…
+more
+
+## : Microsoft Fabric Data Engineering Expert | unknown
+#Hiring
+: Microsoft Fabric Data Engineering Expert
+Looking for a senior
+Microsoft Fabric Data Engineering professional
+to build scalable, secure & high-performance modern data platforms.
+📍
+Location:
+Bangalore / Hyderabad – Preferred
+📍 Pune / Ahmedabad / Mumbai / Chennai
+🏢
+Work Mode:
+Hybrid – 2 Days WFO
+💼
+Experience:
+12–15 Years
+🔥
+Key Skills:
+✅ Microsoft Fabric | OneLake | Lakehouse | Fabric Data Warehouse
+✅ Data Factory / Pipelines | Notebooks | Spark | Dataflows Gen2
+✅ Delta Lake | Direct Lake | Fabric Monitoring & Optimization
+✅ PySpark | Spark SQL | T-SQL | Python
+✅ ETL/ELT | CDC | Incremental Loads | SCD Type 1 & 2
+✅ Medallion Architecture | Lakehouse & Data Warehouse
+✅ Dimensional / Star Schema Modeling
+✅ ADLS Gen2 | ADF | Synapse | Azure SQL
+✅ Key Vault | Azure Functions | Azure DevOps | Entra ID
+✅ Power BI | Semantic Models | DAX | Power Query
+✅ RLS | Direct Lake | Import / DirectQuery | Performance Optimization
+📩
+Interested candidates, please share:
+• Updated Resume
+• Full Name & Contact Number
+• Email ID & LinkedIn
+• Current & Expected CTC
+• Notice Period / Last Working Day
+📧
+Apply:
+anusha.a@martinettechnologies.com
+#Hiring
+#MicrosoftFabric
+#FabricDataEngineering
+#DataEngineer
+#Azure
+#OneLake
+#Lakehouse
+#PySpark
+#PowerBI
+#DataEngineering
+#MedallionArchitecture
+#AzureData
+#TechJobs
+#BangaloreJobs
+#HyderabadJobs
+
+## We’re on the lookout for skilled GCP Data Engineers 🚀 | unknown
+🔥 KITTNE AADMI THE? 😎
+Apparently, not enough for our IT MNC client!
+We’re on the lookout for skilled GCP Data Engineers 🚀
+☁️ Role: GCP Data Engineer
+💼 Experience: 3–15 Years
+💰 CTC: Up to 50 LPA
+📍 Location: Pan India
+Key Skills: GCP | BigQuery | PySpark | Python | SQL | Data Engineering
+If you’re ready for your next big data opportunity, this one’s for you!
+📩 Interested Candidates:
+Share your updated resume at
+hr.tejasurya@gmail.com
+…
+more
+
+## 🔹 Role: Azure Data Engineer | unknown
+🚨 We’re Hiring – Azure Data Engineer! | Bangalore🚨
+🔹 Role: Azure Data Engineer
+🔹 Experience: 4+ Years
+🔹 Location: Bangalore
+Mode of Interview: Face to Face Interview
+💼 Key Skills Required:
+✅ Azure Data Factory (ADF)
+✅ Azure Databricks & Apache Spark
+✅ SQL / T-SQL / Oracle
+✅ Snowflake & Data Warehousing
+✅ Azure Blob Storage
+✅ ETL/ELT & Data Pipelines
+✅ Data Modeling – Star & Snowflake Schema
+✅ DataOps / CI-CD
+📌 Looking for:
+Professionals with strong experience in Azure Data Engineering, large-scale data processing, data warehousing, and building scalable data pipelines.
+📩 Interested candidates can share their updated resumes via DM or email.
+pravallika.chirla@infyshine.com
+#Hiring
+#AzureDataEngineer
+#DataEngineer
+#Azure
+#Databricks
+#ApacheSpark
+#ADF
+#Snowflake
+#SQL
+#DataEngineering
+#BigData
+#HiringNow
+#ITJobs
+
+## 3️⃣ Databricks Architect | unknown
+3️⃣ Databricks Architect
+🚨 We Are Hiring – Databricks Architect
+Role: Databricks Architect – 100% Hands-On
+Experience: 14+ Years Total / 7+ Years Data Engineering & Big Data
+Location: Bangalore – In Office
+Contract: 6+ Months Contract-to-Hire
+Interview: Immediate Slots Available
+Key Requirements:
+Minimum 8+ Databricks projects
+4+ projects implemented end-to-end as an Individual Contributor
+4+ projects as a Databricks Architect
+Lakehouse architecture
+Batch & Streaming
+Delta Lake
+Unity Catalog
+Databricks Workflows
+Auto Loader
+PySpark & Spark SQL
+Spark performance tuning
+Liquid Clustering & AQE
+Photon optimization
+Fine-grained RBAC & Data Lineage
+Terraform & DABs
+CI/CD pipelines
+AWS / Azure / GCP
+Migration from Hadoop / Legacy ETL / Cloud Data Warehouses
+Databricks Certified Data Engineer Professional – preferred
+📩 Interested candidates can share their updated resume:
+Email:
+sreya@ashudividend.com
+📞 Contact: +91 7780339194
+#Databricks
+#DatabricksArchitect
+#DataEngineering
+#BigData
+#Spark
+#PySpark
+#AWS
+#Azure
+#GCP
+#Hiring
+
+## 🚨 Walk-In Interview Drive – Azure Data Engineer | Bangalore | unknown
+🚨 Walk-In Interview Drive – Azure Data Engineer | Bangalore
+We are hiring experienced Azure Data Engineers for a leading technology project.
+📍 Location: Electronic City, Bangalore
+💼 Experience: 4+ Years
+🗓️ Interview Date: Thursday, September 24
+⏰ Time: 10:00 AM
+🏢 Mode: Face-to-Face (F2F)
+🔑 Mandatory Skills
+- Azure Data Engineering
+- Databricks
+- Python
+- SQL
+- Azure Data Factory
+- Apache Spark
+💻 Key Responsibilities
+- Develop prototypes and proof of concepts using multiple data sources, AI/ML methods and big-data technologies.
+- Design and deploy scalable structured and unstructured data solutions on cloud infrastructure.
+- Build data processing workflows and pipelines for analytics and machine learning applications.
+- Work with large-scale datasets and optimize data across different sources and database systems.
+- Develop technical solutions using big-data architectures and data engineering best practices.
+- Collaborate with data architects and global stakeholders to deliver business-focused solutions.
+🎯 Desired Skills & Experience
+- 4+ years of experience in data transformation, databases, data governance and data quality.
+- Strong experience with relational databases and large-scale datasets.
+- Strong knowledge of the Azure Data Engineering ecosystem.
+- Hands-on experience with Azure Blob Storage, Azure Databricks and Azure Data Factory.
+- Strong understanding of Data Warehousing concepts, including Data Modelling, Star Schema and Snowflake Schema.
+- Experience with Snowflake and ETL processes.
+- Knowledge of DataOps, orchestration, workflow management, monitoring and CI/CD.
+- Experience with BI/reporting tools such as Power BI, Tableau, Qlik or SAS VA is an advantage.
+- Strong understanding of Big Data technologies and architectures.
+- Excellent communication and collaboration skills.
+🎓 Qualification: Bachelor's/Master's degree in Computer Science, Engineering, Data Science or a related field.
+📩 Interested candidates: Please share your updated CV along with your total experience, relevant experience, current location and contact details to the mail
+keerthi@vrdella.com
+#Hiring
+#WalkInInterview
+#AzureDataEngineer
+#DataEngineer
+#Azure
+#Databricks
+#Python
+#SQL
+#AzureDataFactory
+#ApacheSpark
+#Snowflake
+#DataEngineering
+#BigData
+#BangaloreJobs
+#ElectronicCity
+#TechJobs
+#ITJobs

@@ -1,0 +1,175 @@
+# Role Group: Data Engineer
+# Posted By: N/A
+# Emails: triveni.p@twsol.com, cheena@supersourcing.com, rahulyadav.referral@gmail.com, brindha@vrdella.com, queentina@vrdella.com
+# Jobs included: 6
+# Companies: Senior Data Engineer, unknown
+# Generated: 2026-09-18 19:14:45
+======================================================================
+
+## Senior Data Engineer (Verified job) | Senior Data Engineer
+📢 HIRING ALERT – SENIOR DATA ENGINEER
+We are looking for an experienced Senior Data Engineer to join our team in Bangalore.
+🔹 Experience: 7+ Years
+🔹 Location: Bangalore
+🔹 Work Mode: Full-Time | Work From Office
+🔹 Notice Period: Immediate to 20 Days
+Required Expertise:
+• PySpark & Spark SQL
+• Databricks & Delta Lake
+• Apache Airflow
+• Advanced SQL
+• Data Modeling & Data Warehousing
+• AWS
+• Git & CI/CD
+• ETL/ELT Pipelines
+Candidates should have strong hands-on experience in designing, developing and optimizing scalable data pipelines.
+Apply Here :
+https://lnkd.in/drrZR2Y5
+📩 Interested candidates can share their updated CV at:
+triveni.p@twsol.com
+👉 Immediate joiners / candidates serving notice period are preferred.
+#Hiring
+#SeniorDataEngineer
+#DataEngineer
+#PySpark
+#Databricks
+#Airflow
+#AWS
+#ETL
+#DataEngineering
+#Bangalore
+#ImmediateJoiners
+
+## Remote Opportunity | Databricks Data Engineer | unknown
+Remote Opportunity | Databricks Data Engineer
+We’re hiring
+Databricks Data Engineers
+for a
+Remote
+opportunity!
+🔹 Strong experience in
+Databricks & Apache Spark
+🔹 Proficiency in
+Python / Scala & SQL
+🔹 Hands-on experience with
+ETL/Data Pipelines & Data Warehousing
+🔹 Cloud experience:
+AWS / Azure / GCP
+🔹 Strong analytical & problem-solving skills
+Interested candidates can share their updated resume at
+cheena@supersourcing.com
+…
+more
+
+## Remote Opportunity | Databricks Data Engineer | unknown
+Remote Opportunity | Databricks Data Engineer
+We’re hiring
+Databricks Data Engineers
+for a
+Remote
+opportunity!
+🔹 Strong experience in
+Databricks & Apache Spark
+🔹 Proficiency in
+Python / Scala & SQL
+🔹 Hands-on experience with
+ETL/Data Pipelines & Data Warehousing
+🔹 Cloud experience:
+AWS / Azure / GCP
+🔹 Strong analytical & problem-solving skills
+Interested candidates can share their updated resume at
+cheena@supersourcing.com
+
+## 💼 Role: Specialist – Data Engineering | unknown
+🚀 LTIMindtree Hiring | Senior Data Engineer
+💼 Role: Specialist – Data Engineering
+🆔 Job ID: 893437
+🧑‍💻 Experience: 5–7 Years
+📍 Location: Open Location
+🔥 Mandatory Skills: BMC Control-M | ETL Concepts | MySQL | Snowflake
+Looking for Data Engineering professionals with strong experience in DBT, SQL, data transformation, data modeling, ETL/ELT & data validation.
+🔹 Key Skills: DBT | Control-M | SQL | MySQL | Snowflake | ETL | Data Warehousing | Data Pipelines | Data Analysis
+⭐ Good to Have: Cisco Environment | Snowflake ETL/ELT | Cloud Analytics Platforms
+📩 Interested? Send your updated CV to
+rahulyadav.referral@gmail.com
+✅ Please mention: Job Title | Total Experience | Notice Period
+🤝 Know someone suitable? Like ❤️ | Share 🔄 | Tag 👥
+
+## Hiring – Azure Data Engineer | Bangalore | unknown
+🚨
+Hiring – Azure Data Engineer | Bangalore
+📍
+Location:
+Bangalore
+💼
+Experience:
+4+ Years
+⚡
+Immediate Joiners Preferred
+📅
+F2F Interview:
+25th September 2026
+Mandatory Skills:
+✅ Databricks
+✅ Python
+✅ SQL
+Good to Have:
+• Azure Data Factory
+• Azure Blob Storage
+• Apache Spark
+• Snowflake
+• Data Warehousing & Data Modelling
+• ETL / Data Pipelines
+• DataOps / CI-CD
+• Power BI / Tableau / Qlik
+Interested candidates can share their updated CV to
+brindha@vrdella.com
+#Hiring
+#AzureDataEngineer
+#Azure
+#Databricks
+#Python
+#SQL
+#DataEngineer
+#Bangalore
+#ImmediateJoiners
+
+## WALK-IN DRIVE – AZURE DATA ENGINEER | unknown
+🚨
+WALK-IN DRIVE – AZURE DATA ENGINEER
+🚨
+📍 Electronic City, Bangalore
+📅
+25th September
+💼
+6+ Years
+| 💰
+CTC: 12 LPA
+🤝
+F2F Interview
+🔴 Must Have
+Azure Data Engineering
+Databricks
+Python
+SQL
+Azure Data Factory
+Data Engineering / ETL
+Data Warehousing & Data Modelling
+Apache Spark
+🟢 Good to Have
+Snowflake
+DataOps / CI-CD
+Power BI / Tableau / Qlik
+Big Data experience
+Azure Blob Storage
+📩
+Interested candidates can share their updated profile at
+queentina@vrdella.com
+#Hiring
+#AzureDataEngineer
+#Databricks
+#Python
+#SQL
+#BangaloreJobs
+#WalkInDrive
+#DataEngineering

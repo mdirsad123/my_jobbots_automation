@@ -14,8 +14,8 @@ def apply_to_job(recipient_email: str, summary: str, cv_path: str, title: str):
     msg = MIMEMultipart()
     msg['Subject'] = f'Application for {title} role'
     msg['From'] = settings["EMAIL_ADDRESS"]
-    # msg['To'] = recipient_email
-    msg['To'] = "mdirsa688@gmail.com"
+    msg['To'] = recipient_email
+    # msg['To'] = "mdirsa688@gmail.com"
 
     # body text with static template and dynamic professional summary
     body = f"""Dear Recruiter,
@@ -24,7 +24,7 @@ Please find my profile summary and details below,
 Professional Summary:
 {summary}
 
-Total Experience: 2 years
+Total Experience: 2+ years
 Current Location: Mumbai
 Preferred Location: Bangalore/Mumbai/Noida
 Notice Period: 1 week

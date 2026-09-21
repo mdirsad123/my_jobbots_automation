@@ -12,4 +12,4 @@ pyenv global 3.12.9
 # debuger port
 "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\chromedebug"
 
-D:\ird-projects\my_pyautomation\.venv\Scripts\activate.bat
+D:/ird-projects/sahil_projects/my_jobbots_automation/.venv/Scripts/activate.bat

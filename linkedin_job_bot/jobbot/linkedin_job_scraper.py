@@ -8,16 +8,12 @@ from datetime import datetime
 import urllib.parse
 import json
 from pathlib import Path
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
+from utils.debbuger_port_driver import get_driver
 
-# Constants
-CHROME_DRIVER_PATH = r"D:\ird-projects\my_pyautomation\ui\driver\chromedriver.exe"
 # CACHE_FILE = "output/cached_jobs.py"
 output_cache_file = Path(__file__).resolve().parent.parent / "output" / "cached_job.py"
 output_cache_file.parent.mkdir(parents=True, exist_ok=True)
@@ -28,7 +24,7 @@ output_cache_file.parent.mkdir(parents=True, exist_ok=True)
 #     "full stack ai engineer", "full stack data scientist"
 # ]
 ALLOWED_TITLES = [
-    "python developer", "data engineer", "Software engineer",
+    "python developer", "data engineer", "AI engineer",
 ]
 
 # Build LinkedIn search URL
@@ -55,12 +51,6 @@ def generate_hashtags(title, location):
         tags.add(f"#{location.lower().replace(' ', '')}")
     # tags.add("#remote")
     return " ".join(sorted(tags))
-
-# Configure and return Selenium driver
-def get_driver():
-    options = Options()
-    options.debugger_address = "127.0.0.1:9222"
-    return webdriver.Chrome(service=Service(CHROME_DRIVER_PATH), options=options)
 
 # Parse job description and email
 def extract_job_details(driver, job_url):

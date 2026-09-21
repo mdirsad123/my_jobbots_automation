@@ -18,10 +18,9 @@ import sys
 from typing import Optional, Tuple
 from datetime import datetime, timedelta
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
-from utils.time_calc_decorator import timeit
 import importlib.util
+from utils.debbuger_port_driver import get_driver
 
-CHROME_DRIVER_PATH = r"D:\ird-projects\my_pyautomation\ui\driver\chromedriver.exe"
 # Config
 NAUKRI_HOME_URL = "https://www.naukrigulf.com/mnj/userProfile/myHome?conmnj=1&showQsb=1&source="
 output_cache_file = Path(__file__).resolve().parent.parent / "output" / "cached_job.py"
@@ -32,12 +31,6 @@ ALLOWED_TITLES = ["Python Developer", "Data Engineer", "Software Engineer"]
 # LOCATIONS = ["United Arab Emirates", "Saudi Arabia", "Dubai", "Abu Dhabi", "Riyadh", "Jeddah", "Doha", "Kuwait City", "Manama", "Amman"]
 LOCATIONS = ["United Arab Emirates", "Saudi Arabia", "Dubai"]
 EXPERIENCE = "2"  # Years
-
-# Chrome with debugger port
-def get_driver():
-    options = Options()
-    options.debugger_address = "127.0.0.1:9222"
-    return webdriver.Chrome(service=Service(CHROME_DRIVER_PATH), options=options)
 
 # Cache to file
 def cache_to_python_file(job_data, filename=output_cache_file):

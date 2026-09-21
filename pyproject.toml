@@ -14,7 +14,6 @@ pyarrow = "14.0.0"
 redshift-connector = "2.0.918"
 sagemaker = "2.212.0"
 smart-open = "5.2.1"
-starlette = "0.27.0"
 pyodbc = "5.0.1"
 pipeline = "^0.1.0"
 polars = "0.20.6"
@@ -52,6 +51,9 @@ pypandoc = "^1.15"
 pymupdf = "^1.26.1"
 transformers = "^4.53.2"
 torch = "^2.7.1"
+mss = "^10.1.0"
+fastapi = "^0.125.0"
+uvicorn = "^0.38.0"
 
 [build-system]
 requires = ["poetry-core"]

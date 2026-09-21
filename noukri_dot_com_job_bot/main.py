@@ -10,9 +10,9 @@ import hashlib
 from datetime import datetime
 import sys
 import time
-from jobbot.get_roles_responsibility_point import generate_cv_roles
+# from jobbot.get_roles_responsibility_point import generate_cv_roles
 from jobbot.get_key_skill import extract_key_skills
-from jobbot.cv_updater import update_roles_in_docx
+# from jobbot.cv_updater import update_roles_in_docx
 from jobbot.easy_job_scrap import scrape_naukri_simple
 from utils.clean_description import clean_job_description
 from output.cached_job import cached_jobs
@@ -52,7 +52,6 @@ def generate_job_hashkey(title, company, post_date):
 
 def sanitize_filename(name):
     return re.sub(r'[\\/*?:"<>|]', "_", name).replace(" ", "_").lower()
-
 
 # ------------------ Easy Apply Main Logic ------------------
 def easy_job_main():
@@ -109,7 +108,6 @@ def easy_job_main():
     save_all_hashkeys(updated_job_dict)
     driver.quit()
     print(f"All applicable jobs processed. CVs saved in: {output_dir}")
-
 
 # ------------------ Entry Point ------------------
 

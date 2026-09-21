@@ -1,0 +1,19 @@
+Subject: Application for AI Engineer / GenAI Engineer
+
+Dear Hiring Team,
+
+I am applying for the AI Engineer / GenAI Engineer opportunity. I have 3+ years of experience across Python backend development, AWS data engineering, API integration, cloud automation, and practical LLM-enabled workflows.
+
+My strongest relevant experience includes:
+- Python backend and REST API development using FastAPI/Flask, SQL, Pandas, and NumPy.
+- AWS serverless and data workflows using Lambda, Glue, S3, Step Functions, SQS, DynamoDB, Redshift, and CloudWatch.
+- Practical LLM API integration, prompt-driven automation, RAG concepts, structured workflows, Docker, CI/CD, testing, and production troubleshooting.
+
+I am particularly interested in roles focused on building reliable AI-enabled applications, integrating GenAI capabilities into backend/cloud systems, and developing production-oriented automation and data workflows.
+
+Please find my updated CV attached. I would welcome the opportunity to discuss how my Python, AWS, backend, data, and applied AI experience can contribute to your team.
+
+Best regards,
+Md Irsad
++91-8409718735
+mdirsadtech7305@gmail.com

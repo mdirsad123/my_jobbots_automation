@@ -18,10 +18,10 @@ import os
 import sys
 from selenium.webdriver.chrome.service import Service
 from datetime import datetime, timedelta
+from utils.debbuger_port_driver import get_driver
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
-CHROME_DRIVER_PATH = r"D:\ird-projects\my_pyautomation\ui\driver\chromedriver.exe"
 # Config
 NAUKRI_HOME_URL = "https://www.naukri.com/mnjuser/homepage"
 output_cache_file = Path(__file__).resolve().parent.parent / "output" / "cached_job.py"
@@ -29,13 +29,7 @@ output_cache_file.parent.mkdir(parents=True, exist_ok=True)
 
 ALLOWED_TITLES = ["Data Engineer", "Python Developer"]
 # ALLOWED_TITLES = ["Python Developer", "Data Engineer", "Software Engineer", "Devops Engineer", "Data Scientist", "Machine Learning Engineer", "AI Engineer", "Backend Developer", "Full Stack Developer"]
-EXPERIENCE = 2  # Years
-
-# Chrome with debugger port
-def get_driver():
-    options = Options()
-    options.debugger_address = "127.0.0.1:9222"
-    return webdriver.Chrome(service=Service(CHROME_DRIVER_PATH), options=options)
+EXPERIENCE = 3  # Years
 
 # Cache to file
 def cache_to_python_file(job_data, filename=output_cache_file):
@@ -81,11 +75,11 @@ def parse_posted_date(date_text: str) -> str:
 
 def contains_allowed_title(title: str, description: str) -> bool:
     Filter_ALLOWED_TITLES = [
-        "Python Developer", "Data Engineer", "Software Engineer", "Devops Engineer", "Data Analyst",
-        "Machine Learning Engineer", "AI Engineer", "AI Agen Engineer", "Agentic AI", "Generative AI", "AI Systems Engineer", "MLops", "AI Developer", "Data Scientist",
-        "Backend Engineer", "Backend Developer", "Full Stack Developer",
-        "Database Platform", "Product Engineer", "Fullstack Developer", "Full Stack Development",
-        "Software Engineer", "Blockchain Developer",
+        "Python Developer", "Data Engineer", "Devops Engineer", "Data Analyst",
+        "Machine Learning Engineer", "AI Engineer", "AI Agent Engineer", "Agentic AI", "Generative AI", 
+        "AI Systems Engineer", "MLops", "AI Developer", "Data Scientist","cloud",
+        "Backend Engineer", "Backend Developer", "devops",
+        "backend", "pythonjobs", "machinelearning", "datascience", "Developer - Tech Support"
     ]
     combined_text = f"{title} {description}".lower()
     

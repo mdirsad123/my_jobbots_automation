@@ -1,0 +1,41 @@
+Subject: Application for Python Developer
+
+Dear Hiring Team,
+
+Thank you for sharing the Python Developer opportunity in Kalyani Nagar, Pune. I am interested in exploring the role. I have 3+ years of software and data-engineering experience with strong hands-on work in Python, SQL, REST APIs, backend development, enterprise integrations, Git, cloud automation, and applied LLM/prompt-driven workflows.
+
+My strongest relevant experience includes:
+- Python backend development with Flask/FastAPI, REST APIs, SQL/MySQL, database optimization, authentication, integrations, and production troubleshooting.
+- Git, Docker, testing, CI/CD concepts, and AWS-based application/data workflows using Lambda, S3, Step Functions, Glue, CloudWatch, and related services.
+- Practical exposure to LLM APIs, prompt engineering/automation, RAG concepts, and AI-assisted Python workflows.
+
+Requested details:
+Current CTC: 7 LPA
+Expected CTC: 10-12 LPA
+Notice Period: 15 Days
+Current Location: Mumbai
+Total Experience: 3+ years
+Relevant Python Experience: 3+ years
+Relevant Django Experience: 1.5 years professional; hands-on backend experience is primarily Flask/FastAPI
+Relevant GenAI Experience: Practical project/automation exposure with LLM APIs, prompt engineering, AI-assisted workflows, and RAG concepts; no dedicated GenAI tenure claimed
+
+Technical Checklist:
+Python: 3+ years
+Django: 1.5 years professional - transferable Flask/FastAPI experience
+SQL Development & Optimization: 3+ years
+REST APIs: 3+ years
+SOAP/WSDL Services: No verified professional experience
+Angular: 1 years - frontend experience is primarily React.js
+Git: 3+ years
+Azure DevOps: 1 years
+CI/CD Pipelines: 2 years Hands-on exposure
+Generative AI (GPT/Embeddings): LLM/GPT API and GenAI workflow exposure; embeddings are not claimed as production experience
+LLM Prompt Engineering: Practical hands-on exposure; dedicated years not separately tracked
+Enterprise Application Development: 3+ years across backend, business applications, APIs, cloud/data workflows, and integrations
+
+I have attached my updated CV for your review. I would be happy to discuss how my Python, backend, SQL, cloud, and applied GenAI experience can transfer to the Django/Azure-oriented parts of the role.
+
+Best regards,
+Md Irsad
++91-8409718735
+mdirsadtech7305@gmail.com

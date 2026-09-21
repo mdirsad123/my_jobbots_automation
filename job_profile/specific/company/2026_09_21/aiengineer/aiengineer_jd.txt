@@ -1,0 +1,89 @@
+# Role Group: AI Engineer
+# Posted By: N/A
+# Emails: careers@vextarainfo.com, pratiksha@tarangansolutions.com
+# Jobs included: 2
+# Companies: a Client for a full-stack Data Scientist opportunity, unknown
+# Generated: 2026-09-21 13:36:21
+======================================================================
+
+## Hiring for a Client for a full-stack Data Scientist opportunity. | a Client for a full-stack Data Scientist opportunity
+WE’RE HIRING | DATA SCIENTIST
+Hiring for a Client for a full-stack Data Scientist opportunity.
+💼 Position: Data Scientist
+🆔 Job ID: 894502
+📍 Location: Pune / Hyderabad
+💼 Experience: 6–8 Years
+📄 Employment: FTE / Contract
+💰 Budget: ₹1.2 LPM
+🔑 KEY SKILLS
+🐍 Python / R / Java
+☁️ AWS / Azure / Google Cloud
+📊 Machine Learning & Statistical Modelling
+🗄️ SQL & Database Systems
+🌐 HTML / CSS / JavaScript
+🔄 Data Pipelines & APIs
+📈 Data Visualization & Dashboards
+🤖 Predictive Modelling
+⚙️ Cloud-Based Application Development
+🎯 ROLE RESPONSIBILITIES
+• Develop end-to-end data science solutions
+• Collect, clean and transform data from multiple sources
+• Build predictive, machine learning and statistical models
+• Deploy models through web APIs or microservices
+• Develop interactive data visualizations and dashboards
+• Build scalable data pipelines, APIs and microservices
+• Work with cloud-based solutions
+• Perform exploratory data analysis and identify trends and patterns
+• Collaborate with data engineers, developers and business stakeholders
+• Research and implement new data science and development approaches
+⭐ GOOD TO HAVE
+• Docker
+• Kubernetes
+• Financial / FinTech domain experience
+• Jira & Confluence
+🎓 QUALIFICATION
+Bachelor’s or Master’s degree in Computer Science, Data Science, Statistics or a related field.
+📩 APPLY NOW
+careers@vextarainfo.com
+Mention “Data Scientist – Job ID 894502” in the subject line.
+#WereHiring
+#HiringForAClient
+#DataScientist
+#DataScience
+#MachineLearning
+#PythonJobs
+#SQL
+#AWS
+#Azure
+#GoogleCloud
+#CloudJobs
+#Data
+
+## AI/ML Engineer – Databricks & GenAI | unknown
+Urgent Requirement,
+AI/ML Engineer – Databricks & GenAI
+C2C - 8-10years
+Remote Pan India
+Shift Time - 11 AM – 9 PM
+JD:-
+"AI/ML + Databricks + Python + SQL -
+Responsibilities • Develop machine learning, deep learning, and generative AI models to support RCM use cases such as claim outcome prediction, denials classification, next best action recommendation, clinical appeal summarization, and workflow optimization.
+• Build end to end ML pipelines including feature engineering, model training, hyperparameter tuning, validation, and monitoring.
+• Research and apply advanced techniques in LLMs, embeddings, retrieval augmentation (RAG), prompt engineering, and document intelligence.
+• Translate operational and product requirements into measurable model objectives, data specifications, and evaluation frameworks.
+• Conduct exploratory data analysis (EDA) to understand data patterns, anomalies, and business insights.
+• Implement and follow best practices around MLOps, including model versioning, reproducibility, feature stores, and drift monitoring.
+• Partner with Data Engineers to ensure feature availability, data quality, and scalable ML/AI deployment within Azure Databricks and enterprise platforms.
+• Collaborate with cross-functional teams to communicate insights, present model results, and drive adoption of ML solutions.
+Contact us:-
+Email id:
+pratiksha@tarangansolutions.com
+Call/WP: 9309037066
+#Databricks
+#AIML
+#Python
+#SQL
+#remotework
+#contractual
+#immediatejoinner
+#urgentrequirement

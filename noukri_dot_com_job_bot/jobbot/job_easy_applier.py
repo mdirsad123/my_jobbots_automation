@@ -121,7 +121,7 @@ def easy_apply_to_job(driver, job_url: str, skills_list, industry, department, c
 
     try:
         
-        update_skill(driver, wait, skills_list)
+        # update_skill(driver, wait, skills_list)
         
         time.sleep(1)
         

@@ -19,18 +19,10 @@ import sys
 from datetime import datetime
 from collections import Counter
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+from utils.debbuger_port_driver import get_driver
 
-# --- PATH CONFIG ---
-chrome_driver_path = r"D:\ird-projects\my_pyautomation\ui\driver\chromedriver.exe"
 output_cache_file = Path(__file__).resolve().parent.parent / "output" / "cached_post.py"
 output_cache_file.parent.mkdir(parents=True, exist_ok=True)
-
-
-# --- UTILS ---
-def get_driver():
-    options = Options()
-    options.debugger_address = "127.0.0.1:9222"
-    return webdriver.Chrome(service=Service(chrome_driver_path), options=options)
 
 def build_post_search_url(title: str) -> str:
     # date_range = "past-week"
@@ -127,12 +119,12 @@ def contains_blocked_keywords(text: str) -> bool:
 
 def contains_allowed_title(description: str) -> bool:
     Filter_ALLOWED_TITLES = [
-        "Python Developer", "Data Engineer", "Software Engineer", "Devops Engineer", "Data Analyst",
+        "Python Developer", "Data Engineer", "Devops Engineer", "Data Analyst",
         "Machine Learning Engineer", "AI Engineer", "AI Agent Engineer", "Agentic AI", "Generative AI", 
         "AI Systems Engineer", "MLops", "AI Developer", "Data Scientist","cloud",
-        "Backend Engineer", "Backend Developer", "Full Stack Developer", "devops", "softwareengineer",
-        "backend", "fullstack", "softwaredeveloper", "pythonjobs", "machinelearning", "datascience",
-        
+        "Backend Engineer", "Backend Developer", "devops",
+        "backend", "pythonjobs", "machinelearning", "datascience",
+        "dataengineer", "dataengineering", "awsdataengineer", "bigdata"
     ]
     
     desc_lower = description.lower()
@@ -154,7 +146,7 @@ def scrape_linkedin_posts() -> str:
     wait = WebDriverWait(driver, 20)
     posts_cache = []
     tags = ["jobs"]
-    allowed_titles = ["pythondeveloper", "dataengineer", "datascientist", "awsdataengineer", "datascience", "dataengineering", "machinelearning", "pythonjobs", "bigdata", "fullstack", "backend", "softwareengineer", "softwaredeveloper", "devops", "cloud"]
+    allowed_titles = ["pythondeveloper", "dataengineer", "datascientist", "awsdataengineer", "datascience", "dataengineering", "machinelearning", "pythonjobs", "bigdata", "backend", "devops", "cloud"]
     seen_emails = set()
     for title in allowed_titles:
         url = build_post_search_url(title)
@@ -238,7 +230,6 @@ def scrape_linkedin_posts() -> str:
 
     print(f"Saved {len(posts_cache)} posts to {output_cache_file}")
     return "LinkedIn post scraping completed and cached."
-
 
 # ✅ Allow command-line run
 if __name__ == "__main__":

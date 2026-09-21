@@ -21,8 +21,8 @@ import importlib.util
 co = cohere.Client(settings["COHERE_API_KEY2"])
 
 PROJECTS = [
-    "Project #1 – Subscription Milestone",
-    "Project #2 – Insights Content",
+    "Project #1 – PrintSoft Replacement",
+    "Project #2 – Prod Finance Data Pipeline",
     "Project #3 – JazzTrack Management System"
 ]
 
@@ -150,7 +150,7 @@ def generate_cv_roles(description: str, docx_path: str) -> str:
 # ---------- USAGE ---------- #
 if __name__ == "__main__":
     
-    docx_path = "noukri_dot_com_job_bot/input/Md_Irsad_ind.docx"
+    docx_path = "linkedin_job_bot/input/Md_Irsad_ind.docx"
     
     jd = "About the job\nAbout the Role\nOverview:\nNewton School of Technology is on a mission to transform technology education and bridge the employability gap. As India’s first impact university, we are committed to revolutionizing learning, empowering students, and shaping the future of the tech industry. Backed by renowned professionals and industry leaders, we aim to solve the employability challenge and create a lasting impact on society.\nWe are currently looking for a\nData Engineer + Instructor– Data Mining\nto join our Computer Science Department. This is a full-time academic role focused on data mining, analytics, and teaching/mentoring students in core data science and engineering topics.\nKey Responsibilities:\n● Develop and deliver comprehensive and engaging lectures for the undergraduate \"Data Mining\", “BigData” and “Data Analytics” courses, covering the full syllabus from foundational concepts to advanced techniques.\n● Instruct students on the complete data lifecycle, including data preprocessing, cleaning, transformation, and feature engineering.\n● Teach the theory, implementation, and evaluation of a wide range of algorithms for Classification, Association rules mining, Clustering, and Anomaly detection.\n● Design and facilitate practical lab sessions and assignments that provide students with hands-on experience using modern data tools and software.\n● Develop and grade assessments, including assignments, projects, and examinations, that effectively measure the Course Learning Objectives (CLOs).\n● Mentor and guide students on projects, encouraging them to work with real-world or benchmark datasets (e.g., from Kaggle).\n● Stay current with the latest advancements, research, and industry trends in data engineering and machine learning to ensure the curriculum remains relevant and cutting-edge.\n● Contribute to the academic and research environment of the department and the university.\nRequired Qualifications:\n● A Ph.D. (or a Master's degree with significant, relevant industry experience) in Computer Science, Data Science, Artificial Intelligence, or a closely related field.\n● Demonstrable expertise in the core concepts of data engineering and machine learning as outlined in the syllabus.\n● Strong practical proficiency in Python and its data science ecosystem, specifically Scikit-learn, Pandas, NumPy, and visualization libraries (e.g., Matplotlib, Seaborn).\n● Proven experience in teaching, preferably at the undergraduate level, with an ability to make complex topics accessible and engaging.\n● Excellent communication and interpersonal skills.\nPreferred Qualifications:\n● A strong record of academic publications in reputable data mining, machine learning, or AI conferences/journals.\n● Prior industry experience as a Data Scientist, Big Data Engineer, Machine Learning Engineer, or in a similar role.\n● Experience with big data technologies (e.g., Spark, Hadoop) and/or deep learning frameworks (e.g., TensorFlow, PyTorch).\n● Experience in mentoring student teams for data science competitions or hackathons.\nPerks & Benefits:\n● Competitive salary packages aligned with industry standards.\n● Access to state-of-the-art labs and classroom facilities."
     

@@ -115,7 +115,7 @@ def post_job_main():
             print(f"Email sent successfully to {post_email}")
             time.sleep(10)  # Avoid rate limiting
             
-            import pdb; pdb.set_trace()
+            # import pdb; pdb.set_trace()
             
             updated_post_hashkeys[hashkey] = {
                 "title": title,  # Using company as title in post-based jobs
@@ -202,6 +202,6 @@ def easy_job_main():
 # ------------------ Entry Point ------------------
 
 if __name__ == "__main__":
-    # post_job_main()
+    post_job_main()
     time.sleep(5)  # Give some time before starting easy apply
     easy_job_main()

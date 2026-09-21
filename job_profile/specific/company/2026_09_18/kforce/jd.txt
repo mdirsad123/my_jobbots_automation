@@ -1,0 +1,55 @@
+Dear Irsad,
+Hope you are doing well.
+We have an exciting opportunity for the position of Python Developer with our organization. Based on your profile, we believe this opportunity aligns well with your experience and expertise.
+Position: Python Developer
+Location: Kalyani Nagar, Pune
+Experience Required: 4 to 7 Years
+Key Skills Required:
+Strong hands-on experience in Python and Django application development.
+Experience with SQL development, database design, and query optimization.
+Knowledge of REST, SOAP, WSDL, and enterprise system integrations.
+Experience with Git, Azure DevOps, CI/CD pipelines, and DevOps practices.
+Exposure to Generative AI technologies, including GPT models, embeddings, and agent-based solutions.
+Experience in Angular development.
+Hands-on experience with LLM Prompt Engineering.
+Understanding of application architecture, SOA principles, and scalable enterprise application development.
+If you are interested in exploring this opportunity, please share your updated resume along with the following details:
+Current CTC
+Expected CTC
+Notice Period
+Current Location
+Total Experience
+Relevant Python & Django Experience
+Relevant GenAI Experience
+Technical Checklist
+Kindly fill in your experience against the following skills:
+
+
+Criteria
+Your Experience
+Python
+___ Years
+Django
+___ Years
+SQL Development & Optimization
+___ Years
+REST APIs
+___ Years
+SOAP/WSDL Services
+___ Years
+Angular
+___ Years
+Git
+___ Years
+Azure DevOps
+___ Years
+CI/CD Pipelines
+___ Years
+Generative AI (GPT/Embeddings)
+___ Years
+LLM Prompt Engineering
+___ Years
+Enterprise Application Development
+___ Years
+Relevant Certifications
+__________

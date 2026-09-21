@@ -103,7 +103,7 @@ def easy_job_main():
             summary = updated_roles["Summary"]
             skills_list = updated_roles["[DYNAMIC TECHNOLOGIES LIST 1]"]
 
-            # final_cv_path = update_roles_in_docx(docx_file, updated_roles, output_docx_file)
+            final_cv_path = update_roles_in_docx(docx_file, updated_roles, output_docx_file)
             # print(f"Updated CV saved: {output_docx_file}")
 
             easy_apply_to_job(driver, job_url, updated_roles, experience_range, skills_list, industry, department, keyword, summary, profile_title)

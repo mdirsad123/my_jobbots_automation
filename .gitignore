@@ -153,3 +153,7 @@ data/local
 **screenshot_*.png
 **updated_cv*.docx
 **/linkedin_job_bot/output/*.docx
+**/job_profile/archive/
+**/linkedin/output/**
+**/linkedin_job_bot/output/**
+**/noukrigulf_job_bot/output/**

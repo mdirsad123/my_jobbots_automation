@@ -95,47 +95,54 @@ def update_roles_in_docx(docx_path, updated_roles_dict, output_path):
     doc.save(output_path)
     print(f"Updated pdf saved at: {output_path}")
     # Convert to PDF
-    # try:
-    #     convert(output_path)
-    #     pdf_path = output_path.replace(".docx", ".pdf")
-    #     # compressed_path = pdf_path.replace(".pdf", "_compressed.pdf")
-    #     compressed_pdf = compress_pdf(pdf_path, pdf_path)
-    #     print(f"Compressed PDF saved at: {compressed_pdf}")
-    #     return compressed_pdf
-    # except Exception as e:
-    #     print(f"Failed to convert to PDF: {e}")
-    #     return output_path  # fallback to docx
+    try:
+        convert(output_path)
+        pdf_path = output_path.replace(".docx", ".pdf")
+        # compressed_path = pdf_path.replace(".pdf", "_compressed.pdf")
+        compressed_pdf = compress_pdf(pdf_path, pdf_path)
+        print(f"Compressed PDF saved at: {compressed_pdf}")
+        return compressed_pdf
+    except Exception as e:
+        print(f"Failed to convert to PDF: {e}")
+        return output_path  # fallback to docx
 
 
 # ----------- Sample Usage ----------- #
 
 if __name__ == '__main__':
     current_dir = os.path.dirname(__file__)
-    docx_file   = os.path.join(current_dir, "Md_Irsad_ind.docx")
+    # docx_file   = os.path.join(current_dir, "Md_Irsad_ind.docx")
+    docx_file = "linkedin_job_bot/input/Md_Irsad_ind.docx"
     output_file = os.path.join(current_dir, "updated_resume.docx")
 
+
     updated_roles = {
-    "Project #1 – Insights Content": {
-        "point1": "Designed and developed secure, scalable AWS API integrations using API Gateway, Lambda (Python), and Step Functions, ensuring seamless data exchange across systems.",
-        "point2": "Implemented and optimized ETL workflows with Airflow, enhancing data processing efficiency and reliability in cross-functional projects.",
-        "point3": "Applied RESTful APIs, and JSON/XML to build robust, high-performance integrations aligned with AWS security best practices.",
-        "point4": "Collaborated with DevOps teams to integrate version control and CI/CD pipelines, ensuring streamlined deployment and maintenance of microservices and database (RDS/DynamoDB) interactions.",
-    },
-    "Project #2 – MQR": {
-        "point1": "Designed and implemented secure, scalable AWS API integrations using API Gateway, Lambda (Python), and Step Functions, ensuring high performance and reliability across multiple systems.",
-        "point2": "Developed and optimized data workflows with Airflow, enhancing efficiency in data exchange processes while adhering to RESTful API standards.",
-        "point3": "Collaborated with cross-functional teams to gather requirements and deliver robust solutions, leveraging JSON/XML and Python scripting for seamless integration.",
-        "point4": "Applied security best practices and DevOps methodologies, including version control and CI/CD pipelines, to maintain and deploy integrations in a microservices architecture with RDS and DynamoDB.",
-    },
-    "PROJECT #2 – DATA CONTENT": {
-        "point1": "Designed and developed secure, scalable AWS API integrations using API Gateway, Lambda (Python), and Step Functions, ensuring seamless data exchange across systems.",
-        "point2": "Implemented and optimized data workflows with Airflow, enhancing integration reliability and performance for cross-functional teams.",
-        "point3": "Applied RESTful APIs, and JSON/XML to build robust, secure, and efficient data interfaces aligned with AWS security best practices.",
-        "point4": "Collaborated with DevOps teams to integrate version control and CI/CD pipelines, leveraging microservices and databases (RDS, DynamoDB) for streamlined deployments.",
-    },
-    "Summary": "Senior Software Engineer with 9.5 years of experience, specializing in AWS cloud technologies including IAM, S3, EC2, Athena, Glue, Step Functions, and CloudWatch. Proficient in designing ETL pipelines using Python, Pandas, PySpark, and SQL, with expertise in machine learning algorithms (classification, regression, random forest). Skilled in performance optimization through caching, code reviews with SonarLint/SonarQube, and project setup using Conda and Poetry. Experienced in RESTful APIs, JSON/XML, and Python scripting, with a strong foundation in secure and efficient data integration practices. Familiar with DevOps tools, version control, CI/CD pipelines, and microservices architectures, including RDS and DynamoDB. AWS certified."}
-
-
+        "Project #1 – PrintSoft Replacement": {
+            "point1": "Applied Python loops and conditions for data processing.",
+            "point2": "Exeption handling in Python using try-except-finally blocks.",
+            "point3": "Secure RDS access using IAM roles, VPC, and encryption.",
+            "point4": "Monitor slow queries and optimize indexes using RDS logs.",
+            "point5": "Deploy models with TensorFlow Serving and TensorFlow Lite using TensorFlow.",
+        },
+        "[DYNAMIC TECHNOLOGIES LIST 1]": "orm, aws, data science, ai, etl, devops, ml, pandas, data, python",
+        "Project #2 – Prod Finance Data Pipeline": {
+            "point1": "Integrate with pandas DataFrames for quick plotting using seaborn.",
+            "point2": "Handle database schema changes with migrations using Django ORM.",
+            "point3": "Perform CRUD operations with Django models using Django ORM.",
+            "point4": "Use key IdPs like Azure AD or Okta for SSO setup.",
+            "point5": "Improve key security and login experience via SSO.",
+        },
+        "[DYNAMIC TECHNOLOGIES LIST 2]": "orm, aws, data science, ai, etl, devops, ml, pandas, data, python",
+        "Project #3 – JazzTrack Management System": {
+            "point1": "Remove outliers and errors in data using Python cleaning.",
+            "point2": "Use Pandas for handling missing data during cleaning.",
+            "point3": "Prepare model input with smart transformation logic.",
+            "point4": "Aggregate values for insights during transformation step.",
+            "point5": "Automate feature creation in AI pipelines efficiently.",
+        },
+        "[DYNAMIC TECHNOLOGIES LIST 3]": "orm, aws, data science, ai, etl, devops, ml, pandas, data, python",
+        "Summary": "Data Engineer and Python Developer with 2+ years of experience in designing scalable ETL pipelines, backend APIs, and automation workflows. Proficient in AWS (Glue, Lambda, Step Functions, S3, Redshift), SQL/MySQL, and Python (Pandas, PySpark, FastAPI). Demonstrated success in automating finance workflows, migrating legacy systems to cloud-native solutions, and optimizing database performance. Experienced in both freelancing and full-time roles, delivering measurable business impact through reduced manual effort and enhanced data processing efficiency. Holds a strong foundation in data preprocessing, algorithm implementation, and practical application of data science tools, with a proven ability to teach and mentor in technical environments.",
+    }
 
     update_roles_in_docx(docx_file, updated_roles, output_file)
     # print("✅ Done. Updated resume saved to:", output_file)
