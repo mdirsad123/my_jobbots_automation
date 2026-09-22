@@ -18,6 +18,8 @@ from linkedin.services.find_similar_jobs import group_and_save_roles
 from linkedin.services.copy_group_role_specific_data import copy_group_role_specific_data
 from utils.debbuger_port_driver import get_driver
 
+from datetime import datetime
+
 def main():
     parser = argparse.ArgumentParser(
         description="Run LinkedIn scraper and group today's scraped jobs"
@@ -44,7 +46,7 @@ def main():
             )
 
             # The scraper has now saved today's jobs to:
-            # output/scarp/YYYY-MM-DD.json
+            # output/scrap/YYYY-MM-DD.json
             #
             # Next, read that JSON and create role-wise grouped .txt files.
             print("Starting Role Grouping...")
@@ -53,6 +55,7 @@ def main():
                 today_only=True
             )
 
+            
             if grouped_summary:
                 print(
                     f"Role grouping completed. "
@@ -71,9 +74,10 @@ def main():
                     "were created."
                 )
 
+        today_date = datetime.now().strftime("%Y-%m-%d")
+
         copy_group_role_specific_data(
-            folder_path=None,
-            output_root=None,
+            folder_path=f"linkedin/output/grouped_jobs/{today_date}",
         )
         # Easy Apply scraper has been removed from scraper_service.py.
         # Keep this mode only for CLI compatibility.

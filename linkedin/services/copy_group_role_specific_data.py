@@ -73,12 +73,12 @@ def normalise_output_date(folder_name: str) -> str:
     match = re.fullmatch(r"(\d{4})[-_](\d{2})[-_](\d{2})", value)
     if match:
         year, month, day = match.groups()
-        return f"{year}_{month}_{day}"
+        return f"{year}-{month}-{day}"
 
     match = re.fullmatch(r"(\d{2})[-_](\d{2})[-_](\d{4})", value)
     if match:
         day, month, year = match.groups()
-        return f"{year}_{month}_{day}"
+        return f"{year}-{month}-{day}"
 
     return re.sub(r"[^A-Za-z0-9_-]+", "_", value).strip("_") or "unknown_date"
 
@@ -217,5 +217,5 @@ def main(input_path: Optional[str] = None) -> None:
         )
 
 if __name__ == "__main__":
-    input_path = "linkedin/output/2026-09-21"
-    main()
+    input_path = "linkedin/output/grouped_jobs/2026-09-21"
+    main(input_path)
