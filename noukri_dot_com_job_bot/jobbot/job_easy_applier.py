@@ -125,8 +125,7 @@ def easy_apply_to_job(driver, job_url: str, skills_list, industry, department, c
         
         time.sleep(1)
         
-        
-        profile_update(driver, wait, industry, department, category, role)
+        # profile_update(driver, wait, industry, department, category, role)
         
         time.sleep(1)
         driver.get(job_url)

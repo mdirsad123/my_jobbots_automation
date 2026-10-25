@@ -27,8 +27,85 @@ NAUKRI_HOME_URL = "https://www.naukri.com/mnjuser/homepage"
 output_cache_file = Path(__file__).resolve().parent.parent / "output" / "cached_job.py"
 output_cache_file.parent.mkdir(parents=True, exist_ok=True)
 
-ALLOWED_TITLES = ["Data Engineer", "Python Developer"]
-# ALLOWED_TITLES = ["Python Developer", "Data Engineer", "Software Engineer", "Devops Engineer", "Data Scientist", "Machine Learning Engineer", "AI Engineer", "Backend Developer", "Full Stack Developer"]
+# SINGLE SOURCE OF TRUTH: edit role names/variants here only.
+# The search box is populated from these canonical role names; scraper checks
+# canonical names plus variants using normalized, word-boundary-aware matches.
+ROLE_TITLE_ALIASES = {
+    "Python Developer": (
+        "python developer", "backend python developer", "python backend developer",
+        "python engineer", "python software engineer", "full stack developer python",
+        "full stack python developer", "fullstack python developer",
+        "python full stack developer", "python programmer", "flask developer",
+        "django developer", "fastapi developer",
+    ),
+    "Data Engineer": (
+        "data engineer", "aws data engineer", "azure data engineer",
+        "big data engineer", "etl developer", "etl engineer", "pyspark developer",
+        "data pipeline engineer", "data platform engineer", "analytics engineer",
+    ),
+    "AI Engineer": (
+        "ai engineer", "ai ml engineer", "ai machine learning engineer",
+        "genai engineer", "generative ai engineer", "llm engineer", "rag engineer",
+        "agentic ai engineer", "ai developer", "ai agent engineer",
+    ),
+    "Machine Learning Engineer": (
+        "machine learning engineer", "ml engineer", "mlops engineer",
+        "deep learning engineer", "nlp engineer",
+    ),
+    "Backend Developer": (
+        "backend developer", "back end developer", "backend engineer",
+        "back end engineer", "api developer",
+    ),
+    "Full Stack Developer": (
+        "full stack developer", "fullstack developer", "full stack engineer",
+        "fullstack engineer", "full stack python developer",
+    ),
+    "Software Engineer": ("software engineer", "software developer"),
+    "Data Scientist": ("data scientist", "applied scientist"),
+    "Data Analyst": ("data analyst",),
+    "Devops Engineer": ("devops engineer", "devops developer", "cloud engineer"),
+}
+ALLOWED_TITLES = list(ROLE_TITLE_ALIASES)
+
+
+def normalize_job_title(value: str) -> str:
+    """Normalize Naukri punctuation, slashes, hyphens and experience suffixes."""
+    value = (value or "").casefold()
+    value = re.sub(r"(?<=\w)[/&+](?=\w)", " ", value)
+    value = re.sub(r"[^a-z0-9]+", " ", value)
+    return " ".join(value.split())
+
+
+def matching_role(title: str, description: str = "") -> str | None:
+    """Match title variants; use JD for Python qualification of generic roles."""
+    normalized = normalize_job_title(title)
+    desc = normalize_job_title(description)
+    matches = []
+    for canonical, aliases in ROLE_TITLE_ALIASES.items():
+        candidates = (canonical, *aliases)
+        if any(re.search(r"(?<!\w)" + re.escape(normalize_job_title(alias)) + r"(?!\w)", normalized)
+               for alias in candidates):
+            matches.append(canonical)
+    if not matches:
+        # A generic title may still be relevant when clearly Python focused.
+        if (re.search(r"\b(developer|engineer|programmer)\b", normalized)
+                and re.search(r"\bpython\b", normalized)):
+            return "Python Developer"
+        return None
+    # Prefer explicit Python/AI/data technical focus over generic title buckets.
+    order = ("AI Engineer", "Machine Learning Engineer", "Data Engineer",
+             "Python Developer", "Data Scientist", "Data Analyst",
+             "Full Stack Developer", "Backend Developer", "Software Engineer", "Devops Engineer")
+    for role in order:
+        if role not in matches:
+            continue
+        if role in {"Software Engineer", "Backend Developer", "Full Stack Developer"}:
+            # Reject clearly unrelated generic stack, but keep genuinely Python titles/JDs.
+            if not re.search(r"\bpython\b", normalized + " " + desc):
+                continue
+        return role
+    return None
+
 EXPERIENCE = 3  # Years
 
 # Cache to file
@@ -73,20 +150,9 @@ def parse_posted_date(date_text: str) -> str:
     # Default fallback
     return today.strftime("%Y-%m-%d")
 
-def contains_allowed_title(title: str, description: str) -> bool:
-    Filter_ALLOWED_TITLES = [
-        "Python Developer", "Data Engineer", "Devops Engineer", "Data Analyst",
-        "Machine Learning Engineer", "AI Engineer", "AI Agent Engineer", "Agentic AI", "Generative AI", 
-        "AI Systems Engineer", "MLops", "AI Developer", "Data Scientist","cloud",
-        "Backend Engineer", "Backend Developer", "devops",
-        "backend", "pythonjobs", "machinelearning", "datascience", "Developer - Tech Support"
-    ]
-    combined_text = f"{title} {description}".lower()
-    
-    for keyword in Filter_ALLOWED_TITLES:
-        if keyword.lower() in combined_text:
-            return True
-    return False
+def contains_allowed_title(title: str, description: str = "") -> bool:
+    """Compatibility wrapper; all matching uses ROLE_TITLE_ALIASES."""
+    return matching_role(title, description) is not None
 
 def scrape_job_description_from_url(driver, url, wait):
     original_tab = driver.current_window_handle
@@ -285,9 +351,8 @@ def scrape_naukri_simple():
                     title = title_el.text.strip()
                     url = title_el.get_attribute("href")
 
-                    if contains_blocked_keywords(title):
-                        print(f"Skipping job (not matched allowed title): {title}")
-                        continue
+                    # Do not reject a Python/AI title just because its JD mentions Java.
+                    # For generic titles we inspect the JD before making a decision.
                     
                     try:
                         company_el = card.find_element(By.CLASS_NAME, "comp-name")
@@ -300,10 +365,11 @@ def scrape_naukri_simple():
                     if full_description is None:
                         continue
                     
-                    # Skip if stop keywords are found
-                    if contains_blocked_keywords(full_description):
+                    canonical_role = matching_role(title, full_description)
+                    if canonical_role is None:
                         print(f"Skipping job (not matched allowed title): {title}")
                         continue
+                    print(f"Matched job: {title} -> {canonical_role}")
 
                     time.sleep(1)
 
@@ -317,6 +383,7 @@ def scrape_naukri_simple():
                     role_category = job_meta.get("role_category", "")
                     key_skills = job_meta.get("key_skills", "")
 
+                    full_desc = full_description
                     if "Job description" in full_description:
                         full_desc = full_description.split("Job description", 1)[1].strip()
 
@@ -329,6 +396,7 @@ def scrape_naukri_simple():
                     # Save result
                     job_data.append({
                         "title": title,
+                        "normalized_role": canonical_role,
                         "company": company,
                         "posted_date": posted_date,
                         "url": url,
