@@ -35,6 +35,11 @@ ROLE_PREFIXES: Dict[str, List[str]] = {
         "data-engineer",
         "data_engineer"
     ],
+    "awsdataengineer": [
+        "awsdataengineer",
+        "aws-dataengineer",
+        "aws_engineer"
+    ],
     "pythondeveloper": [
         "pythondeveloper",
         "python-developer",
@@ -217,5 +222,5 @@ def main(input_path: Optional[str] = None) -> None:
         )
 
 if __name__ == "__main__":
-    input_path = "linkedin/output/grouped_jobs/2026-09-21"
+    input_path = "linkedin/output/grouped_jobs/2026-09-25"
     main(input_path)

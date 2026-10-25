@@ -1,9 +1,8 @@
 import hashlib
 import json
 import os
-import os
+import random
 import re
-import sys
 import sys
 import time
 import urllib.parse
@@ -57,7 +56,14 @@ def scrape_feed_posts(driver):
 
     # Scroll settings.
     MAX_SCROLLS = 6
-    SCROLL_PAUSE = 0.8
+
+    # Only browser interactions require pacing. HTML parsing, filtering,
+    # deduplication and JSON saving are local and do not contact LinkedIn.
+    # Set (min_seconds, max_seconds) here; keep min <= max.
+    ACTION_PAUSE = (1.0, 2.5)       # After navigation / result rendering.
+    SCROLL_PAUSE = (2.0, 4.0)       # After each page scroll.
+    EXPAND_PAUSE = (0.8, 1.5)       # Between "see more" clicks.
+    SEARCH_PAUSE = (4.0, 7.0)       # Between separate search queries.
 
     # Page/result waits.
     RESULT_WAIT_SECONDS = 6.0
@@ -67,6 +73,59 @@ def scrape_feed_posts(driver):
     # Keep this True if you only want posts that look like actual job
     # opportunities. It filters out generic trading discussions/news.
     JOB_ONLY = True
+
+    # ------------------------------------------------------------------
+    # Pacing and LinkedIn restriction handling (from V2, no role changes)
+    # ------------------------------------------------------------------
+    def pause(low_seconds, high_seconds):
+        """Configurable delay between browser actions; not a detection bypass."""
+        low = max(0.0, float(low_seconds))
+        high = max(low, float(high_seconds))
+        time.sleep(random.uniform(low, high))
+
+    class LinkedInRestrictionError(RuntimeError):
+        """Stop scraping when LinkedIn requires verification or limits access."""
+
+    def check_linkedin_restriction():
+        try:
+            current_url = (driver.current_url or "").lower()
+        except WebDriverException:
+            return
+
+        for marker in (
+            "/checkpoint/", "/authwall", "/uas/login",
+            "linkedin.com/login",
+        ):
+            if marker in current_url:
+                raise LinkedInRestrictionError(
+                    f"LinkedIn checkpoint/login page: {current_url}"
+                )
+
+        # Look only at the title, headings, and alert/dialog UI; a job post
+        # mentioning "unusual activity" should not stop the scraper.
+        try:
+            visible_text = driver.execute_script(
+                "var text = [document.title || ''];"
+                "document.querySelectorAll("
+                "'h1, h2, [role=\"dialog\"], [role=\"alert\"], .artdeco-modal'"
+                ").forEach(function (el) { text.push(el.innerText || ''); });"
+                "return text.join(' | ');"
+            ) or ""
+        except WebDriverException:
+            return
+
+        visible_text = str(visible_text).lower().replace("\u2019", "'")
+        for marker in (
+            "unusual activity", "unusual traffic",
+            "search activity has been paused", "paused your search",
+            "commercial use limit", "quick security check",
+            "verify you're a human", "sign in to view more",
+            "join linkedin to see",
+        ):
+            if marker in visible_text:
+                raise LinkedInRestrictionError(
+                    f"LinkedIn verification/restriction: {marker}"
+                )
 
     # ------------------------------------------------------------------
     # Local helpers
@@ -706,13 +765,14 @@ def scrape_feed_posts(driver):
                         "arguments[0].scrollIntoView({block:'center'});",
                         button,
                     )
+                    pause(*EXPAND_PAUSE)
                     driver.execute_script(
                         "arguments[0].click();",
                         button,
                     )
 
                     clicked += 1
-                    time.sleep(0.15)
+                    pause(*EXPAND_PAUSE)
 
                 except Exception:
                     continue
@@ -726,7 +786,9 @@ def scrape_feed_posts(driver):
         last_seen_count = 0
 
         for round_number in range(MAX_SCROLLS + 1):
+            check_linkedin_restriction()
             expand_visible_posts()
+            check_linkedin_restriction()
 
             soup = BeautifulSoup(
                 driver.page_source,
@@ -763,7 +825,8 @@ def scrape_feed_posts(driver):
                 "0, Math.max(window.innerHeight * 0.85, 700)"
                 ");"
             )
-            time.sleep(SCROLL_PAUSE)
+            pause(*SCROLL_PAUSE)
+            check_linkedin_restriction()
 
         return [
             BeautifulSoup(fragment, "html.parser").find()
@@ -1019,6 +1082,9 @@ def scrape_feed_posts(driver):
         except TimeoutException:
             pass
 
+        check_linkedin_restriction()
+        pause(*ACTION_PAUSE)
+
     def wait_for_results(query):
         post_css = (
             "[data-testid='expandable-text-box'], "
@@ -1091,7 +1157,10 @@ def scrape_feed_posts(driver):
     seen_hashes = set()
     search_errors = 0
 
-    for search_query in SEARCH_QUERIES:
+    for search_index, search_query in enumerate(SEARCH_QUERIES):
+        # Also pause after an empty or failed search before starting the next.
+        if search_index > 0:
+            pause(*SEARCH_PAUSE)
         url = build_search_url(search_query)
 
         try:
@@ -1102,6 +1171,8 @@ def scrape_feed_posts(driver):
             fast_navigate(url)
 
             loaded = wait_for_results(search_query)
+            check_linkedin_restriction()
+            pause(*ACTION_PAUSE)
 
             if loaded == "no_results":
                 print(
@@ -1220,6 +1291,13 @@ def scrape_feed_posts(driver):
                         "[scraper] Post parsing error: "
                         f"{post_error}"
                     )
+
+        except LinkedInRestrictionError as restriction:
+            print(
+                f"[scraper] LinkedIn access restriction; stopping searches: "
+                f"{restriction}. No automatic retry."
+            )
+            break
 
         except Exception as search_error:
             search_errors += 1

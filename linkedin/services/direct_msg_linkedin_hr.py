@@ -4,7 +4,7 @@ python -m linkedin.services.direct_msg_linkedin_hr
 
 Automatic inputs per role folder:
 - reply text: *email_reply*.txt
-- posted-by LinkedIn URLs: jd.txt -> Posted-by Profile URLs:
+- posted-by LinkedIn URLs: <role>_jd.txt -> # postedbyurl:
 - attachment: *cv*.pdf
 
 Important:
@@ -21,6 +21,7 @@ from __future__ import annotations
 import re
 import sys
 import time
+from datetime import date
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, Sequence
@@ -44,16 +45,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 # DAILY ROLE-FOLDER AUTOMATION
 # ============================================================================
 # Only these role folders are processed. Missing folders are skipped.
-ROLE_FOLDERS = (
-    "aiengineer",
-    "awsdataengineer",
-    "azuredataengineer",
-    "pythondeveloper",
-)
 
 # In each role folder the script automatically discovers:
 #   1. *email_reply*.txt  -> REPLY_TEXT_PATH
-#   2. jd.txt             -> Posted-by Profile URLs
+#   2. <role>_jd.txt      -> # postedbyurl: LinkedIn profiles
 #   3. *cv*.pdf           -> ATTACHMENT_PATHS
 #
 # You only pass the daily folder to main(), for example:
@@ -198,11 +193,143 @@ def extract_posted_by_urls(raw_text: str) -> list[str]:
 
     return _dedupe_preserve_order(urls)
 
+
+
+# Alias: use the existing URL regex/normalization logic with shared JD reader.
+def extract_profile_urls(raw_text: str) -> list[str]:
+    return extract_posted_by_urls(raw_text)
+
+
+# ============================================================================
+# AUTO-DISCOVERY: TODAY'S COMPANY FOLDER AND LINKEDIN URLs IN ROLE JD FILES
+# ============================================================================
+
+ROLE_FOLDERS = (
+    "aiengineer",
+    "awsdataengineer",
+    "dataengineer",
+    "pythondeveloper",
+)
+
+# Handles:  # postedbyurl: ...
+#           # PostedByURL: ...
+#           Posted-by Profile URLs: ...  (older JD format)
 POSTED_BY_LINE_PATTERN = re.compile(
-    r"^\s*(?:[-*]\s*)?Posted-by\s+Profile\s+URLs?\s*:\s*(.*)$",
+    r"^\s*(?:[-*]\s*)?(?:#\s*)?posted[\s_-]*by[\s_-]*"
+    r"(?:profile[\s_-]*)?urls?\s*:\s*(.*)$",
     re.IGNORECASE,
 )
 
+
+def resolve_daily_company_folder(folder_path: str | Path | None = None) -> Path:
+    """Find today's company folder using the machine's local date.
+
+    Supports BOTH YYYY-MM-DD (as in VS Code screenshot) and YYYY_MM_DD.
+    Works when invoked from the project root or via `python -m ...`.
+    An explicit path overrides today's automatic selection.
+    """
+    script_dir = Path(__file__).resolve().parent
+    anchors = list(dict.fromkeys([
+        Path.cwd(), *Path.cwd().parents,
+        script_dir, *script_dir.parents,
+    ]))
+
+    if folder_path is not None:
+        raw = Path(folder_path).expanduser()
+        possibilities = [raw] if raw.is_absolute() else [
+            anchor / raw for anchor in anchors
+        ]
+    else:
+        today = date.today()
+        date_names = (today.strftime("%Y-%m-%d"), today.strftime("%Y_%m_%d"))
+        possibilities = [
+            anchor / partial / date_name
+            for anchor in anchors
+            for partial in (
+                Path("job_profile/specific/company"),
+                Path("specific/company"),
+                Path("company"),
+                Path("."),
+            )
+            for date_name in date_names
+        ]
+
+    for candidate in possibilities:
+        if candidate.is_dir():
+            return candidate.resolve()
+
+    expected = date.today().strftime("%Y-%m-%d")
+    raise FileNotFoundError(
+        "Company date folder not found. Expected a folder such as "
+        f"job_profile/specific/company/{expected}/ (also supports underscores). "
+        "Run from your project root, or pass the date-folder path explicitly."
+    )
+
+
+def find_role_jd_file(role_folder: Path) -> Path:
+    """Prefer <role>_jd.txt; also support legacy jd.txt in that role folder."""
+    candidates = sorted(
+        (p for p in role_folder.rglob("*")
+         if p.is_file() and p.suffix.casefold() == ".txt"
+         and "email_reply" not in p.stem.casefold()),
+        key=lambda p: str(p).casefold(),
+    )
+    for wanted in (f"{role_folder.name}_jd.txt", "jd.txt"):
+        matches = [p for p in candidates if p.name.casefold() == wanted.casefold()]
+        if len(matches) == 1:
+            return matches[0]
+        if len(matches) > 1:
+            raise RuntimeError(
+                f"Multiple {wanted} files in {role_folder}; choose one."
+            )
+
+    fallbacks = [p for p in candidates if "jd" in p.stem.casefold()
+                 and "reply" not in p.stem.casefold()]
+    if len(fallbacks) == 1:
+        return fallbacks[0]
+    if len(fallbacks) > 1:
+        raise RuntimeError(
+            f"Multiple JD candidates in {role_folder}: "
+            + ", ".join(p.name for p in fallbacks)
+        )
+    raise FileNotFoundError(
+        f"No JD .txt found in {role_folder}. Expected "
+        f"{role_folder.name}_jd.txt (or jd.txt)."
+    )
+
+
+def extract_posted_by_urls_from_jd(jd_path: Path) -> list[str]:
+    """Read *only* labeled postedbyurl lines; retain valid /in/ profiles.
+
+    Handles repeated markers, comma-separated URLs, and subsequent URL-only
+    lines. Ignores unrelated JD links and LinkedIn /company/ pages.
+    """
+    lines = jd_path.read_text(encoding="utf-8-sig", errors="replace").splitlines()
+    found = []
+    markers = 0
+    i = 0
+    while i < len(lines):
+        match = POSTED_BY_LINE_PATTERN.match(lines[i])
+        if not match:
+            i += 1
+            continue
+        markers += 1
+        chunks = [match.group(1)]
+        i += 1
+        while i < len(lines):
+            continuation = lines[i].strip().lstrip("-* ").strip()
+            if not continuation.lower().startswith(("https://", "http://")):
+                break
+            chunks.append(continuation)
+            i += 1
+        found.extend(extract_profile_urls("\n".join(chunks)))
+
+    urls = _dedupe_preserve_order(found)
+    if not markers:
+        print(f"WARNING: No '# postedbyurl:' marker in {jd_path}")
+    elif not urls:
+        print(f"WARNING: Marker present, but no valid LinkedIn /in/ URLs in {jd_path}")
+    return urls
 
 @dataclass(frozen=True)
 class RoleLinkedInConfig:
@@ -281,113 +408,29 @@ def find_reply_text(role_folder: Path) -> Path:
 
 
 def find_jd_text(role_folder: Path) -> Path:
-    """Find exactly one jd.txt inside the role folder."""
-    candidates = [
-        path
-        for path in _all_files_with_suffix(role_folder, ".txt")
-        if path.name.casefold() == "jd.txt"
-    ]
-
-    if len(candidates) == 1:
-        return candidates[0]
-
-    if len(candidates) > 1:
-        names = "\n".join(f"  - {path}" for path in candidates)
-        raise RuntimeError(f"More than one jd.txt file was found:\n{names}")
-
-    raise FileNotFoundError(f"Could not find jd.txt in: {role_folder}")
-
-
-def extract_posted_by_urls_from_jd(jd_path: Path) -> list[str]:
-    """
-    Read LinkedIn URLs only from 'Posted-by Profile URLs:' in jd.txt.
-
-    Example:
-        Posted-by Profile URLs: https://www.linkedin.com/in/person-a, https://www.linkedin.com/in/person-b/
-
-    A marker may also be followed by URL-only continuation lines. Invalid
-    fragments that are not complete linkedin.com/in/... URLs are ignored.
-    """
-    text = jd_path.read_text(encoding="utf-8-sig", errors="replace")
-    lines = text.splitlines()
-
-    found_urls: list[str] = []
-    marker_count = 0
-    i = 0
-
-    while i < len(lines):
-        line = lines[i]
-        match = POSTED_BY_LINE_PATTERN.match(line)
-
-        if not match:
-            i += 1
-            continue
-
-        marker_count += 1
-        chunks = [match.group(1)]
-
-        # Optional continuation support, e.g. marker on one line and URLs on
-        # the following line(s). Stop when a blank/non-LinkedIn line appears.
-        j = i + 1
-        while j < len(lines):
-            next_line = lines[j].strip()
-            if not next_line:
-                break
-            if "linkedin.com/in/" not in next_line.casefold():
-                break
-            chunks.append(next_line)
-            j += 1
-
-        found_urls.extend(extract_posted_by_urls("\n".join(chunks)))
-        i = max(i + 1, j)
-
-    profile_urls = _dedupe_preserve_order(found_urls)
-
-    if marker_count == 0:
-        print(f"WARNING: No 'Posted-by Profile URLs:' line found in {jd_path.name}")
-    elif not profile_urls:
-        print(
-            "WARNING: 'Posted-by Profile URLs:' was found, but no valid "
-            f"LinkedIn /in/ URLs were found in {jd_path.name}"
-        )
-
-    return profile_urls
+    """Backward-compatible wrapper; prefer today's <role>_jd.txt."""
+    return find_role_jd_file(role_folder)
 
 
 def find_cv_pdf(role_folder: Path) -> Path:
-    """Find the CV PDF, not another PDF that may exist in the role folder."""
+    """Prefer stable role-specific CV PDF for LinkedIn messaging attachments."""
     pdf_files = _all_files_with_suffix(role_folder, ".pdf")
-
-    if not pdf_files:
-        raise FileNotFoundError(f"No PDF files found in: {role_folder}")
-
-    cv_candidates = [
-        path for path in pdf_files if "cv" in path.stem.casefold()
-    ]
-
-    if len(cv_candidates) == 1:
-        return cv_candidates[0]
-
-    if len(cv_candidates) > 1:
-        preferred = [
-            path
-            for path in cv_candidates
-            if "md_irshad_cv" in path.stem.casefold()
-        ]
-        if len(preferred) == 1:
-            return preferred[0]
-
-        names = "\n".join(f"  - {path}" for path in cv_candidates)
-        raise RuntimeError(
-            "More than one PDF filename contains 'cv'; cannot safely choose "
-            f"the attachment:\n{names}"
-        )
-
-    names = "\n".join(f"  - {path}" for path in pdf_files)
-    raise FileNotFoundError(
-        "PDF files were found, but none contains 'cv' in its filename.\n"
-        f"Available PDFs:\n{names}"
-    )
+    candidates = [p for p in pdf_files if "cv" in p.stem.casefold()]
+    if not candidates:
+        raise FileNotFoundError(f"No CV PDF was found in: {role_folder}")
+    role = role_folder.name.casefold()
+    for wanted in (
+        f"md_irsad_cv_{role}", "md_irsad_cv",
+        f"md_irshad_cv_{role}", "md_irshad_cv",
+    ):
+        matches = [p for p in candidates if p.stem.casefold() == wanted]
+        if len(matches) == 1:
+            return matches[0]
+        if len(matches) > 1:
+            raise RuntimeError(f"Ambiguous CV PDFs: {matches}")
+    if len(candidates) == 1:
+        return candidates[0]
+    raise RuntimeError(f"Ambiguous CV PDFs in {role_folder}: {[p.name for p in candidates]}")
 
 
 def discover_role_config(role_name: str, role_folder: Path) -> RoleLinkedInConfig:
@@ -399,7 +442,7 @@ def discover_role_config(role_name: str, role_folder: Path) -> RoleLinkedInConfi
     if not profile_urls:
         raise ValueError(
             "No valid LinkedIn profile URLs found after "
-            f"'Posted-by Profile URLs:' in {jd_text_path}"
+            f"'# postedbyurl:' in {jd_text_path}"
         )
 
     return RoleLinkedInConfig(
@@ -1533,14 +1576,9 @@ def process_role_folder(
     )
 
 
-def main(folder_path: str | Path) -> None:
-    """
-    Process all existing supported role folders below one daily folder.
-
-    Example:
-        main(r"job_profile\\specific\\company\\2026_09_17")
-    """
-    daily_folder = Path(folder_path).expanduser()
+def main(folder_path: str | Path | None = None, *, preview_only: bool = False) -> None:
+    """Process supported role folders in today's company date folder."""
+    daily_folder = resolve_daily_company_folder(folder_path)
 
     if not daily_folder.exists():
         raise FileNotFoundError(
@@ -1551,6 +1589,27 @@ def main(folder_path: str | Path) -> None:
         raise NotADirectoryError(
             f"folder_path is not a directory: {daily_folder}"
         )
+
+    if preview_only:
+        print(f"LinkedIn URL preview - company folder: {daily_folder}")
+        all_urls: list[str] = []
+        for role_name in ROLE_FOLDERS:
+            role_folder = daily_folder / role_name
+            if not role_folder.is_dir():
+                print(f"SKIP missing role folder: {role_name}")
+                continue
+            try:
+                jd_path = find_role_jd_file(role_folder)
+                urls = extract_posted_by_urls_from_jd(jd_path)
+                print(f"{role_name}: {len(urls)} profiles from {jd_path.name}")
+                for url in urls:
+                    print(f"  {url}")
+                all_urls.extend(urls)
+            except (FileNotFoundError, OSError, RuntimeError) as exc:
+                print(f"WARNING: {role_name}: {exc}")
+        print(f"Unique profiles across roles: {len(_dedupe_preserve_order(all_urls))}")
+        print("PREVIEW ONLY - Chrome was not opened and no messages sent.")
+        return
 
     print("=" * 90)
     print("AUTOMATED LINKEDIN DIRECT-MESSAGE SENDER")
@@ -1625,6 +1684,5 @@ def main(folder_path: str | Path) -> None:
                 pass
 
 if __name__ == "__main__":
-    folder_path = "job_profile\\specific\\company\\2026_09_17"
-
-    main(folder_path)
+    args = [arg for arg in sys.argv[1:] if arg != "--preview-urls"]
+    main(args[0] if args else None, preview_only="--preview-urls" in sys.argv[1:])

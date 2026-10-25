@@ -1,3 +1,9 @@
+# IMPORTANT: Current ChatGPT Four-Role Workflow
+
+See `CHATGPT_4_ROLE_README.md` for the current four-chat automation. The older sections below describe a legacy company-by-company workflow.
+
+---
+
 # CV Automation Pipeline & Duplicate Tracker
 
 A comprehensive CV generation system with 30-day duplicate detection for job applications.

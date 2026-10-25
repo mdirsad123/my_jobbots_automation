@@ -16,7 +16,8 @@ This script therefore searches normal DOM + open Shadow DOM recursively for:
 - final Send button
 
 Run:
-    python connection_req_msg_linkedin_updated_v2.py
+    python -m linkedin.services.connection_req_msg_linkedin
+    python -m linkedin.services.connection_req_msg_linkedin --preview-urls
 
 Before running:
 1. Start Chrome with remote debugging.
@@ -31,7 +32,10 @@ Example Windows command:
 from __future__ import annotations
 
 import re
+import sys
 import time
+from datetime import date
+from pathlib import Path
 from typing import Iterable, Sequence
 
 from selenium import webdriver
@@ -52,9 +56,8 @@ from selenium.webdriver.remote.webelement import WebElement
 # USER SETTINGS
 # ============================================================================
 
-POSTED_BY_URLS = r"""
-https://www.linkedin.com/in/shaikh-ashfaque-469220144, https://www.linkedin.com/company/lyxalabs, https://www.linkedin.com/in/khushboo-p-39a790a0, https://www.linkedin.com/in/mohd-rahbar-180a4725a, https://www.linkedin.com/in/shaikh-ashfaque-469220144, https://www.linkedin.com/in/bhaumik-jankar-830667ab, https://www.linkedin.com/in/mubeena-k-04338a118, https://www.linkedin.com/in/priya-singh-160047327, https://www.linkedin.com/in/afreen-naz-85b05517a, https://www.linkedin.com/company/innodata-inc-, https://www.linkedin.com/in/charneet-kaur-banga, https://www.linkedin.com/company/covenent-tech-global-pvt-ltd, https://www.linkedin.com/company/d9ithub, https://www.linkedin.com/company/digitalxnode, https://www.linkedin.com/company/finleadai, https://www.linkedin.com/company/interas-labs, https://www.linkedin.com/company/ipolarityllc, https://www.linkedin.com/company/mission-freelances, https://www.linkedin.com/company/razorpay, https://www.linkedin.com/company/remotewlb, https://www.linkedin.com/company/remoteyeah, https://www.linkedin.com/company/the-employment-career-network-limited, https://www.linkedin.com/company/thoughtlabs-belgium, https://www.linkedin.com/company/trinexglobal, https://www.linkedin.com/company/vitim-cloud-technologies, https://www.linkedin.com/company/xperteeztechnology, https://www.linkedin.com/in/%D1%81%D0%B5%D1%80%D0%B3%D0%B5%D0%B9-%D0%BF%D0%B0%D1%88%D0%B8%D0%BD-bb1924166, https://www.linkedin.com/in/aashish-yadav-681473238, https://www.linkedin.com/in/abdullah-yusuf-1b0681437, https://www.linkedin.com/in/abhishek-bhardwaj-7406bb32, https://www.linkedin.com/in/abhishek-shukla023, https://www.linkedin.com/in/abhishek-yadav-41348a189, https://www.linkedin.com/in/aishwarya-ajit-16a934183, https://www.linkedin.com/in/akash-gupta-55a7574, https://www.linkedin.com/in/akash-prajapati-878803210, https://www.linkedin.com/in/akash-tyagi-18a28a170, https://www.linkedin.com/in/akshay-katapally-b2a8aa232, https://www.linkedin.com/in/akshay-lawate-594360265, https://www.linkedin.com/in/anas-shaikh-hr, https://www.linkedin.com/in/anilkumarkavvam, https://www.linkedin.com/in/anwar-raza-40aa97322, https://www.linkedin.com/in/aravind-babu-p-j-835526112, https://www.linkedin.com/in/archana-dadhich-9ba45937a, https://www.linkedin.com/in/astha-gulhane-56760a290, https://www.linkedin.com/in/banika-kour-wazir-8423b1185, https://www.linkedin.com/in/bhupendra-chauhan-745499203, https://www.linkedin.com/in/boppudi-pavankalyan-%E2%9C%AA-5a2b98226, https://www.linkedin.com/in/breiner-olaya-713527123, https://www.linkedin.com/in/c-priya-dharshini-89b0b7298, https://www.linkedin.com/in/devina-nair-a4456416a, https://www.linkedin.com/in/dipesh-gohil-171b153a2, https://www.linkedin.com/in/erprachimittal, https://www.linkedin.com/in/fridaus-ibrahim-88067b437, https://www.linkedin.com/in/gouni-shiva-goud-13913aa1, https://www.linkedin.com/in/harish-g-51075a185, https://www.linkedin.com/in/hasini-sarah-mulk, https://www.linkedin.com/in/iamajgoel18, https://www.linkedin.com/in/itfynder, https://www.linkedin.com/in/jamesrobert, https://www.linkedin.com/in/janet-carolin, https://www.linkedin.com/in/jeffery-atenaga-078191263, https://www.linkedin.com/in/jelin-k-341643376, https://www.linkedin.com/in/jennifer-worre-11b852437, https://www.linkedin.com/in/kadaru-pavan-kumar-221581193, https://www.linkedin.com/in/kalyan-k-bb5030267, https://www.linkedin.com/in/kanis-fathima-s-015594146, https://www.linkedin.com/in/karan-lumbhani-71157a428, https://www.linkedin.com/in/karima-bahieg, https://www.linkedin.com/in/kishore-kumar-m-77871b275, https://www.linkedin.com/in/komal-pal-82aab0290, https://www.linkedin.com/in/linh-nguyen-bb8863213, https://www.linkedin.com/in/lipika-gogia-30a553310, https://www.linkedin.com/in/madhu-d-100000cr, https://www.linkedin.com/in/mahesh-kumar-025763257, https://www.linkedin.com/in/makarand-bandkar-326105236, https://www.linkedin.com/in/manaswini-pujari-1a47a278, https://www.linkedin.com/in/mani-singh-a9114b366, https://www.linkedin.com/in/manu-pratap-singh-shekhawat-a843ab192, https://www.linkedin.com/in/manyano-tshangana, https://www.linkedin.com/in/md-adnan-shahriar-shihab-681809437, https://www.linkedin.com/in/md-huzaifa-80a0b9284, https://www.linkedin.com/in/melissa-oliveira-in, https://www.linkedin.com/in/moulidhar, https://www.linkedin.com/in/mounika-sunkavalli-1a7545251, https://www.linkedin.com/in/muhammad-anique-300828266, https://www.linkedin.com/in/nishi-panchal-60b6bb2a6, https://www.linkedin.com/in/nithin-narayan-70485b382, https://www.linkedin.com/in/nitish-kumar-a0a322a3, https://www.linkedin.com/in/numan01, https://www.linkedin.com/in/nuwaish, https://www.linkedin.com/in/nux-software-solutions-0a9ab515b, https://www.linkedin.com/in/parthiban-s-30810b254, https://www.linkedin.com/in/parthiban-s-4998043a8, https://www.linkedin.com/in/patricia-bassetti-58097b3, https://www.linkedin.com/in/preeti-priya-panda, https://www.linkedin.com/in/priyaa-darshan-g-0bb796182, https://www.linkedin.com/in/rajesh-sharma-ab27b4234, https://www.linkedin.com/in/rajeshranjandata, https://www.linkedin.com/in/rana-singh-2219a1340, https://www.linkedin.com/in/revanth-s-a0a90234b, https://www.linkedin.com/in/riya-ranjan-806657258, https://www.linkedin.com/in/roshni-coelho-94a944253, https://www.linkedin.com/in/s-dinesh-kumar-912762208, https://www.linkedin.com/in/sandeep-naidu-42a072256, https://www.linkedin.com/in/sandhya-maurya-716ba84a, https://www.linkedin.com/in/sanjaylinked, https://www.linkedin.com/in/shantanusghuge, https://www.linkedin.com/in/shanti-sunder-kodamanchili-48a003235, https://www.linkedin.com/in/sherin-santosh-0b06b3377, https://www.linkedin.com/in/shilpa-raut-9363185a, https://www.linkedin.com/in/shivani-boora, https://www.linkedin.com/in/shivduttranadive, https://www.linkedin.com/in/shiwani-parashar-04a55513b, https://www.linkedin.com/in/shubham-tiwari-a51785167, https://www.linkedin.com/in/sidahmed-ryad-bazi, https://www.linkedin.com/in/siham-staifa-34a870150, https://www.linkedin.com/in/sladjan-jeremic, https://www.linkedin.com/in/soniya-raghuwanshi-09661125a, https://www.linkedin.com/in/subha-santhoshkumar-0a9240297, https://www.linkedin.com/in/subham-rai-4b3a96392, https://www.linkedin.com/in/sujitha-kothapalli-2aab98230, https://www.linkedin.com/in/sumareddy-p-429891382, https://www.linkedin.com/in/supriya-r-, https://www.linkedin.com/in/tanuja-penumatsa, https://www.linkedin.com/in/theodorus-viryaparamita, https://www.linkedin.com/in/thrishna-samaroo-ba602861, https://www.linkedin.com/in/varshini-k-87a51b222, https://www.linkedin.com/in/vihaan-t-1834a1338, https://www.linkedin.com/in/vipin-tiwari-14834712, https://www.linkedin.com/in/vishnu-teja-nichanametla-364641241, https://www.linkedin.com/in/visvaja-dharmalingam, https://www.linkedin.com/in/monika-bhogawat-19711b1b1, https://www.linkedin.com/in/revanth-s-a0a90234b, https://www.linkedin.com/in/sakshi-ubale-0754bb258, https://www.linkedin.com/in/abdul-kareem-md, https://www.linkedin.com/in/debikar, https://www.linkedin.com/in/harish-koduri-lead-recruitment, https://www.linkedin.com/in/muhammad-shariq-b06037307, https://www.linkedin.com/in/nivetha-tagor-b70408413, https://www.linkedin.com/in/rekha-yadav-hr, https://www.linkedin.com/in/ritik-singhal-538b8b318, https://www.linkedin.com/in/sam-russell-b2b049357, https://www.linkedin.com/in/t-vaishali-331564365, https://www.linkedin.com/in/tina-lynette-lazaro-moganti, https://www.linkedin.com/company/grabapp, https://www.linkedin.com/in/chhabi-saxena-khare-29a541149, https://www.linkedin.com/in/himanshusrivastava47, https://www.linkedin.com/in/ingridrxs-leenders, https://www.linkedin.com/in/kaushikdebb, https://www.linkedin.com/in/mukta-bhoyar1305, https://www.linkedin.com/in/revanth-s-a0a90234b, https://www.linkedin.com/in/shaikh-ashfaque-469220144, https://www.linkedin.com/in/shilpa-paul-1b49841a0, https://www.linkedin.com/in/suvetha-lakshmee, https://www.linkedin.com/in/tanisha1497
-"""
+# Recruiter/profile links are now loaded from each role's JD file;
+# no hardcoded POSTED_BY_URLS list is needed.
 
 # Keep the note <= 300 characters.
 # {first_name} is replaced with the opened profile's first name.
@@ -122,6 +125,157 @@ def extract_profile_urls(raw_text: str) -> list[str]:
         urls.append(url)
 
     return _dedupe_preserve_order(urls)
+
+
+# ============================================================================
+# AUTO-DISCOVERY: TODAY'S COMPANY FOLDER AND LINKEDIN URLs IN ROLE JD FILES
+# ============================================================================
+
+ROLE_FOLDERS = (
+    "aiengineer",
+    "awsdataengineer",
+    "dataengineer",
+    "pythondeveloper",
+)
+
+# Handles:  # postedbyurl: ...
+#           # PostedByURL: ...
+#           Posted-by Profile URLs: ...  (older JD format)
+POSTED_BY_LINE_PATTERN = re.compile(
+    r"^\s*(?:[-*]\s*)?(?:#\s*)?posted[\s_-]*by[\s_-]*"
+    r"(?:profile[\s_-]*)?urls?\s*:\s*(.*)$",
+    re.IGNORECASE,
+)
+
+
+def resolve_daily_company_folder(folder_path: str | Path | None = None) -> Path:
+    """Find today's company folder using the machine's local date.
+
+    Supports BOTH YYYY-MM-DD (as in VS Code screenshot) and YYYY_MM_DD.
+    Works when invoked from the project root or via `python -m ...`.
+    An explicit path overrides today's automatic selection.
+    """
+    script_dir = Path(__file__).resolve().parent
+    anchors = list(dict.fromkeys([
+        Path.cwd(), *Path.cwd().parents,
+        script_dir, *script_dir.parents,
+    ]))
+
+    if folder_path is not None:
+        raw = Path(folder_path).expanduser()
+        possibilities = [raw] if raw.is_absolute() else [
+            anchor / raw for anchor in anchors
+        ]
+    else:
+        today = date.today()
+        date_names = (today.strftime("%Y-%m-%d"), today.strftime("%Y_%m_%d"))
+        possibilities = [
+            anchor / partial / date_name
+            for anchor in anchors
+            for partial in (
+                Path("job_profile/specific/company"),
+                Path("specific/company"),
+                Path("company"),
+                Path("."),
+            )
+            for date_name in date_names
+        ]
+
+    for candidate in possibilities:
+        if candidate.is_dir():
+            return candidate.resolve()
+
+    expected = date.today().strftime("%Y-%m-%d")
+    raise FileNotFoundError(
+        "Company date folder not found. Expected a folder such as "
+        f"job_profile/specific/company/{expected}/ (also supports underscores). "
+        "Run from your project root, or pass the date-folder path explicitly."
+    )
+
+
+def find_role_jd_file(role_folder: Path) -> Path:
+    """Prefer <role>_jd.txt; also support legacy jd.txt in that role folder."""
+    candidates = sorted(
+        (p for p in role_folder.rglob("*")
+         if p.is_file() and p.suffix.casefold() == ".txt"
+         and "email_reply" not in p.stem.casefold()),
+        key=lambda p: str(p).casefold(),
+    )
+    for wanted in (f"{role_folder.name}_jd.txt", "jd.txt"):
+        matches = [p for p in candidates if p.name.casefold() == wanted.casefold()]
+        if len(matches) == 1:
+            return matches[0]
+        if len(matches) > 1:
+            raise RuntimeError(
+                f"Multiple {wanted} files in {role_folder}; choose one."
+            )
+
+    fallbacks = [p for p in candidates if "jd" in p.stem.casefold()
+                 and "reply" not in p.stem.casefold()]
+    if len(fallbacks) == 1:
+        return fallbacks[0]
+    if len(fallbacks) > 1:
+        raise RuntimeError(
+            f"Multiple JD candidates in {role_folder}: "
+            + ", ".join(p.name for p in fallbacks)
+        )
+    raise FileNotFoundError(
+        f"No JD .txt found in {role_folder}. Expected "
+        f"{role_folder.name}_jd.txt (or jd.txt)."
+    )
+
+
+def extract_posted_by_urls_from_jd(jd_path: Path) -> list[str]:
+    """Read *only* labeled postedbyurl lines; retain valid /in/ profiles.
+
+    Handles repeated markers, comma-separated URLs, and subsequent URL-only
+    lines. Ignores unrelated JD links and LinkedIn /company/ pages.
+    """
+    lines = jd_path.read_text(encoding="utf-8-sig", errors="replace").splitlines()
+    found = []
+    markers = 0
+    i = 0
+    while i < len(lines):
+        match = POSTED_BY_LINE_PATTERN.match(lines[i])
+        if not match:
+            i += 1
+            continue
+        markers += 1
+        chunks = [match.group(1)]
+        i += 1
+        while i < len(lines):
+            continuation = lines[i].strip().lstrip("-* ").strip()
+            if not continuation.lower().startswith(("https://", "http://")):
+                break
+            chunks.append(continuation)
+            i += 1
+        found.extend(extract_profile_urls("\n".join(chunks)))
+
+    urls = _dedupe_preserve_order(found)
+    if not markers:
+        print(f"WARNING: No '# postedbyurl:' marker in {jd_path}")
+    elif not urls:
+        print(f"WARNING: Marker present, but no valid LinkedIn /in/ URLs in {jd_path}")
+    return urls
+
+def collect_today_posted_by_urls(daily_folder: Path) -> list[str]:
+    """Combine all today's supported role JDs, deduplicating globally."""
+    all_urls: list[str] = []
+    for role_name in ROLE_FOLDERS:
+        role_folder = daily_folder / role_name
+        if not role_folder.is_dir():
+            print(f"SKIP missing role folder: {role_name}")
+            continue
+        try:
+            jd_path = find_role_jd_file(role_folder)
+            urls = extract_posted_by_urls_from_jd(jd_path)
+        except (FileNotFoundError, RuntimeError, OSError) as exc:
+            print(f"WARNING: Cannot load JD for {role_name}: {exc}")
+            continue
+        print(f"{role_name}: {len(urls)} unique /in/ profiles from {jd_path.name}")
+        all_urls.extend(urls)
+
+    return _dedupe_preserve_order(all_urls)
 
 
 # ============================================================================
@@ -1083,16 +1237,21 @@ def send_all_connection_requests(
 # MAIN
 # ============================================================================
 
-def main() -> None:
-    profile_urls = extract_profile_urls(
-        POSTED_BY_URLS
-    )
+def main(folder_path: str | Path | None = None, *, preview_only: bool = False) -> None:
+    daily_folder = resolve_daily_company_folder(folder_path)
+    print(f"Daily company folder: {daily_folder}")
+    profile_urls = collect_today_posted_by_urls(daily_folder)
 
     if not profile_urls:
-        raise ValueError(
-            "No valid LinkedIn /in/ profile URLs found "
-            "in POSTED_BY_URLS."
-        )
+        print("No LinkedIn /in/ profile URLs found in today's role JD files.")
+        return
+
+    print(f"Unique LinkedIn profiles across roles: {len(profile_urls)}")
+    if preview_only:
+        print("URL PREVIEW ONLY - Chrome was not opened and no requests sent.")
+        for url in profile_urls:
+            print(f"  {url}")
+        return
 
     preview_note = CONNECTION_NOTE.format(
         first_name="Name",
@@ -1154,4 +1313,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    args = [arg for arg in sys.argv[1:] if arg != "--preview-urls"]
+    main(args[0] if args else None, preview_only="--preview-urls" in sys.argv[1:])

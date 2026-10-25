@@ -1,0 +1,3840 @@
+{
+  "input_file": "2026-10-25(1).json",
+  "date": "2026-10-25",
+  "max_required_years": 4,
+  "total_raw_records": 242,
+  "invalid_records": 0,
+  "duplicate_records": 53,
+  "job_seeker_and_non_hiring_excluded": 67,
+  "experience_excluded": 60,
+  "eligible_classified": 62,
+  "group_counts": {
+    "aiengineer": 1,
+    "awsdataengineer": 8,
+    "dataengineer": 45,
+    "pythondeveloper": 0,
+    "others": 8
+  },
+  "emitted_groups": [
+    "aiengineer",
+    "awsdataengineer",
+    "dataengineer",
+    "others"
+  ],
+  "omitted_zero_groups": [
+    "pythondeveloper"
+  ],
+  "decisions": [
+    {
+      "input_index": 0,
+      "job_reference": "cc80da7d11308f40c0f8a14321dce66b",
+      "original_id": null,
+      "original_title": "🔹 Network engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 1,
+      "job_reference": "5fa21dbabb41f7533f7725bbd5bee2ce",
+      "original_id": null,
+      "original_title": "Open Positions:",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "others",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "Multiple unrelated occupations in a single recruitment post, without a single clearly primary technical deliverable."
+    },
+    {
+      "input_index": 2,
+      "job_reference": "383fbfbbd41eb9b7292c08c83916f01a",
+      "original_id": null,
+      "original_title": "🤖 AI / ML Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 3,
+      "job_reference": "d9b6fbb44ed6fa912eff7de793471035",
+      "original_id": null,
+      "original_title": "Experience :- 10+",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 4,
+      "job_reference": "580898c79f1cbc7b2db8b47f8a8e7554",
+      "original_id": null,
+      "original_title": "Our consultants are available on:🔹 C2C🔹 C2H",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 5,
+      "job_reference": "da9bd1808e6d3ee9eeba50f7025eb335",
+      "original_id": null,
+      "original_title": "🚨 WE ARE HIRING | SENIOR PYTHON DEVELOPER – DATABRICKS",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 6,
+          "evidence": "Experience: 6+"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "Experience: 6+"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6+ Years"
+        }
+      ]
+    },
+    {
+      "input_index": 6,
+      "job_reference": "42678c0d7bcf935e14e95b8ec499d984",
+      "original_id": null,
+      "original_title": "🚨 WE ARE HIRING | SENIOR PYTHON DEVELOPER – DATABRICKS",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 6,
+          "evidence": "Experience: 6+"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "Experience: 6+"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6+ Years"
+        }
+      ]
+    },
+    {
+      "input_index": 7,
+      "job_reference": "3ece9046e151f6e02fc1696e31f266fb",
+      "original_id": null,
+      "original_title": "Available Consultants:",
+      "original_company": "Techinfo Services Inc",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 8,
+      "job_reference": "13d97b91c3490c8bf43ee0c7b2fb1b29",
+      "original_id": null,
+      "original_title": "✅ Sr. Java developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 9,
+      "job_reference": "8bfde9de260d9f6349e7e533db0eb034",
+      "original_id": null,
+      "original_title": "🚀 WE’RE HIRING | Multiple IT Openings Across India 🚀",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "others",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "Multiple unrelated occupations in a single recruitment post, without a single clearly primary technical deliverable."
+    },
+    {
+      "input_index": 10,
+      "job_reference": "8f9f0c41f53f495aad3d1411c97a18dd",
+      "original_id": null,
+      "original_title": "🚀 WE’RE HIRING | Multiple IT Openings Across India 🚀",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 9,
+      "duplicates_reference": "8bfde9de260d9f6349e7e533db0eb034"
+    },
+    {
+      "input_index": 11,
+      "job_reference": "8e4f940a96655ccc9e073ee5a34c3e4d",
+      "original_id": null,
+      "original_title": "✅ Network Engineers – 12+ Years",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 12,
+      "job_reference": "0f3c8f12d59c5d3796bbf7c4a811f622",
+      "original_id": null,
+      "original_title": "✅ Java Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 13,
+      "job_reference": "6d46a353da26bf7f409f0c55995cb438",
+      "original_id": null,
+      "original_title": "🚀 C2C HOTLIST | Immediate Joiners Available 🚀",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 14,
+      "job_reference": "bfbd00e7b046482f8d1c177b88f98ff8",
+      "original_id": null,
+      "original_title": "Java Full Stack Developers,",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 15,
+      "job_reference": "db83a2c66da5215d27f48019039ae60a",
+      "original_id": null,
+      "original_title": "📢 HOTLIST",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 16,
+      "job_reference": "97518c309f1bc354bf9f71706853ea7d",
+      "original_id": null,
+      "original_title": "cono@quantumdatatech.ai",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 17,
+      "job_reference": "885a19005cd732489729e837e245611c",
+      "original_id": null,
+      "original_title": "🔹 Open Positions:",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "not_verifiable_hiring_ad",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 18,
+      "job_reference": "97dc11ca5f4fb64f0141d5776f24d4c2",
+      "original_id": null,
+      "original_title": "Databricks Data Engineers (Verified job)",
+      "original_company": "Databricks Data Engineers",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 19,
+      "job_reference": "b993f95befe37a18e8678049f74c1772",
+      "original_id": null,
+      "original_title": "​⏰ Shift: UK Shift (2:00 PM – 11:00 PM IST)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 7,
+          "evidence": "Experience: 7+"
+        },
+        {
+          "minimum_years": 7,
+          "evidence": "Experience: 7+"
+        },
+        {
+          "minimum_years": 7,
+          "evidence": "7+ Years"
+        }
+      ]
+    },
+    {
+      "input_index": 20,
+      "job_reference": "52375dea015ace5692a23e5a0f27ce14",
+      "original_id": null,
+      "original_title": "Data Engineer",
+      "original_company": "ThoughtLabs Belgium",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 21,
+      "job_reference": "87833dd71a744fdabc72ad5cc554d886",
+      "original_id": null,
+      "original_title": "Remote Data Engineer (Verified job)",
+      "original_company": "Remote Data Engineer",
+      "decision": "excluded",
+      "group": null,
+      "reason": "not_verifiable_hiring_ad",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 22,
+      "job_reference": "79bf5df88a44475f565aca6f75b1f644",
+      "original_id": null,
+      "original_title": "Big Data Developer (Verified job)",
+      "original_company": "Big Data Developer",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 4,
+          "evidence": "04 to 15 yrs"
+        }
+      ],
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 23,
+      "job_reference": "e8ffd411e9994aebcdc27f8191336e03",
+      "original_id": null,
+      "original_title": "Azure Data Engineer",
+      "original_company": "Deloitte",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 2,
+          "evidence": "2+ years"
+        }
+      ],
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 24,
+      "job_reference": "17c744335a67ae4c6873382deeaf3e6a",
+      "original_id": null,
+      "original_title": "​⏰ Shift: UK Shift (2:00 PM – 11:00 PM IST)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 7,
+          "evidence": "Experience: 7+"
+        },
+        {
+          "minimum_years": 7,
+          "evidence": "Experience: 7+"
+        },
+        {
+          "minimum_years": 7,
+          "evidence": "7+ Years"
+        }
+      ]
+    },
+    {
+      "input_index": 25,
+      "job_reference": "65fa02902160a7832e8ac3d3d077c7b8",
+      "original_id": null,
+      "original_title": "● Company: Tata Consultancy Services (TCS)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 5,
+          "evidence": "Experience: 5-10"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5-10 years of experience"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5-10 years"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5-10 Years"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "at least 3 years"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3+ years"
+        },
+        {
+          "minimum_years": 2,
+          "evidence": "2+ years"
+        },
+        {
+          "minimum_years": 2,
+          "evidence": "2+ years"
+        }
+      ]
+    },
+    {
+      "input_index": 26,
+      "job_reference": "94c38839a747fc7f5af78afb1385cede",
+      "original_id": null,
+      "original_title": "Tata Consultancy Services",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 6,
+          "evidence": "Experience: 6+"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "Experience: 6+"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6+ years"
+        }
+      ]
+    },
+    {
+      "input_index": 27,
+      "job_reference": "311dd987149393573ec7e753b55a3597",
+      "original_id": null,
+      "original_title": "💼 Job Title: Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 28,
+      "job_reference": "f5f05361c3b53699919c15887cc83862",
+      "original_id": null,
+      "original_title": "​⏰ Shift: UK Shift (2:00 PM – 11:00 PM IST)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 19,
+      "duplicates_reference": "b993f95befe37a18e8678049f74c1772"
+    },
+    {
+      "input_index": 29,
+      "job_reference": "283a493f8075985df302c99086b8a9f5",
+      "original_id": null,
+      "original_title": "Location: Remote",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 30,
+      "job_reference": "910255911a7641f4f856d547f6ee4a1c",
+      "original_id": null,
+      "original_title": "Location: Remote",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 15,
+          "evidence": "Experience: 15 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 31,
+      "job_reference": "bf1be8358f62d7c6dee3c173d6b43d42",
+      "original_id": null,
+      "original_title": "Senior Data Engineer — 6+ years of experience",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 6,
+          "evidence": "6+ years of experience"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6+ years"
+        },
+        {
+          "minimum_years": 1,
+          "evidence": "1-2 years of experience"
+        },
+        {
+          "minimum_years": 1,
+          "evidence": "1-2 years"
+        }
+      ]
+    },
+    {
+      "input_index": 32,
+      "job_reference": "5d13e9a96e6dc00276f345a0da31e44f",
+      "original_id": null,
+      "original_title": "📍 Locations: Dallas, TX | Austin, TX | Chicago, IL 🇺🇸",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 33,
+      "job_reference": "eff9d4d9536d74864b2069fc7808473c",
+      "original_id": null,
+      "original_title": "- Develop and maintain data pipelines.",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 34,
+      "job_reference": "c0e01d319a6ad24ffad6d00a298c5833",
+      "original_id": null,
+      "original_title": "Technology: AWS Data Engineering & Data Science",
+      "original_company": "Osman",
+      "decision": "included",
+      "group": "awsdataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "AWS-centric data pipelines, ingestion, ETL or data platforms are central to the JD."
+    },
+    {
+      "input_index": 35,
+      "job_reference": "6737a273638e6bc4ebb2a31b808ebbd4",
+      "original_id": null,
+      "original_title": "Role : Data Engineer (DataOps focus)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 5,
+          "evidence": "5+ yrs"
+        }
+      ]
+    },
+    {
+      "input_index": 36,
+      "job_reference": "a859c0a10937201b7ad395637c11ed25",
+      "original_id": null,
+      "original_title": "🔹 Data Engineer – 5+ Years of Experience",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 5,
+          "evidence": "5+ Years of Experience"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5+ Years of Experience"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5+ Years"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5+ Years"
+        }
+      ]
+    },
+    {
+      "input_index": 37,
+      "job_reference": "53a06424cdfd430c4eababda78d37b78",
+      "original_id": null,
+      "original_title": "Job Title:- Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 38,
+      "job_reference": "d9901d40fa98ea4e727e858199bbd2fe",
+      "original_id": null,
+      "original_title": "Hello Folks,",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 39,
+      "job_reference": "13fab1373f72cef287e7630e07bc27b3",
+      "original_id": null,
+      "original_title": "Location: Bengaluru / Pune",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 5,
+          "evidence": "Experience: 5-8"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5-8 years"
+        }
+      ]
+    },
+    {
+      "input_index": 40,
+      "job_reference": "2b98b033f07836852536035da5661005",
+      "original_id": null,
+      "original_title": "🚀 Data Engineer Opportunity | Aptean",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 2,
+          "evidence": "2-5 years of experience"
+        },
+        {
+          "minimum_years": 2,
+          "evidence": "2-5 years"
+        }
+      ],
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 41,
+      "job_reference": "a0b21199e955c3f2fb922981413674bd",
+      "original_id": null,
+      "original_title": "Preferred Location:",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "awsdataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "AWS-centric data pipelines, ingestion, ETL or data platforms are central to the JD."
+    },
+    {
+      "input_index": 42,
+      "job_reference": "29a76f5bae854bc0654276e5c31aed0a",
+      "original_id": null,
+      "original_title": "Hello Folks",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 43,
+      "job_reference": "fa201b407a3a47123067c63ff3d29ae6",
+      "original_id": null,
+      "original_title": "📍 Location: Dallas, TX / Remote (EST/CST Time Zones)",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 44,
+      "job_reference": "ec35ee66f60d2debf4025d2eee415661",
+      "original_id": null,
+      "original_title": "🔹 Experience: 0–5 years",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 45,
+      "job_reference": "4c27e6dfa3b8b02855901e8b15c2c085",
+      "original_id": null,
+      "original_title": "hr@orogoo.com.Email",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 2,
+          "evidence": "Experience: 2-4"
+        }
+      ],
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 46,
+      "job_reference": "f4937efe10b93af591e4a0a3bc066cbf",
+      "original_id": null,
+      "original_title": "💼 Experience: 7–10 Years",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 7,
+          "evidence": "Experience: 7-10"
+        },
+        {
+          "minimum_years": 7,
+          "evidence": "7-10 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 47,
+      "job_reference": "7d8b6c2a0854480fbbcff68677eb2b22",
+      "original_id": null,
+      "original_title": "Primary Location:Tier I City, Preferable Bangalore",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 48,
+      "job_reference": "4ab24f46897489dcdd564848dc5d1c15",
+      "original_id": null,
+      "original_title": "AVAILABLE FOR CANDIDATES BASED IN USA",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 49,
+      "job_reference": "302f34609045e48de8ba4691cc3b19fa",
+      "original_id": null,
+      "original_title": "📍 Location: Mountain View, CA (Onsite)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 12,
+          "evidence": "Experience :12+"
+        },
+        {
+          "minimum_years": 12,
+          "evidence": "Experience :12+"
+        }
+      ]
+    },
+    {
+      "input_index": 50,
+      "job_reference": "f1712f78fcc8c3e71f729ea07d7d35b7",
+      "original_id": null,
+      "original_title": "Location: Pune",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 2,
+          "evidence": "Experience: 2+"
+        },
+        {
+          "minimum_years": 2,
+          "evidence": "Experience: 2+"
+        },
+        {
+          "minimum_years": 2,
+          "evidence": "2+ years"
+        }
+      ],
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 51,
+      "job_reference": "c2521ef29fba43c79de14e6535309902",
+      "original_id": null,
+      "original_title": "📍 Location: Dallas, TX (Onsite)",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 52,
+      "job_reference": "265e7380be498836b43a81e90ed83aa7",
+      "original_id": null,
+      "original_title": "📍 Location: MTV, CA (Onsite)",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 53,
+      "job_reference": "52a2a3be4e93ed5cf951da65686ebbbd",
+      "original_id": null,
+      "original_title": "Title: Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 5,
+          "evidence": "MUST HAVE:\n5+"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5+ years"
+        }
+      ]
+    },
+    {
+      "input_index": 54,
+      "job_reference": "2fb21d1fd24ca182701d0daac6b8b494",
+      "original_id": null,
+      "original_title": "💼 Experience: 7–10 Years",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 46,
+      "duplicates_reference": "f4937efe10b93af591e4a0a3bc066cbf"
+    },
+    {
+      "input_index": 55,
+      "job_reference": "ca8c5786222212797ccd640116f3f8e9",
+      "original_id": null,
+      "original_title": "Primary Location:Tier I City, Preferable Bangalore",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 47,
+      "duplicates_reference": "7d8b6c2a0854480fbbcff68677eb2b22"
+    },
+    {
+      "input_index": 56,
+      "job_reference": "8abf9d538a20212454e98fe4d52a8209",
+      "original_id": null,
+      "original_title": "AVAILABLE FOR CANDIDATES BASED IN USA",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 48,
+      "duplicates_reference": "4ab24f46897489dcdd564848dc5d1c15"
+    },
+    {
+      "input_index": 57,
+      "job_reference": "37120b442d8700943e6b99232c2a3db2",
+      "original_id": null,
+      "original_title": "📍 Location: Mountain View, CA (Onsite)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 49,
+      "duplicates_reference": "302f34609045e48de8ba4691cc3b19fa"
+    },
+    {
+      "input_index": 58,
+      "job_reference": "cefc44034616379ea7c1eac0f68198c4",
+      "original_id": null,
+      "original_title": "Location: Pune",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 50,
+      "duplicates_reference": "f1712f78fcc8c3e71f729ea07d7d35b7"
+    },
+    {
+      "input_index": 59,
+      "job_reference": "4cbf1cd269b4dcc966dc2b1291cde2cf",
+      "original_id": null,
+      "original_title": "📍 Location: Dallas, TX (Onsite)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 51,
+      "duplicates_reference": "c2521ef29fba43c79de14e6535309902"
+    },
+    {
+      "input_index": 60,
+      "job_reference": "c9027d9e948b59ba01f848a90b966972",
+      "original_id": null,
+      "original_title": "📍 Location: MTV, CA (Onsite)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 52,
+      "duplicates_reference": "265e7380be498836b43a81e90ed83aa7"
+    },
+    {
+      "input_index": 61,
+      "job_reference": "0a89148d1586fdd8bb7d920d3a31db95",
+      "original_id": null,
+      "original_title": "Title: Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 53,
+      "duplicates_reference": "52a2a3be4e93ed5cf951da65686ebbbd"
+    },
+    {
+      "input_index": 62,
+      "job_reference": "43825ad7c1921b0c2d9267b3fba24d20",
+      "original_id": null,
+      "original_title": "Location: IL (Remote)📍",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 63,
+      "job_reference": "5e11627bbb517b6789c0089c5ca92b21",
+      "original_id": null,
+      "original_title": ": Data Engineer / Databricks Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 64,
+      "job_reference": "d5aaad0ba8b5a228a7fa9efc465756ed",
+      "original_id": null,
+      "original_title": "📍 Location: Hyderabad, India",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 65,
+      "job_reference": "0f3eb4564cc101531ef9a09e3e926f29",
+      "original_id": null,
+      "original_title": "nehacss145@gmail.com",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 66,
+      "job_reference": "effbab1cb32f101d750ee8837eede256",
+      "original_id": null,
+      "original_title": "only H1B And US Citizens can apply",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 12,
+          "evidence": "Exp 12 to 15"
+        },
+        {
+          "minimum_years": 12,
+          "evidence": "12 to 15 years"
+        }
+      ]
+    },
+    {
+      "input_index": 67,
+      "job_reference": "b58f28923fddbf359477215c64983c96",
+      "original_id": null,
+      "original_title": "📍 Location: Dallas, TX",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 10,
+          "evidence": "Experience: 10-12"
+        },
+        {
+          "minimum_years": 10,
+          "evidence": "10-12 years of experience"
+        },
+        {
+          "minimum_years": 10,
+          "evidence": "10-12 years of experience"
+        },
+        {
+          "minimum_years": 10,
+          "evidence": "10-12 years"
+        },
+        {
+          "minimum_years": 10,
+          "evidence": "10-12 years"
+        },
+        {
+          "minimum_years": 10,
+          "evidence": "10-12 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 68,
+      "job_reference": "f67069b983540098529502e75b87d1e8",
+      "original_id": null,
+      "original_title": "🚨 WE ARE HIRING | DATA ENGINEER 🚨",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 5,
+          "evidence": "Experience: 5-8"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5-8 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 69,
+      "job_reference": "e4be926e1583a9915648f9c8d67161fe",
+      "original_id": null,
+      "original_title": "Preferred Location:",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 70,
+      "job_reference": "afb74a17e32fa8a475f6aec0c26b48c7",
+      "original_id": null,
+      "original_title": "Need Only EX Capital Once candidates",
+      "original_company": "Capital One",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 71,
+      "job_reference": "07825e5d78c3cc4ed481489e68cd0a2c",
+      "original_id": null,
+      "original_title": "⚙️ Data Engineer —",
+      "original_company": "US Opportunities",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 72,
+      "job_reference": "72d68d042afd0bc460bd9791334dd29a",
+      "original_id": null,
+      "original_title": "🚨Hi Vendors,I hope you’re doing well.",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 73,
+      "job_reference": "17413d2007c76d6d7bcd08ef15e5876f",
+      "original_id": null,
+      "original_title": "Location: Wilmington, DE || Onsite",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 8,
+          "evidence": "Experience\n8-10"
+        },
+        {
+          "minimum_years": 8,
+          "evidence": "8-10 years"
+        }
+      ]
+    },
+    {
+      "input_index": 74,
+      "job_reference": "f3b78111ab18e131c53fca2d23d018d3",
+      "original_id": null,
+      "original_title": "Role: Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 10,
+          "evidence": "must have: 10 years"
+        }
+      ]
+    },
+    {
+      "input_index": 75,
+      "job_reference": "7cba1add9dd188dfc1a49f573e9df1be",
+      "original_id": null,
+      "original_title": "*AVAILABLE FOR CANDIDATES BASED IN USA*",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 76,
+      "job_reference": "8a8e68a3a0c46effa2b0b448eac61ac7",
+      "original_id": null,
+      "original_title": "Role : DATA Engineer / ETL Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 10,
+          "evidence": "Experience 10 years"
+        }
+      ]
+    },
+    {
+      "input_index": 77,
+      "job_reference": "c3be34de245518e70d21ccacc3dc2748",
+      "original_id": null,
+      "original_title": "🏢 Company: micro1",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "not_verifiable_hiring_ad",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 78,
+      "job_reference": "6b0b848a2abf9c48cbfd1f32c9211357",
+      "original_id": null,
+      "original_title": "📍 Location: Mason, OH (Onsite – 5 Days a Week)",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "awsdataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "AWS-centric data pipelines, ingestion, ETL or data platforms are central to the JD."
+    },
+    {
+      "input_index": 79,
+      "job_reference": "e74b063562bbb3084761f0c5d0691dd5",
+      "original_id": null,
+      "original_title": "🚀 We're Hiring: Senior Data Engineer & Lead Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 7,
+          "evidence": "Experience: 7-12"
+        },
+        {
+          "minimum_years": 7,
+          "evidence": "7-12 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 80,
+      "job_reference": "38144954d591d51ca057bebd09483838",
+      "original_id": null,
+      "original_title": "🚀 C2C Bench Candidates – Ready to Deploy!",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 81,
+      "job_reference": "466af922e5742a753f8c7eb50ee54525",
+      "original_id": null,
+      "original_title": "📍 Location: Phoenix, AZ",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 2,
+          "evidence": "Minimum 2+"
+        },
+        {
+          "minimum_years": 2,
+          "evidence": "2+ years"
+        }
+      ],
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 82,
+      "job_reference": "2661a983aa18212573be38e7d35446ae",
+      "original_id": null,
+      "original_title": "Hello Connections,",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 8,
+          "evidence": "Experience: 8 - 12"
+        },
+        {
+          "minimum_years": 8,
+          "evidence": "8-10 years"
+        },
+        {
+          "minimum_years": 8,
+          "evidence": "8 - 12 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 83,
+      "job_reference": "ede881743c464e147a2aaf629f629cde",
+      "original_id": null,
+      "original_title": "Location: Spring, TX (Onsite)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 12,
+          "evidence": "Experience: 12+"
+        },
+        {
+          "minimum_years": 12,
+          "evidence": "Experience: 12+"
+        }
+      ]
+    },
+    {
+      "input_index": 84,
+      "job_reference": "1d29997b3edbd8736d04880d349fa02b",
+      "original_id": null,
+      "original_title": "📍 Location: Mumbai, Bangalore",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 5,
+          "evidence": "Experience: 5 - 8"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5 - 8 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 85,
+      "job_reference": "d656a956c4a606cc62b294d9e73f86fe",
+      "original_id": null,
+      "original_title": "🚀 C2C Bench Candidates – Ready to Deploy!",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 80,
+      "duplicates_reference": "38144954d591d51ca057bebd09483838"
+    },
+    {
+      "input_index": 86,
+      "job_reference": "0fd83b9ee60a03b87ebfb1ae9caf9c06",
+      "original_id": null,
+      "original_title": "my bench H1B Consultants:-",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 87,
+      "job_reference": "1846c8a687676af4ea596892487848c7",
+      "original_id": null,
+      "original_title": "Role : DATA Engineer / ETL Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 76,
+      "duplicates_reference": "8a8e68a3a0c46effa2b0b448eac61ac7"
+    },
+    {
+      "input_index": 88,
+      "job_reference": "960c78671b084f00800536c6ea2fe9f9",
+      "original_id": null,
+      "original_title": "📍 Location: Phoenix, AZ",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 81,
+      "duplicates_reference": "466af922e5742a753f8c7eb50ee54525"
+    },
+    {
+      "input_index": 89,
+      "job_reference": "20ab26f27fd0ffbbe362df0478b72abd",
+      "original_id": null,
+      "original_title": "Hello Connections,",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 82,
+      "duplicates_reference": "2661a983aa18212573be38e7d35446ae"
+    },
+    {
+      "input_index": 90,
+      "job_reference": "60efe42dd84b1509815bd65282695978",
+      "original_id": null,
+      "original_title": "Location: Spring, TX (Onsite)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 83,
+      "duplicates_reference": "ede881743c464e147a2aaf629f629cde"
+    },
+    {
+      "input_index": 91,
+      "job_reference": "5f7e24f8da58df8cd07c8fc757900d80",
+      "original_id": null,
+      "original_title": "📍 Location: Mumbai, Bangalore",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 84,
+      "duplicates_reference": "1d29997b3edbd8736d04880d349fa02b"
+    },
+    {
+      "input_index": 92,
+      "job_reference": "da37db7e84577f7e29c51c3e07ce1093",
+      "original_id": null,
+      "original_title": "my bench H1B Consultants:-",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 86,
+      "duplicates_reference": "0fd83b9ee60a03b87ebfb1ae9caf9c06"
+    },
+    {
+      "input_index": 93,
+      "job_reference": "340e6c3b00f15087d87a0cf167122d3c",
+      "original_id": null,
+      "original_title": "I have an excellent Data Engineer available for new opportunities.",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 94,
+      "job_reference": "2f430c517b1f839b1c93d83d752ffcf8",
+      "original_id": null,
+      "original_title": "Title:- Data Analytics Engineer (Data Transformation Analytics)",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 3,
+          "evidence": "3-5 years of relevant experience"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3-5 years"
+        }
+      ],
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 95,
+      "job_reference": "01361a5805747f787d4ac459af1e2cb6",
+      "original_id": null,
+      "original_title": "Hello Professionals,",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 10,
+          "evidence": "10 + yrs"
+        }
+      ]
+    },
+    {
+      "input_index": 96,
+      "job_reference": "03e730728d856b0d1684a3435afb4bb4",
+      "original_id": null,
+      "original_title": "🚀 Remote Data Engineer Opportunity | Bank of America 💻",
+      "original_company": "Bank of America",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 97,
+      "job_reference": "2408252b8fe5c4567d8fbd7b0a792a7c",
+      "original_id": null,
+      "original_title": "📍 Mountain View, CA",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 98,
+      "job_reference": "1e048144dae634973ef4b2b442ff8f25",
+      "original_id": null,
+      "original_title": "Data Engineer - Data Platform - AWS Location - HYD/BLR/Kol/Kochi",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "awsdataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "AWS-centric data pipelines, ingestion, ETL or data platforms are central to the JD."
+    },
+    {
+      "input_index": 99,
+      "job_reference": "f91c7402059b29c9568f7a6c2cfc64d3",
+      "original_id": null,
+      "original_title": "Total Experience: 6 Years",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 6,
+          "evidence": "Total Experience: 6 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 100,
+      "job_reference": "beac16a71a6512070a31f6706bbd16ad",
+      "original_id": null,
+      "original_title": "📍 Location: Maryland Heights, MO (Hybrid)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 8,
+          "evidence": "Experience: 8-10"
+        },
+        {
+          "minimum_years": 8,
+          "evidence": "8-10 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 101,
+      "job_reference": "f22ac467ad2adfe3599e7dcc213cb20d",
+      "original_id": null,
+      "original_title": "📍 Location: Hyderabad",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 8,
+          "evidence": "Experience: 8+"
+        },
+        {
+          "minimum_years": 8,
+          "evidence": "Experience: 8+"
+        },
+        {
+          "minimum_years": 8,
+          "evidence": "8+ Years"
+        }
+      ]
+    },
+    {
+      "input_index": 102,
+      "job_reference": "ba3a77da3b59dec707b7f4d19612ebb0",
+      "original_id": null,
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 103,
+      "job_reference": "4fa8ae49496770f7088a8e0d89b77f75",
+      "original_id": null,
+      "original_title": "Note: Not For Bench Sales Recruiters",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 104,
+      "job_reference": "6d14da0e828e948bc03851c15524edcc",
+      "original_id": null,
+      "original_title": "Hope you're doing great.",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 105,
+      "job_reference": "a70bc83b2df92dc922f31cd1f221af7c",
+      "original_id": null,
+      "original_title": "📍 Location: Alpharetta, GA (Local Candidates Only)",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 106,
+      "job_reference": "832430f166e00a8d4eb986d39da59627",
+      "original_id": null,
+      "original_title": "💼 Position: Data Engineer with Databricks (13+ years)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 13,
+          "evidence": "13+ years"
+        }
+      ]
+    },
+    {
+      "input_index": 107,
+      "job_reference": "f51c00b117abd364ecd7e752cd71d391",
+      "original_id": null,
+      "original_title": "📍 Location: Remote, USA",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 7,
+          "evidence": "7+ years"
+        }
+      ]
+    },
+    {
+      "input_index": 108,
+      "job_reference": "89cd76d8997cb463e7c72e6619513f7a",
+      "original_id": null,
+      "original_title": "📍 Chennai – DLF Porur | Hybrid",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 5,
+          "evidence": "Experience: 5-8"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5-8 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 109,
+      "job_reference": "128aaa59d011c2ef388e93f9ed4e3877",
+      "original_id": null,
+      "original_title": "ALL VISA CANDIDATES AVAILABLE MY BENCH",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 110,
+      "job_reference": "b8e646a325e88f07e52a9df2674ef5ed",
+      "original_id": null,
+      "original_title": "📍 Location: Maryland Heights, MO",
+      "original_company": "Nitish",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 8,
+          "evidence": "Experience: 8-10"
+        },
+        {
+          "minimum_years": 8,
+          "evidence": "8-10 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 111,
+      "job_reference": "1dfef5e994d96cfa3e934a1042394765",
+      "original_id": null,
+      "original_title": "We’re looking for experienced Salesforce professionals for multiple exciting opportunities!",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 10,
+          "evidence": "10-15 Years"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6-9 Years"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6-9 Years"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6-9 Years"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6-8 Years"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6-8 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 112,
+      "job_reference": "6025245f5edc307ce61f59d777c57c5f",
+      "original_id": null,
+      "original_title": "🚀 WERE HIRING | GCP DATA ENGINEER 🚀",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 5,
+          "evidence": "Experience: 5-10"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5-10 Years"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "Minimum 3 years"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3+ years of relevant experience"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3+ years"
+        }
+      ]
+    },
+    {
+      "input_index": 113,
+      "job_reference": "b4007d17e518f3395e887c9e9918d491",
+      "original_id": null,
+      "original_title": "📌 Experience: 8+ Years",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 8,
+          "evidence": "Experience: 8+"
+        },
+        {
+          "minimum_years": 8,
+          "evidence": "Experience: 8+"
+        },
+        {
+          "minimum_years": 8,
+          "evidence": "8+ Years"
+        }
+      ]
+    },
+    {
+      "input_index": 114,
+      "job_reference": "9ee89e48a3b87cb6994dda44d733c7d4",
+      "original_id": null,
+      "original_title": "🏢 Client: Alpha FMC",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 115,
+      "job_reference": "5eab0eb0e1e17c12046eb0fd318ec2c8",
+      "original_id": null,
+      "original_title": "Trading / Finance Job Opportunity",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 116,
+      "job_reference": "50ea29b4c301f7c781320586e3762cb3",
+      "original_id": null,
+      "original_title": "✅ Databricks, Spark, PySpark, SQL",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 10,
+          "evidence": "10+ years of experience"
+        },
+        {
+          "minimum_years": 10,
+          "evidence": "10+ years"
+        }
+      ]
+    },
+    {
+      "input_index": 117,
+      "job_reference": "29a87ab1b439e731068897f7122a0779",
+      "original_id": null,
+      "original_title": "🚀 Hiring: Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 6,
+          "evidence": "Experience: 6-12"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6-12 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 118,
+      "job_reference": "d4be92eee158d03bec950ee950eea2cf",
+      "original_id": null,
+      "original_title": "Hire Type – Contract",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "awsdataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "AWS-centric data pipelines, ingestion, ETL or data platforms are central to the JD."
+    },
+    {
+      "input_index": 119,
+      "job_reference": "ced6601ed7c65c2c57f6781d96432778",
+      "original_id": null,
+      "original_title": "📌 Experience: 8+ Years",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 113,
+      "duplicates_reference": "b4007d17e518f3395e887c9e9918d491"
+    },
+    {
+      "input_index": 120,
+      "job_reference": "9783600b7a68e030d96f24ed237de553",
+      "original_id": null,
+      "original_title": "🏢 Client: Alpha FMC",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 114,
+      "duplicates_reference": "9ee89e48a3b87cb6994dda44d733c7d4"
+    },
+    {
+      "input_index": 121,
+      "job_reference": "461405e28c9a6b1ca02f30d546f3103e",
+      "original_id": null,
+      "original_title": "✅ Databricks, Spark, PySpark, SQL",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 116,
+      "duplicates_reference": "50ea29b4c301f7c781320586e3762cb3"
+    },
+    {
+      "input_index": 122,
+      "job_reference": "623419800b0acd016bd53620083452a6",
+      "original_id": null,
+      "original_title": "🚀 Hiring: Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 117,
+      "duplicates_reference": "29a87ab1b439e731068897f7122a0779"
+    },
+    {
+      "input_index": 123,
+      "job_reference": "b3ef299c39fbc238f4e8ebea60c09cc0",
+      "original_id": null,
+      "original_title": "Hire Type – Contract",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 118,
+      "duplicates_reference": "d4be92eee158d03bec950ee950eea2cf"
+    },
+    {
+      "input_index": 124,
+      "job_reference": "3cd91117d6720fbb91ab3a46592c4fd5",
+      "original_id": null,
+      "original_title": "#Databricks",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 125,
+      "job_reference": "e689001af7e0259ae8f6a8002e70fc78",
+      "original_id": null,
+      "original_title": "Preferred Location:",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 126,
+      "job_reference": "e98660e5b2d6614b020b1e6f695ab049",
+      "original_id": null,
+      "original_title": "Location: Remote",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 7,
+          "evidence": "7+ years"
+        }
+      ]
+    },
+    {
+      "input_index": 127,
+      "job_reference": "340c844f11ce396baaf6677c8ebdf8be",
+      "original_id": null,
+      "original_title": "👨‍💻 Poojitha",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 128,
+      "job_reference": "64593493f144674e3b3ebc4fe747e134",
+      "original_id": null,
+      "original_title": "Location: Chennai",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 4,
+          "evidence": "Experience: 4-6"
+        },
+        {
+          "minimum_years": 4,
+          "evidence": "4-6 years"
+        }
+      ],
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 129,
+      "job_reference": "b04f8ef38115c63b01fb2d35907a37d3",
+      "original_id": null,
+      "original_title": "We’re hiring: Databricks Application Engineer II (Contract) | Nottingham, UK",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 130,
+      "job_reference": "3bc7fb6c878fcf22b7e70af461e6244e",
+      "original_id": null,
+      "original_title": "🚨 We’re Hiring: Sr. Data Engineer – Databricks | Remote (LATAM)",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 131,
+      "job_reference": "04ae1d74a9d81fe5937402bf60c57752",
+      "original_id": null,
+      "original_title": "🏢 Work Mode: Onsite – 5 Days a Week",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 6,
+          "evidence": "6+ years of experience"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6+ years of experience"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6+ years"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6+ years"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3+ years of experience"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3+ years"
+        }
+      ]
+    },
+    {
+      "input_index": 132,
+      "job_reference": "fa93dbba94f037692d0f77d3014495ef",
+      "original_id": null,
+      "original_title": "Fulcrum Digital Inc",
+      "original_company": "Fulcrum Digital Inc",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 10,
+          "evidence": "10+ Years of Experience"
+        },
+        {
+          "minimum_years": 10,
+          "evidence": "10+ Years"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6-8 Years of Experience"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6-8 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 133,
+      "job_reference": "ffddc1cac045e536449c0df09612a714",
+      "original_id": null,
+      "original_title": "Hire Type – Contract",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 134,
+      "job_reference": "f3660254f21f8e59783b4c9d8d57b4c2",
+      "original_id": null,
+      "original_title": "Hope you’re doing well. Greetings from Cloud Wave Technology.",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 135,
+      "job_reference": "f5688f9c142af887bacec57f31001fa1",
+      "original_id": null,
+      "original_title": "📍 Location: Mumbai, Bangalore",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 5,
+          "evidence": "Experience: 5 - 8"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5 - 8 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 136,
+      "job_reference": "1b2827d60d07d3f3495c1241a21f1ac1",
+      "original_id": null,
+      "original_title": "Data Engineer with Strong GCP Experience - W2 Contract.",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 7,
+          "evidence": "Experience7+"
+        },
+        {
+          "minimum_years": 7,
+          "evidence": "Experience7+"
+        },
+        {
+          "minimum_years": 7,
+          "evidence": "7+\nyears of experience"
+        }
+      ]
+    },
+    {
+      "input_index": 137,
+      "job_reference": "3c4b0dd895f4f260ed8bb55a8a2a4a69",
+      "original_id": null,
+      "original_title": "🚀 IMMEDIATE C2C IT CONSULTANT AVAILABILITY | USA",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 138,
+      "job_reference": "63c87e57680ce4ab552f43f830aeae57",
+      "original_id": null,
+      "original_title": "🔊 **Now Hiring: AWS Data Engineer **",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "awsdataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "AWS-centric data pipelines, ingestion, ETL or data platforms are central to the JD."
+    },
+    {
+      "input_index": 139,
+      "job_reference": "14de087b167aae23fa3b9092aa8aa518",
+      "original_id": null,
+      "original_title": "Trading / Finance Job Opportunity",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "awsdataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "AWS-centric data pipelines, ingestion, ETL or data platforms are central to the JD."
+    },
+    {
+      "input_index": 140,
+      "job_reference": "18fe4605408dcf869fde6d9907ca5f14",
+      "original_id": null,
+      "original_title": "Duration : Onsite (Mason, OH)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 6,
+          "evidence": "6 + Years"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6 + Years"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3+ Years"
+        }
+      ]
+    },
+    {
+      "input_index": 141,
+      "job_reference": "3dae632744393c463749ba6395e470d5",
+      "original_id": null,
+      "original_title": "Role: Senior Python Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 142,
+      "job_reference": "a19acb191259412c5231360af7909ba0",
+      "original_id": null,
+      "original_title": "🚀 Attention Hiring Managers & Recruiters! 🚀",
+      "original_company": "Tech Info Services Inc",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 143,
+      "job_reference": "6f24275dd68c314765800861ede46b55",
+      "original_id": null,
+      "original_title": "CL Technologies Pvt. Ltd.",
+      "original_company": "CL Technologies Pvt. Ltd",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 6,
+          "evidence": "Experience: 6-8"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6-8 Years"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "Experience: 3-5"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3-5 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 144,
+      "job_reference": "a9aa4aa1e0df49ecf21362d1634d7ca6",
+      "original_id": null,
+      "original_title": "Interview Experience | Position: Data Engineer |",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 145,
+      "job_reference": "0e65cf382f81b55bd2455b3d5516eb62",
+      "original_id": null,
+      "original_title": "Duration : Onsite (Mason OH) , Onsite",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 10,
+          "evidence": "Exp : 10+"
+        },
+        {
+          "minimum_years": 10,
+          "evidence": "Exp : 10+"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6 + Years"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6 + Years"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3+ Years"
+        }
+      ]
+    },
+    {
+      "input_index": 146,
+      "job_reference": "05c5a23141afeabd847fd81c85e1fa3e",
+      "original_id": null,
+      "original_title": "Looking forward to connecting with talented Data Engineers. 🤝",
+      "original_company": "Khatabook",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 3,
+          "evidence": "Experience: 3-7"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3-7 years"
+        }
+      ],
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 147,
+      "job_reference": "d65ff6f847c8a86d1d2a9da9f18dd55b",
+      "original_id": null,
+      "original_title": "Data Platform Engineer II",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "awsdataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 3,
+          "evidence": "3-7 years of experience"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3-7 years"
+        }
+      ],
+      "classification_reason": "AWS-centric data pipelines, ingestion, ETL or data platforms are central to the JD."
+    },
+    {
+      "input_index": 148,
+      "job_reference": "b2ff5f34f4469a5cc6d8c693bb6a86b7",
+      "original_id": null,
+      "original_title": "No Bench Sales profiles🚀",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 149,
+      "job_reference": "5190bcd0a5e6048ac8047d23624f1068",
+      "original_id": null,
+      "original_title": "🚨 OCTOBER HIRING DRIVE | 20 OPENINGS ACROSS THE USA",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "not_verifiable_hiring_ad",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 150,
+      "job_reference": "d57e58f2ffbedaf5fd1d42c9cf9f9d14",
+      "original_id": null,
+      "original_title": "🚀 TECH MAHINDRA SQL INTERVIEW BLUEPRINT! 💻🔥",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 151,
+      "job_reference": "1f503f9f9dc7557bb7ef4840a185e98e",
+      "original_id": null,
+      "original_title": "📢 Looking for Vendor Empanelment Partners!",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 2,
+          "evidence": "2-4 years"
+        }
+      ],
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 152,
+      "job_reference": "9c530a1523b1229f29d8b422049c3201",
+      "original_id": null,
+      "original_title": "Location: Leeds, UK (Remote Opportunity)",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 153,
+      "job_reference": "7fcf8bd58046e0a2168a22586f16abb5",
+      "original_id": null,
+      "original_title": "Looking forward to connecting with talented Data Engineers. 🤝",
+      "original_company": "Khatabook",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 146,
+      "duplicates_reference": "05c5a23141afeabd847fd81c85e1fa3e"
+    },
+    {
+      "input_index": 154,
+      "job_reference": "7fa74a3557fda4118e23fca73bbc0b4c",
+      "original_id": null,
+      "original_title": "Data Platform Engineer II",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 147,
+      "duplicates_reference": "d65ff6f847c8a86d1d2a9da9f18dd55b"
+    },
+    {
+      "input_index": 155,
+      "job_reference": "2bdbdca7b06d4a6ab963bb8c08364c35",
+      "original_id": null,
+      "original_title": "No Bench Sales profiles🚀",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 148,
+      "duplicates_reference": "b2ff5f34f4469a5cc6d8c693bb6a86b7"
+    },
+    {
+      "input_index": 156,
+      "job_reference": "b6a482917697865f8b333756a95915a4",
+      "original_id": null,
+      "original_title": "🚨 OCTOBER HIRING DRIVE | 20 OPENINGS ACROSS THE USA",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 149,
+      "duplicates_reference": "5190bcd0a5e6048ac8047d23624f1068"
+    },
+    {
+      "input_index": 157,
+      "job_reference": "d563b889f7a3517279a216281ef3099c",
+      "original_id": null,
+      "original_title": "🚀 TECH MAHINDRA SQL INTERVIEW BLUEPRINT! 💻🔥",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 150,
+      "duplicates_reference": "d57e58f2ffbedaf5fd1d42c9cf9f9d14"
+    },
+    {
+      "input_index": 158,
+      "job_reference": "9000d6adea471c09e2afd414601b2e8d",
+      "original_id": null,
+      "original_title": "📢 Looking for Vendor Empanelment Partners!",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 151,
+      "duplicates_reference": "1f503f9f9dc7557bb7ef4840a185e98e"
+    },
+    {
+      "input_index": 159,
+      "job_reference": "e845586d195aa5efbb5278188cc508d7",
+      "original_id": null,
+      "original_title": "Location: Leeds, UK (Remote Opportunity)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 152,
+      "duplicates_reference": "9c530a1523b1229f29d8b422049c3201"
+    },
+    {
+      "input_index": 160,
+      "job_reference": "93a3c163ea518d13ca6796a4e29a9c36",
+      "original_id": null,
+      "original_title": "📌 Open Positions:",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "aiengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 8,
+          "evidence": "8+ Years"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "Experience: 5-10"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "Experience: 5-10"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "Experience: 5+"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "Experience: 5+"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5-10 Years"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5-10 Years"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5+ Years"
+        }
+      ],
+      "classification_reason": "Primary deliverable is AI/ML, GenAI, models or agentic solutions described in the JD."
+    },
+    {
+      "input_index": 161,
+      "job_reference": "9cbd5bfdff9bd2d86df26573c28e6710",
+      "original_id": null,
+      "original_title": "are doing great,",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 12,
+          "evidence": "Experience: 12-18"
+        },
+        {
+          "minimum_years": 12,
+          "evidence": "12-18 Years"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3+ years"
+        }
+      ]
+    },
+    {
+      "input_index": 162,
+      "job_reference": "f588c7366b1c66909815780d52b8b47a",
+      "original_id": null,
+      "original_title": "SQL and Python",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 3,
+          "evidence": "Experience: 3+"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "Experience: 3+"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3+ Years of Experience"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3+ Years"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3+ Years"
+        }
+      ],
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 163,
+      "job_reference": "0c6b21ad616be2e5e96ec111b9a97b4b",
+      "original_id": null,
+      "original_title": "Location: Sheffield, UK",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 164,
+      "job_reference": "fb7140eeebaaa88194f128f37ce21edf",
+      "original_id": null,
+      "original_title": "📍 Location: Madison, WI – 100% Remote or Office-Based",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 6,
+          "evidence": "6+ years"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6+ years"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6+ years"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6+ years"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6+ years"
+        },
+        {
+          "minimum_years": 4,
+          "evidence": "4+ years"
+        },
+        {
+          "minimum_years": 2,
+          "evidence": "2+ years"
+        },
+        {
+          "minimum_years": 2,
+          "evidence": "2+ years"
+        }
+      ]
+    },
+    {
+      "input_index": 165,
+      "job_reference": "9c64d8addbb5767719a476b091648ece",
+      "original_id": null,
+      "original_title": "📌 Role 1: .NET Full Stack Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 6,
+          "evidence": "Experience: 6+"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "Experience: 6+"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "Experience: 6+"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "Experience: 6+"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6+ years"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6+ years"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5+ years"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5+ years"
+        }
+      ]
+    },
+    {
+      "input_index": 166,
+      "job_reference": "9a7a5b1142a19ace1623876c26ae57c3",
+      "original_id": null,
+      "original_title": "📍 Location: Hyderabad (Hybrid)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 12,
+          "evidence": "Experience: 12-15"
+        },
+        {
+          "minimum_years": 12,
+          "evidence": "12-15 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 167,
+      "job_reference": "1a8a68e08ca45861e5ec8d8cb8da6605",
+      "original_id": null,
+      "original_title": "🌎 Eligibility: GC, GC‑EAD, USC, H4‑EAD, OPT, STEM‑OPT",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "not_verifiable_hiring_ad",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 168,
+      "job_reference": "fbd7cfff6903958543bee85a63700671",
+      "original_id": null,
+      "original_title": "Location : Remote (USA)",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 3,
+          "evidence": "Exp : 3 - 7"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3 - 7 Years"
+        }
+      ],
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 169,
+      "job_reference": "27990e87da815bc5fb5db5f3ebfa36e8",
+      "original_id": null,
+      "original_title": "✅ Sr. Java developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 8,
+      "duplicates_reference": "13d97b91c3490c8bf43ee0c7b2fb1b29"
+    },
+    {
+      "input_index": 170,
+      "job_reference": "ea773b955030d107e7d137786726c174",
+      "original_id": null,
+      "original_title": "📄 Passport copy available upon request",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 171,
+      "job_reference": "5c5d1f79cfed149cee8be59ade313b8e",
+      "original_id": null,
+      "original_title": "We are currently hiring experienced IT professionals for the following positions:",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 172,
+      "job_reference": "af4b6ca8dcbb255f50c54da7ca2abcfe",
+      "original_id": null,
+      "original_title": "One important point: active SC Clearance is mandatory for this opportunity.",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 173,
+      "job_reference": "651cb80659909577fba0ed7101f38b71",
+      "original_id": null,
+      "original_title": "🔹 Senior Data Engineer",
+      "original_company": "Ness Digital Engineering",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 10,
+          "evidence": "10+ years"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "Experience: 6-10"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "Experience: 5+"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "Experience: 5+"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5+ years"
+        },
+        {
+          "minimum_years": 4,
+          "evidence": "Experience: 4-7"
+        },
+        {
+          "minimum_years": 4,
+          "evidence": "4-7 years"
+        }
+      ]
+    },
+    {
+      "input_index": 174,
+      "job_reference": "33d00a1761f41cfaf9d8b10abf257bbe",
+      "original_id": null,
+      "original_title": "📄 Passport copy available upon request",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 175,
+      "job_reference": "e56a61fc3bc84add686098fa0630f486",
+      "original_id": null,
+      "original_title": "🔥 CONSULTANTS AVAILABLE IMMEDIATELY 🔥",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 176,
+      "job_reference": "71e86694489fe885c1beabe6e998e8d6",
+      "original_id": null,
+      "original_title": "📍 **Location:** Los Angeles, CA",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 6,
+          "evidence": "6-10 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 177,
+      "job_reference": "62233f2d86aa29f4a9461b42de0fa089",
+      "original_id": null,
+      "original_title": "📍 Location: Chennai (DLF Porur) - Hybrid",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 5,
+          "evidence": "Experience: 5-8"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5-8 years"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5-8 Years"
+        }
+      ]
+    },
+    {
+      "input_index": 178,
+      "job_reference": "26c186b71e84c49cef2e346f323d24d5",
+      "original_id": null,
+      "original_title": "Trading / Finance Job Opportunity",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 179,
+      "job_reference": "34536a0ad04ae2262c70a3f8f1639fef",
+      "original_id": null,
+      "original_title": "⏰ Shift: UK Shift (2:00 PM – 11:00 PM IST)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 7,
+          "evidence": "Experience: 7+"
+        },
+        {
+          "minimum_years": 7,
+          "evidence": "Experience: 7+"
+        },
+        {
+          "minimum_years": 7,
+          "evidence": "7+ Years"
+        }
+      ]
+    },
+    {
+      "input_index": 180,
+      "job_reference": "45c48dee9f309c3e9e321c15b9fdfeb3",
+      "original_id": null,
+      "original_title": "shailaja.vejendla@teamlease.com",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 4,
+          "evidence": "4-12years of experience"
+        },
+        {
+          "minimum_years": 4,
+          "evidence": "4-12years"
+        },
+        {
+          "minimum_years": 4,
+          "evidence": "4-10 years of experience"
+        },
+        {
+          "minimum_years": 4,
+          "evidence": "4-10 years"
+        }
+      ],
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 181,
+      "job_reference": "940c65e98cff8dcc2bf998455d376260",
+      "original_id": null,
+      "original_title": "👨‍💻 AVAILABLE CONSULTANTS",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 182,
+      "job_reference": "7bb7c3a0af55e53264912dcfda90b272",
+      "original_id": null,
+      "original_title": "🔥 CONSULTANTS AVAILABLE IMMEDIATELY 🔥",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 175,
+      "duplicates_reference": "e56a61fc3bc84add686098fa0630f486"
+    },
+    {
+      "input_index": 183,
+      "job_reference": "77cd8a41577158fc9fab7877edc5881e",
+      "original_id": null,
+      "original_title": "📍 **Location:** Los Angeles, CA",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 176,
+      "duplicates_reference": "71e86694489fe885c1beabe6e998e8d6"
+    },
+    {
+      "input_index": 184,
+      "job_reference": "1cdb448bde0b80a27337b8d771e4a83e",
+      "original_id": null,
+      "original_title": "📍 Location: Chennai (DLF Porur) - Hybrid",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 177,
+      "duplicates_reference": "62233f2d86aa29f4a9461b42de0fa089"
+    },
+    {
+      "input_index": 185,
+      "job_reference": "ad5d0a2526430f6b5c2b5c89d2a8a7da",
+      "original_id": null,
+      "original_title": "Trading / Finance Job Opportunity",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 178,
+      "duplicates_reference": "26c186b71e84c49cef2e346f323d24d5"
+    },
+    {
+      "input_index": 186,
+      "job_reference": "820b21c7369307b9e72a75bdb0c269cc",
+      "original_id": null,
+      "original_title": "⏰ Shift: UK Shift (2:00 PM – 11:00 PM IST)",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 179,
+      "duplicates_reference": "34536a0ad04ae2262c70a3f8f1639fef"
+    },
+    {
+      "input_index": 187,
+      "job_reference": "873d6a0a690a6808daf7a0258e19789b",
+      "original_id": null,
+      "original_title": "shailaja.vejendla@teamlease.com",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 180,
+      "duplicates_reference": "45c48dee9f309c3e9e321c15b9fdfeb3"
+    },
+    {
+      "input_index": 188,
+      "job_reference": "a6a8760caef025a7cb8d931440af4dda",
+      "original_id": null,
+      "original_title": "👨‍💻 AVAILABLE CONSULTANTS",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 181,
+      "duplicates_reference": "940c65e98cff8dcc2bf998455d376260"
+    },
+    {
+      "input_index": 189,
+      "job_reference": "b2b0419504e8ef0ba19f1992eceb6028",
+      "original_id": null,
+      "original_title": "Position Name: AI Engineer",
+      "original_company": "KPMG are looking",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 5,
+          "evidence": "Minimum 5 years"
+        }
+      ]
+    },
+    {
+      "input_index": 190,
+      "job_reference": "72ad9613c6ac68cdecff741280e44d8e",
+      "original_id": null,
+      "original_title": "Which area of the data ecosystem resonates most with you?",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 191,
+      "job_reference": "3b8eafd8e3e17042fc88e0ddae93790e",
+      "original_id": null,
+      "original_title": "Three data roles. Three different problems.",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 192,
+      "job_reference": "38d4d62947f1e3d642eb6bc277d3378b",
+      "original_id": null,
+      "original_title": "Simplest machine for the heaviest data.",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 193,
+      "job_reference": "38044462a9014f9c411aa99ee91638cb",
+      "original_id": null,
+      "original_title": "📍 Location: Boston, MA (On-site)",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "others",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "Primary work is analytics, product management, business analysis or a mixed-role recruitment announcement, not data engineering."
+    },
+    {
+      "input_index": 194,
+      "job_reference": "94769cd7c825833b14e8825556f263ad",
+      "original_id": null,
+      "original_title": "Compensation: 32 LPA",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 195,
+      "job_reference": "20e23ac76c3136adb0e5ed30d160f481",
+      "original_id": null,
+      "original_title": "📍 Location: Manhattan, New York",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "JD centers on data ingestion, ETL/ELT, data processing, warehouse or data platform delivery."
+    },
+    {
+      "input_index": 196,
+      "job_reference": "aa4fcf2beaee9dbf1c3e52cd54a79af5",
+      "original_id": null,
+      "original_title": "#DataEngineering",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 197,
+      "job_reference": "9e17e1a80d444dbc4f8764aff755a39c",
+      "original_id": null,
+      "original_title": "Good Morning LinkedIn,",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 198,
+      "job_reference": "4f426b7c16a8648d46b91c3bb079adf9",
+      "original_id": null,
+      "original_title": "💼 Consultants Available Across Multiple Technologies:",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 199,
+      "job_reference": "774f145bdcd9789f068110fad8b43a4d",
+      "original_id": null,
+      "original_title": "#DataEngineering",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 200,
+      "job_reference": "0e93aefaca2f03fc372e138556c70ffe",
+      "original_id": null,
+      "original_title": "Databricks",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 201,
+      "job_reference": "3fc3a30b39538fffa81f5509e0989df2",
+      "original_id": null,
+      "original_title": "♻️ Repost if you think more people should see this.",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 202,
+      "job_reference": "b0b5381fc3e17290937762bbc42e73db",
+      "original_id": null,
+      "original_title": "**AI/ML Data Engineer | 8 Years of Experience | OPT EAD**",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 203,
+      "job_reference": "7fb1cad957c89896cb1e958e9613f24a",
+      "original_id": null,
+      "original_title": "Role : Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 6,
+          "evidence": "6+ years of experience"
+        },
+        {
+          "minimum_years": 6,
+          "evidence": "6+ years"
+        }
+      ]
+    },
+    {
+      "input_index": 204,
+      "job_reference": "eb8df7cc3a120ebc03d45e5a0e629b2b",
+      "original_id": null,
+      "original_title": "Location: Boston, MA (Hybrid) Locals",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 12,
+          "evidence": "Experience: 12+"
+        },
+        {
+          "minimum_years": 12,
+          "evidence": "Experience: 12+"
+        },
+        {
+          "minimum_years": 12,
+          "evidence": "12+ Years"
+        }
+      ]
+    },
+    {
+      "input_index": 205,
+      "job_reference": "902cd2322cc4cbad5323df3e14625887",
+      "original_id": null,
+      "original_title": "🚀 Attention US IT Recruiters",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 206,
+      "job_reference": "03ea9b8f17b4ce3fddd3029a23acf833",
+      "original_id": null,
+      "original_title": "🔥 OUR CURRENT CONSULTANT HOTLIST 🔥",
+      "original_company": "Indus Group Inc",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 207,
+      "job_reference": "8fa6358e4927b7b362bc7269029500bc",
+      "original_id": null,
+      "original_title": "Healthcare Data Engineer with Real-Time & Cloud Platforms",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 13,
+          "evidence": "Minimum 13+"
+        },
+        {
+          "minimum_years": 13,
+          "evidence": "13+ years of experience"
+        },
+        {
+          "minimum_years": 13,
+          "evidence": "13+ years"
+        },
+        {
+          "minimum_years": 13,
+          "evidence": "13+ Years"
+        },
+        {
+          "minimum_years": 4,
+          "evidence": "4+ years of experience"
+        },
+        {
+          "minimum_years": 4,
+          "evidence": "4+ years"
+        }
+      ]
+    },
+    {
+      "input_index": 208,
+      "job_reference": "d586bfbc6a3d2d7f23bfddc6aad8563b",
+      "original_id": null,
+      "original_title": "Location: Boston, MA (Hybrid) Locals",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 204,
+      "duplicates_reference": "eb8df7cc3a120ebc03d45e5a0e629b2b"
+    },
+    {
+      "input_index": 209,
+      "job_reference": "109dc503fb47cf450e365e864168fa83",
+      "original_id": null,
+      "original_title": "🚀 Attention US IT Recruiters",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 205,
+      "duplicates_reference": "902cd2322cc4cbad5323df3e14625887"
+    },
+    {
+      "input_index": 210,
+      "job_reference": "83f1c655ec718bcb322559e46758f652",
+      "original_id": null,
+      "original_title": "🔥 OUR CURRENT CONSULTANT HOTLIST 🔥",
+      "original_company": "Indus Group Inc",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 206,
+      "duplicates_reference": "03ea9b8f17b4ce3fddd3029a23acf833"
+    },
+    {
+      "input_index": 211,
+      "job_reference": "dce2e77f5bb472aff240d5df786730c2",
+      "original_id": null,
+      "original_title": "Healthcare Data Engineer with Real-Time & Cloud Platforms",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 207,
+      "duplicates_reference": "8fa6358e4927b7b362bc7269029500bc"
+    },
+    {
+      "input_index": 212,
+      "job_reference": "75902fbe75c8992e35832907d89178f1",
+      "original_id": null,
+      "original_title": "#DataEngineering",
+      "original_company": "Uncore Digital",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 213,
+      "job_reference": "9a6dab8ffba706dafadf4589df5ca296",
+      "original_id": null,
+      "original_title": "#datafam",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 214,
+      "job_reference": "f07fdab02fb1481ae4b799b70cba2f53",
+      "original_id": null,
+      "original_title": "DP-700 completed. Microsoft Fabric Data Engineer Associate.",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 215,
+      "job_reference": "4ee337d0a2a3da54e943edcb95559eec",
+      "original_id": null,
+      "original_title": "#Airflow",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 10,
+          "evidence": "10+ years of experience"
+        },
+        {
+          "minimum_years": 10,
+          "evidence": "10+ years"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3+ years"
+        }
+      ]
+    },
+    {
+      "input_index": 216,
+      "job_reference": "4864dce9a5fa9f4a814c810ccf19403d",
+      "original_id": null,
+      "original_title": "Data Analytics can open doors to multiple career paths. 📊",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 217,
+      "job_reference": "359f2447791df527209fd14ef9bddcac",
+      "original_id": null,
+      "original_title": "\"Data Engineer\" and \"DevOps Engineer\"",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 7,
+          "evidence": "7+ years"
+        },
+        {
+          "minimum_years": 7,
+          "evidence": "7+ years"
+        }
+      ]
+    },
+    {
+      "input_index": 218,
+      "job_reference": "64c0563688f4c0de81a4e2675e78e3b3",
+      "original_id": null,
+      "original_title": "Desk: +1 3072930843 Ext:4808",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 219,
+      "job_reference": "90f3bc4fa34f58c36757f3af47cc0472",
+      "original_id": null,
+      "original_title": "Hello Vendors!",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 220,
+      "job_reference": "66241f46e1e91f46e324e7814d8a84b8",
+      "original_id": null,
+      "original_title": "🤖 AI / ML Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 2,
+      "duplicates_reference": "383fbfbbd41eb9b7292c08c83916f01a"
+    },
+    {
+      "input_index": 221,
+      "job_reference": "f7e4edd4ac356f660687d261056d8465",
+      "original_id": null,
+      "original_title": "🔹 Network engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 0,
+      "duplicates_reference": "cc80da7d11308f40c0f8a14321dce66b"
+    },
+    {
+      "input_index": 222,
+      "job_reference": "e9802fd5b8702926bd0516c51e59d09b",
+      "original_id": null,
+      "original_title": "🚀 IMMEDIATE C2C IT CONSULTANT AVAILABILITY | USA",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 137,
+      "duplicates_reference": "3c4b0dd895f4f260ed8bb55a8a2a4a69"
+    },
+    {
+      "input_index": 223,
+      "job_reference": "faf7531b1fe66dcec4a44a34556db88e",
+      "original_id": null,
+      "original_title": "✅ Sr. Java developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 8,
+      "duplicates_reference": "13d97b91c3490c8bf43ee0c7b2fb1b29"
+    },
+    {
+      "input_index": 224,
+      "job_reference": "ad39ef91361f6c723a503df7226196a8",
+      "original_id": null,
+      "original_title": "✅ Sr. Java developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 8,
+      "duplicates_reference": "13d97b91c3490c8bf43ee0c7b2fb1b29"
+    },
+    {
+      "input_index": 225,
+      "job_reference": "d3b7930ffe36e5706f2f070f622d1bd6",
+      "original_id": null,
+      "original_title": "🔹 Open Positions:",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 17,
+      "duplicates_reference": "885a19005cd732489729e837e245611c"
+    },
+    {
+      "input_index": 226,
+      "job_reference": "e222380564d6a256816f933a49de7bac",
+      "original_id": null,
+      "original_title": "💼 Consultants Available Across Multiple Technologies:",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 198,
+      "duplicates_reference": "4f426b7c16a8648d46b91c3bb079adf9"
+    },
+    {
+      "input_index": 227,
+      "job_reference": "89d872d371c41966ffeb38726b010d24",
+      "original_id": null,
+      "original_title": "🔥 TODAY'S C2C / C2H HOTLIST — IMMEDIATE AVAILABILITY 🔥",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 228,
+      "job_reference": "307adbb00f90a038b2d088da0b8f64e6",
+      "original_id": null,
+      "original_title": "🔥 AVAILABLE IT CONSULTANTS – HOTLIST 🔥",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 229,
+      "job_reference": "95c865735e7e41f677ccca8e76930945",
+      "original_id": null,
+      "original_title": "BUSINESS ANALYST – 14+ Years | H1B | Open to Relocate",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 230,
+      "job_reference": "41bf25978571ea290a8b1734c3a1cf80",
+      "original_id": null,
+      "original_title": "🔁Know someone suitable? Tag them or share this post!",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "others",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 3,
+          "evidence": "3+ Years"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3+ Years"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3+ Years"
+        },
+        {
+          "minimum_years": 3,
+          "evidence": "3+ Years"
+        },
+        {
+          "minimum_years": 2,
+          "evidence": "2+ Years"
+        },
+        {
+          "minimum_years": 1,
+          "evidence": "1-5 Years"
+        },
+        {
+          "minimum_years": 1,
+          "evidence": "1-4 Years"
+        },
+        {
+          "minimum_years": 1,
+          "evidence": "1+ Years"
+        }
+      ],
+      "classification_reason": "Primary work is analytics, product management, business analysis or a mixed-role recruitment announcement, not data engineering."
+    },
+    {
+      "input_index": 231,
+      "job_reference": "6640543b3be51d9ea4edb3f2d6e93110",
+      "original_id": null,
+      "original_title": "🔁Know someone suitable? Tag them or share this post!",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 230,
+      "duplicates_reference": "41bf25978571ea290a8b1734c3a1cf80"
+    },
+    {
+      "input_index": 232,
+      "job_reference": "e422f379619ae1ebe6c1de61aea9e000",
+      "original_id": null,
+      "original_title": "Work Location: Karnataka (Bengaluru), India",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "others",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "Primary work is analytics, product management, business analysis or a mixed-role recruitment announcement, not data engineering."
+    },
+    {
+      "input_index": 233,
+      "job_reference": "e333a2d1a4a30f6d6ac8f36633de70d1",
+      "original_id": null,
+      "original_title": "📌 Job Details:🔹 Role: Data Analyst – Retail Industry",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "others",
+      "reason": "eligible_vacancy",
+      "experience_requirement": [
+        {
+          "minimum_years": 4,
+          "evidence": "Experience: 4+"
+        },
+        {
+          "minimum_years": 4,
+          "evidence": "Experience: 4+"
+        },
+        {
+          "minimum_years": 4,
+          "evidence": "4+ Years"
+        }
+      ],
+      "classification_reason": "Primary work is analytics, product management, business analysis or a mixed-role recruitment announcement, not data engineering."
+    },
+    {
+      "input_index": 234,
+      "job_reference": "7001a1bec813a04566a7da1bf8c61447",
+      "original_id": null,
+      "original_title": "This role sits within the",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "others",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "Primary work is analytics, product management, business analysis or a mixed-role recruitment announcement, not data engineering."
+    },
+    {
+      "input_index": 235,
+      "job_reference": "7f7ca125a81d90f8ded4bec8c184a0ff",
+      "original_id": null,
+      "original_title": "#Analyst",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "others",
+      "reason": "eligible_vacancy",
+      "experience_requirement": null,
+      "classification_reason": "Primary work is analytics, product management, business analysis or a mixed-role recruitment announcement, not data engineering."
+    },
+    {
+      "input_index": 236,
+      "job_reference": "d4024fa57cc1799d30e09d8d10a0173f",
+      "original_id": null,
+      "original_title": "Job Description:",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "mandatory_minimum_experience_above_4_years",
+      "experience_requirement": [
+        {
+          "minimum_years": 5,
+          "evidence": "5-10years of experience"
+        },
+        {
+          "minimum_years": 5,
+          "evidence": "5-10years"
+        }
+      ]
+    },
+    {
+      "input_index": 237,
+      "job_reference": "3eec6b2fb0a8aeb26d856bedd4e27f30",
+      "original_id": null,
+      "original_title": "#Analyst",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 235,
+      "duplicates_reference": "7f7ca125a81d90f8ded4bec8c184a0ff"
+    },
+    {
+      "input_index": 238,
+      "job_reference": "c12d6d6dc3f3945ff8756fe9436ad6c6",
+      "original_id": null,
+      "original_title": "Job Description:",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 236,
+      "duplicates_reference": "d4024fa57cc1799d30e09d8d10a0173f"
+    },
+    {
+      "input_index": 239,
+      "job_reference": "5397d45034cef8404c58ce16d120a0c0",
+      "original_id": null,
+      "original_title": "5️⃣ Optimization – Running queries on millions of rows without a timeout",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "job_seeker_or_non_hiring_post",
+      "experience_requirement": null
+    },
+    {
+      "input_index": 240,
+      "job_reference": "8ce3a4adbd7c355d494cef11a0fabd0d",
+      "original_id": null,
+      "original_title": "5️⃣ Optimization – Running queries on millions of rows without a timeout",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 239,
+      "duplicates_reference": "5397d45034cef8404c58ce16d120a0c0"
+    },
+    {
+      "input_index": 241,
+      "job_reference": "53379a17a6cb349790ede750b1e5f8a6",
+      "original_id": null,
+      "original_title": "♻️ Repost if you think more people should see this.",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "group": null,
+      "reason": "duplicate_ad",
+      "experience_requirement": null,
+      "duplicates_input_index": 201,
+      "duplicates_reference": "3fc3a30b39538fffa81f5509e0989df2"
+    }
+  ]
+}

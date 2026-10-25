@@ -1,0 +1,459 @@
+{
+  "name": "LinkedIn JobBot Master Orchestrator - Apply All (Fixed v2)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 12,
+              "triggerAtMinute": 30
+            }
+          ]
+        }
+      },
+      "id": "3d6f905d-171f-457a-ab6a-8d3f671ff0a0",
+      "name": "Daily Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -2320,
+        432
+      ],
+      "notesInFlow": true,
+      "notes": "Runs every day at 12:30 in Asia/Kolkata (workflow timezone). Change time to match your scraping schedule."
+    },
+    {
+      "parameters": {},
+      "id": "fc493a9a-d795-4426-a41e-2ad6cce0f51d",
+      "name": "Manual Test Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -2320,
+        624
+      ],
+      "notesInFlow": true,
+      "notes": "Use Execute Workflow to test without activating the schedule. WARNING: it still executes scraper and ChatGPT submission steps."
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5461da9f-9ea5-41aa-b19d-c4e3a551bb48",
+              "name": "send_emails",
+              "value": true,
+              "type": "boolean"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "c84eb31c-2291-40b4-8e6d-9a480795d888",
+      "name": "Workflow Options",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2096,
+        528
+      ],
+      "notesInFlow": true,
+      "notes": "Set send_emails=true ONLY after reviewing files/recipients and enabling JOBBOTS_ALLOW_OUTREACH=1 on the FastAPI host. False is the safe default."
+    },
+    {
+      "parameters": {
+        "url": "http://host.docker.internal:8000/health",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "fc02fc4c-cf4c-4b5d-97e5-d7ab4283b6d8",
+      "name": "FastAPI Health Check",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1872,
+        528
+      ],
+      "notesInFlow": true,
+      "notes": "If this fails, start FastAPI and ensure n8n Docker can access the Windows host at host.docker.internal:8000."
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8000/api/v1/scraper",
+        "options": {
+          "timeout": 7200000
+        }
+      },
+      "id": "2746fc99-82dc-43f4-ad20-de96951d7175",
+      "name": "1 - Scrape LinkedIn Jobs",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1648,
+        528
+      ],
+      "notesInFlow": true,
+      "notes": "POST with NO body. This blocks until the scraper subprocess ends, then verifies today's dated JSON exists. Do not retry automatically: repeated scrapes can duplicate work."
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8000/api/v1/job-grouping",
+        "options": {
+          "timeout": 1200000
+        }
+      },
+      "id": "7e6b8f7c-428d-4464-adf9-c56da079037f",
+      "name": "2 - Submit Job Grouping to ChatGPT",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1424,
+        528
+      ],
+      "notesInFlow": true,
+      "notes": "POST with NO body. Success means prompt submitted only; ChatGPT ZIP might still be generating. Avoid automatic retry of submission."
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8000/api/v1/grouping-download",
+        "options": {
+          "timeout": 1800000
+        }
+      },
+      "id": "1c94cbe6-23b3-45d5-962a-5e1f8facf647",
+      "name": "3 - Download Grouped JD ZIP",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -976,
+        528
+      ],
+      "notesInFlow": true,
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "notes": "Retries up to 5 total attempts with 10-minute gaps on 409/incomplete remote ZIP. API validates audit JSON, five JD files, and dated import. Stops if not ready after retries."
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8000/api/v1/cv-generator",
+        "options": {
+          "timeout": 1200000
+        }
+      },
+      "id": "ee4383f8-00b3-413e-98a0-68b763b9601a",
+      "name": "4 - Submit Four CV Requests",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -752,
+        528
+      ],
+      "notesInFlow": true,
+      "notes": "POST with NO body. Sends one request per role; complete means submitted, NOT ZIP generation complete. Preserve browser Chrome debugger on port 9222."
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8000/api/v1/cv-download",
+        "options": {
+          "timeout": 2400000
+        }
+      },
+      "id": "66fa684b-be12-4238-a4b1-a0f9d9f35a78",
+      "name": "5 - Download All Four CV ZIPs",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -304,
+        528
+      ],
+      "notesInFlow": true,
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 600000,
+      "notes": "Retries up to 5 total attempts, 10-minute gap. API validates four ZIPs and all 20 generated artifacts before 200 success. Does not send emails."
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "b281e56a-49a9-4a8f-b96b-c00291b3af90",
+              "leftValue": "={{ $('Workflow Options').first().json.send_emails }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "7022264f-72a9-419e-b019-df1ba40e7e81",
+      "name": "Send Emails Enabled?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -80,
+        528
+      ],
+      "notesInFlow": true,
+      "notes": "TRUE -> email-sender. FALSE -> finish with downloadable CVs ready. To enable, change Workflow Options/send_emails and allow outreach in FastAPI environment."
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8000/api/v1/email-sender",
+        "options": {
+          "timeout": 2400000
+        }
+      },
+      "id": "b7c37123-7cdf-43ff-a529-a82cc49c4707",
+      "name": "6 - Send Application Emails (OPTIONAL)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        144,
+        528
+      ],
+      "notesInFlow": true,
+      "notes": "External side effects. Only runs when Workflow Options send_emails=true AND Windows FastAPI has JOBBOTS_ALLOW_OUTREACH=1. Review job list and application emails first. Do not enable automatic retries."
+    },
+    {
+      "parameters": {
+        "content": "## JobBots n8n / synchronous FastAPI\n- No date or JSON body in any POST. FastAPI uses Windows local date.\n- **FastAPI startup**: `python -m uvicorn linkedin.linkedin_fastapi:app --host 127.0.0.1 --port 8000` (ensure n8n can reach it).\n- **Required Chrome**: debugger active on port 9222, logged into LinkedIn and ChatGPT.\n- Two ChatGPT submission calls **do not** wait for remote ZIP generation. Wait and downloader retries bridge the gap.\n- Defaults to **no emails**. To enable reviewed outreach, set `Workflow Options/send_emails=true` and `JOBBOTS_ALLOW_OUTREACH=1` in FastAPI environment.\n- HTTP request timeouts are deliberately long for synchronous tasks. If you are using reverse proxies, check their idle timeout.\n- If FastAPI requires `X-API-Key`, configure that header on all protected HTTP nodes.\n- Scraper and all steps recompute today in Windows. Run during the same local day (12:30 IST schedule).",
+        "height": 280,
+        "width": 1000,
+        "color": 5
+      },
+      "id": "de4d07cd-7144-4205-8f35-9106bf810479",
+      "name": "IMPORTANT - READ BEFORE ENABLING",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -2080,
+        192
+      ]
+    },
+    {
+      "parameters": {
+        "unit": "minutes"
+      },
+      "id": "ab6c0002-7e73-4492-8cbf-3e7b2e26e767",
+      "name": "Wait 5 Min for Job Grouping ZIP",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -1200,
+        528
+      ],
+      "webhookId": "6ebd2cbe-a170-4368-a67d-457a6fef2851",
+      "notesInFlow": true,
+      "notes": "Delays 15 minutes while ChatGPT works remotely. FastAPI submit completion does not mean the ZIP exists yet."
+    },
+    {
+      "parameters": {
+        "amount": 15,
+        "unit": "minutes"
+      },
+      "id": "ea082621-ab5e-4391-9ebf-71118d83e492",
+      "name": "Wait 15 Min for Four CV ZIPs",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -528,
+        528
+      ],
+      "webhookId": "b450c09a-9552-4d40-91d0-8bd695deb82e",
+      "notesInFlow": true,
+      "notes": "Delays 30 minutes while ChatGPT works remotely. FastAPI submit completion does not mean the ZIP exists yet."
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Daily Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Workflow Options",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual Test Trigger": {
+      "main": [
+        [
+          {
+            "node": "Workflow Options",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Workflow Options": {
+      "main": [
+        [
+          {
+            "node": "FastAPI Health Check",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "FastAPI Health Check": {
+      "main": [
+        [
+          {
+            "node": "1 - Scrape LinkedIn Jobs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 - Scrape LinkedIn Jobs": {
+      "main": [
+        [
+          {
+            "node": "2 - Submit Job Grouping to ChatGPT",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2 - Submit Job Grouping to ChatGPT": {
+      "main": [
+        [
+          {
+            "node": "Wait 5 Min for Job Grouping ZIP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3 - Download Grouped JD ZIP": {
+      "main": [
+        [
+          {
+            "node": "4 - Submit Four CV Requests",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4 - Submit Four CV Requests": {
+      "main": [
+        [
+          {
+            "node": "Wait 15 Min for Four CV ZIPs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5 - Download All Four CV ZIPs": {
+      "main": [
+        [
+          {
+            "node": "Send Emails Enabled?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Emails Enabled?": {
+      "main": [
+        [
+          {
+            "node": "6 - Send Application Emails (OPTIONAL)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "6 - Send Application Emails (OPTIONAL)": {
+      "main": [
+        []
+      ]
+    },
+    "Wait 5 Min for Job Grouping ZIP": {
+      "main": [
+        [
+          {
+            "node": "3 - Download Grouped JD ZIP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait 15 Min for Four CV ZIPs": {
+      "main": [
+        [
+          {
+            "node": "5 - Download All Four CV ZIPs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "793d3d71-6a34-4a50-a56f-ecdc79b29ddf",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "8a7fb01706ae1fd675980614dc167fbbbf7e9e5660b77379e70605d80bc0adaf"
+  },
+  "id": "dT18tiOZcIaV5umB",
+  "tags": [
+    {
+      "updatedAt": "2026-10-19T09:30:27.643Z",
+      "createdAt": "2026-10-19T09:30:27.643Z",
+      "id": "5OYFNHnkpVU5p5Vr",
+      "name": "linkedin"
+    },
+    {
+      "updatedAt": "2026-10-19T09:30:27.685Z",
+      "createdAt": "2026-10-19T09:30:27.685Z",
+      "id": "Eo0Mv3FdyYO2rXVs",
+      "name": "orchestration"
+    },
+    {
+      "updatedAt": "2026-10-19T09:30:27.668Z",
+      "createdAt": "2026-10-19T09:30:27.668Z",
+      "id": "dY4w0zhpDkSKMr05",
+      "name": "knowledge-base"
+    }
+  ]
+}

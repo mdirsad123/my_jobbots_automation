@@ -1,0 +1,232 @@
+# Role Group: AWS Data Engineer
+# Emails: Osman.m@neotechusa.com, opportunity@dtcinfotech.com, suresh.g@amazesysteminc.com, gaurav.sharma@zodiac-solutions.com, uanil@fireflypros.com, kayalvizhi@vysystems.com
+# postedbyurl: https://www.linkedin.com/in/mohammed-osman-7a8847143/, https://www.linkedin.com/in/girish-kumar-ba2305445/, https://www.linkedin.com/in/suresh-kumar-goswami-8aa6ba120/, https://www.linkedin.com/company/khatabook/
+# Jobs included: 8
+======================================================================
+
+## Job 1: Technology: AWS Data Engineering & Data Science | Osman
+Job reference: c0e01d319a6ad24ffad6d00a298c5833
+Posted By Profile: https://www.linkedin.com/in/mohammed-osman-7a8847143/
+
+Role : AWS Data Engineer with Data Science
+Location: Cambridge, MA
+Job Type: Contract
+Technology: AWS Data Engineering & Data Science
+We are looking for a hands-on AWS Data Engineer with Data Science expertise to build and maintain scalable cloud data pipelines and operationalize machine learning models.
+Key Responsibilities:
+• Design and develop scalable AWS data pipelines and data lakes.
+• Build and maintain feature stores for machine learning.
+• Develop and automate ML pipelines and workflows.
+• Bridge data engineering and data science to deploy production-ready machine learning solutions.
+Interested candidates: Please share your updated resume at
+Osman.m@neotechusa.com
+.
+#Hiring
+#AWS
+#DataEngineer
+#DataScience
+#MachineLearning
+#MLOps
+#CloudJobs
+#ContractJobs
+
+----------------------------------------------------------------------
+
+## Job 2: Preferred Location: | Employer not specified
+Job reference: a0b21199e955c3f2fb922981413674bd
+Posted By Profile: https://www.linkedin.com/in/girish-kumar-ba2305445/
+
+"Specialists, your next opportunity may be here. . We are looking for Data Engineer - Data Platforms-AWS specialist - apply now @ DTCInfotech!
+Python Fundamentals 2 Testing 3 Data Engineer (pandas, polars etc) 4 Scraping (Selenium, Beautiful Soup etc) 5 Airflow 6 Database 7 CI/CD 8 AI 9 Others (Git, PR, OS etc) 10 Leadership 11 Communication12Learning Attitude Data Engineer
+Primary Location: Tier I City, Preferable Pune
+Please share your updated profile with following details to Girish<
+opportunity@dtcinfotech.com
+>
+Experience:
+Current CTC :
+Expected CTC:
+Notice Period:
+Preferred Location:
+Note:Please do refer to your known circle who are actively looking for job change.
+We are looking for candidates who can quickly join, are available for in-person discussions and are comfortable working at client office.
+Thanks and Regards
+Girish<
+opportunity@dtcinfotech.com
+>"
+
+----------------------------------------------------------------------
+
+## Job 3: 📍 Location: Mason, OH (Onsite – 5 Days a Week) | Employer not specified
+Job reference: 6b0b848a2abf9c48cbfd1f32c9211357
+Posted By Profile: https://www.linkedin.com/in/suresh-kumar-goswami-8aa6ba120/
+
+📢 WE ARE HIRING – Data Engineer / ETL Developer
+📍 Location: Mason, OH (Onsite – 5 Days a Week)
+📄 Type: Contract
+🔹 Required Skills: Apache NiFi, PySpark, AWS Glue, Complex SQL, SQL Performance Tuning, MySQL, PostgreSQL, LAWS Document DB, Apache Kafka, ETL Development.
+📩 Interested candidates, please share your updated resume at
+suresh.g@amazesysteminc.com
+or via DM. 🔁 Please share with your network!
+#Hiring
+#DataEngineer
+#ETLDeveloper
+#ApacheNiFi
+#PySpark
+#AWSGlue
+#Kafka
+#SQL
+#PostgreSQL
+#MySQL
+#AWS
+#ContractJobs
+#OhioJobs
+#MasonOH
+.
+
+----------------------------------------------------------------------
+
+## Job 4: Data Engineer - Data Platform - AWS Location - HYD/BLR/Kol/Kochi | Employer not specified
+Job reference: 1e048144dae634973ef4b2b442ff8f25
+Posted By Profile: https://www.linkedin.com/in/girish-kumar-ba2305445/
+
+"Specialists, your next opportunity may be here. . We are looking for Data Engineer - Data Platforms-AWS specialist - apply now @ DTCInfotech!
+Data Engineer - Data Platform - AWS Location - HYD/BLR/Kol/Kochi
+Primary Location: Tier I City, Preferable Bangalore
+Please share your updated profile with following details to Girish<
+opportunity@dtcinfotech.com
+>
+Experience:
+Current CTC :
+Expected CTC:
+Notice Period:
+Preferred Location:
+Note:Please do refer to your known circle who are actively looking for job change.
+We are looking for candidates who can quickly join, are available for in-person discussions and are comfortable working at client office.
+Thanks and Regards
+Girish<
+opportunity@dtcinfotech.com
+>"
+
+----------------------------------------------------------------------
+
+## Job 5: Hire Type – Contract | Employer not specified
+Job reference: d4be92eee158d03bec950ee950eea2cf
+Apply URL: https://www.linkedin.com/groups/10529815/?q=highlightedFeedForGroups&highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7518014562600640513
+
+#Urgentjobopening
+Job Title – Sr. Databricks Engineer
+Hire Type – Contract
+Location – Wilmington, DE – 5 Days onsite
+Role Skillset – Must Have – Deep knowledge in Databricks amp; AWS eco-systems Delta Lake + Lake house architecture (Lake flow, Lake Base) PySpark/Scala Spark High volume Production-grade Databricks ELT/ETL engineering nbsp; Nice to have – Streaming/DLT experience ML Ops on Databricks Data Mesh architecture knowledge Advance cost/performance engineering
+Experience – Databricks amp; AWS data engineer
+#Databricks
+#AWS
+#data
+#Engineer
+#ETL
+#ELT
+#contract
+#c2c
+#benchsales
+#Vendorsupport
+#hotlists
+#c2cgooglegroups
+#benchsalesrecruiter
+#longtermcontract
+#c2cjobs
+Please share me your resume at
+gaurav.sharma@zodiac-solutions.com
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 6: 🔊 **Now Hiring: AWS Data Engineer ** | Employer not specified
+Job reference: 63c87e57680ce4ab552f43f830aeae57
+Apply URL: https://www.linkedin.com/groups/10529815/?q=highlightedFeedForGroups&highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7517994608140840960
+
+#W2
+#Hiring
+🔊 **Now Hiring: AWS Data Engineer **
+📍 **Location: Piscataway, NJ (3 Days Hybrid) ** - Locals only
+📧 **Email:**
+uanil@fireflypros.com
+***Visa: OPT, H4 EAD, GC, and Citizens only on W2
+Required Skills:
+Strong hands-on experience with Databricks, Python, and AWS Cloud.
+Experience with AWS Lambda, Amazon S3, and MongoDB.
+Proficiency in data engineering, ETL/ELT pipelines, data transformation, and integration.
+Working experience with Power BI; Tableau is an added advantage.
+Familiarity with GitHub, GitHub Actions, and CI/CD practices.
+Experience working in Agile/Scrum development teams.
+Strong coding, debugging, and problem-solving skills with a development-focused mindset.
+#AWSDataEngineer
+#DataEngineer
+#MongoBD
+#S3
+#Github
+#Python
+#ETL
+#DataBricks
+
+----------------------------------------------------------------------
+
+## Job 7: Trading / Finance Job Opportunity | Employer not specified
+Job reference: 14de087b167aae23fa3b9092aa8aa518
+Apply URL: https://www.linkedin.com/groups/10529815/?q=highlightedFeedForGroups&highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7517991690964471808
+
+Hi Connections, We do have job opportunity for following requirements,
+Senior/ Lead AWS Data Engineer - Arizona, Scottsdale or Omaha, LaVista, or Georgia, Atlanta - C2C - Onsite (Only Local)
+AI Data Engineer - Arizona, Scottsdale or Omaha, LaVista, or Georgia, Atlanta (Only Local)
+CCM Quadient - Remote - C2C
+Kindly share your profiles to
+kayalvizhi@vysystems.com
+
+----------------------------------------------------------------------
+
+## Job 8: Data Platform Engineer II | Employer not specified
+Job reference: d65ff6f847c8a86d1d2a9da9f18dd55b
+Posted By: Khatabook
+Posted By Profile: https://www.linkedin.com/company/khatabook/
+
+We’re Hiring | Data Platform Engineer II @
+Khatabook
+Are you passionate about building scalable data infrastructure, solving complex engineering challenges, and enabling data-driven decision-making?
+At
+Khatabook
+, we’re looking for a talented
+Data Platform Engineer II
+to join our team and help build reliable, secure, and cost-efficient data systems that power our products and business insights.
+What we’re looking for:
+🔹 3–7 years of experience in Data Engineering
+🔹 Strong proficiency in Python and Advanced SQL
+🔹 Hands-on experience with Apache Airflow and production data pipelines
+🔹 Experience with Snowflake / Amazon Redshift and AWS
+🔹 Knowledge of CDC, incremental data ingestion, Apache Spark, and Kafka
+🔹 Strong understanding of data quality, pipeline reliability, and performance optimisation
+✨ Experience with DBT, Kubernetes, and AI-ready data pipelines is a plus!
+📍
+Location:
+Bengaluru
+If you enjoy building robust data platforms and want to work on meaningful engineering challenges at scale, we’d love to hear from you!
+Tagging our Hiring Manager,
+Pankaj Pandey
+, to bring the right talent into the conversation!
+📩 Interested? Drop me a DM or share your profile in the comments.
+Know someone who would be a great fit? Tag them or share this post!
+#Hiring
+#DataEngineering
+#DataEngineer
+#Python
+#SQL
+#Snowflake
+#AWS
+#ApacheAirflow
+#Kafka
+#Spark
+#Khatabook
+#TechHiring
+…
+more
+
+----------------------------------------------------------------------

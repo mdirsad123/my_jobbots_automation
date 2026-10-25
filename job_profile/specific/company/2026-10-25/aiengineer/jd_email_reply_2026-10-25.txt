@@ -1,0 +1,27 @@
+To: Asthaaq.A@techedge-solution.com
+Subject: Application for Generative AI Engineer – Chennai
+
+Dear Hiring Team,
+
+I am applying for the Generative AI Engineer opening in Taramani, Chennai. I have 3+ years of experience as a Python and Data Engineer, with practical LLM API integration, prompt automation and RAG concepts alongside production backend and AWS data workflows.
+
+- Python, FastAPI/Flask, REST APIs, SQL, Pandas, and cloud-based automation.
+- AWS Lambda, S3, SQS, DynamoDB, Glue/PySpark and data pipeline integration.
+- Experience developing finance-document automation and complex data workflows, transferable to GenAI application development.
+
+I am interested in application-focused GenAI engineering. My experience with LangChain, LangGraph and agentic frameworks is not presented as production experience.
+
+Current CTC: INR 6,00,000 per annum (based on INR 50,000 per month contract compensation; subject to employer CTC convention)
+Expected CTC: Open to discussion
+Total / Relevant Experience: 3+ years / applied AI automation and backend integration
+Current Location: Please confirm before sending
+Notice Period / Last Working Day: Immediate to 15 days, subject to confirmation
+Position Applied For: Generative AI Engineer
+Chennai work-from-office availability: Please confirm before sending
+
+Please find my updated CV attached.
+
+Best regards,
+Md Irsad
++91-8409718735
+mdirsadtech7305@gmail.com

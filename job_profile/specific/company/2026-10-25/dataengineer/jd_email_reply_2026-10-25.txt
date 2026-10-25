@@ -1,0 +1,18 @@
+Subject: Application for Data Engineer
+
+Dear Hiring Team,
+
+I am interested in Data Engineer opportunities requiring Python, SQL, ETL pipelines, cloud data processing and reliable integrations. I have 3+ years of combined software development and data engineering experience, including AWS-based finance-data and serverless automation projects.
+
+- Developed Python/PySpark ETL workflows with AWS Glue, S3, Lambda and Step Functions, including validation and incremental processing.
+- Built REST API integrations and MySQL-backed applications, with SQL optimization and production troubleshooting.
+- Automated finance-document workflows with AWS SQS, DynamoDB and Oracle ORDS APIs.
+
+I would welcome the opportunity to discuss how this background aligns with the specific opening. I am available to join immediately or within 15 days, depending on project handover.
+
+Please find my updated CV attached.
+
+Best regards,
+Md Irsad
++91-8409718735
+mdirsadtech7305@gmail.com

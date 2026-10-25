@@ -19,6 +19,6 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 ngrok http 8000
 
 3. after open chrome and run below command only need to replace ngrok public url
-https://api.telegram.org/bot8494944485:AAHrAvgwtepTyPeUCi6Fgw8zsDiPPm99scI/setWebhook?url=https://7c07-152-59-144-244.ngrok-free.app/telegram&drop_pending_updates=true
+https://api.telegram.org/bot8494944485:AAHrAvgwtepTyPeUCi6Fgw8zsDiPPm99scI/setWebhook?url=https://6eb2-152-59-143-140.ngrok-free.app/telegram&drop_pending_updates=true
 
 4. and then run successfuly now send any message from bot then trigger api and run any function

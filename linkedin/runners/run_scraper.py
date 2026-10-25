@@ -14,8 +14,8 @@ sys.path.append(
 )
 
 from linkedin.services.scraper_service import scrape_feed_posts
-from linkedin.services.find_similar_jobs import group_and_save_roles
-from linkedin.services.copy_group_role_specific_data import copy_group_role_specific_data
+# from linkedin.services.find_similar_jobs import group_and_save_roles
+# from linkedin.services.copy_group_role_specific_data import copy_group_role_specific_data
 from utils.debbuger_port_driver import get_driver
 
 from datetime import datetime
@@ -51,34 +51,34 @@ def main():
             # Next, read that JSON and create role-wise grouped .txt files.
             print("Starting Role Grouping...")
 
-            grouped_summary = group_and_save_roles(
-                today_only=True
-            )
+            # grouped_summary = group_and_save_roles(
+            #     today_only=True
+            # )
 
             
-            if grouped_summary:
-                print(
-                    f"Role grouping completed. "
-                    f"Groups created: {len(grouped_summary)}"
-                )
+        #     if grouped_summary:
+        #         print(
+        #             f"Role grouping completed. "
+        #             f"Groups created: {len(grouped_summary)}"
+        #         )
 
-                for role, details in grouped_summary.items():
-                    print(
-                        f"  - {role}: "
-                        f"{details['job_count']} jobs -> "
-                        f"{details['file']}"
-                    )
-            else:
-                print(
-                    "Role grouping completed, but no groups "
-                    "were created."
-                )
+        #         for role, details in grouped_summary.items():
+        #             print(
+        #                 f"  - {role}: "
+        #                 f"{details['job_count']} jobs -> "
+        #                 f"{details['file']}"
+        #             )
+        #     else:
+        #         print(
+        #             "Role grouping completed, but no groups "
+        #             "were created."
+        #         )
 
-        today_date = datetime.now().strftime("%Y-%m-%d")
+        # today_date = datetime.now().strftime("%Y-%m-%d")
 
-        copy_group_role_specific_data(
-            folder_path=f"linkedin/output/grouped_jobs/{today_date}",
-        )
+        # copy_group_role_specific_data(
+        #     folder_path=f"linkedin/output/grouped_jobs/{today_date}",
+        # )
         # Easy Apply scraper has been removed from scraper_service.py.
         # Keep this mode only for CLI compatibility.
         if args.mode == "easy":

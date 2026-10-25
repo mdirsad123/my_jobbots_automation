@@ -12,14 +12,14 @@ job_profile/
         └── 2026_09_17/
             ├── aiengineer/
             ├── awsdataengineer/
-            ├── azuredataengineer/
+            ├── dataengineer/
             └── pythondeveloper/
 
 For every role folder that exists, the script automatically discovers:
 
 1. EMAIL_REPLY_TEXT_PATH
    - Prefer a .txt file whose filename contains "email_reply".
-   - The file must have "Subject:" as its first non-empty line.
+   - Subject may occur after To: or other header lines.
 
 2. JD file
    - Prefer an exact file named "jd.txt".
@@ -67,12 +67,21 @@ from email.message import EmailMessage
 from pathlib import Path
 from typing import Iterable, Sequence
 
+# Prevent Windows cp1252 consoles (including redirected FastAPI worker logs)
+# from crashing when printing emoji or Unicode symbols.
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        try:
+            _stream.reconfigure(errors="backslashreplace")
+        except (OSError, ValueError):
+            pass
+
 # ============================================================================
 # SENDER SETTINGS
 # ============================================================================
 
-EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS", "er.mdirshad44@gmail.com")
-EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD", "fjve kcqe edps zfub")  # Use Gmail App Password from environment variable
+EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS", "mdirsadtech7305@gmail.com")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD", "ippq cczp hwkn jyrl")  # Use Gmail App Password from environment variable
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 587
 SEND_DELAY_SECONDS = 2
@@ -89,6 +98,7 @@ RECIPIENT_NAME = "Recruiter"
 ROLE_FOLDERS = (
     "aiengineer",
     "dataengineer",
+    "awsdataengineer",
     "pythondeveloper",
 )
 
@@ -176,49 +186,17 @@ def find_email_reply_text(role_folder: Path) -> Path:
         if "email_reply" in path.stem.casefold()
     ]
 
-    # Validate candidate format: first non-empty line must be Subject: ...
-    named_valid = [
-        path
-        for path in named_candidates
-        if _first_non_empty_line(path).casefold().startswith("subject:")
-    ]
+    # Filename is sufficient; do not require Subject as the first line.
+    if len(named_candidates) == 1:
+        return named_candidates[0]
+    if len(named_candidates) > 1:
+        raise RuntimeError(f"Multiple email reply files: {[p.name for p in named_candidates]}")
 
-    if len(named_valid) == 1:
-        return named_valid[0]
-
-    if len(named_valid) > 1:
-        names = "\n".join(f"  - {path}" for path in named_valid)
-        raise RuntimeError(
-            "More than one email-reply .txt file was found. "
-            "Cannot safely choose one:\n"
-            f"{names}"
-        )
-
-    # Fallback: any non-JD text file whose first non-empty line is Subject:.
-    format_candidates = [
-        path
-        for path in txt_files
-        if "email_reply" not in path.stem.casefold()
-        and path.name.casefold() != "jd.txt"
-        and _first_non_empty_line(path).casefold().startswith("subject:")
-    ]
-
-    if len(format_candidates) == 1:
-        return format_candidates[0]
-
-    if len(format_candidates) > 1:
-        names = "\n".join(f"  - {path}" for path in format_candidates)
-        raise RuntimeError(
-            "More than one Subject-based email-reply .txt file was found. "
-            "Rename the intended file to include 'email_reply':\n"
-            f"{names}"
-        )
-
-    raise FileNotFoundError(
-        "Could not find the email-reply text file in "
-        f"{role_folder}. Expected a .txt file containing 'email_reply' "
-        "whose first non-empty line starts with 'Subject:'."
-    )
+    # A simple fallback when the generated filename differs.
+    fallback = [p for p in txt_files if "reply" in p.stem.casefold()]
+    if len(fallback) == 1:
+        return fallback[0]
+    raise FileNotFoundError(f"Email reply TXT not found or ambiguous in {role_folder}")
 
 
 # ============================================================================
@@ -346,43 +324,28 @@ def extract_recipient_emails_from_jd(jd_path: Path) -> list[str]:
 # ============================================================================
 
 def find_cv_pdf(role_folder: Path) -> Path:
+    """Prefer the new stable CV filename, including the correct `irsad` spelling."""
     pdf_files = _all_files_with_suffix(role_folder, ".pdf")
-
-    if not pdf_files:
-        raise FileNotFoundError(
-            f"No PDF files found in role folder: {role_folder}"
-        )
-
-    cv_candidates = [
-        path
-        for path in pdf_files
-        if "cv" in path.stem.casefold()
-    ]
-
-    if len(cv_candidates) == 1:
-        return cv_candidates[0]
-
-    if len(cv_candidates) > 1:
-        preferred = [
-            path
-            for path in cv_candidates
-            if "md_irshad_cv" in path.stem.casefold()
-        ]
-
-        if len(preferred) == 1:
-            return preferred[0]
-
-        names = "\n".join(f"  - {path}" for path in cv_candidates)
-        raise RuntimeError(
-            "More than one PDF filename contains 'cv'. "
-            "Cannot safely choose the attachment:\n"
-            f"{names}"
-        )
-
-    names = "\n".join(f"  - {path}" for path in pdf_files)
-    raise FileNotFoundError(
-        "PDF files were found, but none has 'cv' in the filename.\n"
-        f"Available PDFs:\n{names}"
+    candidates = [p for p in pdf_files if "cv" in p.stem.casefold()]
+    if not candidates:
+        raise FileNotFoundError(f"No CV PDF was found in {role_folder}")
+    role = role_folder.name.casefold()
+    for wanted in (
+        f"md_irsad_cv_{role}",
+        "md_irsad_cv",
+        f"md_irshad_cv_{role}",  # older alternate spelling
+        "md_irshad_cv",
+    ):
+        matches = [p for p in candidates if p.stem.casefold() == wanted]
+        if len(matches) == 1:
+            return matches[0]
+        if len(matches) > 1:
+            raise RuntimeError(f"Ambiguous CV filenames: {matches}")
+    if len(candidates) == 1:
+        return candidates[0]
+    raise RuntimeError(
+        "More than one CV PDF exists; expected the stable role-specific "
+        f"md_irsad_cv_{role}.pdf. Found: {[p.name for p in candidates]}"
     )
 
 
@@ -442,43 +405,29 @@ def load_email_reply(file_path: str | Path) -> tuple[str, str]:
 
     lines = text.splitlines()
 
-    first_content_index = next(
-        (
-            index
-            for index, line in enumerate(lines)
-            if line.strip()
-        ),
-        None,
-    )
-
-    if first_content_index is None:
-        raise ValueError(
-            f"Email reply text file is empty: {path}"
-        )
-
-    subject_line = lines[first_content_index].strip()
-
-    if not subject_line.casefold().startswith("subject:"):
-        raise ValueError(
-            "First non-empty line must start with 'Subject:' in "
-            f"{path}"
-        )
-
-    subject = subject_line.split(":", 1)[1].strip()
-
+    # Permit leading To:, blank lines, and arbitrary headers.
+    # Address from To: is informational; actual recipients come from the JD.
+    subject = ""
+    subject_index = None
+    for index, line in enumerate(lines):
+        match = re.match(r"^\s*(?:\*\*)?Subject\s*:\s*(.*?)(?:\*\*)?\s*$", line, re.IGNORECASE)
+        if match:
+            subject = match.group(1).strip()
+            subject_index = index
+            break
     if not subject:
-        raise ValueError(
-            f"Subject is empty in email reply text file: {path}"
-        )
+        subject = "Job Application"
 
-    body = "\n".join(
-        lines[first_content_index + 1 :]
-    ).strip()
-
+    # Strip leading delivery headers, never leak an embedded To: line into body.
+    if subject_index is not None:
+        body_lines = lines[subject_index + 1:]
+    else:
+        body_lines = lines[:]
+    while body_lines and (not body_lines[0].strip() or re.match(r"^\s*(?:To|From|Cc|Bcc)\s*:", body_lines[0], re.I)):
+        body_lines.pop(0)
+    body = "\n".join(body_lines).strip()
     if not body:
-        raise ValueError(
-            f"Email body is empty in email reply text file: {path}"
-        )
+        raise ValueError(f"Email body is empty: {path}")
 
     # Force the first Dear ... greeting to address Recruiter.
     greeting_pattern = re.compile(
@@ -655,11 +604,11 @@ def send_all_emails(
                     attachment_paths=attachment_paths,
                 )
 
-                # server.send_message(
-                #     msg,
-                #     from_addr=EMAIL_ADDRESS,
-                #     to_addrs=[email],
-                # )
+                server.send_message(
+                    msg,
+                    from_addr=EMAIL_ADDRESS,
+                    to_addrs=[email],
+                )
 
                 sent_count += 1
                 print(

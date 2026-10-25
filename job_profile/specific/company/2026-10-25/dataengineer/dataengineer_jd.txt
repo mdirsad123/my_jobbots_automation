@@ -1,0 +1,1536 @@
+# Role Group: Data Engineer
+# Emails: gayathri@intellisoftsystems.us, juhi.p@amazesystemsinc.com, mahatoisha61@gmail.com, raj.brothersconsultingllc@gmail.com, vaibhav.mhaske@tissatech.com, sharon@uniteditinc.com, hr@orogoo.com, opportunity@dtcinfotech.com, rifawara@gmail.com, pooja.patil@techknomatic.com, anitk@acestackllc.com, Naveen@arkhyatech.com, Kifayathullah@datamaxis.net, rajeev@javentechnologies.com, khalid@aasthaconsulting.com, ashok@sar-tech.net, tanishamandal75@gmail.com, harshitdwivedib@gmail.com, surya@ividtek.com, shruti@kanakits.com, aadarsh@tekshapers.com, rahber@nexivainc.com, recruitment@gvtechsystems.com, priya@vergilremnant.com, saikiran.chinnamallu@tachyontech.com, Mamoon.akhtar@gvrinfotek.com, vali@cactusits.com, jaisna.james@zeero.us, pushpalatha_bk@bluerose-tech.com, Ramya@nexoratechinc.com, abirami@blytheinfo.com, shalini@blytheinfo.com, azizpasha@cactusits.com, shailaja.vejendla@teamlease.com, pragya@gvrinfotek.com
+# postedbyurl: https://www.linkedin.com/in/vinay-veluswamy-43b45020/, https://www.linkedin.com/in/ashutakaul/, https://www.linkedin.com/in/diptimayee-swain-94a882230/, https://www.linkedin.com/in/arshlanahmed01/, https://www.linkedin.com/in/gayathri-uchuluri/, https://www.linkedin.com/in/isha-mahato-62207440b/, https://www.linkedin.com/in/datastack-institute-a03634425/, https://www.linkedin.com/in/pandhari-mhaske-0aa2002b8/, https://www.linkedin.com/in/rabal-setia-0a180a2a0/, https://www.linkedin.com/in/girish-kumar-ba2305445/, https://www.linkedin.com/in/misbah-batool-690680343/, https://www.linkedin.com/in/lakshmi-padmanabhan-a22216180/, https://www.linkedin.com/in/rajbir-singh-5b387b30/, https://www.linkedin.com/in/naveen-kumar-07418b221/, https://www.linkedin.com/in/kifayathullah-a-k-b82a9a2b7/, https://www.linkedin.com/in/rajeev-z/, https://www.linkedin.com/in/ashharkhalid02/, https://www.linkedin.com/in/ashok-reddy-dantla-38ba97141/, https://www.linkedin.com/in/trisha-mandal-864985431/, https://www.linkedin.com/in/harshit-dwivedi0779/, https://www.linkedin.com/in/dammuluri-suryanarayana-917807390/, https://www.linkedin.com/in/lavanya-k-559171225/, https://www.linkedin.com/in/neeraj-mba-hr/, https://www.linkedin.com/in/saikiranchinnamallu/, https://www.linkedin.com/in/mamoon-akhtar-072b03316/, https://www.linkedin.com/in/shubham-atre-a34b9a20a/, https://www.linkedin.com/company/cactus-it-solutions/, https://www.linkedin.com/in/jaisnajames/, https://www.linkedin.com/in/pushpa-keshavamurthy-678b76111/, https://www.linkedin.com/in/sameer-baig-677b76228/, https://www.linkedin.com/in/mohammed-nadeem-607b22148/, https://www.linkedin.com/in/shailaja-vejendla-3039ab214/, https://www.linkedin.com/in/pragya-singh-8908a9276/
+# Jobs included: 45
+======================================================================
+
+## Job 1: Databricks Data Engineers (Verified job) | Databricks Data Engineers
+Job reference: 97dc11ca5f4fb64f0141d5776f24d4c2
+Apply URL: https://www.linkedin.com/jobs/view/4480219662/
+Posted By Profile: https://www.linkedin.com/in/vinay-veluswamy-43b45020/
+
+🚀 We're Hiring | Databricks Data Engineer at 7Dxperts!
+Are you passionate about Data Engineering and building scalable, high-performance data solutions?
+7Dxperts is looking for skilled Databricks Data Engineers to join our growing team!
+
+----------------------------------------------------------------------
+
+## Job 2: Data Engineer | ThoughtLabs Belgium
+Job reference: 52375dea015ace5692a23e5a0f27ce14
+Apply URL: https://www.linkedin.com/jobs/view/4480248081/
+Posted By Profile: https://www.linkedin.com/in/ashutakaul/
+
+🚀 We’re Hiring: Senior Data Engineer – Snowflake | dbt | AI
+📍 Location: Arendonk, Belgium
+🏢 Work Model: Hybrid – 2 days/week onsite
+💼 Contract: B2B
+Key Skills:
+Strong hands-on experience in Data Engineering
+Expertise in Snowflake, dbt, Advanced SQL, and AI
+Data modelling and data integration from multiple sources
+Knowledge of Git, CI/CD, code reviews, and automated data quality testing
+Nice to Have: SAP S/4HANA, Python, Microsoft Fabric, Power BI, Apache Iceberg, or AI-driven semantic layers.
+Looking for a senior professional who takes ownership, thinks critically, and communicates effectively with business stakeholders.
+📩 Interested? Feel free to DM me or share your CV!
+#Hiring
+#DataEngineering
+#Snowflake
+#dbt
+#AI
+#B2B
+#BelgiumJobs
+
+----------------------------------------------------------------------
+
+## Job 3: Big Data Developer (Verified job) | Big Data Developer
+Job reference: 79bf5df88a44475f565aca6f75b1f644
+Apply URL: https://www.linkedin.com/jobs/view/4480229058/
+Posted By Profile: https://www.linkedin.com/in/diptimayee-swain-94a882230/
+
+Greetings from TCS!
+Job Title: Big Data Engineer
+Experience Range: 04 to 15 yrs
+Work Location: TCS-Chennai, Bangalore,Hyderabad
+Mode of Interview: Weekend Virtual Interview
+Date of Interview: 24th Oct,2026
+
+----------------------------------------------------------------------
+
+## Job 4: Azure Data Engineer | Deloitte
+Job reference: e8ffd411e9994aebcdc27f8191336e03
+Apply URL: https://www.linkedin.com/jobs/view/4459926686/
+Posted By Profile: https://www.linkedin.com/in/arshlanahmed01/
+
+Data Engineer
+Requirements added by the job poster
+• 2+ years of work experience with Azure Data Lake
+
+----------------------------------------------------------------------
+
+## Job 5: 💼 Job Title: Data Engineer | Employer not specified
+Job reference: 311dd987149393573ec7e753b55a3597
+Posted By Profile: https://www.linkedin.com/in/gayathri-uchuluri/
+
+🚀 WE ARE HIRING: Data Engineer | Dallas, TX (Onsite)
+💼 Job Title: Data Engineer
+📍 Location: Dallas, TX (Onsite)
+🏢 Work Mode: Onsite
+🛂 Visa: All visa types accepted
+We are seeking an experienced Data Engineer with strong healthcare domain experience to design, develop, and maintain scalable data processing solutions. The ideal candidate will have hands-on expertise in Python, PySpark, AWS cloud services, and SQL, along with experience working with healthcare data and building reliable ETL/ELT pipelines.
+📩 Interested candidates: Please share your updated resume
+gayathri@intellisoftsystems.us
+or connect with me for more details.
+🔑 Primary Skills:
+✅ Strong experience with Python
+✅ Hands-on experience with PySpark
+✅ AWS cloud services and data engineering
+✅ Strong SQL skills
+✅ ETL/ELT pipeline development
+#Hiring
+#DataEngineer
+#Python
+#PySpark
+#AWS
+#SQL
+#ETL
+#DataEngineering
+#DataAnalytics
+#DataWarehouse
+#DallasJobs
+#OnsiteJobs
+
+----------------------------------------------------------------------
+
+## Job 6: Location: Remote | Employer not specified
+Job reference: 283a493f8075985df302c99086b8a9f5
+Apply URL: https://www.linkedin.com/groups/44194/?q=highlightedFeedForGroups&highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7518023528617533440
+
+Job Title: Snowflake Data Engineer (Banking /Finance domain )
+Location: Remote
+Job Description:
+We are looking for an experienced Snowflake Data Engineer with strong hands-on experience in Snowflake, PySpark, and Python to develop and maintain data pipelines.
+Key Responsibilities:
+Design, develop, and maintain data pipelines using Snowflake.
+Develop ETL/ELT processes for data integration and transformation.
+Write Python scripts and PySpark jobs for large-scale data processing.
+Write and optimize complex SQL queries.
+Perform data validation, troubleshooting, and performance tuning.
+Work with cross-functional teams to deliver reliable data solutions.
+#SnowflakeDataEngineer
+#Snowflake
+#PySpark
+#Python
+#SQL
+#ETL
+#ELT
+#DataEngineering
+#DataPipelines
+#DataWarehouse
+#DataIntegration
+#DataTransformation
+#PerformanceTuning
+E:
+juhi.p@amazesystemsinc.com
+
+----------------------------------------------------------------------
+
+## Job 7: 📍 Locations: Dallas, TX | Austin, TX | Chicago, IL 🇺🇸 | Employer not specified
+Job reference: 5d13e9a96e6dc00276f345a0da31e44f
+Posted By Profile: https://www.linkedin.com/in/isha-mahato-62207440b/
+
+📊 WE’RE HIRING — DATA ENGINEER
+📍 Locations: Dallas, TX | Austin, TX | Chicago, IL 🇺🇸
+Visa Status:
+H1B
+F1 OPT
+STEM OPT
+OPT-EAD
+CPT
+F1
+💼 Role: Data Engineer / Data Pipeline Development / Data Infrastructure Opportunities
+We’re looking for technology-driven candidates interested in data infrastructure, data processing, and building reliable pipelines that support analytics and business intelligence.
+🔹 Designing and maintaining data pipelines
+🔹 Collecting, transforming, and processing large datasets
+🔹 Working with SQL, Python, and database technologies
+🔹 Building ETL/ELT workflows for data integration
+🔹 Improving data quality, reliability, and performance
+🔹 Collaborating with data analysts, data scientists, and engineering teams
+🎓 STEM / International Students: Candidates with relevant STEM backgrounds are encouraged to apply, subject to applicable work-authorization requirements.
+📩 Interested?
+Please share your updated Resume at:
+📧 [
+mahatoisha61@gmail.com
+]
+🚀 Take your Data Engineering career to the next level in the USA!
+#DataEngineer
+#DataEngineering
+#BigData
+#SQL
+#Python
+#TechJobsUSA
+#USJobs
+#STEMJobs
+#STEMOPT
+#InternationalStudents
+#Hiring
+#DallasJobs
+#AustinJobs
+#ChicagoJobs
+
+----------------------------------------------------------------------
+
+## Job 8: Job Title:- Data Engineer | Employer not specified
+Job reference: 53a06424cdfd430c4eababda78d37b78
+Apply URL: https://www.linkedin.com/groups/10472901/?q=highlightedFeedForGroups&highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7517975879541657601
+
+Hi,
+We have an urgent job opening for Data Engineer _______ New York City, NY( Onsite) Need Local Please send the updated resume if you find comfortable for this position.
+Job Title:- Data Engineer
+Location: New York City, NY( Onsite) Need Local
+Duration:-  Long Term Contract
+Need Local Candidate Face to face Interview
+Industry: Banking & Financial Services
+Job Description:
+We are looking for an experienced Data Engineer with strong programming skills in Python, PySpark, and Java/Scala. Candidates must have experience working with banking or financial services clients and be available for a face-to-face interview in New York or New Jersey.
+Required Skills:
+Python
+PySpark
+Java / Scala
+Data Engineering and Data Processing
+Banking & Financial Services domain experience
+Strong problem-solving and analytical skills
+Note: Only local candidates from New York or New Jersey will be considered. F2F interview is mandatory. Please share me updated resume at:-
+raj.brothersconsultingllc@gmail.com
+
+----------------------------------------------------------------------
+
+## Job 9: Hello Folks, | Employer not specified
+Job reference: d9901d40fa98ea4e727e858199bbd2fe
+Apply URL: https://www.linkedin.com/groups/14208311/?q=highlightedFeedForGroups&highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7517994749186985984
+
+Hello Folks,
+We are looking for candidates for an SAP Data Engineer opportunity.
+Role: SAP Database Engineer
+Location: Lisle, IL
+Eligible Visa Status: GC, GC EAD, H4 EAD, USC
+Required Skills: Syniti, SAP ERP, Data Migration, SAP S/4HANA, PeopleSoft, Baan
+📩 Interested candidates can share their updated resumes at:
+vaibhav.mhaske@tissatech.com
+Please feel free to share this opportunity with anyone who might be a good fit.
+#Hiring
+#SAPDataEngineer
+#SAPERP
+#DataMigration
+#Syniti
+#S4HANA
+#PeopleSoft
+#Baan
+#USJobs
+
+----------------------------------------------------------------------
+
+## Job 10: 🚀 Data Engineer Opportunity | Aptean | Employer not specified
+Job reference: 2b98b033f07836852536035da5661005
+Apply URL: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FgkA3ugex&urlhash=okUE&mt=oxFFL0Dc5Wta6R6mzAs3QLXrmqLKUFiLevKQUjIhg-cxxpmtfKEyDKa8w6rJsEBqQ0sf3pJ5Bi5QjeDxi0uA8CH6t8mDKcGriPniNpQW0ZyXLmbY2dVCRjIGwg&isSdui=true
+Posted By Profile: https://www.linkedin.com/in/datastack-institute-a03634425/
+
+‼️Urgent
+🚀 Data Engineer Opportunity | Aptean
+Looking for your next opportunity in Data Engineering? 💻
+This role is for professionals with 2–5 years of experience in modern data platforms and data pipeline development.
+🔥 Key skills highlighted:
+🔹 Microsoft Fabric — Pipelines, Dataflows Gen2 & Notebooks
+🔹 Data Warehousing & Lakehouse Architecture
+🔹 ETL/ELT Pipeline Development
+🔹 Medallion Architecture — Bronze, Silver & Gold
+🔹 Delta Lake / OneLake Concepts
+🔹 Distributed Data Pipelines & Data Modeling
+📌 Explore the job description and apply here:
+🔗
+https://lnkd.in/gkA3ugex
+👉 Follow me for more Data Engineer jobs, remote opportunities, and career updates!
+🔁 Share this post with your network to help fellow data engineers discover new opportunities.
+Let's grow together! 🚀
+#DataEngineering
+#MicrosoftFabric
+#RemoteJobs
+#Hiring
+#DataStackInstitute
+
+----------------------------------------------------------------------
+
+## Job 11: Hello Folks | Employer not specified
+Job reference: 29a76f5bae854bc0654276e5c31aed0a
+Posted By Profile: https://www.linkedin.com/in/pandhari-mhaske-0aa2002b8/
+
+Hello Folks
+Urgent Hiring for Sap Data Engineer if anyone Might be interested can share Resume on below Email
+Role :SAP Data Migration
+Location :Lisle Il
+Visas:H4Ead,GCEad who can work on W2
+Email ID :
+vaibhav.mhaske@tissatech.com
+skills :Data Migration,Sap 4hana,Syniti
+
+----------------------------------------------------------------------
+
+## Job 12: 📍 Location: Dallas, TX / Remote (EST/CST Time Zones) | Employer not specified
+Job reference: fa201b407a3a47123067c63ff3d29ae6
+Apply URL: https://www.linkedin.com/groups/10529815/?q=highlightedFeedForGroups&highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7517957726853902336
+
+📢 WE’RE HIRING: Data Engineer
+📍 Location: Dallas, TX / Remote (EST/CST Time Zones)
+💼 Employment Type: Full-Time
+🇺🇸 Work Authorization: GC / USC Only
+We are looking for an experienced Data Engineer with strong Python, SQL, and multimodal data processing expertise to build scalable data pipelines for AI training datasets.
+📩 Interested candidates, please share your updated resume to
+sharon@uniteditinc.com
+#Hiring
+#DataEngineer
+#DataEngineering
+#Python
+#SQL
+#MultimodalData
+#AI
+#MachineLearning
+#DataPipelines
+#DallasTX
+#RemoteJobs
+#FullTimeJobs
+#USC
+#GreenCard
+
+----------------------------------------------------------------------
+
+## Job 13: hr@orogoo.com.Email | Employer not specified
+Job reference: 4c27e6dfa3b8b02855901e8b15c2c085
+Posted By Profile: https://www.linkedin.com/in/rabal-setia-0a180a2a0/
+
+We’re Hiring | Snowflake Data EngineerWe’re looking for a Snowflake Data Engineer with strong SQL, data pipeline and data modeling skills.Experience: 2–4 yearsLocation: Pune, Bangalore or GurgaonWork arrangement: One month onsiteAvailability: Immediate joiners preferredRequired skills:• Snowflake• SQL• ETL/ELT pipeline development• Data modeling• PythonInterested candidates can send their updated CV to
+hr@orogoo.com.Email
+subject: Application – Snowflake Data EngineerPlease include your relevant experience, current location and joining availability.
+#Hiring
+#Snowflake
+#DataEngineer
+#SQL
+#Python
+#DataEngineering
+#ITJobs
+
+----------------------------------------------------------------------
+
+## Job 14: Primary Location:Tier I City, Preferable Bangalore | Employer not specified
+Job reference: 7d8b6c2a0854480fbbcff68677eb2b22
+Posted By Profile: https://www.linkedin.com/in/girish-kumar-ba2305445/
+
+"Here is an opportunity worth a closer look. We are looking for Data Engineer - Data Integration specialist - apply now @ DTCInfotech!
+Candidate should have hands-on development and architecture design experience with Talend. Experience with Talend Data Integration using ESB Hands-on experience in core java and RESTFUL services. Hands-on experience in designing and creating jobs , routes Experience in Orchestration of Talend jobs Experience in SOAP/REST web services implementation in Talend Should possess hands on experience in Design, Development and CI/CD release. Experience in developing transformations with different file formats like Positional, JSON, XML, CSV, Flat-file Experience in working with Database components in Talend like Oracle, MySQL etc. Knowledge of various normalization techniques, Joins, Indexes Knowledge of source code repositories like svn, git etc.Datastage experience is also needed.
+Primary Location:Tier I City, Preferable Bangalore
+Please share your updated profile with following details to Girish<
+opportunity@dtcinfotech.com
+>
+Experience:
+Current CTC :
+Expected CTC:
+Notice Period:
+Preferred Location:
+Note:Please do refer to your known circle who are actively looking for job change.
+We are looking for candidates who can quickly join, are available for in-person discussions and are comfortable working at client office.
+Thanks and Regards
+Girish<
+opportunity@dtcinfotech.com
+>"
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 15: AVAILABLE FOR CANDIDATES BASED IN USA | Employer not specified
+Job reference: 4ab24f46897489dcdd564848dc5d1c15
+Posted By Profile: https://www.linkedin.com/in/misbah-batool-690680343/
+
+⚙️ Data Engineer — Hiring for US Opportunities
+AVAILABLE FOR CANDIDATES BASED IN USA
+✅ Python and SQL
+✅ ETL / Data Pipelines
+✅ Spark / Kafka
+✅ Snowflake / Databricks
+✅ AWS / Azure / GCP
+📍 Remote / Hybrid / Onsite — USA
+📩 Send your resume to
+rifawara@gmail.com
+Mandatory details with resume :
+Full Name | Visa Status | Current Location
+#DataEngineer
+#ETL
+#Snowflake
+#Databricks
+#USVisa
+#ITjobs
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 16: Location: Pune | Employer not specified
+Job reference: f1712f78fcc8c3e71f729ea07d7d35b7
+Apply URL: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2Fgt3YDESb&urlhash=-hWN&mt=O3vgL2uZyZXh4-m60BrcPqQyiTeBsBQ8EkND0SMUXcKWS_9oCrzqQZaQ6AoZetlLJhMzpUKPrT8CF5_NNrI-dwW75hIYNQ4bC83ovr_aXwVuhr8dQfazC9JFow&isSdui=true
+Posted By Profile: https://www.linkedin.com/in/lakshmi-padmanabhan-a22216180/
+
+We’re Hiring: Snowflake Data Engineer
+Location: Pune
+Experience: 2+ years
+Mandatory skills: Snowflake, SQL, ETL/ELT, data modeling, and Python.
+Share your resume at:
+pooja.patil@techknomatic.com
+.
+Please like , comment and share this post so that it can reach out to needy people in your circle.
+Connect and Follow me for more updates.
+Join our WhatsApp group to explore more opportunities on QA Jobs.
+https://lnkd.in/gt3YDESb
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 17: 📍 Location: Dallas, TX (Onsite) | Employer not specified
+Job reference: c2521ef29fba43c79de14e6535309902
+Posted By: Rajbir Singh
+Posted By Profile: https://www.linkedin.com/in/rajbir-singh-5b387b30/
+
+🚀 We’re Hiring: Lead Data Engineer
+Are you an experienced Data Engineer ready to take the lead on exciting data engineering initiatives? Join our team and take the next step in your career!
+📌 Role: Lead Data Engineer
+📍 Location: Dallas, TX (Onsite)
+💼 Employment Type: Full-Time
+📩 Interested candidates: Please share your updated resume at
+anitk@acestackllc.com
+.
+Know someone who might be a great fit? Feel free to share this opportunity with your network!
+#Hiring
+#LeadDataEngineer
+#DataEngineering
+#FullTimeJobs
+#DallasTX
+#JobOpportunity
+#NowHiring
+#Fulltime
+#USC
+#GC
+#Greencard
+#Permanentresidence
+#Fulltime
+#USjob
+USITjob
+#Immedaitejoiner
+#share
+#updatedcv
+#resume
+Rajbir Singh
+Vivek Pharswan
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 18: 📍 Location: MTV, CA (Onsite) | Employer not specified
+Job reference: 265e7380be498836b43a81e90ed83aa7
+Posted By Profile: https://www.linkedin.com/in/naveen-kumar-07418b221/
+
+Are you experienced Data Engineer with Scala 2.x looking to take on a critical role in a high-impact environment
+📩 DM for or share your profile at
+Naveen@arkhyatech.com
+✅ Role: Data Engineer with Scala 2.x
+📍 Location: MTV, CA (Onsite)
+Key Responsibilities:
+Scala 2.x (Functional Programming experience) Hands on experience with SQL GCP / Google Cloud (Pub sub / Dataflow / Big Query) (Nice to have) IDL / Thrift / Finagle knowledge / experience
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 19: Location: IL (Remote)📍 | Employer not specified
+Job reference: 43825ad7c1921b0c2d9267b3fba24d20
+Posted By Profile: https://www.linkedin.com/in/kifayathullah-a-k-b82a9a2b7/
+
+We are actively looking Data Engineer on in our direct Clients team in a IL (Remote) work model 📍
+Requirement:
+Position: Data Engineer
+Location: IL (Remote)📍
+Skill require:
+📌ETL Development
+📌Informatica power center
+📌Azure
+📌Azure data factory(ADF)
+📌Data Bricks
+📌Teradata
+📌Teradata Loader Utilities
+📌Python for Data engineering/Automation
+📌Spark/PySpark
+📌SQL
+📌Snowflake
+If you have the required skills please share your updated resume at
+Kifayathullah@datamaxis.net
+📧
+10+ experience candidate We can work on (C2C, W2 , 1099)
+📎 Lets build stronger Networks together!
+Would like apply for this Position kindly send the message. Additionally, feel free to connect with me here on LinkedIn.
+Please do follow AB2 Consulting, Inc. amp; DATAMAXIS, Inc for new C2C roles.
+Kifayathullah
+US IT Recruiter.
+#openfornewopportunities
+#activelylookingforjobs
+#azure
+#benchsales
+#C2C
+#lead
+#cloud
+#salesrecruiter
+#longtermcontract
+#hybrid
+#ITHiring
+#TechOpenings
+#contract
+#DetroitJobs
+#Recruiting
+#ITRecruiting
+#Benchsalesrecruiter
+#Directclient
+#Remote
+#WorkfromHome
+#strongSQL
+#ETLdeveloper
+#dataengineer
+#Informatica
+#ImmediateJoiner
+#datamaxis
+#DirectClient
+
+----------------------------------------------------------------------
+
+## Job 20: : Data Engineer / Databricks Engineer | Employer not specified
+Job reference: 5e11627bbb517b6789c0089c5ca92b21
+Posted By Profile: https://www.linkedin.com/in/rajeev-z/
+
+#Hiring
+: Data Engineer / Databricks Engineer
+Location: Eagan, MN- Relocation considered
+Contract: CTH
+Required Skills:
+Databricks Platform Administration & Governance
+Apache Spark, PySpark & Delta Lake
+Data Pipeline Architecture & ETL/ELT
+Platform Cost Optimization
+Cloud Security, Networking & Private Connectivity
+AWS / Azure / GCP
+Unity Catalog, CI/CD & Infrastructure as Code (Preferred)
+📩 Send resumes to:
+rajeev@javentechnologies.com
+#Hiring
+#DataEngineer
+#Databricks
+#DataEngineering
+#PySpark
+#CloudEngineering
+#MinnesotaJobs
+#ContractJobs
+#corptocorp
+#c2c
+#CTH
+#C2H
+#Contracttohire
+
+----------------------------------------------------------------------
+
+## Job 21: 📍 Location: Hyderabad, India | Employer not specified
+Job reference: d5aaad0ba8b5a228a7fa9efc465756ed
+Posted By Profile: https://www.linkedin.com/in/ashharkhalid02/
+
+🚀 WE ARE HIRING | DATA ENGINEERING ROLES
+📍 Location: Hyderabad, India
+Aastha Consulting is hiring experienced professionals for exciting opportunities with a leading global multinational organization in the Data Engineering domain.
+📌 Open Positions:
+🔹 Data Engineer
+🔹 Senior Data Engineer
+🔹 Data Engineering Lead
+💻 Key Skills Required:
+✅ Databricks & Unity Catalog
+✅ Delta Live Tables (DLT) & Auto Loader
+✅ Data Modelling & Data Architecture
+✅ Advanced Python & PySpark
+✅ Advanced SQL
+✅ Logging & Monitoring using Azure / Databricks Services
+✅ Agile Methodology
+⭐ Good to Have:
+🔹 Databricks Asset Bundles (DABs)
+🔹 Azure Data Factory (ADF)
+🔹 Azure DevOps
+We are looking for skilled professionals with strong hands-on experience in modern data engineering technologies, cloud data platforms, and large-scale data processing.
+📩 Share your updated CV at:
+khalid@aasthaconsulting.com
+📞 Contact: +91 9199144739
+📢 Interested candidates can apply or share this opportunity with suitable professionals in their network.
+#Hiring
+#DataEngineering
+#DataEngineer
+#SeniorDataEngineer
+#Databricks
+#Python
+#PySpark
+#SQL
+#Azure
+#AzureDataFactory
+#AasthaConsulting
+#HyderabadJobs
+#ITJobs
+
+----------------------------------------------------------------------
+
+## Job 22: Preferred Location: | Employer not specified
+Job reference: e4be926e1583a9915648f9c8d67161fe
+Posted By Profile: https://www.linkedin.com/in/girish-kumar-ba2305445/
+
+"Experienced professionals — this one is for you. We are looking for Data Engineer - Data Integration specialist - apply now @ DTCInfotech!
+Transfer data from operational and external environments to the business intelligence environment. They utilize tools such as Informatica, Ab Initio software, and DataStage (formerly Ascential) - IBM's WebSphere Data Integration Suite. This role involves creating and implementing Extract, Transform, and Load (ETL) processes, ensuring the seamless flow of data throughout the business intelligence solution's lifecycle.
+Primary Location:Tier I City, Preferable Bangalore
+Please share your updated profile with following details to Girish<
+opportunity@dtcinfotech.com
+>
+Experience:
+Current CTC :
+Expected CTC:
+Notice Period:
+Preferred Location:
+Note:Please do refer to your known circle who are actively looking for job change.
+We are looking for candidates who can quickly join, are available for in-person discussions and are comfortable working at client office.
+Thanks and Regards
+Girish<
+opportunity@dtcinfotech.com
+>"
+
+----------------------------------------------------------------------
+
+## Job 23: Need Only EX Capital Once candidates | Capital One
+Job reference: afb74a17e32fa8a475f6aec0c26b48c7
+Posted By Profile: https://www.linkedin.com/in/ashok-reddy-dantla-38ba97141/
+
+Need Only EX Capital Once candidates
+Position: Data Engineer
+Location: Richmond VA
+Client: Capital One
+Skills:
+PythonSQL, AWS Apache Spark/PySpark Kafka, Snowflake Databricks, and ETL/data pipeline development.
+Please send suitable resumes at
+ashok@sar-tech.net
+/ 315 951 1852
+
+----------------------------------------------------------------------
+
+## Job 24: ⚙️ Data Engineer — | US Opportunities
+Job reference: 07825e5d78c3cc4ed481489e68cd0a2c
+Posted By Profile: https://www.linkedin.com/in/trisha-mandal-864985431/
+
+⚙️ Data Engineer —
+Hiring for US Opportunities
+*AVAILABLE FOR CANDIDATES BASED IN USA*
+✅ Python and SQL
+✅ ETL / Data Pipelines
+✅ Spark / Kafka
+✅ Snowflake / Databricks
+✅ AWS / Azure / GCP
+📍 Remote / Hybrid / Onsite — USA
+📩 Send your resume to
+tanishamandal75@gmail.com
+Mandatory details with resume : Full Name | Visa Status | Current Location
+#DataEngineer
+#ETL
+#Snowflake
+#Databricks
+#USVisa
+#ITjobs
+
+----------------------------------------------------------------------
+
+## Job 25: *AVAILABLE FOR CANDIDATES BASED IN USA* | Employer not specified
+Job reference: 7cba1add9dd188dfc1a49f573e9df1be
+Posted By Profile: https://www.linkedin.com/in/harshit-dwivedi0779/
+
+⚙️ Data Engineer — Hiring for US Opportunities
+*AVAILABLE FOR CANDIDATES BASED IN USA*
+✅ Python and SQL
+✅ ETL / Data Pipelines
+✅ Spark / Kafka
+✅ Snowflake / Databricks
+✅ AWS / Azure / GCP
+📍 Remote / Hybrid / Onsite — USA
+📩 Send your resume to
+harshitdwivedib@gmail.com
+Mandatory details with resume :
+Full Name | Visa Status | Current Location
+#DataEngineer
+#ETL
+#Snowflake
+#Databricks
+#USVisa
+#ITjobs
+
+----------------------------------------------------------------------
+
+## Job 26: 📍 Location: Phoenix, AZ | Employer not specified
+Job reference: 466af922e5742a753f8c7eb50ee54525
+Posted By Profile: https://www.linkedin.com/in/dammuluri-suryanarayana-917807390/
+
+🚀 Hiring: GCP Data Engineer
+📍 Location: Phoenix, AZ
+🏢 Work Mode: Onsite
+💼 Contract: C2C
+We are looking for a skilled GCP Data Engineer with hands-on AI/ML experience to build scalable data pipelines and integrate AI/ML solutions on Google Cloud Platform.
+Key Skills:
+Strong experience with GCP, BigQuery, Dataflow, Dataproc, and Pub/Sub
+Expertise in Python, PySpark, SQL, and ETL/ELT pipelines
+Hands-on experience with Vertex AI and AI/ML workflows
+Minimum 2+ years of practical AI/ML experience
+Knowledge of LLMs, Generative AI, RAG, and vector search
+Experience with Cloud Composer/Airflow, Terraform, and CI/CD
+Interested candidates can share their updated resume to email
+surya@ividtek.com
+#Hiring
+#GCP
+#DataEngineer
+#GoogleCloud
+#AI
+#MachineLearning
+#VertexAI
+#BigQuery
+#C2C
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 27: Title:- Data Analytics Engineer (Data Transformation Analytics) | Employer not specified
+Job reference: 2f430c517b1f839b1c93d83d752ffcf8
+Posted By: Lavanya K
+Posted By Profile: https://www.linkedin.com/in/lavanya-k-559171225/
+
+Title:- Data Analytics Engineer (Data Transformation Analytics)
+Location :- Alpharetta, GA
+Local only
+GC/USC only
+Financial Service domain
+Interview : Video and in person
+Required Skills:-
+Strong SQL and relational database development skills.
+Hands-on experience with IBM DB2, Snowflake, and DuckDB.
+Proficiency in Python, including data manipulation using pandas or similar libraries. Experience working with CSV, JSON, Parquet, REST APIs, and relational databases. Understanding of data modeling, transformation, data quality, and metric/KPI development. Experience preparing data for Power BI or custom analytical applications.
+Familiarity with Git and modern software development practices.
+Experience using GenAI development tools, such as GitHub Copilot, Anthropic Claude, OpenAI Codex, or similar tools, to accelerate development, testing, debugging, and documentation.
+Preferred Experience:-
+Experience with several of the following is beneficial: dbt or SQLMesh for data transformations FastAPI for sharing data via APIs Streamlit or Dash for custom data dashboards Power BI CI/CD and automated testing Cloud data and analytics platforms
+Qualifications:-
+Approximately 3–5 years of relevant experience in data engineering, analytics engineering, BI, or software development. Bachelors degree in Computer Science, Engineering, Information Systems, Data Analytics, or a related discipline, or equivalent practical experience.
+Strong communication skills and the ability to work with both technical teams and business stakeholders.
+Demonstrated ability to deliver quality reporting solutions in a fast-paced, iterative environment.
+Share resume @
+shruti@kanakits.com
+Lavanya K
+Shailja Sanga
+Shruti Priyadarshini
+#w2
+#w2hiring
+#w2roles
+#c2c
+#corptocorp
+#c2chiring
+#vendorlist
+#vendormanagement
+#benchsales
+#benchsalesrecruiter
+#hiring
+#opentowork
+
+----------------------------------------------------------------------
+
+## Job 28: 📍 Mountain View, CA | Employer not specified
+Job reference: 2408252b8fe5c4567d8fbd7b0a792a7c
+Apply URL: https://www.linkedin.com/groups/99563/?q=highlightedFeedForGroups&highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7518027930564943872
+
+🚨 Hiring: Senior Data Engineer – AI/Agentic AI
+📍 Mountain View, CA
+Looking for a strong Data Engineer with expertise in Python, Databricks, PySpark, SQL, LangChain, LangGraph, Langfuse, Semantic Data & Agentic AI.
+🔹 Build scalable data pipelines using Databricks, Delta Lake & Lakeflow
+🔹 Develop semantic models, knowledge/contextual graphs & RAG solutions
+🔹 Integrate enterprise data with AI agents using LangChain & LangGraph
+🔹 Implement vector search, embeddings & graph-based retrieval
+🔹 Use Langfuse/MLflow for evaluation, tracing & observability
+🔹 Strong data governance, quality & production support experience
+Interested candidates, please share your updated resume at
+aadarsh@tekshapers.com
+.
+
+----------------------------------------------------------------------
+
+## Job 29: 📍 Location: Alpharetta, GA (Local Candidates Only) | Employer not specified
+Job reference: a70bc83b2df92dc922f31cd1f221af7c
+Apply URL: https://www.linkedin.com/groups/4299996/?q=highlightedFeedForGroups&highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7517993145259757568
+
+🚨 Hiring: Data Analytics Engineer – Data Transformation & Analytics
+📍 Location: Alpharetta, GA (Local Candidates Only)
+💼 Domain: Financial Services
+🛂 Visa: USC / GC Only
+🎯 Interview: Video + In-Person
+Key Skills Required:
+✅ Strong SQL, Python, and relational database development
+✅ Hands-on experience with IBM DB2, Snowflake, and DuckDB
+✅ Data transformation, cleansing, integration, and modeling
+✅ pandas, CSV, JSON, Parquet, and REST APIs
+✅ Data quality, validation, reconciliation, and KPI development
+✅ Power BI and analytical data applications
+✅ Git and modern development practices
+✅ GenAI development tools: GitHub Copilot, Claude, OpenAI Codex, or similar
+Preferred Skills: dbt, SQLMesh, FastAPI, Streamlit, Dash, CI/CD, automated testing, and cloud analytics platforms.
+Looking for candidates with strong data engineering and analytics experience, preferably in the financial services domain.
+📩 Interested candidates, please share your updated resume at:
+rahber@nexivainc.com
+Rahber Hussain
+Technical Recruiter | Nexiva
+📞 +1 (347) 472-0915
+#Hiring
+#DataAnalyticsEngineer
+#DataEngineering
+#SQL
+#Python
+#Snowflake
+#IBMDb2
+#DuckDB
+#PowerBI
+#FinancialServices
+#AlpharettaGA
+#USJobs
+#TechJobs
+
+----------------------------------------------------------------------
+
+## Job 30: 🏢 Client: Alpha FMC | Employer not specified
+Job reference: 9ee89e48a3b87cb6994dda44d733c7d4
+Apply URL: https://www.linkedin.com/groups/10472901/?q=highlightedFeedForGroups&highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7517998983311650816
+
+🚨 Hiring: Data Engineer – Snowflake & dbt | 6 Openings
+🏢 Client: Alpha FMC
+📍 Location: St. Louis, MO
+🏠 Work Mode: Hybrid
+✈️ Travel: Mandatory alternate-week travel to the client location (expenses included)
+💰 Salary: $120K–$150K
+🇺🇸 Work Authorization: US Citizens (USC) or Green Card holders only
+Required Skills:
+Strong hands-on experience with Snowflake
+Expertise in dbt (Data Build Tool)
+Data Engineering and Data Warehousing
+ETL/ELT pipeline development
+Advanced SQL and query optimization
+Data modeling and modern cloud data platforms
+Data quality, governance, and performance optimization
+Preferred Qualifications:
+Financial Services or Consulting experience
+AWS, Azure, or GCP
+Agile/Scrum experience
+Key Responsibilities:
+Build and optimize scalable data pipelines and data models.
+Develop enterprise data warehouse solutions.
+Ensure data quality, security, and performance.
+Collaborate with stakeholders and resolve data integration issues.
+📩 Interested candidates, please share your updated resume and LinkedIn profile via DM.
+Email ID:
+recruitment@gvtechsystems.com
+#Hiring
+#DataEngineer
+#Snowflake
+#dbt
+#SQL
+#DataWarehouse
+#ETL
+#ELT
+#AlphaFMC
+#USJobs
+#Fulltime
+#CTH
+#USC
+#GC
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 31: Preferred Location: | Employer not specified
+Job reference: e689001af7e0259ae8f6a8002e70fc78
+Posted By Profile: https://www.linkedin.com/in/girish-kumar-ba2305445/
+
+"Specialists, your next opportunity may be here. . We are looking for Data Engineer - Data Integration specialist - apply now @ DTCInfotech!
+Data Integration is responsible for designing and building solutions to transfer data from operational and external environments to the business intelligence environment. They utilize tools such as Informatica, Ab Initio software, and DataStage (formerly Ascential) - IBM's WebSphere Data Integration Suite. This role involves creating and implementing Extract, Transform, and Load (ETL) processes, ensuring the seamless flow of data throughout the business intelligence solution's lifecycle.
+Primary Location: Tier I City, Preferable Chennai
+Please share your updated profile with following details to Girish<
+opportunity@dtcinfotech.com
+>
+Experience:
+Current CTC :
+Expected CTC:
+Notice Period:
+Preferred Location:
+Note:Please do refer to your known circle who are actively looking for job change.
+We are looking for candidates who can quickly join, are available for in-person discussions and are comfortable working at client office.
+Thanks and Regards
+Girish<
+opportunity@dtcinfotech.com
+>"
+
+----------------------------------------------------------------------
+
+## Job 32: Location: Chennai | Employer not specified
+Job reference: 64593493f144674e3b3ebc4fe747e134
+Apply URL: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2Fgt3YDESb&urlhash=-hWN&mt=suyvRY4iRqbfI0GmVJE1OWB0kndJ-G-WJrcsNwK1pVLdGj-X-lNWG9EXjhjD06PSEJCERh15MTZbT7ochOyP3xeUGukKE3niDAJjJuaDkGMIMuapmdJpOciQCw&isSdui=true
+Posted By Profile: https://www.linkedin.com/in/lakshmi-padmanabhan-a22216180/
+
+URGENT HIRING: Python PySpark Data Engineer
+Location: Chennai
+Experience: 4–6 years
+Interview: Face-to-face in Chennai (mandatory)
+Joining: Immediate joiners preferred
+Mandatory skills:
+Strong Python programming
+Hands-on PySpark, Pandas, and NumPy
+SQL and ETL
+Azure Databricks
+Azure Data Lake Storage and Azure cloud services
+End-to-end data pipeline development and optimization
+DevOps practices
+Data analysis, debugging, and performance optimization
+Role summary: Develop and maintain scalable data pipelines, perform ETL, optimize performance, and collaborate with engineering and data science teams.
+Qualification: Bachelor’s or Master’s degree in Computer Science or equivalent.
+Apply only if you can attend the in-person interview in Chennai.
+Send your updated CV to:
+priya@vergilremnant.com
+.
+Please like , comment and share this post so that it can reach out to needy people in your circle.
+Connect and Follow me for more updates.
+Join our WhatsApp group to explore more opportunities on QA Jobs.
+https://lnkd.in/gt3YDESb
+
+----------------------------------------------------------------------
+
+## Job 33: We’re hiring: Databricks Application Engineer II (Contract) | Nottingham, UK | Employer not specified
+Job reference: b04f8ef38115c63b01fb2d35907a37d3
+Posted By Profile: https://www.linkedin.com/in/neeraj-mba-hr/
+
+We’re hiring: Databricks Application Engineer II (Contract) | Nottingham, UK
+I’m looking for a Databricks Application Engineer II to help turn data and AI workloads into a business-ready product enrichment application.
+You’ll sit within a Data Management technology group, working closely with Data Scientists, Data Engineers, and Solution Architects to make enriched product data truly usable for business users.
+What you’ll do:
+Build user-facing workflows and services so business and technical users can submit product data, trigger enrichment jobs, review attributes, compare source vs enriched values, approve results, and manage exceptions.
+Develop backend APIs and service layers that connect application functionality to Databricks pipelines, AI/ML models, and enriched datasets.
+Implement validation, error handling, exception management, and processing-status tracking to ensure reliable enrichment workflows end to end.
+Enable secure access and authentication aligned with enterprise standards, keeping components modular, testable, and maintainable.
+Support CSV / spreadsheet-compatible output generation for downstream use and collaborate on deployment, CI/CD, and operational monitoring with Data/MLOps Engineers.
+Participate in Agile ceremonies, demos, and iterative product development while producing technical documentation and knowledge transfer materials.
+What we’re looking for:
+Strong software/application engineering background with hands-on experience integrating solutions with Databricks.
+Solid Python development skills and proven REST API/service development experience.
+Good SQL and data manipulation capability, plus experience consuming data and ML services from application components.
+Knowledge of application security, authentication, and access-control patterns, along with Git-based source control and CI/CD.
+Experience with unit and integration testing in Agile, multidisciplinary engineering teams, and the ability to turn user workflows into production-quality application features.
+If this sounds like you, please DM me your profile/resume or comment “Interested” and I’ll share the next steps.
+
+----------------------------------------------------------------------
+
+## Job 34: 🚨 We’re Hiring: Sr. Data Engineer – Databricks | Remote (LATAM) | Employer not specified
+Job reference: 3bc7fb6c878fcf22b7e70af461e6244e
+Posted By Profile: https://www.linkedin.com/in/saikiranchinnamallu/
+
+🚨 We’re Hiring: Sr. Data Engineer – Databricks | Remote (LATAM)
+We are looking for an experienced Senior Data Engineer with strong Databricks experience for a remote contract opportunity!
+📍 Location: Remote – Latin America (LATAM)
+💻 Required Skills: Data Engineering, Databricks
+🌎 Eligible Countries: Brazil, Peru, Colombia, Argentina, and Mexico
+💼 Position: Data Engineer
+📄 Employment Type: Contract
+⚡ Joining: Immediate joiners preferred
+🤝 Engagement Type: Independent Contractor
+Who Should Apply?
+Senior Data Engineers with hands-on Databricks experience.
+Candidates currently based in Brazil, Peru, Colombia, Argentina, or Mexico.Professionals available to join immediately.
+Candidates willing to work as independent contractors.
+📩 Interested candidates: Please share your updated resume at
+saikiran.chinnamallu@tachyontech.com
+🔁 Referrals are welcome! If you know anyone in your professional network who is actively looking for a new opportunity, please share this post or refer them to me.
+Let’s connect the right talent with the right opportunity!
+#Hiring
+#DataEngineer
+#DataEngineering
+#RemoteJobs
+#LATAMJobs
+#ContractJobs
+#RemoteJobs
+#ContractJobs
+#ImmediateJoiner
+#ITJobs
+#HiringNow
+#immediatehiring
+#opentowork
+#Brazilhiring
+#Braziljob
+#Braziljobs
+#Peruhiring
+#Perujob
+#Perujobs
+#Colombiahiring
+#Colombiajob
+#Colombiajobs
+#Argentinahiring
+#Argentinajob
+#Argentinajobs
+#ImmediateJoiner
+#IndependentContractor
+#BrazilJobs
+#PeruJobs
+#ColombiaJobs
+#ArgentinaJobs
+#MexicoJobs
+#TechJobs
+#Hiring
+#SeniorDataEngineer
+#Databricks
+#DataEngineering
+#LATAMJobs
+#RemoteJobs
+#ContractJobs
+#ImmediateJoiners
+#IndependentContractor
+#BrazilJobs
+#PeruJobs
+#ColombiaJobs
+#ArgentinaJobs
+#MexicoJobs
+#TechHiring
+
+----------------------------------------------------------------------
+
+## Job 35: Role: Senior Python Data Engineer | Employer not specified
+Job reference: 3dae632744393c463749ba6395e470d5
+Posted By Profile: https://www.linkedin.com/in/mamoon-akhtar-072b03316/
+
+Urgent Hiring !!
+Role: Senior Python Data Engineer
+Location: Jersey City, New Jersey ( Hybrid- Locals Only)
+MOI: Face-To-Face
+** H1B is highly preferred **
+🔹 Must-Have Skills:
+Python Development
+Apache Airflow
+dbt Core
+Kubernetes / OpenShift
+ETL/ELT & Data Pipelines
+Production Support & Troubleshooting
+Preferred: On-premises infrastructure, CI/CD, DevOps, and enterprise data platforms.
+Share the resume at :
+Mamoon.akhtar@gvrinfotek.com
+#Hiring
+#PythonDeveloper
+#DataEngineer
+#ApacheAirflow
+#DBT
+#Kubernetes
+#OpenShift
+#ETL
+#DataEngineering
+#TechJobs
+#C2C
+#C2H
+#Benchsalesrecruiter
+
+----------------------------------------------------------------------
+
+## Job 36: Looking forward to connecting with talented Data Engineers. 🤝 | Khatabook
+Job reference: 05c5a23141afeabd847fd81c85e1fa3e
+
+🚀 We’re Hiring | Data Platform Engineer II at Khatabook!We’re looking for passionate Data Engineers to join our team at Khatabook and help us build scalable, reliable, and cost-efficient data platforms.
+If you enjoy solving complex data engineering challenges, building production-grade pipelines, and working with technologies like Python, SQL, Airflow, Snowflake, AWS, and Kafka, this could be a great opportunity for you!
+📍 Location: Bengaluru💼 Experience: 3–7 years
+Know someone who would be a great fit? Tag them or share this post with your network!
+Looking forward to connecting with talented Data Engineers. 🤝
+#Hiring
+#DataEngineering
+#DataPlatform
+#Khatabook
+#TechHiring
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 37: 📢 Looking for Vendor Empanelment Partners! | Employer not specified
+Job reference: 1f503f9f9dc7557bb7ef4840a185e98e
+Apply URL: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2Fg3sXWEDj&urlhash=txHT&mt=AZNDEHxNj-OeGSAlE5Ro7IbfAEdxdjpBtK-cig12KLT_xnfkeW7LZ1S_zDBe8XrcsrMYQZ_XHScBc7rPCHwiuglSAXbv5gNy6ezBY576CzG-Yge3D-QzRf35fA&isSdui=true
+Posted By Profile: https://www.linkedin.com/in/shubham-atre-a34b9a20a/
+
+📢 Looking for Vendor Empanelment Partners!
+We are seeking staffing vendors who can provide onsite resources for the following positions:
+🔹 AI Engineer - 2-4 years (Only 1 month onsite then complete remote)
+🔹 Snowflake Data Engineer 2- 6
+📍 Locations: Pune | Bengaluru | Gurugram
+Interested vendors, please DM me to discuss empanelment and collaboration opportunities.
+Please fill this form ::
+https://lnkd.in/g3sXWEDj
+Note :- this post is not for the recruitment agency & Job Consultancy.
+#VendorEmpanelment
+#AIEngineer
+#Snowflake
+#StaffingPartners
+#OnsiteResources
+#Hiring
+#contractrole
+#contractualhiring
+#vendors
+#onsite
+#c2c
+#aiengineer
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 38: Location: Leeds, UK (Remote Opportunity) | Employer not specified
+Job reference: 9c530a1523b1229f29d8b422049c3201
+Posted By: CACTUS
+Posted By Profile: https://www.linkedin.com/company/cactus-it-solutions/
+
+CACTUS
+Hiring: Data Engineer!
+Location: Leeds, UK (Remote Opportunity)
+Job Type: Permanent or Contract (Inside IR35)
+Required Skills:
+(Databricks or Palantir Foundry), Python, PySpark, SQL
+"Active SC Clearance is mandatory"
+📩 Interested candidates? Send your CV to **
+vali@cactusits.com
+**
+Feel free to share or tag someone who might be a great fit! 🤝
+#Hiring
+#DataEngineer
+#DataEngineering
+#Databricks
+#PalantirFoundry
+#Palantir
+#Python
+#PySpark
+#SQL
+#BigData
+#DataAnalytics
+#DataPlatform
+#CloudComputing
+#TechJobs
+#ITJobs
+#UKJobs
+#LeedsJobs
+#RemoteJobs
+#RemoteWork
+#ContractJobs
+#PermanentJobs
+#InsideIR35
+#SCclearance
+#SecurityClearedJobs
+#TechHiring
+#Recruitment
+#CareerOpportunities
+#JobOpening
+#NowHiring
+#UKTechJobs
+Mohammed Nadeem
+Saiteja Chary
+Shaik Azizpasha
+Sudheer Goud
+Keerthi Pasupuleti
+Mounika Molugu
+Sharadha Vavilala
+Balachandra Gurram
+Sharath Komara
+Smruti Shree Sanghmitra Panda
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 39: SQL and Python | Employer not specified
+Job reference: f588c7366b1c66909815780d52b8b47a
+Posted By Profile: https://www.linkedin.com/in/jaisnajames/
+
+🚀 Join Zeero’s Talent Cloud Platform | Data Engineers | 3+ Years of Experience
+Are you passionate about building scalable data pipelines and working with modern cloud data platforms? Join Zeero’s Talent Cloud Platform and explore exciting opportunities with leading companies! 🌟
+🔹 Experience: 3+ Years
+🔹 Work Mode: Remote / Hybrid
+💻 Key Skills:
+ETL/ELT Pipeline Development
+SQL and Python
+Data Orchestration
+Big Data Technologies
+Azure Databricks and Delta Lake
+PySpark and Apache Spark
+Azure Data Factory (ADF)
+Data Modeling and Lakehouse Architecture
+Performance Tuning and Pipeline Optimization
+Cloud Platforms: Azure / AWS / GCP📝
+✨ Why Zeero?
+One assessment, endless opportunities! Showcase your skills, complete the assessment, get vetted, and connect with exciting Data Engineering opportunities through Zeero’s Talent Cloud Platform.
+📩 Interested?
+Send your resume to:
+jaisna.james@zeero.us
+🔁 Tag a skilled Data Engineer or share this post with your network!
+#Zeero
+#Hiring
+#DataEngineer
+#DataEngineering
+#Python
+#SQL
+#ETL
+#Orchestration
+#BigData
+#Databricks
+#PySpark
+#TalentCloud
+#CloudComputing
+
+----------------------------------------------------------------------
+
+## Job 40: Location: Sheffield, UK | Employer not specified
+Job reference: 0c6b21ad616be2e5e96ec111b9a97b4b
+Posted By Profile: https://www.linkedin.com/in/pushpa-keshavamurthy-678b76111/
+
+We’re Hiring: GCP Data Engineer – Technical Lead
+Location: Sheffield, UK
+Work Mode: Hybrid – 2 days per week in the office
+Contract Duration: 11 MonthsKey Skills amp;
+Experience:Strong experience in GCP and Apache Airflow.
+Expertise in Python, ETL/ELT pipelines, and data integration.Experience with BigQuery, Cloud Storage, Pub/Sub, Dataflow, or GKE.Knowledge of CI/CD, Terraform, and automated deployment pipelines.Experience in multi-tenant platforms, data lineage, and observability.
+Proven technical leadership, solution design, and team mentoring skills.
+Interested candidates, please share your updated CV at
+pushpalatha_bk@bluerose-tech.com
+.
+#Hiring
+#GCP
+#DataEngineer
+#GoogleCloudPlatform
+#ApacheAirflow
+#Python
+#DataEngineering
+#ETL
+#TechnicalLead
+#UKJobs
+#ContractJobs
+
+----------------------------------------------------------------------
+
+## Job 41: Location : Remote (USA) | Employer not specified
+Job reference: fbd7cfff6903958543bee85a63700671
+Posted By Profile: https://www.linkedin.com/in/sameer-baig-677b76228/
+
+Job Title : Data Engineer
+Location : Remote (USA)
+Type : Contract (C2C)
+Exp : 3 - 7 Years Only
+Job Description
+Under minimal supervision, develops, tests and deploys ELT/ETL processes across multiple sources, targets and tools.Provides support and recommendations to associate engineers to enhance their technical skills. Collaborates with data consumers of varying skill levels on available data sources and potential biases within datasets.Provides operational and ad-hoc support for systems and applications troubleshooting and maintenance for incidents related to data warehouses, datasets and data pipelines.Assists in data model design under the guidance of more experienced team members. Builds data models, using a variety of sources and target systems, growing a better understanding of enterprise architectural standards and designs.
+Share your Resumes to :
+Ramya@nexoratechinc.com
+#Hotlist
+#Hotlists
+#HotListing
+#Contract
+#Onsite
+#Hybrid
+#Remote
+#RemoteJobs
+#RemoteWork
+#RemoteRoles
+#RemoteOpportunities
+#C2C
+#CorpToCorp
+#C2CJobs
+#C2CRequirements
+#C2CRequirement
+#C2CRecruiters
+#C2CConsultants
+#C2CVendors
+#C2CVendor
+#C2CVendorList
+#C2CHiring
+#C2CHotlist
+#C2CAvailable
+#C2CRoles
+#C2CReqs
+#C2CUSAJobs
+#USITRecruitment
+#USITRecruiters
+#USITRecruiter
+#USITStaffing
+#USITJobs
+#BenchSales
+#BenchSalesRecruiter
+#BenchSalesRecruiters
+#USBenchSales
+#VendorList
+#Vendors
+#Recruitment
+#Recruiters
+#Staffing
+#LinkedIn
+#LinkedInJobs
+#LinkedInPost
+#LinkedInPosts
+#LinkedInConnections
+#LinkedInFamily
+#DevOps
+#DotNet
+#NodeJS
+#ReactJS
+#FullStack
+#Frontend
+#SDET
+#QA
+#QualityEngineer
+#Hadoop
+#OPT
+#H1B
+#USC
+#USCitizen
+#GreenCard
+#GC
+#GCEAD
+#USAJobs
+#Sales
+#SalesRecruitment
+#SalesRecruiter
+#SalesRecruiters
+#SalesRecruiting
+#Distribution
+#Email
+#onsite
+#hybrid
+#remote
+#jobs
+#devops
+#dotnet
+#sdet
+#qa
+#nodejs
+#react
+#fullstack
+#frontend
+#hadoop
+#qualityengineer
+#contract
+#job
+#jobopening
+#jobopenings
+#openings
+#hiring
+#hiringimmediately
+#hotlist
+#sales
+#benchsales
+#benchsalesrecruiter
+#benchsalesrecruiters
+#benchsale
+#vendorlist
+#vendors
+#vendorslist
+#vendor
+#recruitment
+#recruiters
+#c2c
+#c2crequirements
+#c2cvendors
+#c2chotlist
+#c2cjobs
+#c2cusajobs
+#c2crequirement
+#c2chiring
+#c2croles
+#c2crecruiters
+#corp2corp
+#updating
+#requirements
+#requirement
+#c2creqs
+#c2cvendorlist
+#list
+#post
+#comment
+#distribution
+#email
+#linkedin
+#recruiting
+#salesrecruiters
+#salesrecruiter
+#salesrecruitment
+#salesrecruiting
+#hotlists
+#hotlisting
+#preferred
+#dailyrequirements
+#urgentrequirement
+#urgenthiring
+#opt
+#usc
+#h1b
+#usitrecruitment
+#usitrecruiters
+#usbenchsales
+#opportunity
+#c2cconsultants
+#c2cavailable
+#c2cvendor
+#usitrecruiting
+#usitbenchsales
+#usitjobs
+#usitrecruiter
+#usitstaffing
+#uscitizen
+#uscitizenship
+#usajobs
+#greencard
+#gcead
+#gc
+#hexaware
+#linkedinposts
+#linkedinfamily
+#linkedinpost
+#linkedinconnections
+#linkedinconnection
+#linkedinjobs
+#remoteworking
+#remoteroles
+#remotework
+#remotejobs
+#remotejob
+#remoterole
+#remoteopportunities
+
+----------------------------------------------------------------------
+
+## Job 42: We are currently hiring experienced IT professionals for the following positions: | Employer not specified
+Job reference: 5c5d1f79cfed149cee8be59ade313b8e
+Apply URL: https://www.linkedin.com/groups/14424392/?q=highlightedFeedForGroups&highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7517939160620363776
+
+🚨 URGENT HIRING – IMMEDIATE OPENINGS! 🚨
+We are currently hiring experienced IT professionals for the following positions:
+🔹 IDMC Developer – Charlotte, NC
+🔹 Senior GCP Big Data Engineer – Charlotte, NC
+🔹 Senior AWS Databricks Data Engineer - Charlotte, NC
+🔹Senior Snowflake Cortex AI Developer - Charlotte, NC
+📩 Interested candidates: If you are actively looking for a new opportunity or know someone who may be a good fit, please DM me or share your updated resume at:
+📩
+abirami@blytheinfo.com
+📩
+shalini@blytheinfo.com
+
+----------------------------------------------------------------------
+
+## Job 43: One important point: active SC Clearance is mandatory for this opportunity. | Employer not specified
+Job reference: af4b6ca8dcbb255f50c54da7ca2abcfe
+Posted By: Mohammed Nadeem
+Posted By Profile: https://www.linkedin.com/in/mohammed-nadeem-607b22148/
+
+The data engineering market is always moving, and we’re currently looking to connect with a good Data Engineer for an opportunity in the UK.
+We’re looking for someone with hands-on experience across Databricks, AWS, Python, SQL and PySpark.
+The role is based in Leeds, UK, with remote working available. There’s flexibility for either a contract engagement (Inside IR35) or a permanent position.
+One important point: active SC Clearance is mandatory for this opportunity.
+If you’re open to a new role, or know someone in your network who might be a good fit, I’d be happy to have a conversation.
+Please drop me a message or send your CV to
+azizpasha@cactusits.com
+.
+Thanks in advance for any referrals or shares! 🙏
+#DataEngineering
+#DataEngineer
+#Databricks
+#AWS
+#Python
+#PySpark
+#SQL
+#SCCleared
+#UKTechJobs
+Mohammed Nadeem
+Sudheer Goud
+Saiteja Chary
+Masthanvali Banaganipalli
+Mounika Molugu
+Sharadha Vavilala
+Keerthi Pasupuleti
+Smruti Shree Sanghmitra Panda
+
+----------------------------------------------------------------------
+
+## Job 44: shailaja.vejendla@teamlease.com | Employer not specified
+Job reference: 45c48dee9f309c3e9e321c15b9fdfeb3
+Posted By Profile: https://www.linkedin.com/in/shailaja-vejendla-3039ab214/
+
+Hi Friends,
+We have urgent openings for Azure data engineers having 4-12years of experience for Remote location
+Notice period: Immediate joiners
+Job Description:
+We are seeking an experienced Azure Cloud Engineer having 4-10 years of experiencewith hands-on expertise in architecting and implementing Azure-based data solutions.The role involves working with cutting-edge technologies like Azure Databricks, ADF,Synapse, Databricks Unity Catalog, Delta Lake, PySpark, SQL and other Azure cloudservices. The ideal candidate should also have strong skills in cloud administration,solution architecture, data modeling, optimization, cost effective solutions and teamguidance. This is an individual contributor role that also requires effective collaborationwith business and technical teams.Must Have-● Strong experience as a Data/Cloud Engineer on Azure Cloud technologies.● Expertise in Azure Databricks, including Architecture, Delta Lake, Workflow, DLT,Compute, with knowledge of Unity Catalog for data governance.● Hands-on experience with Delta Lake, building scalable and reliable datapipelines using PySpark, SQL● Identify the bottlenecks and provide the optimized and cost-effective solutions.● Solid understanding of cloud administration, including resource provisioning,scaling, and cost optimization in Azure.● Experience in data modeling and designing schemas for analytical workloads.● Proven experience in designing or implementing solution architectures usingAzure.● Expertise with CI/CD pipelines for deploying data solutions.● Excellent communication skills to interact with technical and business teamseffectively.Good To Have-● Independently take ownership of tasks and deliver solutions while ensuringalignment with cross-functional teams, guiding and mentoring team members.● Work closely with business units and stakeholders to ensure deliverables meetbusiness requirements and expectations.● Need to have at least one certification - Azure Data Engineering Associate orDatabricks Data Engineer Associate
+Skills:Azure Databricks | Adfs | Azure Cloud | Data/Cloud Engineer | Cloud Azure | Workflow | DLT | Delta Lake | PySpark
+Interested candidates who are immediate joiners/who are serving notice period can apply to
+shailaja.vejendla@teamlease.com
+alongwith updated profile and id proof.
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 45: 📍 Location: Manhattan, New York | Employer not specified
+Job reference: 20e23ac76c3136adb0e5ed30d160f481
+Posted By Profile: https://www.linkedin.com/in/pragya-singh-8908a9276/
+
+Hi Folks !!
+Requirement
+🚨 Hiring: Database Sr. Lead – SQL Developer / Database Architect / Data Engineer
+📍 Location: Manhattan, New York
+🏢 Work Mode: 100% Onsite
+💻 Interview Process: 1st Round – Video | 2nd Round – Mandatory Onsite
+🎯 Openings: 1
+⚡ Preference: Local candidates with utilities industry experience
+🔹 Key Responsibilities:
+✔️ Develop, maintain, and optimize SQL Server stored procedures, views, functions, and complex T-SQL queries
+✔️ Design, develop, and support enterprise ETL/ELT processes and data integrations
+✔️ Build data ingestion, incremental loading, reconciliation, validation, and data quality processes
+✔️ Troubleshoot and resolve database, SQL, and ETL-related issues end to end
+✔️ Perform query tuning, indexing, performance optimization, and schema refinement
+✔️ Manage database objects, schema changes, and scripts using Azure DevOps and GitHub
+✔️ Support SQL Server administration, monitoring, security, maintenance, and backup verification
+✔️ Create and maintain technical documentation, deployment plans, operational procedures, and support runbooks
+✔️ Develop and execute test plans covering positive, negative, white-box, and black-box testing
+✔️ Support release deployments, production implementations, and testing activities
+✔️ Collaborate with business and technical teams to deliver reliable, secure, and scalable database solutions
+✔️ Provide clear technical updates and explain complex concepts to non-technical stakeholders
+Email id:
+pragya@gvrinfotek.com
+#Hiring
+#SQLDeveloper
+#DatabaseLead
+#SQLServer
+#TSQL
+#ETL
+#ELT
+#DataEngineering
+#DatabaseArchitecture
+#DataWarehouse
+#PowerShell
+#ConEdison
+#Utilities
+#NewYorkJobs
+#OnsiteJobs
+#ITJobs
+#C2C
+#C2H
+#W2
+#Benchsalesrequirement
+
+----------------------------------------------------------------------
