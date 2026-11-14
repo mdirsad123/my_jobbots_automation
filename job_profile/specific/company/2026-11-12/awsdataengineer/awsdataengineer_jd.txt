@@ -1,0 +1,130 @@
+# Role Group: AWS Data Engineer
+# Emails: kashish.j@apideltech.com, hr@runmapglobal.com, recruitment@eclaro.com
+# postedbyurl: https://www.linkedin.com/in/rithiksaravana/, https://www.linkedin.com/in/priyabhatnagar-hrspecialist/
+# Jobs included: 3
+======================================================================
+
+## Job 1: DATA ENGINEER | Employer not specified
+Job reference: 09ae9058e6c701fbb51bac2ec63a5b4f
+Input record: 15
+Poster profile: https://www.linkedin.com/in/rithiksaravana/
+
+Job description / posting:
+
+🚨 HIRING ALERT | DATA ENGINEER
+Exciting opportunity for experienced Data Engineers specializing in large-scale data migrations and AWS technologies!
+💼 Position: Data Engineer
+📍 Location: Hyderabad
+📊 Experience: 3+ Years
+🔹 KEY SKILLS & REQUIREMENTS
+- Strong experience in Data Engineering and large-scale data migrations.
+- Expertise in Complex SQL, query optimization and data analysis.
+- Hands-on experience with AWS Redshift, S3, Glue and Lambda.
+- Proficiency in Python (preferred), Java or Scala.
+- Experience with ETL/ELT frameworks, Informatica or SSIS.
+- Ability to reverse engineer legacy systems.
+- Knowledge of Dimensional Modeling, Star Schema, Snowflake Schema and Data Warehousing.
+📩 HOW TO APPLY?
+Interested candidates can share their updated resumes at:
+Email:
+kashish.j@apideltech.com
+🤝 Know someone with strong Data Engineering and AWS experience? Tag them or share this opportunity with your professional network!
+⚠️ DISCLAIMER: This opportunity is shared purely for job awareness and professional networking purposes. I am not the recruiter or hiring authority and am not involved in the recruitment or selection process. Interested candidates are requested to contact the mentioned email address directly.
+Wishing all applicants the very best! 🚀
+#HiringAlert
+#DataEngineer
+#DataEngineering
+#AWSJobs
+#PythonDeveloper
+#SQL
+#ETL
+#CloudComputing
+#HyderabadJobs
+#ITJobs
+#CareerOpportunities
+#SRGROUPS
+
+----------------------------------------------------------------------
+
+## Job 2: AWS Data Engineer | Employer not specified
+Job reference: 78eb005cac656964496e68035ef80e79
+Input record: 243
+Poster profile: https://www.linkedin.com/in/priyabhatnagar-hrspecialist/
+
+Job description / posting:
+
+Job Description – AWS Data Engineer
+Experience: 4+ Years
+Location: Hyderabad / Bangalore
+Work Mode: Work From Office (5 Days a Week)
+Shift Timing: 1:30 PM – 10:30 PM
+Employment Type: Full-Time
+Immediate/Early Joiners Preferred
+Job Overview
+We are looking for an experienced
+AWS Data Engineer
+with a minimum of 4 years of hands-on experience in AWS, PySpark, SQL, and AWS Glue. The candidate should have strong expertise in data engineering, data processing, and ETL development.
+Key Skills & Responsibilities
+Minimum 4 years of experience in AWS Data Engineering.
+Strong hands-on experience with
+AWS services, PySpark, SQL, and AWS Glue
+.
+Experience in developing and managing data processing workflows.
+Good understanding of data transformation, extraction, and loading processes.
+Knowledge of ETL concepts and data pipeline development.
+Ability to write and optimize SQL queries and PySpark jobs.
+Mandatory Skills
+AWS
+PySpark
+SQL
+AWS Glue
+📩 Interested candidates can share their updated resume at
+hr@runmapglobal.com
+#AWSDataEngineer
+#AWSJobs
+#AWSGlue
+#PySpark
+#SQLDeveloper
+#DataEngineering
+#BigData
+#ETLDeveloper
+#DataPipeline
+#AWSCloud
+#CloudComputing
+#DataEngineerJobs
+#HyderabadJobs
+#BangaloreJobs
+#HiringNow
+#ImmediateHiring
+#TechJobs
+#ITJobs
+#DataAnalytics
+#WeAreHiring
+#JobOpening
+#CareerOpportunities
+📩 Interested candidates can share their updated resume at
+hr@runmapglobal.com
+
+----------------------------------------------------------------------
+
+## Job 3: Data Engineer | Employer not specified
+Job reference: 797952064c2d3b082ce49e98bf47d254
+Input record: 247
+Source URL: https://www.linkedin.com/showcase/eclarophilippines/
+
+Job description / posting:
+
+Getting data from multiple sources into one usable format takes careful engineering.
+A global client has an opening for a Data Engineer to develop automated ETL pipelines using AWS tools.
+Send your CV at
+recruitment@eclaro.com
+or apply at
+https://lnkd.in/gDpw4ska
+Don't forget to mention where you've seen us. 😉
+#ECLARO
+#ECLAROCareers
+#jobsph
+#awsdataengineer
+#etlengineer
+
+----------------------------------------------------------------------

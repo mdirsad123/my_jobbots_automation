@@ -1,0 +1,18 @@
+Subject: Application for Python Developer / Backend Engineer
+
+Dear Hiring Team,
+
+I am writing to apply for a Python Developer or Backend Engineer opportunity. I bring 3+ years of experience in Python development, REST API integration, backend services, and cloud-based automation.
+
+- Developed Flask-based REST APIs, MySQL-backed business workflows, authentication features, and React user interfaces.
+- Built Python and AWS data-processing integrations using Lambda, S3, SQS, Step Functions, and Oracle ORDS APIs.
+- Worked on SQL optimization, validation, automated testing, debugging, and production troubleshooting.
+
+I would welcome the opportunity to discuss how my backend and full-stack experience fits your team's requirements. Please find my updated CV attached.
+
+Best regards,
+Md Irsad
++91-8409718735
+mdirsadtech7305@gmail.com
+
+Note to sender: Customize the subject, employer name, recipient, and job reference before sending. This draft is for an aggregate of multiple postings, not a specific vacancy.

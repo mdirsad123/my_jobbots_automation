@@ -1,0 +1,20 @@
+[
+  {
+    "role": "awsdataengineer",
+    "project_url": "https://chatgpt.com/g/g-p-6ad4d3df646481919b57dc116e98be5b/project",
+    "draft_text": "DATE=2026-10-30; ROLE=aiengineer. Use the attached current JD aiengineer_jd.txt and the truthful canonical candidate context from specific/master_prompt.txt and md_irsad.md. For this request, the EXACT five file names inside 2026-10-30/aiengineer/ are: md_irsad_cv_aiengineer.md, md_irsad_cv_aiengineer.pdf, md_irsad_cv_aiengineer.docx, jd_email_reply_2026-10-30.txt, interview_prep_aiengineer_2026-10-30.pdf. The three CV file names MUST NOT contain a date. Generate and link exactly ONE downloadable archive named 2026-10-30_aiengineer.zip (hyphens in date; no prefix/suffix/version). These exact filenames OVERRIDE any older date-based names in cached Project files or prior chats. Follow the current Section 13 for all other requirements: truthful role-level CV, 2-page portrait CV PDF and DOCX, email TXT and anonymous 16:9 interview-prep PDF. Validate ZIP integrity and five files; never mix employers. If Project source files are inaccessible, say so.",
+    "saved_at": "2026-10-30T18:38:39+05:30"
+  },
+  {
+    "role": "dataengineer",
+    "project_url": "https://chatgpt.com/g/g-p-6ad4d3eb4e3881918beb94639237e5fb/project",
+    "draft_text": "DATE=2026-10-30; ROLE=awsdataengineer. Use the attached current JD awsdataengineer_jd.txt and the truthful canonical candidate context from specific/master_prompt.txt and md_irsad.md. For this request, the EXACT five file names inside 2026-10-30/awsdataengineer/ are: md_irsad_cv_awsdataengineer.md, md_irsad_cv_awsdataengineer.pdf, md_irsad_cv_awsdataengineer.docx, jd_email_reply_2026-10-30.txt, interview_prep_awsdataengineer_2026-10-30.pdf. The three CV file names MUST NOT contain a date. Generate and link exactly ONE downloadable archive named 2026-10-30_awsdataengineer.zip (hyphens in date; no prefix/suffix/version). These exact filenames OVERRIDE any older date-based names in cached Project files or prior chats. Follow the current Section 13 for all other requirements: truthful role-level CV, 2-page portrait CV PDF and DOCX, email TXT and anonymous 16:9 interview-prep PDF. Validate ZIP integrity and five files; never mix employers. If Project source files are inaccessible, say so.",
+    "saved_at": "2026-10-30T18:39:17+05:30"
+  },
+  {
+    "role": "pythondeveloper",
+    "project_url": "https://chatgpt.com/g/g-p-6ad4d3d115b88191a0927cd7080b617d/project",
+    "draft_text": "DATE=2026-10-30; ROLE=dataengineer. Use the attached current JD dataengineer_jd.txt and the truthful canonical candidate context from specific/master_prompt.txt and md_irsad.md. For this request, the EXACT five file names inside 2026-10-30/dataengineer/ are: md_irsad_cv_dataengineer.md, md_irsad_cv_dataengineer.pdf, md_irsad_cv_dataengineer.docx, jd_email_reply_2026-10-30.txt, interview_prep_dataengineer_2026-10-30.pdf. The three CV file names MUST NOT contain a date. Generate and link exactly ONE downloadable archive named 2026-10-30_dataengineer.zip (hyphens in date; no prefix/suffix/version). These exact filenames OVERRIDE any older date-based names in cached Project files or prior chats. Follow the current Section 13 for all other requirements: truthful role-level CV, 2-page portrait CV PDF and DOCX, email TXT and anonymous 16:9 interview-prep PDF. Validate ZIP integrity and five files; never mix employers. If Project source files are inaccessible, say so.",
+    "saved_at": "2026-10-30T18:40:17+05:30"
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "search_keywords": [
+    "#dataengineer",
+    "#pythondeveloper",
+    "#awsdataengineer",
+    "#aiengineer"
+  ],
+  "target_roles": {
+    "awsdataengineer": [
+      "aws data engineer",
+      "awsdataengineer",
+      "aws glue developer",
+      "aws etl developer"
+    ],
+    "dataengineer": [
+      "data engineer",
+      "dataengineer",
+      "big data engineer",
+      "etl engineer"
+    ],
+    "pythondeveloper": [
+      "python developer",
+      "pythondeveloper",
+      "python engineer",
+      "backend python developer",
+      "python backend developer",
+      "python software developer",
+      "fastapi developer",
+      "flask developer",
+      "django developer"
+    ],
+    "aiengineer": [
+      "ai engineer",
+      "aiengineer",
+      "ai/ml engineer",
+      "ml engineer",
+      "machine learning engineer",
+      "artificial intelligence engineer",
+      "genai engineer",
+      "generative ai engineer",
+      "llm engineer",
+      "agentic ai engineer",
+      "ai agent engineer",
+      "ai developer",
+      "machine learning developer"
+    ]
+  },
+  "blocked_title_keywords": [
+    "data analyst",
+    "business analyst",
+    "bi developer",
+    "power bi developer",
+    "tableau developer",
+    "java developer",
+    "javascript developer",
+    "frontend developer",
+    "react developer",
+    "qa engineer",
+    "test engineer",
+    "sales",
+    "recruiter",
+    "hr executive",
+    "intern",
+    "internship",
+    "trainee"
+  ],
+  "blocked_post_keywords": [
+    "open to work",
+    "looking for a job",
+    "looking for job opportunities",
+    "seeking job opportunities",
+    "seeking new opportunities",
+    "please refer me",
+    "available for hire",
+    "not hiring",
+    "we are not hiring",
+    "join our paid course",
+    "register for our webinar"
+  ],
+  "hiring_keywords": [
+    "hiring",
+    "we are looking for",
+    "we're looking for",
+    "we are seeking",
+    "job opening",
+    "job openings",
+    "open position",
+    "vacancy",
+    "vacancies",
+    "recruiting for",
+    "urgent requirement",
+    "apply now",
+    "send your resume",
+    "share your cv",
+    "send your cv",
+    "email your resume"
+  ],
+  "date_filter": "past-24h",
+  "job_only": true,
+  "max_scrolls": 6,
+  "pacing_seconds": {
+    "action": [1.0, 2.5],
+    "scroll": [2.0, 4.0],
+    "expand": [0.8, 1.5],
+    "between_searches": [4.0, 7.0]
+  },
+  "wait_seconds": {
+    "results": 6.0,
+    "results_poll": 0.25,
+    "route": 2.5
+  }
+}

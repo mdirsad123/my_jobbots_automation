@@ -1,0 +1,18 @@
+Subject: Application for AWS Data Engineer
+
+Dear Hiring Team,
+
+I am applying for the AWS Data Engineer role. I bring over three years of experience across Python engineering, AWS-based data pipelines, serverless automation, and SQL-backed applications.
+
+- Developed AWS Glue and PySpark ETL workflows for finance datasets, including schema mapping, incremental loading, and validation.
+- Worked with S3, Lambda, Step Functions, DynamoDB, Redshift, and CloudWatch to orchestrate and monitor data processing.
+- Built Python REST integrations and SQL/MySQL-backed workflows, alongside AWS-based finance-document automation.
+
+I would welcome the opportunity to discuss how these skills fit your data engineering needs. I can share further details about my project responsibilities and relevant AWS experience during an interview.
+
+Please find my updated CV attached.
+
+Best regards,
+Md Irsad
++91-8409718735
+mdirsadtech7305@gmail.com

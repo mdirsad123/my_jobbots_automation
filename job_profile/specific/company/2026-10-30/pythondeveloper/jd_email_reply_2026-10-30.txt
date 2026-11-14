@@ -1,0 +1,18 @@
+Subject: Application for Python Developer
+
+Dear Hiring Team,
+
+I am applying for a Python Developer role. I have 3+ years of experience working with Python backends, REST APIs, SQL, automation workflows, and AWS-based data processing.
+
+- Built Flask/FastAPI backend services, MySQL integrations, and React-connected business application modules, including authentication and reporting workflows.
+- Developed Python-based API and event-driven automation with AWS Lambda, SQS, S3, DynamoDB, and Oracle ORDS; automated finance-document generation with an 80% reduction in manual effort.
+- Worked with Selenium, Pandas, Docker, Git, and testing/debugging tools alongside cloud data-processing pipelines.
+
+I would welcome the opportunity to discuss how my backend development and automation experience fits your team's requirements. I am available to join immediately to within 15 days, subject to final engagement arrangements.
+
+Please find my updated CV attached.
+
+Best regards,
+Md Irsad
++91-8409718735
+mdirsadtech7305@gmail.com

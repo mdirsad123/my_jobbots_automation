@@ -1,0 +1,18 @@
+Subject: Application for AI Engineer / Python AI Backend Engineer
+
+Dear Hiring Team,
+
+I am applying for AI Engineer opportunities focused on Python backend development, API integrations, AI-enabled automation and data workflows. I bring 3+ years of experience in Python software and data engineering, with exposure to LLM API automation and RAG concepts.
+
+- Built Python REST services and business workflows using FastAPI, Flask, SQL and MySQL.
+- Delivered AWS Glue/PySpark pipelines and serverless automation with Lambda, Step Functions, S3 and SQS.
+- Worked with LLM APIs, prompt-driven workflows and data preprocessing; currently extending these foundations toward production GenAI application patterns.
+
+I would welcome a discussion about roles where my software engineering and AWS data experience can contribute to dependable AI application delivery. Please find my updated CV attached.
+
+Best regards,
+Md Irsad
++91-8409718735
+mdirsadtech7305@gmail.com
+
+Note for sender: Adapt the subject and opening to each specific vacancy. This is a general role-level template, not an application to all employers in the JD corpus.

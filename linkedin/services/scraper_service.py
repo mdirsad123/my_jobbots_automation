@@ -21,6 +21,217 @@ project_root = Path(
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
+# Put scraper_config.json NEXT TO this file. Edits to that file take effect
+# at the start of the next scrape; no Python changes are needed.
+CONFIG_PATH = Path(__file__).resolve().with_name("scraper_config.json")
+
+
+def load_scraper_config():
+    try:
+        with CONFIG_PATH.open("r", encoding="utf-8") as handle:
+            config = json.load(handle)
+    except (OSError, json.JSONDecodeError) as exc:
+        raise RuntimeError(
+            f"Unable to read LinkedIn scraper config at {CONFIG_PATH}: {exc}"
+        ) from exc
+
+    for name in ("search_keywords", "blocked_title_keywords",
+                 "blocked_post_keywords", "hiring_keywords"):
+        if not isinstance(config.get(name), list) or any(
+            not isinstance(item, str) for item in config[name]
+        ):
+            raise ValueError(f"Config '{name}' must be a list of strings")
+
+    roles = config.get("target_roles")
+    if not isinstance(roles, dict) or not roles or any(
+        not isinstance(aliases, list) or not aliases or any(
+            not isinstance(alias, str) or not alias.strip()
+            for alias in aliases
+        )
+        for aliases in roles.values()
+    ):
+        raise ValueError("Config 'target_roles' must map roles to nonempty aliases")
+
+    if not config["search_keywords"]:
+        raise ValueError("Config 'search_keywords' must not be empty")
+    return config
+
+
+def _keyword_pattern(phrase):
+    # Match complete words, allowing punctuation differences such as AI/ML,
+    # AI-ML and AI ML. Never match plain 'data' or 'cloud' as a role.
+    words = re.findall(r"[a-z0-9]+", phrase.casefold())
+    if not words:
+        return None
+    pattern = r"(?<![a-z0-9])" + r"[\s_./\-]*".join(
+        re.escape(word) for word in words
+    ) + r"(?![a-z0-9])"
+    return re.compile(pattern, re.IGNORECASE)
+
+
+def _compile_role_filters(config):
+    roles = []
+    for role, aliases in config["target_roles"].items():
+        patterns = [(_keyword_pattern(alias), alias) for alias in aliases]
+        roles.append((role, [(pattern, alias) for pattern, alias in patterns if pattern]))
+    return {
+        "roles": roles,
+        "blocked_title": [p for item in config["blocked_title_keywords"]
+                          if (p := _keyword_pattern(item))],
+        "blocked_post": [p for item in config["blocked_post_keywords"]
+                         if (p := _keyword_pattern(item))],
+        "hiring": [p for item in config["hiring_keywords"]
+                   if (p := _keyword_pattern(item))],
+    }
+
+
+def _match_role_title(candidate, filters):
+    """Return (real title, configured role), never generic one-word topics."""
+    if not candidate:
+        return None
+    candidate = re.sub(r"\s+", " ", candidate).strip()
+    if len(candidate) > 220:
+        return None
+
+    hits = []
+    for role, aliases in filters["roles"]:
+        for pattern, alias in aliases:
+            match = pattern.search(candidate)
+            if match:
+                hits.append((match.start(), -(match.end() - match.start()), role, match))
+    if not hits:
+        return None
+
+    # Prefer longest overlapping alias (AWS Data Engineer before Data Engineer).
+    # Otherwise, choose the first explicitly named role in a multi-role line.
+    hits.sort(key=lambda hit: (hit[0], hit[1]))
+    start, _, role, match = hits[0]
+    for pos, _, other_role, other_match in hits[1:]:
+        if pos == start and other_match.end() > match.end():
+            role, match = other_role, other_match
+
+    # A disallowed title before our role is usually a skills mention, e.g.
+    # 'Cloud Engineer with Python Developer skills'. Reject internships and
+    # trainee posts even if that modifier appears after the target title.
+    for pattern in filters["blocked_title"]:
+        blocked = pattern.search(candidate)
+        if blocked and (
+            blocked.start() < match.start()
+            or blocked.group(0).casefold() in {"intern", "internship", "trainee"}
+        ):
+            return None
+
+    prefix = candidate[:match.start()]
+    seniority = re.search(
+        r"(?i)(?:^|[\s:|,/-])"
+        r"(senior|junior|lead|principal|staff|associate|sr\.?|jr\.?)\s*$",
+        prefix,
+    )
+    title = match.group(0).lstrip("#")
+    if seniority:
+        title = f"{seniority.group(1)} {title}"
+    title = title.replace("_", " ").strip(" -:/|,.;#")
+    return title, role
+
+
+def identify_target_job(post_text, linked_title, config, filters=None):
+    """Require hiring intent AND a target *position*, not just tech mentions.
+
+    A real linked job title takes precedence. Without one, use job-title labels,
+    hiring headlines and concise role-name lines; never scrape by hashtag alone
+    or because a target skill appears in a long requirements paragraph.
+    """
+    filters = filters or _compile_role_filters(config)
+    text = post_text or ""
+    if config.get("job_only", True) and not any(
+        pattern.search(text) for pattern in filters["hiring"]
+    ):
+        return None
+    if any(pattern.search(text) for pattern in filters["blocked_post"]):
+        return None
+
+    if linked_title:
+        match = _match_role_title(linked_title, filters)
+        if match:
+            return match
+        # A linked job explicitly titled Data Analyst/Cloud Engineer wins over
+        # a coincidental target-role skill or hashtag in the post body.
+        if any(pattern.search(linked_title) for pattern in filters["blocked_title"]):
+            return None
+
+    lines = [re.sub(r"\s+", " ", line).strip()
+             for line in text.splitlines() if line.strip()]
+    label = re.compile(
+        r"(?i)^(?:[•*\-]\s*)?"
+        r"(?:job title|job role|role|position|designation|vacancy|"
+        r"open position|hiring for|we are hiring for|we're hiring for)"
+        r"\s*[:\-–|]?\s*(.+)$"
+    )
+    explicit_labels = []
+    for line in lines:
+        found = label.match(line)
+        if found:
+            explicit_labels.append(found.group(1))
+
+    if explicit_labels:
+        for title in explicit_labels:
+            match = _match_role_title(title, filters)
+            if match:
+                return match
+        # Do not mistake 'Skills: #PythonDeveloper' for a second job when
+        # 'Role: Data Analyst' was explicitly declared.
+        return None
+
+    # Hiring headlines can put the title on the same line or the next line.
+    hiring_prefix = re.compile(
+        r"(?i)\b(?:we are hiring|we're hiring|now hiring|hiring for|"
+        r"we are looking for|we're looking for|urgent requirement for|"
+        r"openings? for|looking to hire)\b"
+    )
+    for index, line in enumerate(lines):
+        signal = hiring_prefix.search(line)
+        if not signal:
+            continue
+        trailing = line[signal.end():].lstrip(" :\t-–|#")
+        match = _match_role_title(trailing[:110], filters)
+        if match:
+            return match
+        if index + 1 < len(lines):
+            next_line = lines[index + 1]
+            if len(next_line) <= 110:
+                match = _match_role_title(next_line, filters)
+                if match:
+                    return match
+
+    # Some recruiters post 'Senior Data Engineer' as its own heading followed
+    # by experience, location and application details.
+    skip_prefixes = (
+        "skills", "tech stack", "technology", "requirements", "must have",
+        "nice to have", "experience", "qualification", "location",
+        "hashtags", "preferred", "proficiency", "knowledge", "tools",
+        "responsibilities", "about us", "apply", "contact", "email",
+    )
+    for line in lines[:30]:
+        candidate = line.lstrip("•*- ")
+        if len(candidate) > 85 or len(candidate.split()) > 10:
+            continue
+        if candidate.casefold().startswith(skip_prefixes):
+            continue
+        match = _match_role_title(candidate, filters)
+        if match:
+            # The position must be the heading itself, not an unrelated
+            # sentence that merely mentions a title.
+            _, role = match
+            role_pos = min(
+                (m.start() for r, patterns in filters["roles"] if r == role
+                 for p, _ in patterns if (m := p.search(candidate))),
+                default=1000,
+            )
+            if role_pos <= 26:
+                return match
+    return None
+
+
 def scrape_feed_posts(driver):
     """
     Scrape relevant LinkedIn feed/content job posts and save them to:
@@ -39,40 +250,25 @@ def scrape_feed_posts(driver):
     TODAY = datetime.now().strftime("%Y-%m-%d")
     OUTPUT_FILE = OUTPUT_DIR / f"{TODAY}.json"
 
-    # Search phrases are intentionally broad so we can discover jobs that
-    # may not contain exactly the same wording as the target category.
-    SEARCH_QUERIES = [
-        "Python Developer", "Data Engineer", "Devops Engineer", "Data Analyst",
-        "Machine Learning Engineer", "AI Engineer", "AI Agent Engineer", "Agentic AI", "Generative AI", 
-        "AI Systems Engineer", "MLops", "AI Developer", "Data Scientist","cloud",
-        "Backend Engineer", "Backend Developer", "devops",
-        "backend", "pythonjobs", "machinelearning", "datascience",
-        "dataengineer", "dataengineering", "awsdataengineer", "bigdata"
-    ]
-
-    # Search each query over the past week. Change to "past-24h" if you
-    # want only today's LinkedIn posts.
-    DATE_FILTER = "past-24h"
-
-    # Scroll settings.
-    MAX_SCROLLS = 6
-
-    # Only browser interactions require pacing. HTML parsing, filtering,
-    # deduplication and JSON saving are local and do not contact LinkedIn.
-    # Set (min_seconds, max_seconds) here; keep min <= max.
-    ACTION_PAUSE = (1.0, 2.5)       # After navigation / result rendering.
-    SCROLL_PAUSE = (2.0, 4.0)       # After each page scroll.
-    EXPAND_PAUSE = (0.8, 1.5)       # Between "see more" clicks.
-    SEARCH_PAUSE = (4.0, 7.0)       # Between separate search queries.
-
-    # Page/result waits.
-    RESULT_WAIT_SECONDS = 6.0
-    RESULT_POLL_SECONDS = 0.25
-    ROUTE_WAIT_SECONDS = 2.5
-
-    # Keep this True if you only want posts that look like actual job
-    # opportunities. It filters out generic trading discussions/news.
-    JOB_ONLY = True
+    CONFIG = load_scraper_config()
+    ROLE_FILTERS = _compile_role_filters(CONFIG)
+    # True hashtags are single tokens (e.g. #dataengineer, not #data engineer).
+    SEARCH_QUERIES = list(dict.fromkeys(
+        query.strip() for query in CONFIG["search_keywords"] if query.strip()
+    ))
+    DATE_FILTER = CONFIG.get("date_filter", "past-24h")
+    MAX_SCROLLS = max(0, int(CONFIG.get("max_scrolls", 6)))
+    pacing = CONFIG.get("pacing_seconds", {})
+    waits = CONFIG.get("wait_seconds", {})
+    ACTION_PAUSE = tuple(pacing.get("action", (1.0, 2.5)))
+    SCROLL_PAUSE = tuple(pacing.get("scroll", (2.0, 4.0)))
+    EXPAND_PAUSE = tuple(pacing.get("expand", (0.8, 1.5)))
+    SEARCH_PAUSE = tuple(pacing.get("between_searches", (4.0, 7.0)))
+    RESULT_WAIT_SECONDS = float(waits.get("results", 6.0))
+    RESULT_POLL_SECONDS = float(waits.get("results_poll", 0.25))
+    ROUTE_WAIT_SECONDS = float(waits.get("route", 2.5))
+    print(f"[scraper] Loaded {len(SEARCH_QUERIES)} searches and "
+          f"{len(CONFIG['target_roles'])} target roles from {CONFIG_PATH}")
 
     # ------------------------------------------------------------------
     # Pacing and LinkedIn restriction handling (from V2, no role changes)
@@ -189,7 +385,6 @@ def scrape_feed_posts(driver):
 
     def generate_hashtags(text):
         tags = set(re.findall(r"#\w+", (text or "").lower()))
-        tags.add("#remote")
         return " ".join(sorted(tags))
 
     def build_search_url(query):
@@ -398,184 +593,6 @@ def scrape_feed_posts(driver):
                     return candidate
 
         return "unknown"
-
-    title_signals = [
-        "engineer",
-        "developer",
-        "scientist",
-        "analyst",
-        "architect",
-        "manager",
-        "lead",
-        "consultant",
-        "specialist",
-        "researcher",
-        "intern",
-        "trader",
-        "quant",
-        "quantitative",
-        "devops",
-        "mlops",
-        "python",
-        "data",
-        "ai",
-        "ml",
-        "backend",
-        "fullstack",
-        "frontend",
-        "software",
-        "cloud",
-        "platform",
-        "automation",
-        "trading",
-        "finance",
-        "fintech",
-        "forex",
-        "market",
-        "risk",
-        "portfolio",
-        "investment",
-        "broker",
-        "backtesting",
-        "strategy",
-    ]
-
-    title_noise = {
-        "follow",
-        "like",
-        "comment",
-        "repost",
-        "share",
-        "send",
-        "connect",
-        "message",
-        "more",
-        "view",
-        "profile",
-        "post",
-        "linkedin",
-        "home",
-        "jobs",
-        "network",
-        "notifications",
-        "report",
-        "save",
-        "copy",
-        "embed",
-        "reactions",
-        "see",
-        "hide",
-        "apply",
-    }
-
-    def extract_title(post_text, card_title=None):
-        if card_title:
-            candidate = normalise_space(card_title)
-            if candidate and candidate.lower() not in title_noise:
-                return candidate
-
-        lines = [
-            normalise_space(line)
-            for line in post_text.splitlines()
-            if normalise_space(line)
-        ]
-
-        trigger_words = (
-            "hiring",
-            "we are hiring",
-            "we're hiring",
-            "looking for",
-            "open role",
-            "job opportunity",
-            "position",
-            "job title",
-            "job by",
-            "role:",
-        )
-
-        for index, line in enumerate(lines):
-            lowered = line.lower()
-
-            if any(trigger in lowered for trigger in trigger_words):
-                candidates = []
-
-                if index > 0:
-                    candidates.append(lines[index - 1])
-
-                if index + 1 < len(lines):
-                    candidates.append(lines[index + 1])
-
-                for candidate in candidates:
-                    if (
-                        2 <= len(candidate.split()) <= 12
-                        and 3 <= len(candidate) <= 120
-                        and candidate.lower() not in title_noise
-                    ):
-                        return candidate
-
-        for line in lines:
-            lowered = line.lower()
-            words = len(line.split())
-
-            if (
-                1 <= words <= 10
-                and any(signal in lowered for signal in title_signals)
-                and lowered not in title_noise
-                and not lowered.startswith(("http://", "https://"))
-            ):
-                return line
-
-        return "Unknown"
-
-    def is_relevant_job(text, title):
-        combined = f"{title} {text}".lower()
-
-        job_terms = (
-            "hiring",
-            "job",
-            "role",
-            "position",
-            "vacancy",
-            "opening",
-            "career",
-            "careers",
-            "recruit",
-            "recruiting",
-            "looking for",
-            "join our",
-            "apply",
-            "opportunity",
-            "internship",
-        )
-
-        domain_terms = (
-            "#ai engineer",
-            "#ml engineer",
-            "data engineer",
-            "data scientist",
-            "machine learning",
-            "python developer",
-            "python engineer",
-            "backend engineer",
-            "backend developer",
-            "devops engineer",
-            "software engineer",
-            "software developer",
-            "fullstack engineer",
-            "fullstack developer",
-            "cloud engineer",
-            "cloud developer",
-        )
-
-        has_job = any(term in combined for term in job_terms)
-        domain_hits = sum(
-            1 for term in domain_terms if term in combined
-        )
-
-        if not JOB_ONLY:
-            return domain_hits >= 1
-
-        return has_job and domain_hits >= 1
 
     def post_text_from_tag(element):
         text_box = element.select_one("[data-testid='expandable-text-box']")
@@ -898,15 +915,20 @@ def scrape_feed_posts(driver):
             "actively reviewing applicants",
         }
 
+        # The actual job link text is the best title when available. Keep
+        # explicitly blocked titles too, so the filter can reject a linked
+        # Data Analyst card rather than fall back to post hashtags.
+        link_title = normalise_space(link.get_text(" ", strip=True))
+        title_candidates = [link_title] + lines
         card_title = next(
             (
                 line
-                for line in lines
+                for line in title_candidates
                 if line.casefold() not in ignored
                 and 1 <= len(line.split()) <= 12
-                and any(
-                    signal in line.lower()
-                    for signal in title_signals
+                and (
+                    _match_role_title(line, ROLE_FILTERS) is not None
+                    or any(p.search(line) for p in ROLE_FILTERS["blocked_title"])
                 )
             ),
             None,
@@ -1200,16 +1222,12 @@ def scrape_feed_posts(driver):
                         extract_linked_job_details(post)
                     )
 
-                    title = extract_title(
-                        post_text,
-                        linked_title,
+                    target = identify_target_job(
+                        post_text, linked_title, CONFIG, ROLE_FILTERS
                     )
-
-                    if not is_relevant_job(
-                        post_text,
-                        title,
-                    ):
+                    if target is None:
                         continue
+                    title, target_role = target
 
                     poster_name, poster_url = extract_poster(
                         post
@@ -1238,13 +1256,6 @@ def scrape_feed_posts(driver):
                         preferred_url=linked_job_url,
                     )
 
-                    # If the post is clearly a job but title extraction
-                    # failed, keep it instead of throwing it away.
-                    if title == "Unknown":
-                        title = (
-                            "Trading / Finance Job Opportunity"
-                        )
-
                     job_hash = make_hash(
                         title,
                         company,
@@ -1261,6 +1272,7 @@ def scrape_feed_posts(driver):
                         "job_hashkey": job_hash,
                         "source": "linkedin_feed_post",
                         "title": title,
+                        "target_role": target_role,
                         "company": company,
                         "post_date": TODAY,
                         "url": apply_url,
@@ -1339,21 +1351,32 @@ def scrape_feed_posts(driver):
     merged = []
     merged_hashes = set()
 
+    removed_old_jobs = 0
     for job in existing_jobs + jobs:
-        job_hash = job.get("job_hashkey")
-
-        if not job_hash:
-            job_hash = make_hash(
-                job.get("title", ""),
-                job.get("company", ""),
-                job.get("url", ""),
-                job.get("job_description", ""),
-            )
-            job["job_hashkey"] = job_hash
-
+        if not isinstance(job, dict):
+            continue
+        # Re-apply CURRENT config to today's existing JSON, otherwise old
+        # broad/unwanted jobs would survive every same-day rerun forever.
+        target = identify_target_job(
+            job.get("job_description", ""),
+            job.get("title", ""),
+            CONFIG,
+            ROLE_FILTERS,
+        )
+        if not target:
+            if job in existing_jobs:
+                removed_old_jobs += 1
+            continue
+        job["title"], job["target_role"] = target
+        job_hash = make_hash(
+            job.get("title", ""),
+            job.get("company", ""),
+            job.get("url", ""),
+            job.get("job_description", ""),
+        )
+        job["job_hashkey"] = job_hash
         if job_hash in merged_hashes:
             continue
-
         merged_hashes.add(job_hash)
         merged.append(job)
 
@@ -1380,6 +1403,7 @@ def scrape_feed_posts(driver):
         f"[scraper] Finished. "
         f"New jobs: {len(jobs)}, "
         f"total jobs in today's file: {len(merged)}, "
+        f"previous jobs removed by filters: {removed_old_jobs}, "
         f"search errors: {search_errors}"
     )
 

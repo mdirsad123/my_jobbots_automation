@@ -5,6 +5,8 @@ Each role opens a new chat in its OWN ChatGPT Project.
 Each new chat receives ONE attachment: its current role JD.
 The master prompt and resume files are already in each ChatGPT Project's Sources.
 The JD attachment MUST be verified inside the composer before Send.
+The script waits for uploads to finish, verifies the Send result and stops if
+submission cannot be confirmed. Existing unsent dated drafts can be resumed.
 
 Project landing pages can reopen with an UN-SENT old prompt draft. Before attaching
 new files, this script backs up old draft text locally and clears just the new-chat
@@ -51,6 +53,7 @@ from selenium.common.exceptions import (
     WebDriverException,
 )
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.remote.webelement import WebElement
@@ -83,16 +86,20 @@ ROLE_PROJECT_URLS: dict[str, str] = {
 }
 CHROME_DEBUGGER_ADDRESS = "127.0.0.1:9222"
 
-# True: submit each prompt and proceed immediately to the next role.
+# Submit one role at a time. Advance ONLY after a confirmed successful Send.
 # Use --dry-run to inspect the attachments and prompts without sending.
 SEND_REQUESTS = True
 
-PAGE_LOAD_TIMEOUT_SECONDS = 40
-ELEMENT_TIMEOUT_SECONDS = 35
-ATTACHMENT_TIMEOUT_SECONDS = 55
-SEND_TIMEOUT_SECONDS = 35
-AFTER_UPLOAD_SECONDS = 1.5
-BETWEEN_REQUESTS_SECONDS = 2.0
+PAGE_LOAD_TIMEOUT_SECONDS = 60
+ELEMENT_TIMEOUT_SECONDS = 60
+ATTACHMENT_TIMEOUT_SECONDS = 120
+SEND_TIMEOUT_SECONDS = 240          # Wait for ChatGPT to enable Send after JD upload
+AFTER_UPLOAD_SECONDS = 3.0           # Upload chip may appear before upload completes
+SEND_READY_STABLE_SECONDS = 2.0      # Button should remain enabled briefly
+SEND_CONFIRM_SECONDS = 22           # Inspect navigation after each click
+SEND_FINAL_CONFIRM_SECONDS = 75     # If composer clears, do not retry sending
+SEND_CLICK_ATTEMPTS = 3             # Retry ONLY while original unsent draft remains
+BETWEEN_REQUESTS_SECONDS = 5.0
 
 RESULTS_FILENAME = "chatgpt_submission_results.json"
 DRAFT_BACKUP_FILENAME = "chatgpt_replaced_drafts.json"
@@ -274,15 +281,66 @@ UPLOAD_MENU_SELECTORS: tuple[tuple[str, str], ...] = (
     (By.XPATH, "//*[self::button or @role='menuitem'][contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'from computer')]") ,
 )
 
-SEND_SELECTORS: tuple[tuple[str, str], ...] = (
-    (By.CSS_SELECTOR, 'button[data-testid="send-button"]'),
-    (By.CSS_SELECTOR, 'button[aria-label="Send prompt"]'),
-    (By.CSS_SELECTOR, 'button[aria-label="Send message"]'),
-    (By.CSS_SELECTOR, 'button[aria-label="Send"]'),
-    (By.CSS_SELECTOR, 'button[title="Send prompt"]'),
-    (By.CSS_SELECTOR, 'button[title="Send"]'),
-    (By.XPATH, "//button[contains(translate(@aria-label,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'send prompt')]") ,
-)
+# Send-button lookup is scoped to the current composer (not sidebar/global buttons).
+# A single CSS selector cannot handle all ChatGPT UI variants. The browser-side
+# locator checks data-testid, accessible labels, submit buttons and arrow icons.
+SEND_BUTTON_PROBE_JS = r"""
+    const editor = arguments[0];
+    let root = editor.closest('form');
+    if (!root) {
+        let node = editor;
+        for (let i = 0; i < 9 && node; i++, node = node.parentElement) {
+            if (node.querySelector && node.querySelector(
+                'button[data-testid="composer-plus-btn"], input[type="file"], ' +
+                'button[aria-label="Attach files"], button[aria-label="Add files"]'
+            )) { root = node; break; }
+        }
+    }
+    if (!root || root === document.body) return {element:null, ready:false,
+        info:'Composer form/container not located'};
+
+    const buttons = Array.from(root.querySelectorAll('button'));
+    const isVisible = b => b.getClientRects().length > 0 &&
+        getComputedStyle(b).visibility !== 'hidden' &&
+        getComputedStyle(b).display !== 'none';
+    const candidates = buttons.filter(b => {
+        if (!isVisible(b)) return false;
+        const testid = (b.getAttribute('data-testid') || '').toLowerCase();
+        const label = (b.getAttribute('aria-label') || '').trim().toLowerCase();
+        const title = (b.getAttribute('title') || '').trim().toLowerCase();
+        const icon = b.querySelector('svg');
+        const iconClass = icon ? (icon.getAttribute('class') || '') : '';
+        return /(?:^|[-_])(send|submit)(?:[-_]|$)/.test(testid) ||
+               /^(send|send prompt|send message|submit)$/.test(label) ||
+               /^(send|send prompt|send message)$/.test(title) ||
+               b.getAttribute('type') === 'submit' ||
+               /(?:lucide-)?arrow-up/.test(iconClass);
+    });
+    const describe = b => [
+        (b.getAttribute('data-testid') || ''),
+        (b.getAttribute('aria-label') || ''),
+        (b.getAttribute('title') || ''),
+        ('disabled=' + Boolean(b.disabled)),
+        ('aria-disabled=' + (b.getAttribute('aria-disabled') || 'false'))
+    ].join(' / ');
+    const ready = b => !b.disabled && b.getAttribute('aria-disabled') !== 'true' &&
+        !b.hasAttribute('inert') && getComputedStyle(b).pointerEvents !== 'none';
+    const chosen = candidates.find(ready) || candidates[0];
+    return chosen
+        ? {element:chosen, ready:ready(chosen), info:describe(chosen)}
+        : {element:null, ready:false,
+           info:'No Send button; composer buttons: ' + buttons.filter(isVisible)
+                .map(describe).slice(0, 8).join(' | ')};
+"""
+
+
+def normalized_prompt(text: str) -> str:
+    return " ".join((text or "").split())
+
+
+class SubmissionUnconfirmed(RuntimeError):
+    """A click may have been sent; manual review is safer than a duplicate."""
+
 
 
 def assert_chatgpt_login_and_new_chat(driver: webdriver.Chrome, expected_url: str) -> None:
@@ -342,13 +400,15 @@ def open_fresh_chat_tab(driver: webdriver.Chrome, url: str) -> str:
         lambda d: d.execute_script("return document.readyState") in {"interactive", "complete"}
     )
     assert_chatgpt_login_and_new_chat(driver, url)
+    wait_for_composer(driver)
+    time.sleep(3)  # Allow a slow Project landing page to restore its saved draft.
     return composer_text(wait_for_composer(driver)).strip()
 
 
 def backup_existing_draft(
     backup_path: Path, *, role: str, project_url: str, draft: str,
 ) -> None:
-    """Persist a copy BEFORE replacing the unsent draft in the Project landing page."""
+    """Save the original unsent draft BEFORE replacing it with a new role request."""
     if not draft:
         return
     existing: list[dict] = []
@@ -359,8 +419,7 @@ def backup_existing_draft(
                 existing = loaded
         except (OSError, ValueError) as exc:
             raise RuntimeError(
-                f"Cannot read previous draft backup {backup_path}. "
-                "Refusing to change the Project draft."
+                f"Cannot read previous draft backup {backup_path}; refusing to clear it."
             ) from exc
     existing.append({
         "role": role,
@@ -374,6 +433,39 @@ def backup_existing_draft(
         encoding="utf-8",
     )
     tmp.replace(backup_path)
+
+
+def find_existing_prepared_tab(driver: webdriver.Chrome, request: RoleRequest) -> bool:
+    """Reuse the same-date staged JD and prompt from an existing Project tab.
+
+    This avoids discarding the four drafts from a failed previous Send attempt.
+    Never interact with an existing /c/ conversation.
+    """
+    original_handle = driver.current_window_handle
+    target_path = urlparse(request.project_url).path.rstrip('/')
+    for handle in reversed(driver.window_handles):
+        try:
+            driver.switch_to.window(handle)
+            url = urlparse(driver.current_url)
+            if url.hostname not in {'chatgpt.com', 'www.chatgpt.com'}:
+                continue
+            if url.path.rstrip('/') != target_path:
+                continue
+            editor = first_visible(driver, COMPOSER_SELECTORS)
+            if editor is None:
+                continue
+            if normalized_prompt(composer_text(editor)) != normalized_prompt(request.prompt):
+                continue
+            if attachment_visible(driver, request.jd_path.name):
+                print(f'  Reusing existing unsent role draft: {driver.current_url}')
+                return True
+        except (WebDriverException, StaleElementReferenceException, RuntimeError):
+            continue
+    try:
+        driver.switch_to.window(original_handle)
+    except WebDriverException:
+        pass
+    return False
 
 
 def clear_project_landing_draft(driver: webdriver.Chrome) -> None:
@@ -528,37 +620,161 @@ def fill_prompt(driver: webdriver.Chrome, message: str) -> None:
             f"ChatGPT composer text verification failed ({len(actual)} vs {len(expected)} chars)."
         )
 
-def submit_prompt(driver: webdriver.Chrome) -> str:
-    """Click Send exactly ONCE. Never retry an ambiguous submission."""
-    time.sleep(20)  # Wait 20 seconds for ChatGPT file upload to finish
-    until = time.monotonic() + SEND_TIMEOUT_SECONDS
-    send: WebElement | None = None
-    while time.monotonic() < until:
-        for element in visible_elements(driver, SEND_SELECTORS):
-            try:
-                if element.is_enabled():
-                    send = element
-                    break
-            except StaleElementReferenceException:
-                pass
-        if send is not None:
-            break
-        time.sleep(0.3)
-    if send is None:
-        raise TimeoutException("ChatGPT Send button not enabled or not found.")
+def probe_send_button(driver: webdriver.Chrome) -> tuple[WebElement | None, bool, str]:
+    editor = first_visible(driver, COMPOSER_SELECTORS)
+    if editor is None:
+        return None, False, 'Composer not visible'
+    try:
+        state = driver.execute_script(SEND_BUTTON_PROBE_JS, editor)
+        if not isinstance(state, dict):
+            return None, False, 'Send-button probe returned unexpected data'
+        element = state.get('element')
+        ready = bool(state.get('ready'))
+        info = str(state.get('info', ''))
+        if element is not None and ready:
+            ready = element.is_displayed() and element.is_enabled()
+        return element, ready, info
+    except (StaleElementReferenceException, WebDriverException) as exc:
+        return None, False, f'Send-button locator still loading: {type(exc).__name__}'
 
-    safe_click(driver, send)
-    until = time.monotonic() + SEND_TIMEOUT_SECONDS
-    while time.monotonic() < until:
+
+def wait_for_send_enabled(driver: webdriver.Chrome, prompt: str, jd_name: str,
+                          seconds: float = SEND_TIMEOUT_SECONDS) -> WebElement:
+    """Wait for upload processing to finish; verify prompt/JD while waiting."""
+    end = time.monotonic() + seconds
+    stable_since: float | None = None
+    next_log = 0.0
+    detail = 'not found'
+    while time.monotonic() < end:
+        # Don't click Send if the draft was modified or detached while uploading.
+        editor = first_visible(driver, COMPOSER_SELECTORS)
+        if editor is None:
+            stable_since = None
+        elif normalized_prompt(composer_text(editor)) != normalized_prompt(prompt):
+            raise SubmissionUnconfirmed(
+                'Prompt changed/disappeared while waiting for Send. '
+                'Check the current ChatGPT tab before retrying.'
+            )
+        else:
+            button, enabled, detail = probe_send_button(driver)
+            if button is not None and enabled:
+                if stable_since is None:
+                    stable_since = time.monotonic()
+                elif time.monotonic() - stable_since >= SEND_READY_STABLE_SECONDS:
+                    if not attachment_visible(driver, jd_name):
+                        raise RuntimeError(f'JD attachment disappeared: {jd_name}')
+                    return button
+            else:
+                stable_since = None
+        if time.monotonic() >= next_log:
+            remaining = int(max(0, end - time.monotonic()))
+            print(f'  Waiting for Send button / JD upload... remaining {remaining}s ({detail})', flush=True)
+            next_log = time.monotonic() + 15
+        time.sleep(0.6)
+    raise TimeoutException(
+        f'ChatGPT Send did not become enabled within {int(seconds)}s. '
+        f'Last button state: {detail}. The unsent draft is still in this tab.'
+    )
+
+
+def check_send_state(driver: webdriver.Chrome, project_url: str, prompt: str) -> str:
+    """A new conversation /c/<id> in the same project proves Send went through."""
+    current = urlparse(driver.current_url)
+    target_id = re.search(r'g-p-[a-z0-9]+', urlparse(project_url).path)
+    if current.hostname not in {'chatgpt.com', 'www.chatgpt.com'} or not target_id:
+        raise SubmissionUnconfirmed(f'Unexpected ChatGPT URL: {driver.current_url}')
+    if target_id.group(0) not in current.path:
+        raise SubmissionUnconfirmed(f'Navigation to different Project: {driver.current_url}')
+    if re.search(r'/c/[a-z0-9-]+/?$', current.path, re.IGNORECASE):
+        return 'sent'
+    editor = first_visible(driver, COMPOSER_SELECTORS)
+    if editor is None:
+        return 'transitioning'
+    current_text = normalized_prompt(composer_text(editor))
+    if current_text == normalized_prompt(prompt):
+        return 'draft'
+    return 'cleared' if not current_text else 'modified'
+
+
+def click_send_button(driver: webdriver.Chrome, button: WebElement) -> None:
+    """Click one real, enabled button; never use Enter or global coordinates."""
+    try:
+        driver.execute_script("arguments[0].scrollIntoView({block:'center'});", button)
+        button.click()
+    except ElementClickInterceptedException:
+        # Intercepted means that WebDriver did not dispatch its click.
+        # Try a normal mouse action rather than clicking a random overlay.
+        ActionChains(driver).move_to_element(button).click().perform()
+
+
+def submit_prompt(driver: webdriver.Chrome, project_url: str,
+                  prompt: str, jd_filename: str) -> str:
+    """Submit with bounded retries only if the exact original draft is still unsent.
+
+    Never retry once the composer has cleared, navigation started, or submission
+    may be underway: a duplicate CV request would be worse than a clear error.
+    """
+    time.sleep(AFTER_UPLOAD_SECONDS)
+    for attempt in range(1, SEND_CLICK_ATTEMPTS + 1):
+        state = check_send_state(driver, project_url, prompt)
+        if state == 'sent':
+            return 'sent'
+        if state != 'draft':
+            raise SubmissionUnconfirmed(
+                f'Cannot safely click Send; composer state is {state!r}. '
+                'Inspect this tab before retrying.'
+            )
+        button = wait_for_send_enabled(
+            driver, prompt, jd_filename,
+            seconds=SEND_TIMEOUT_SECONDS if attempt == 1 else min(60, SEND_TIMEOUT_SECONDS),
+        )
+        print(f'  Clicking Send ({attempt}/{SEND_CLICK_ATTEMPTS})...', flush=True)
         try:
-            if "/c/" in urlparse(driver.current_url).path:
-                return "sent"
-            if not composer_text(wait_for_composer(driver)).strip():
-                return "sent_unconfirmed"
-        except (StaleElementReferenceException, WebDriverException):
-            pass
-        time.sleep(0.3)
-    return "sent_unconfirmed"
+            click_send_button(driver, button)
+        except (StaleElementReferenceException, WebDriverException) as exc:
+            # The DOM may have moved just as a request was dispatched.
+            # Observe state before deciding whether a retry is safe.
+            print(f'  Send click returned {type(exc).__name__}; verifying...', flush=True)
+        deadline = time.monotonic() + SEND_CONFIRM_SECONDS
+        last_state = 'draft'
+        while time.monotonic() < deadline:
+            try:
+                last_state = check_send_state(driver, project_url, prompt)
+            except WebDriverException:
+                last_state = 'transitioning'
+            if last_state == 'sent':
+                print(f'  Confirmed sent: {driver.current_url}', flush=True)
+                return 'sent'
+            if last_state in {'cleared', 'modified', 'transitioning'}:
+                break
+            time.sleep(0.6)
+
+        if last_state != 'draft':
+            # Once the draft changes, clicking again could create two chats.
+            print('  Send initiated; waiting for conversation URL...', flush=True)
+            deadline = time.monotonic() + SEND_FINAL_CONFIRM_SECONDS
+            while time.monotonic() < deadline:
+                try:
+                    state = check_send_state(driver, project_url, prompt)
+                except WebDriverException:
+                    state = 'transitioning'
+                if state == 'sent':
+                    print(f'  Confirmed sent: {driver.current_url}', flush=True)
+                    return 'sent'
+                time.sleep(0.7)
+            raise SubmissionUnconfirmed(
+                'The Send click changed the composer, but ChatGPT did not '
+                'confirm a new /c/ conversation. NOT retrying to avoid duplicates. '
+                f'Check this tab: {driver.current_url}'
+            )
+        # Still exactly the original unsent draft: it is safe to try again.
+        if attempt < SEND_CLICK_ATTEMPTS:
+            print('  Original prompt still unsent; retrying button click...', flush=True)
+    raise TimeoutException(
+        f'After {SEND_CLICK_ATTEMPTS} clicks, the original draft is still present '
+        'and no new conversation was created. Leaving this role unsent and stopping.'
+    )
+
 
 
 # ============================ RESULTS / MAIN =============================
@@ -608,9 +824,14 @@ def run(daily_folder: Path, *, send: bool, force: bool) -> int:
     pending = []
     for role_request in requests:
         previous = report["roles"].get(role_request.role, {})
-        if send and not force and previous.get("status") in {"sent", "sent_unconfirmed"}:
-            print(f"SKIP {role_request.role}: previously submitted; use --force to resend")
+        if send and not force and previous.get('status') == 'sent':
+            print(f"SKIP {role_request.role}: a new conversation was previously confirmed")
         else:
+            if send and not force and previous.get('status') in {'sent_unconfirmed', 'needs_review'}:
+                print(
+                    f"CHECK {role_request.role}: prior status={previous.get('status')}; "
+                    'will ONLY resume an exact unsent draft already open in Chrome.'
+                )
             pending.append(role_request)
     if not pending:
         print(f"No new requests. See {results_path}")
@@ -629,56 +850,75 @@ def run(daily_folder: Path, *, send: bool, force: bool) -> int:
             print(f"  JD PATH: {req.jd_path}")
             print(f"  ROLE-SPECIFIC PROMPT JD: {req.jd_path.name}")
             try:
-                old_draft = open_fresh_chat_tab(driver, req.project_url)
-                if old_draft:
-                    backup_existing_draft(
-                        draft_backup_path,
-                        role=req.role,
-                        project_url=req.project_url,
-                        draft=old_draft,
+                reused_tab = find_existing_prepared_tab(driver, req)
+                prior_status = report['roles'].get(req.role, {}).get('status')
+                if (send and not force and prior_status in {'sent_unconfirmed', 'needs_review'}
+                        and not reused_tab):
+                    raise SubmissionUnconfirmed(
+                        f'Previous status for {req.role} is {prior_status!r}, but no '
+                        'exact unsent prompt + JD is open. Check whether it was '
+                        'already submitted, then use --force only if appropriate.'
                     )
-                    clear_project_landing_draft(driver)
-                    print(
-                        "  Removed old unsent Project draft "
-                        f"(backup: {draft_backup_path.name})"
-                    )
-                # If a prior unsent draft has file chips, do not mix them with
-                # today's JD. Clearing prompt text does not necessarily remove
-                # previously uploaded attachments in ChatGPT.
-                known_attachments = [
-                    "chatgpt_cv_context.zip",  # Legacy unsent attachment only; never uploaded
-                    *(f"{role}_jd.txt" for role in ROLE_FOLDERS),
-                    "jd.txt",
-                ]
-                previous_files = [
-                    name for name in known_attachments
-                    if attachment_visible(driver, name)
-                ]
-                if previous_files:
-                    raise RuntimeError(
-                        "Old file attachment(s) are still present in this "
-                        f"Project draft: {previous_files}. Remove those old "
-                        "attachment chips manually and rerun this role; "
-                        "new files will not be mixed with old uploads."
-                    )
-                print("  Using Project's existing specific.zip / master_prompt.txt")
-                print("  Attaching ONLY the current role JD")
-                attach_file(driver, req.jd_path)
+                old_draft = (composer_text(wait_for_composer(driver)).strip()
+                             if reused_tab else open_fresh_chat_tab(driver, req.project_url))
+                same_draft = normalized_prompt(old_draft) == normalized_prompt(req.prompt)
                 required_files = (req.jd_path,)
-                verify_all_attachments(driver, required_files)
-                print(f"  VERIFIED JD attachment: {req.jd_path.name}")
-                fill_prompt(driver, req.prompt)
-                verify_all_attachments(driver, required_files)
-                print("  VERIFIED prompt and JD attachment; ready for Send")
-                if send:
-                    status = submit_prompt(driver)
-                    print(f"  {status.upper()}: chat remains open")
+                if same_draft:
+                    # Resume a previously prepared but NOT sent request. In particular,
+                    # reruns after the old Send timeout must not clear the JD chip.
+                    verify_all_attachments(driver, required_files)
+                    print('  RESUMING: exact dated prompt and JD already in composer')
                 else:
-                    status = "draft_ready"
-                    print("  DRY RUN: request staged only; Send not clicked")
+                    if old_draft:
+                        backup_existing_draft(
+                            draft_backup_path,
+                            role=req.role,
+                            project_url=req.project_url,
+                            draft=old_draft,
+                        )
+                        clear_project_landing_draft(driver)
+                        print(
+                            '  Removed old unsent Project draft '
+                            f'(backup: {draft_backup_path.name})'
+                        )
+                    # Clearing a draft does not remove attachments. Never mix old
+                    # attachment chips with today's JD.
+                    known_attachments = [
+                        'chatgpt_cv_context.zip',
+                        *(f'{role}_jd.txt' for role in ROLE_FOLDERS),
+                        'jd.txt',
+                    ]
+                    previous_files = [
+                        name for name in known_attachments
+                        if attachment_visible(driver, name)
+                    ]
+                    if previous_files:
+                        raise RuntimeError(
+                            'Old attachment(s) still present in Project draft: '
+                            f'{previous_files}. Remove those chips manually and rerun. '
+                            'The script will not mix JD versions.'
+                        )
+                    print("  Using Project's existing specific.zip / master_prompt.txt")
+                    print('  Attaching ONLY the current role JD')
+                    attach_file(driver, req.jd_path)
+                    verify_all_attachments(driver, required_files)
+                    print(f'  VERIFIED JD attachment: {req.jd_path.name}')
+                    fill_prompt(driver, req.prompt)
+                verify_all_attachments(driver, required_files)
+                if normalized_prompt(composer_text(wait_for_composer(driver))) != normalized_prompt(req.prompt):
+                    raise RuntimeError('Prompt text changed before Send')
+                print('  VERIFIED prompt and JD attachment; preparing Send')
+                if send:
+                    status = submit_prompt(driver, req.project_url, req.prompt, req.jd_path.name)
+                    print(f'  {status.upper()}: new conversation confirmed')
+                else:
+                    status = 'draft_ready'
+                    print('  DRY RUN: request staged only; Send not clicked')
                 url = driver.current_url
             except Exception as exc:
                 fail_count += 1
+                if isinstance(exc, SubmissionUnconfirmed):
+                    status = 'needs_review'
                 details = f"{type(exc).__name__}: {exc}"
                 print(f"  ERROR: {details}")
                 if driver is not None:
@@ -698,6 +938,13 @@ def run(daily_folder: Path, *, send: bool, force: bool) -> int:
                     **({"error": details} if details else {}),
                 }
                 save_results(results_path, report)
+            if send and status != 'sent':
+                print(
+                    f'  STOPPED on {req.role}: Send was NOT confirmed. '
+                    'The tab remains open for inspection; other roles were not opened.',
+                    flush=True,
+                )
+                break
             if idx < len(pending) - 1:
                 time.sleep(BETWEEN_REQUESTS_SECONDS)
     finally:
@@ -708,7 +955,7 @@ def run(daily_folder: Path, *, send: bool, force: bool) -> int:
             except Exception:
                 pass
     print(f"\nCompleted submission pass; failed={fail_count}; results={results_path}")
-    print("Tabs remain open. ChatGPT can work on each role separately.")
+    print("Browser tabs remain open. Roles advance only after confirmed Send.")
     return 1 if fail_count else 0
 
 

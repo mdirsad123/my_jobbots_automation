@@ -1,0 +1,20 @@
+Subject: Application for Python Developer / Backend Developer
+
+Dear Hiring Team,
+
+I am applying for Python Developer and Backend Developer opportunities. I have 3+ years of experience developing Python APIs, backend applications, database workflows, and cloud-based automation.
+
+- Built Flask/FastAPI REST APIs and MySQL-backed business modules including authentication, reporting, and operational workflows.
+- Integrated third-party REST APIs and developed Python/AWS workflows using Lambda, S3, SQS, Step Functions, and CloudWatch.
+- Worked with SQL optimization, debugging, Git, unit testing, and production support for business and finance-data applications.
+
+I would welcome an opportunity to discuss how my Python backend and API integration experience fits your requirements. My notice period is immediate to 15 days.
+
+Please find my updated CV attached.
+
+Best regards,
+Md Irsad
++91-8409718735
+mdirsadtech7305@gmail.com
+
+Note for sender (remove before emailing): This is a generic role-level template based on multiple independent postings. Verify the specific employer, location/eligibility, notice period and required skills; personalize this message before sending. Do not send to all JD email addresses together.

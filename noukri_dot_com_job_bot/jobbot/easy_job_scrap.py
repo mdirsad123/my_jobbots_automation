@@ -67,7 +67,6 @@ ROLE_TITLE_ALIASES = {
 }
 ALLOWED_TITLES = list(ROLE_TITLE_ALIASES)
 
-
 def normalize_job_title(value: str) -> str:
     """Normalize Naukri punctuation, slashes, hyphens and experience suffixes."""
     value = (value or "").casefold()
@@ -285,10 +284,7 @@ def scrape_naukri_simple():
         exp_input.send_keys(Keys.ENTER)
         time.sleep(1)
         
-        
-
-        
-
+       
         # Click the Search button
         search_btn = driver.find_element(By.XPATH, "//span[normalize-space()='Search']")
         driver.execute_script("arguments[0].click();", search_btn)  

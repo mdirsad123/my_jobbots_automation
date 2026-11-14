@@ -1,0 +1,3294 @@
+{
+  "input_file": "2026-10-30.json",
+  "date": "2026-10-30",
+  "max_required_years": 4,
+  "total_raw_records": 259,
+  "invalid_records": 0,
+  "duplicate_records": 77,
+  "job_seeker_and_non_hiring_excluded": 14,
+  "experience_excluded": 91,
+  "eligible_classified": 77,
+  "group_counts": {
+    "aiengineer": 9,
+    "awsdataengineer": 7,
+    "dataengineer": 34,
+    "pythondeveloper": 22,
+    "others": 5
+  },
+  "emitted_groups": [
+    "aiengineer",
+    "awsdataengineer",
+    "dataengineer",
+    "pythondeveloper",
+    "others"
+  ],
+  "omitted_zero_groups": [],
+  "non_hiring_breakdown": {
+    "job_seeker_or_non_hiring": 12,
+    "not_verifiable_hiring_ad": 2
+  },
+  "classification_policy": "Each original record is assigned at most one final group. In multi-role posts, an eligible role can be included even if a separate advertised role exceeds 4 years; the entire source post is preserved for traceability. Experience eligibility is based on required lower bound of the selected opening, not upper bound or nice-to-have skills.",
+  "dedup_policy": "Highly similar/full reposted advertisements (including same application/position), not similar titles alone; original surviving source index retained.",
+  "reconciliation": {
+    "input_records": 259,
+    "invalid": 0,
+    "duplicates": 77,
+    "non_hiring": 14,
+    "experience": 91,
+    "classified": 77,
+    "category_total": 259,
+    "matches_total": true
+  },
+  "decisions": [
+    {
+      "input_index": 0,
+      "reference": "229e30bc07e3826a14f4057ac5c375f8",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "10+ Years",
+        "Experience:\n6–10+ Years"
+      ],
+      "mandatory_minimum_years": 10.0
+    },
+    {
+      "input_index": 1,
+      "reference": "7beb364d19136362718c75ac65a18e1b",
+      "original_title": "Data Engineer",
+      "original_company": "Data Engineer",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: etl, elt, sql, fabric."
+    },
+    {
+      "input_index": 2,
+      "reference": "f73f9bf67929ca881325ad3011bbdb8a",
+      "original_title": "Lead Data Engineer",
+      "original_company": "Data Team Lead (Verified job)",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8+Years",
+        "Experience:8+Years"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 3,
+      "reference": "0b085fc4294e85952344143243c06198",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5+ years",
+        "Experience:\n5+ years in Data Engineering, Data Science, or ML Engineering."
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 4,
+      "reference": "c1417240a51a4abc76ebf3872cb63c43",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "3–5 years",
+        "Experience: 3–5 years"
+      ],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, etl, databricks, snowflake, spark, pyspark."
+    },
+    {
+      "input_index": 5,
+      "reference": "edca595792e15ecdbf0cfdcf89e15122",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "6+ years",
+        "Experience: 6+ years"
+      ],
+      "mandatory_minimum_years": 6.0
+    },
+    {
+      "input_index": 6,
+      "reference": "771885546106d91ccfd326539a55a171",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, etl, elt, data warehouse, data modeling, sql."
+    },
+    {
+      "input_index": 7,
+      "reference": "263f2c6208cab6c7ce9072ebc32a91cc",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "4.5+ Years",
+        "Experience: 4.5+ Years (Mini)"
+      ],
+      "mandatory_minimum_years": 4.5
+    },
+    {
+      "input_index": 8,
+      "reference": "f0efba0fa8e9c3038de1564fd956d226",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "job_seeker_or_non_hiring",
+      "details": "Interview-preparation/career advice post, not a hiring vacancy"
+    },
+    {
+      "input_index": 9,
+      "reference": "a82ba0905057e98ef1e47198a4501e2e",
+      "original_title": "Sr Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines."
+    },
+    {
+      "input_index": 10,
+      "reference": "ba7340558d8662a2b6bde46a91fca427",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "263f2c6208cab6c7ce9072ebc32a91cc",
+      "duplicate_of_input_index": 7
+    },
+    {
+      "input_index": 11,
+      "reference": "a09119e803d3228463ae9a8631a33c9a",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "f0efba0fa8e9c3038de1564fd956d226",
+      "duplicate_of_input_index": 8
+    },
+    {
+      "input_index": 12,
+      "reference": "eac0f5d250d6c29250c5355efa4038bb",
+      "original_title": "Sr Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "a82ba0905057e98ef1e47198a4501e2e",
+      "duplicate_of_input_index": 9
+    },
+    {
+      "input_index": 13,
+      "reference": "c5f48c17072f374591d043d75cf3b224",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data engineering."
+    },
+    {
+      "input_index": 14,
+      "reference": "a5f579fdecb29ba2c9e326d5e0a85222",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "3+ years"
+      ],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, etl, elt, databricks, spark, pyspark."
+    },
+    {
+      "input_index": 15,
+      "reference": "1b6faf307e2ccee456555306937f42d8",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5–7 years",
+        "Experience: 5–7 years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 16,
+      "reference": "7906eda8c930f1df7a0bd59668d91921",
+      "original_title": "Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "12+ Years",
+        "12+ years",
+        "Experience:\n12+ Years"
+      ],
+      "mandatory_minimum_years": 12.0
+    },
+    {
+      "input_index": 17,
+      "reference": "d53a4192bcd6a2ab9f5c2c26086a805b",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "3–4 Years",
+        "3–4 years",
+        "Experience:\n3–4 Years"
+      ],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: etl, elt, snowflake, spark, pyspark, data warehouse."
+    },
+    {
+      "input_index": 18,
+      "reference": "a80a0368566bab38d5054a12c790153d",
+      "original_title": "dataengineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8+ years"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 19,
+      "reference": "dcdaa4aa15f8d3d7172ff6ada0fdd3a2",
+      "original_title": "Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "7906eda8c930f1df7a0bd59668d91921",
+      "duplicate_of_input_index": 16
+    },
+    {
+      "input_index": 20,
+      "reference": "83c848c45097dd7e29283bbc39e57600",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "d53a4192bcd6a2ab9f5c2c26086a805b",
+      "duplicate_of_input_index": 17
+    },
+    {
+      "input_index": 21,
+      "reference": "02e053856eaa58d4b0f935487f4c9145",
+      "original_title": "dataengineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "a80a0368566bab38d5054a12c790153d",
+      "duplicate_of_input_index": 18
+    },
+    {
+      "input_index": 22,
+      "reference": "1ed97bab177142bca757989d6aa140a7",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "6–12 Years",
+        "Experience:\n6–12 Years"
+      ],
+      "mandatory_minimum_years": 6.0
+    },
+    {
+      "input_index": 23,
+      "reference": "86fadd3df2e839a861dbe663c71e6fc5",
+      "original_title": "Data Engineer",
+      "original_company": "Phenom",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "6–10 Years",
+        "Experience Requirement: 6–10 Years"
+      ],
+      "mandatory_minimum_years": 6.0
+    },
+    {
+      "input_index": 24,
+      "reference": "0010d9fb17958e555dbe4876bd26f644",
+      "original_title": "Data Engineer",
+      "original_company": "Pine Labs",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "3–6 Years",
+        "Experience:\n3–6 Years"
+      ],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, data processing."
+    },
+    {
+      "input_index": 25,
+      "reference": "6086ac45ea1fd57575f5374211935602",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "1ed97bab177142bca757989d6aa140a7",
+      "duplicate_of_input_index": 22
+    },
+    {
+      "input_index": 26,
+      "reference": "b30b768c8999ae2060111b721ace1926",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "7-10 Years",
+        "Years of Experience: 7-10 Years"
+      ],
+      "mandatory_minimum_years": 7.0
+    },
+    {
+      "input_index": 27,
+      "reference": "36b05edbe835f5cc86d4ed63ad504ef9",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "6–12 Years",
+        "Experience: 6–12 Years"
+      ],
+      "mandatory_minimum_years": 6.0
+    },
+    {
+      "input_index": 28,
+      "reference": "bb231cd2883267ea13910ced3e8668f5",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "7+ years"
+      ],
+      "mandatory_minimum_years": 7.0
+    },
+    {
+      "input_index": 29,
+      "reference": "006634fee71ca15b0303bda3fdd0a05f",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "2–4 years",
+        "Experience:\n2–4 years"
+      ],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, etl, elt, snowflake, data engineering, data modeling."
+    },
+    {
+      "input_index": 30,
+      "reference": "509e9cf8c6645e2c1d637f3453dae3d9",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "36b05edbe835f5cc86d4ed63ad504ef9",
+      "duplicate_of_input_index": 27
+    },
+    {
+      "input_index": 31,
+      "reference": "09199b558145ac2ec50205edc214698d",
+      "original_title": "SR. DATA ENGINEER",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "7–10 Years",
+        "Experience: 7–10 Years"
+      ],
+      "mandatory_minimum_years": 7.0
+    },
+    {
+      "input_index": 32,
+      "reference": "75da4585693315993894c91e0c29c66c",
+      "original_title": "Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "awsdataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "3–6 Years",
+        "4–8 Years",
+        "Experience:\n3–6 Years",
+        "Experience:\n4–8 Years"
+      ],
+      "classification_reason": "AWS-centered data pipeline, streaming, lakehouse or data warehouse engineering role; JD evidence: aws, glue, redshift, s3, emr, lambda. The Senior Data Engineer vacancy is 3–6 years with AWS Glue/S3/Redshift/Athena/Lambda data platform responsibilities; the separate Data Scientist has 4–8 years."
+    },
+    {
+      "input_index": 33,
+      "reference": "a7945f7e3c4155c3ca0637b9967f3f9e",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "36b05edbe835f5cc86d4ed63ad504ef9",
+      "duplicate_of_input_index": 27
+    },
+    {
+      "input_index": 34,
+      "reference": "73538a50199d1ab45701130f0632904c",
+      "original_title": "SR. DATA ENGINEER",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "09199b558145ac2ec50205edc214698d",
+      "duplicate_of_input_index": 31
+    },
+    {
+      "input_index": 35,
+      "reference": "d6688ef042cb011f8ba74d195303b59e",
+      "original_title": "Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "75da4585693315993894c91e0c29c66c",
+      "duplicate_of_input_index": 32
+    },
+    {
+      "input_index": 36,
+      "reference": "b1300e2a76b1e9990fff5131c505f0bd",
+      "original_title": "DATA ENGINEER",
+      "original_company": "Chennai is mandatory",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5–8 Years",
+        "Experience:\n5–8 Years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 37,
+      "reference": "f05e03472d1d86170391ba303d97864d",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "awsdataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "3 – 6 Years",
+        "4 – 8 Years",
+        "Experience:\n3 – 6 Years",
+        "Experience:\n4 – 8 Years"
+      ],
+      "classification_reason": "AWS-centered data pipeline, streaming, lakehouse or data warehouse engineering role; JD evidence: aws, glue, redshift, s3, emr, lambda. Multiple roles in one source posting; selected AWS Data Engineer as the most specific qualifying target group; GCP Data Engineer also has a 3-year minimum."
+    },
+    {
+      "input_index": 38,
+      "reference": "302c6aa8b90d90e98f8e37ea18295dbc",
+      "original_title": "DATA ENGINEER",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "3-4 years"
+      ],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: etl, snowflake, data engineering, data integration, sql, fabric."
+    },
+    {
+      "input_index": 39,
+      "reference": "accd2dd285e89e74adc257953a62be3a",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "4–8 Years",
+        "4–8 years",
+        "Experience:4–8 Years"
+      ],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, etl, databricks, spark, pyspark, sql."
+    },
+    {
+      "input_index": 40,
+      "reference": "1aa341ee06f376c6b35f13632ea92b3e",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "others",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "8+ Years",
+        "8–10 Years",
+        "2–4 Years",
+        "7–8 Years",
+        "Experience: 8+ Years",
+        "Experience: 8–10 Years",
+        "Experience: 2–4 Years",
+        "Experience: 7–8 Years"
+      ],
+      "classification_reason": "Mixed recruitment advertisement: GCP Data Engineer requires 8 years; the qualifying 2–4 year opening is Junior Laravel/PHP Developer, outside the four target roles.",
+      "eligible_opening": "Junior Laravel/PHP Developer, 2–4 years; GCP Data Engineer excluded at 8–10 years"
+    },
+    {
+      "input_index": 41,
+      "reference": "e69cccac80f950ee03ddda5f8edca5bd",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5-10 Years",
+        "Experience:\n5-10 Years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 42,
+      "reference": "a17b109839b0914428a937f5c92179cd",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5+ Years",
+        "Experience:\n5+ Years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 43,
+      "reference": "9562af3b9e0a7a2b5197c9d9877c05c8",
+      "original_title": "DATA ENGINEER",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8+ Years",
+        "Experience: 8+ Years"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 44,
+      "reference": "a621c205e6f79b376908572b75edb9aa",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "aiengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary vacancy delivers AI/ML, GenAI, RAG or agent-enabled systems; JD evidence: agentic, agents, rag, genai."
+    },
+    {
+      "input_index": 45,
+      "reference": "bc04f2ac2464d9bbd5c7e09637a72511",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "e69cccac80f950ee03ddda5f8edca5bd",
+      "duplicate_of_input_index": 41
+    },
+    {
+      "input_index": 46,
+      "reference": "cea2b0c9befc978d80ef5adab0f7b8e3",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "a17b109839b0914428a937f5c92179cd",
+      "duplicate_of_input_index": 42
+    },
+    {
+      "input_index": 47,
+      "reference": "d3fb50abffe6d745c62ea915bcc13846",
+      "original_title": "DATA ENGINEER",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "9562af3b9e0a7a2b5197c9d9877c05c8",
+      "duplicate_of_input_index": 43
+    },
+    {
+      "input_index": 48,
+      "reference": "3ec03451fdaeae382584d5b7d80af00a",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "a621c205e6f79b376908572b75edb9aa",
+      "duplicate_of_input_index": 44
+    },
+    {
+      "input_index": 49,
+      "reference": "462d36eb3ace4130cdd2e5fcd306d380",
+      "original_title": "DATA ENGINEER",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "3+ Years",
+        "Experience Required: 3+ Years"
+      ],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, etl, elt, sql."
+    },
+    {
+      "input_index": 50,
+      "reference": "016a4be668d271cd916cc98a9f886794",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "7 years",
+        "12 years",
+        "Experience: 7 years to 12 years"
+      ],
+      "mandatory_minimum_years": 12.0
+    },
+    {
+      "input_index": 51,
+      "reference": "17a623fc7f636bddeae546e6fd38593c",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "6–10 Years",
+        "Experience: 6–10 Years"
+      ],
+      "mandatory_minimum_years": 6.0
+    },
+    {
+      "input_index": 52,
+      "reference": "fea5b14838e5379776a6082146289158",
+      "original_title": "Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "awsdataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "AWS-centered data pipeline, streaming, lakehouse or data warehouse engineering role; JD evidence: aws, emr, snowflake, pyspark."
+    },
+    {
+      "input_index": 53,
+      "reference": "c8b0db365322204262828e8fd0ae0251",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "b30b768c8999ae2060111b721ace1926",
+      "duplicate_of_input_index": 26
+    },
+    {
+      "input_index": 54,
+      "reference": "2763f7f9e9e21500b706e8bde8776484",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "6–12 Years",
+        "Experience:\n6–12 Years"
+      ],
+      "mandatory_minimum_years": 6.0
+    },
+    {
+      "input_index": 55,
+      "reference": "dc12ef109fcd91e1aeb3ed105d047527",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "7+ years",
+        "Experience: 7+ years"
+      ],
+      "mandatory_minimum_years": 7.0
+    },
+    {
+      "input_index": 56,
+      "reference": "d6ae08b664b0271ffce21720fae217eb",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data engineering, data modeling, sql."
+    },
+    {
+      "input_index": 57,
+      "reference": "cbbfad56389cbd3bd27429a30bd0bc1c",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "7+ years",
+        "5+ years",
+        "Experience required - 7+ years"
+      ],
+      "mandatory_minimum_years": 7.0
+    },
+    {
+      "input_index": 58,
+      "reference": "592203342956a3d80206172cdf441d80",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "2–10 Years",
+        "Experience: 2–10 Years"
+      ],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: etl, spark, pyspark, data engineering, sql."
+    },
+    {
+      "input_index": 59,
+      "reference": "7fc0e217d83ad5c3b525d7cecb51ea8a",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "3–5 years",
+        "Experience: 3–5 years"
+      ],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: etl, elt, databricks, snowflake, spark, pyspark."
+    },
+    {
+      "input_index": 60,
+      "reference": "f73b8c6a379be6448704c0a880a850e2",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "6–10 Years",
+        "Experience:\n6–10 Years"
+      ],
+      "mandatory_minimum_years": 6.0
+    },
+    {
+      "input_index": 61,
+      "reference": "c67c0a65df717b8197d77be5924ba4e3",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "f73b8c6a379be6448704c0a880a850e2",
+      "duplicate_of_input_index": 60
+    },
+    {
+      "input_index": 62,
+      "reference": "fb17b2a1416918eb56cef3610fef94d9",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: snowflake, data engineering, data modeling, sql, dbt, fabric."
+    },
+    {
+      "input_index": 63,
+      "reference": "a518773890d4c3a3cc068e32d3eb0f5b",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "others",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "4.5–9.5 years",
+        "4–9 years",
+        "4.5+ years",
+        "Experience:\n4.5–9.5 years",
+        "Experience:\n4–9 years",
+        "Experience:\n4.5+ years"
+      ],
+      "classification_reason": "Mixed recruitment advertisement: Python Developer and Data Engineer require 4.5 years; QA Automation Engineer requires 4 years and is outside target roles.",
+      "eligible_opening": "QA Automation Engineer, 4–9 years; Python Developer/Data Engineer start at 4.5 years"
+    },
+    {
+      "input_index": 64,
+      "reference": "34b222ade3a634d7d51863e40df2216d",
+      "original_title": "Data Engineer",
+      "original_company": "New york",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, etl, data engineering, data modeling, sql."
+    },
+    {
+      "input_index": 65,
+      "reference": "4633679931975cabb3b18d3bda8bf262",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8-12 Years",
+        "Experience:\n8-12 Years"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 66,
+      "reference": "e369571ac96714eb7d129342f3cfcbac",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: databricks, data integration, data modeling, sql."
+    },
+    {
+      "input_index": 67,
+      "reference": "b04c3bcbffd4aeac57208d81315e3f0c",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5+ years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 68,
+      "reference": "74bdbf2ba5cba2a511063afdd74f8056",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "job_seeker_or_non_hiring",
+      "details": "Hotlist marketing available consultants, not hiring"
+    },
+    {
+      "input_index": 69,
+      "reference": "de7d787ddaf79cca83c23b29d8c91255",
+      "original_title": "DATA ENGINEER",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5–16 Years",
+        "Experience:\n5–16 Years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 70,
+      "reference": "4d5d91fa60febe4b7e45cd80455235fb",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, etl, elt, databricks, snowflake, spark."
+    },
+    {
+      "input_index": 71,
+      "reference": "25db292d77131790bebf606b77f86eb5",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, data engineering, data integration, data modeling, sql."
+    },
+    {
+      "input_index": 72,
+      "reference": "5962472c7d16833e36ec220d68748c2c",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "2+ years"
+      ],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, etl, spark, data engineering, sql."
+    },
+    {
+      "input_index": 73,
+      "reference": "ad51d03dd85237da14624db55d2528d5",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5+ Years",
+        "Experience: 5+ Years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 74,
+      "reference": "986ff45874d162a0a8b3a56b174c7149",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, etl, elt, sql."
+    },
+    {
+      "input_index": 75,
+      "reference": "f7b37488772403f1dd2f44ec585987b1",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "3+ years",
+        "Min Exp: 12",
+        "Exp: 12+"
+      ],
+      "mandatory_minimum_years": 12.0
+    },
+    {
+      "input_index": 76,
+      "reference": "739bd6ff76cba16968602caaaa69ab14",
+      "original_title": "Sr. AI/ML Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "job_seeker_or_non_hiring",
+      "details": "Bench-sales consultant hotlist, not hiring"
+    },
+    {
+      "input_index": 77,
+      "reference": "57f0d0cb99cbdfc84fd0222d821d18e5",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "f7b37488772403f1dd2f44ec585987b1",
+      "duplicate_of_input_index": 75
+    },
+    {
+      "input_index": 78,
+      "reference": "28728f03c914851b0010e64689b13894",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "ad51d03dd85237da14624db55d2528d5",
+      "duplicate_of_input_index": 73
+    },
+    {
+      "input_index": 79,
+      "reference": "306dbbb48318cb087bee6f050e634e2b",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "986ff45874d162a0a8b3a56b174c7149",
+      "duplicate_of_input_index": 74
+    },
+    {
+      "input_index": 80,
+      "reference": "73622a1d31b8e958ab5914cdaf790180",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "f7b37488772403f1dd2f44ec585987b1",
+      "duplicate_of_input_index": 75
+    },
+    {
+      "input_index": 81,
+      "reference": "5a878e9c760fd8eb2334e09fddefab5b",
+      "original_title": "Sr. AI/ML Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "739bd6ff76cba16968602caaaa69ab14",
+      "duplicate_of_input_index": 76
+    },
+    {
+      "input_index": 82,
+      "reference": "2523496813ab4624f64f65aa9dc43596",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "f7b37488772403f1dd2f44ec585987b1",
+      "duplicate_of_input_index": 75
+    },
+    {
+      "input_index": 83,
+      "reference": "abc96b95f6b06ded267eb1eca77ae050",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "4+ Years",
+        "5+ Years",
+        "10+ Years",
+        "Experience: 4+ Years",
+        "Experience: 5+ Years",
+        "Experience: 10+ Years"
+      ],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: databricks. Data Engineer (Level 4) requires 4+ years; other positions in the posting need 5+ or 10+ and are not the selected vacancy."
+    },
+    {
+      "input_index": 84,
+      "reference": "5118b7c7315ae42022ef7d728ff25af2",
+      "original_title": "ML Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "job_seeker_or_non_hiring",
+      "details": "Available H1B consultants hotlist, not hiring"
+    },
+    {
+      "input_index": 85,
+      "reference": "80462794b2210c8d78be1957f7525393",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: etl, elt, data engineering, sql, data lake, fabric."
+    },
+    {
+      "input_index": 86,
+      "reference": "4e5c6076b104824fe68f67d2f0893e68",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8–10 Years",
+        "Experience:\n8–10 Years 💥 Work Mode : Hybrid"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 87,
+      "reference": "ef328eaff513a545f5081ed87c3390b4",
+      "original_title": "DATA ENGINEER",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, etl, elt, snowflake, data engineering, data integration."
+    },
+    {
+      "input_index": 88,
+      "reference": "1291a3c421ee594a624e2338f756dcb9",
+      "original_title": "Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5–7 Years",
+        "Experience: 5–7 Years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 89,
+      "reference": "d9bc5f8c59be357955bd7e1a7f028267",
+      "original_title": "Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "10+ Years",
+        "8+ Years",
+        "8+ years",
+        "Total Experience:\n10+ Years",
+        "Relevant Experience:\n8+ Years"
+      ],
+      "mandatory_minimum_years": 10.0
+    },
+    {
+      "input_index": 90,
+      "reference": "e73bfb9ab0b2de1f19bed95aa9a1208a",
+      "original_title": "DATA ENGINEER",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "ef328eaff513a545f5081ed87c3390b4",
+      "duplicate_of_input_index": 87
+    },
+    {
+      "input_index": 91,
+      "reference": "18dc75b4ed27beeac77aea46aea766af",
+      "original_title": "Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "1291a3c421ee594a624e2338f756dcb9",
+      "duplicate_of_input_index": 88
+    },
+    {
+      "input_index": 92,
+      "reference": "e824fa38800600551e2d46df857c4f79",
+      "original_title": "Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "d9bc5f8c59be357955bd7e1a7f028267",
+      "duplicate_of_input_index": 89
+    },
+    {
+      "input_index": 93,
+      "reference": "0675dfe796f93be5b5297f6cb011f864",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "2–6Years",
+        "2–6 Years",
+        "Experience: 2–6Years",
+        "Experience: 2–6 Years"
+      ],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, etl, snowflake, sql."
+    },
+    {
+      "input_index": 94,
+      "reference": "ee6b88491961c24f76afba0806fc996a",
+      "original_title": "DataEngineer",
+      "original_company": "Startappss System India Pvt. Ltd",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5+ Years",
+        "Experience: 5+ Years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 95,
+      "reference": "7e887325c44216d0e8a73b01c07a31eb",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "awsdataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "5+ years"
+      ],
+      "classification_reason": "AWS-centered data pipeline, streaming, lakehouse or data warehouse engineering role; JD evidence: s3, kinesis, data pipeline. The separate Alfresco software vacancy has a 4–5 year requirement; Data Engineer vacancy has no stated minimum and involves Kinesis/S3 pipelines."
+    },
+    {
+      "input_index": 96,
+      "reference": "cb7e3ad0f5f70fb159f658015460f5a6",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "job_seeker_or_non_hiring",
+      "details": "C2C consultants offered for assignments, not a vacancy"
+    },
+    {
+      "input_index": 97,
+      "reference": "7286d1860748b835f03dd2a97343a28a",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5+ years",
+        "4+ years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 98,
+      "reference": "3ef7a32840ad0abb0124da23e862029e",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, databricks, data modeling, sql."
+    },
+    {
+      "input_index": 99,
+      "reference": "6735dde4cc472d713d1664403fcd1827",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "awsdataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "AWS-centered data pipeline, streaming, lakehouse or data warehouse engineering role; JD evidence: s3, kinesis, data pipeline."
+    },
+    {
+      "input_index": 100,
+      "reference": "bd1e3c87e950d39a85d5ef14a17340c1",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "6–10 Years",
+        "Experience: 6–10 Years"
+      ],
+      "mandatory_minimum_years": 6.0
+    },
+    {
+      "input_index": 101,
+      "reference": "e1bab1880fde60e61e3fb0f8df4e39a1",
+      "original_title": "Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "12+ Years",
+        "12+ years",
+        "Experience: 12+ Years Experience"
+      ],
+      "mandatory_minimum_years": 12.0
+    },
+    {
+      "input_index": 102,
+      "reference": "760908f0ebe316b2de513739f428dda1",
+      "original_title": "AWS Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "others",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Recruitment listing contains an AWS Data Engineer / Production Support title but no duties or pipeline details to establish an AWS-centered data-engineering assignment."
+    },
+    {
+      "input_index": 103,
+      "reference": "387488500529296a39388583e5e7c00a",
+      "original_title": "Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "e1bab1880fde60e61e3fb0f8df4e39a1",
+      "duplicate_of_input_index": 101
+    },
+    {
+      "input_index": 104,
+      "reference": "f82e83619a158693049d3c4349436bc9",
+      "original_title": "AWS Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "760908f0ebe316b2de513739f428dda1",
+      "duplicate_of_input_index": 102
+    },
+    {
+      "input_index": 105,
+      "reference": "b2972609fd05602d09feabbc2f086ccf",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "awsdataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "AWS-centered data pipeline, streaming, lakehouse or data warehouse engineering role; JD evidence: aws, glue, s3, lake formation, snowflake, data pipeline."
+    },
+    {
+      "input_index": 106,
+      "reference": "cf1d51201f9b748af5b949c64730339b",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8+ Years",
+        "Experience: 8+ Years"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 107,
+      "reference": "823c5aa9153fbd99c1a9e136a9218b55",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "c5f48c17072f374591d043d75cf3b224",
+      "duplicate_of_input_index": 13
+    },
+    {
+      "input_index": 108,
+      "reference": "d63ad3918b36030f0fa0eb03f36cbd2f",
+      "original_title": "Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "10+ Years",
+        "Experience:\n10+ Years"
+      ],
+      "mandatory_minimum_years": 10.0
+    },
+    {
+      "input_index": 109,
+      "reference": "bab334c4ed8c4556b4d9b86de182ed78",
+      "original_title": "AWSDataEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "10+ Years",
+        "Experience: 10+ Years"
+      ],
+      "mandatory_minimum_years": 10.0
+    },
+    {
+      "input_index": 110,
+      "reference": "7285ad093934da0bd909cd0f32e12658",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "10+ years",
+        "9+ years",
+        "7+ years"
+      ],
+      "mandatory_minimum_years": 10.0
+    },
+    {
+      "input_index": 111,
+      "reference": "1760ab58da8bd7c71968a7bbd3e116fb",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5+ years",
+        "Experience:\n5+ years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 112,
+      "reference": "59e19d0b47cd0e50df19c9ad4fd6da40",
+      "original_title": "dataengineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "job_seeker_or_non_hiring",
+      "details": "Weekly bench-sales candidate hotlist, not hiring"
+    },
+    {
+      "input_index": 113,
+      "reference": "7957c4a60d4b0d87dad87879b038c2df",
+      "original_title": "dataengineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "59e19d0b47cd0e50df19c9ad4fd6da40",
+      "duplicate_of_input_index": 112
+    },
+    {
+      "input_index": 114,
+      "reference": "3461d7eb10b43db5b7db6c121471052c",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5+ Years",
+        "8+ Years",
+        "Experience: 5+ Years",
+        "Experience: 8+ Years"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 115,
+      "reference": "8bc6a4aaaffc049e47546f186d62c7cc",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8 Years"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 116,
+      "reference": "cf1f65938a103d21d12aba3d80f92ce1",
+      "original_title": "Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "7+ Years",
+        "Experience: 7+ Years"
+      ],
+      "mandatory_minimum_years": 7.0
+    },
+    {
+      "input_index": 117,
+      "reference": "25ce5081604531ff4590c8e4ee797ab6",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: sql, dbt."
+    },
+    {
+      "input_index": 118,
+      "reference": "3f96ea9264423a9ed3c7f7d319659d4f",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "4–8 Years",
+        "8–12 Years",
+        "Experience: 4–8 Years (Developers) | 8–12 Years (Sr. Developer / Tech Lead)"
+      ],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: etl, elt, databricks, snowflake, sql, dbt."
+    },
+    {
+      "input_index": 119,
+      "reference": "bf7dc1f82b248eecbd0c04bf45eae017",
+      "original_title": "Lead Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8+ Years",
+        "Experience:\n8+ Years"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 120,
+      "reference": "188b380e5735210f81aaf848cfaf8c6a",
+      "original_title": "dataengineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "12+ years"
+      ],
+      "mandatory_minimum_years": 12.0
+    },
+    {
+      "input_index": 121,
+      "reference": "2568de8ad804b536114c98230b32363c",
+      "original_title": "Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "job_seeker_or_non_hiring",
+      "details": "Available profiles hotlist, not hiring"
+    },
+    {
+      "input_index": 122,
+      "reference": "d86073ceb34787970284d6605d1bb826",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "3f96ea9264423a9ed3c7f7d319659d4f",
+      "duplicate_of_input_index": 118
+    },
+    {
+      "input_index": 123,
+      "reference": "0b34ec78fdc0e780086958cb14c1400f",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "10+ Years",
+        "Experience: 10+ Years"
+      ],
+      "mandatory_minimum_years": 10.0
+    },
+    {
+      "input_index": 124,
+      "reference": "1500636b6a0966c1f01369b5a55a7f2e",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, databricks, spark, pyspark, data modeling, sql."
+    },
+    {
+      "input_index": 125,
+      "reference": "37e52e9e4285d7333859bff2e0fc4f00",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "3f96ea9264423a9ed3c7f7d319659d4f",
+      "duplicate_of_input_index": 118
+    },
+    {
+      "input_index": 126,
+      "reference": "7af6cb57f231a7e5a5a50be5491f2066",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "0b34ec78fdc0e780086958cb14c1400f",
+      "duplicate_of_input_index": 123
+    },
+    {
+      "input_index": 127,
+      "reference": "9fdbb8e8cb887fdc50c257c1127977e9",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "1500636b6a0966c1f01369b5a55a7f2e",
+      "duplicate_of_input_index": 124
+    },
+    {
+      "input_index": 128,
+      "reference": "7d948ed62e8a93046f5e41dd9e95f746",
+      "original_title": "Senior Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: elt, databricks, spark, sql, data lake."
+    },
+    {
+      "input_index": 129,
+      "reference": "f08f8767758d3d3fddaa82eb1cd76fa0",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "job_seeker_or_non_hiring",
+      "details": "Consultant availability hotlist, not hiring"
+    },
+    {
+      "input_index": 130,
+      "reference": "829af540ee81b85d07d8e19b72db4f9d",
+      "original_title": "Principal Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "awsdataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "AWS-centered data pipeline, streaming, lakehouse or data warehouse engineering role; JD evidence: aws, s3, lambda, snowflake, etl."
+    },
+    {
+      "input_index": 131,
+      "reference": "65a8356119c42c7edc1d8bd966ee820a",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "others",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Real ETL Developer opening identified by job ID 5627 and recruiter, but no actual responsibilities or technology requirements are specified; insufficient role evidence for confident data-engineering assignment."
+    },
+    {
+      "input_index": 132,
+      "reference": "2111a447ead38d31369cc98206c2b788",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: etl, databricks, spark."
+    },
+    {
+      "input_index": 133,
+      "reference": "f1c8a3651fd543a03bf96101b0811b87",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "job_seeker_or_non_hiring",
+      "details": "Educational Spark optimization post, not a vacancy"
+    },
+    {
+      "input_index": 134,
+      "reference": "7d268e6fd68d03f83445422072cd32b5",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "65a8356119c42c7edc1d8bd966ee820a",
+      "duplicate_of_input_index": 131
+    },
+    {
+      "input_index": 135,
+      "reference": "078a695a3ad98cacb4a3e1eb8b3a71b2",
+      "original_title": "Principal Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "829af540ee81b85d07d8e19b72db4f9d",
+      "duplicate_of_input_index": 130
+    },
+    {
+      "input_index": 136,
+      "reference": "c964a605f2ebe318cfb1ce3a21e09e4b",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: data pipeline, etl, databricks, snowflake, spark, sql."
+    },
+    {
+      "input_index": 137,
+      "reference": "c038163952a4f196ec55088ae78a8d5c",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "6–12 Years",
+        "Experience:\n6–12 Years"
+      ],
+      "mandatory_minimum_years": 6.0
+    },
+    {
+      "input_index": 138,
+      "reference": "eeb0d6098d254639a9239498808a2502",
+      "original_title": "Data Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "2111a447ead38d31369cc98206c2b788",
+      "duplicate_of_input_index": 132
+    },
+    {
+      "input_index": 139,
+      "reference": "40bd879220a4b6f9bd6645ec7e875c8a",
+      "original_title": "PythonDeveloper",
+      "original_company": "YMinds.AI",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "6+ Years",
+        "Experience: 6+ Years (Strong Python expertise)"
+      ],
+      "mandatory_minimum_years": 6.0
+    },
+    {
+      "input_index": 140,
+      "reference": "5ed4307348a271f552ae377547d6dc47",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "others",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "0-1 Year",
+        "Experience: 0-1 Year"
+      ],
+      "classification_reason": "Associate Software Engineer JD accepts Python or any of Java, C#, C/C++, Scala, Go, Rust; no substantial Python-specific duties are mandatory."
+    },
+    {
+      "input_index": 141,
+      "reference": "a5d11b71237562c2e0bae1145527dd2e",
+      "original_title": "Senior Python Developer",
+      "original_company": "Mintocred",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, backend."
+    },
+    {
+      "input_index": 142,
+      "reference": "f11811cddb714cbb8286190559eb4703",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "2–3 Years",
+        "2–3 years",
+        "Experience: 2–3 Years"
+      ],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, fastapi, flask, django, backend, api."
+    },
+    {
+      "input_index": 143,
+      "reference": "a39bd230f9113b083eedeaa129b861be",
+      "original_title": "AI/ML Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "aiengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "0–3 years",
+        "Experience: 0–3 years (Freshers encouraged to apply)Location: On-site / Hybrid"
+      ],
+      "classification_reason": "Primary vacancy delivers AI/ML, GenAI, RAG or agent-enabled systems; JD evidence: rag, llm, generative ai, machine learning, ml models, ai/. Role explicitly builds, trains and deploys ML models; location restriction is retained rather than filtering by country."
+    },
+    {
+      "input_index": 144,
+      "reference": "6eac74850dbb3373092c801de5338fd4",
+      "original_title": "AI Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "5+ Years",
+        "2+ Years"
+      ],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, rest."
+    },
+    {
+      "input_index": 145,
+      "reference": "7ef070fe17b946031e9653e3f47d89fa",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "7+ Years",
+        "7+ years",
+        "Experience: 7+ Years"
+      ],
+      "mandatory_minimum_years": 7.0
+    },
+    {
+      "input_index": 146,
+      "reference": "2f04501f724a8d025a458780b8d63221",
+      "original_title": "MachineLearningEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "not_verifiable_hiring_ad",
+      "details": "Vendor/network collaboration prospect for upcoming assignment, not a verified active individual vacancy"
+    },
+    {
+      "input_index": 147,
+      "reference": "00aff980284d6e8b95bf64ed86e96ac4",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "2–5 Years",
+        "2–5 years",
+        "2 years",
+        "5 years",
+        "3 Years",
+        "Experience: 2–5 Years (Mandatory)"
+      ],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, django, backend, api, rest, microservice."
+    },
+    {
+      "input_index": 148,
+      "reference": "6711379bcc9adacc35da907061bfaf6b",
+      "original_title": "PythonDeveloper",
+      "original_company": "Equinox Human Capital Partners",
+      "decision": "included",
+      "group": "aiengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "0–2 years"
+      ],
+      "classification_reason": "Primary vacancy delivers AI/ML, GenAI, RAG or agent-enabled systems; JD evidence: llm, ai-enabled, ai & data intelligence. Selected AI & Data Intelligence Engineer/AI workforce intelligence opening from multi-role recruiting post."
+    },
+    {
+      "input_index": 149,
+      "reference": "9d01495f8383ab72b8107a71f1960ad2",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, django, rest."
+    },
+    {
+      "input_index": 150,
+      "reference": "3504783b51ad6bedcf35f1725cc65166",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "6+ years",
+        "2+ years"
+      ],
+      "mandatory_minimum_years": 6.0
+    },
+    {
+      "input_index": 151,
+      "reference": "c15306c217033c2a09b11e3139e51889",
+      "original_title": "AI/ML Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "a39bd230f9113b083eedeaa129b861be",
+      "duplicate_of_input_index": 143
+    },
+    {
+      "input_index": 152,
+      "reference": "ec04c11e52d036b05d74e43cc16ea27e",
+      "original_title": "AI Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8+ Years",
+        "8+ years",
+        "4+ years",
+        "3+ years",
+        "Experience: 8+ Years"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 153,
+      "reference": "3162af7a6db667938c0384a58fb377f9",
+      "original_title": "AI/ML Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "a39bd230f9113b083eedeaa129b861be",
+      "duplicate_of_input_index": 143
+    },
+    {
+      "input_index": 154,
+      "reference": "4ce681b100ea9ae9dfcb6a7a99ae0347",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "4+ Years",
+        "Experience: 4+ Years",
+        "Experience:\n4+ Years"
+      ],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, fastapi, flask, django, backend, api."
+    },
+    {
+      "input_index": 155,
+      "reference": "b4f9cf8b0fd4e9de2b790bb8e095514f",
+      "original_title": "AI ENGINEER",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "aiengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "4+ Years",
+        "Experience:\n4+ Years"
+      ],
+      "classification_reason": "Primary vacancy delivers AI/ML, GenAI, RAG or agent-enabled systems; JD evidence: agents, rag, llm, machine learning, ai/, ai agents."
+    },
+    {
+      "input_index": 156,
+      "reference": "f2a590e0d76481beb6ffd1eea379eb60",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "4ce681b100ea9ae9dfcb6a7a99ae0347",
+      "duplicate_of_input_index": 154
+    },
+    {
+      "input_index": 157,
+      "reference": "f4c34544bffdce1ac1952b5e94fa2158",
+      "original_title": "AI ENGINEER",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "b4f9cf8b0fd4e9de2b790bb8e095514f",
+      "duplicate_of_input_index": 155
+    },
+    {
+      "input_index": 158,
+      "reference": "689b56bc8a715580ee1f16141916299c",
+      "original_title": "GenAI Engineer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "aiengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "4+ Years",
+        "4+ years",
+        "Experience: 4+ Years"
+      ],
+      "classification_reason": "Primary vacancy delivers AI/ML, GenAI, RAG or agent-enabled systems; JD evidence: agentic, agents, llm, generative ai, genai, machine learning."
+    },
+    {
+      "input_index": 159,
+      "reference": "741ecaa2aed6cc480739453e7be5576b",
+      "original_title": "PYTHON DEVELOPER",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "2+ Years",
+        "2+ years",
+        "Experience:\n2+ Years"
+      ],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, fastapi, flask, django, backend, api."
+    },
+    {
+      "input_index": 160,
+      "reference": "c8e8f1f9a19dfc665d3d9c9aed89acad",
+      "original_title": "AI Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "15+ years"
+      ],
+      "mandatory_minimum_years": 15.0
+    },
+    {
+      "input_index": 161,
+      "reference": "87e20674914e08f9fa8c20c911767480",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "aiengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "4 to 6 years",
+        "Experience: 4 to 6 years"
+      ],
+      "classification_reason": "Primary vacancy delivers AI/ML, GenAI, RAG or agent-enabled systems; JD evidence: rag, llm, generative ai, genai, ai/. Although titled Python Developer, the required deliverables center on LLMs, RAG, LangChain and GenAI systems."
+    },
+    {
+      "input_index": 162,
+      "reference": "0b23373ce65d54f84ce4102936db5430",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "3–5 years",
+        "Experience: 3–5 years"
+      ],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, fastapi, flask, django, backend, api. Despite Applied AI Specialist title, duties are Python/React frontend-backend, APIs, asynchronous processing and databases; ML is preferred only."
+    },
+    {
+      "input_index": 163,
+      "reference": "ae53a9b4cddfbdb52f91c78845401636",
+      "original_title": "Senior Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8+ yrs"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 164,
+      "reference": "375f51960771416830bede6ea64d8c34",
+      "original_title": "AI DEVELOPER",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "15+years",
+        "15+ years",
+        "Experience:15+years"
+      ],
+      "mandatory_minimum_years": 15.0
+    },
+    {
+      "input_index": 165,
+      "reference": "4d14e0ecb57de919fec8c39b413f1def",
+      "original_title": "GenAI Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "689b56bc8a715580ee1f16141916299c",
+      "duplicate_of_input_index": 158
+    },
+    {
+      "input_index": 166,
+      "reference": "49aad96fcdc49bac34d1d6a009513117",
+      "original_title": "PYTHON DEVELOPER",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "741ecaa2aed6cc480739453e7be5576b",
+      "duplicate_of_input_index": 159
+    },
+    {
+      "input_index": 167,
+      "reference": "13398e7e5469a7a644aae02aab83489c",
+      "original_title": "AI Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "c8e8f1f9a19dfc665d3d9c9aed89acad",
+      "duplicate_of_input_index": 160
+    },
+    {
+      "input_index": 168,
+      "reference": "f1eeac5ee8d67d24a78717897f604bd4",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "87e20674914e08f9fa8c20c911767480",
+      "duplicate_of_input_index": 161
+    },
+    {
+      "input_index": 169,
+      "reference": "57b12b048186feb3edc4047caaec193d",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "0b23373ce65d54f84ce4102936db5430",
+      "duplicate_of_input_index": 162
+    },
+    {
+      "input_index": 170,
+      "reference": "eec419011dfb93f0e2e3b9523f843dbb",
+      "original_title": "Senior Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "ae53a9b4cddfbdb52f91c78845401636",
+      "duplicate_of_input_index": 163
+    },
+    {
+      "input_index": 171,
+      "reference": "2704eeb9f5e1c2feddd24318f59aa1bb",
+      "original_title": "AI DEVELOPER",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "375f51960771416830bede6ea64d8c34",
+      "duplicate_of_input_index": 164
+    },
+    {
+      "input_index": 172,
+      "reference": "00d32032353c256f7970cada04298b8b",
+      "original_title": "AI Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5+ Years",
+        "Experience: 5+ Years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 173,
+      "reference": "e765926621805cae58051b0fe1dd805a",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5+ Years",
+        "5+ years",
+        "Experience:\n5+ Years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 174,
+      "reference": "52565575d97dfecab0b5bafa61dab2d0",
+      "original_title": "AI Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "15+ Years",
+        "15+ years"
+      ],
+      "mandatory_minimum_years": 15.0
+    },
+    {
+      "input_index": 175,
+      "reference": "77591421f46eb2800157013df3345b77",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5+ years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 176,
+      "reference": "18d6ee6568188e6812e2f72e6d8a3009",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "12 years"
+      ],
+      "mandatory_minimum_years": 12.0
+    },
+    {
+      "input_index": 177,
+      "reference": "62a531444d19f8615914a0da8b7bca45",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "7+ Years",
+        "Experience: 7+ Years"
+      ],
+      "mandatory_minimum_years": 7.0
+    },
+    {
+      "input_index": 178,
+      "reference": "9782dae74322e2997e444c544e22ccea",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "a518773890d4c3a3cc068e32d3eb0f5b",
+      "duplicate_of_input_index": 63
+    },
+    {
+      "input_index": 179,
+      "reference": "16f3f65e8c984690fc6dc28f1e1367c4",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "12+ Years",
+        "Experience: 12+ Years"
+      ],
+      "mandatory_minimum_years": 12.0
+    },
+    {
+      "input_index": 180,
+      "reference": "5cb620830ddbb70bcee83fd0cee7a58b",
+      "original_title": "Senior Python Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "10+ Years",
+        "Experience:\n10+ Years"
+      ],
+      "mandatory_minimum_years": 10.0
+    },
+    {
+      "input_index": 181,
+      "reference": "bd70f1c224a18a7ad178397632d982b7",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5+ Years",
+        "Experience: 5+ Years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 182,
+      "reference": "cdd973ef363692c66c85e03631a5cc35",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8+ Years",
+        "7+ years",
+        "Experience: 8+ Years"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 183,
+      "reference": "d5e99111905dd07a2e15ca001b08350b",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "16f3f65e8c984690fc6dc28f1e1367c4",
+      "duplicate_of_input_index": 179
+    },
+    {
+      "input_index": 184,
+      "reference": "aad282bc6aec2da327ee4534a0156fb6",
+      "original_title": "Senior Python Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "5cb620830ddbb70bcee83fd0cee7a58b",
+      "duplicate_of_input_index": 180
+    },
+    {
+      "input_index": 185,
+      "reference": "e67eec76c7a386a53f0a870684f0dcbd",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "bd70f1c224a18a7ad178397632d982b7",
+      "duplicate_of_input_index": 181
+    },
+    {
+      "input_index": 186,
+      "reference": "196dcbf517b0295af442a68c98e786dc",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "cdd973ef363692c66c85e03631a5cc35",
+      "duplicate_of_input_index": 182
+    },
+    {
+      "input_index": 187,
+      "reference": "38b7a7e1ceab0c4c02c4a6582b74de47",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, api, rest, automation, bot."
+    },
+    {
+      "input_index": 188,
+      "reference": "96840be59255dc19fb1470510e6ce5a9",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "0–2 years",
+        "Experience: 0–2 years and Career Gap candidates"
+      ],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, rest, automation, full stack."
+    },
+    {
+      "input_index": 189,
+      "reference": "df42cc7bd30f23f5f811b5d1721bf6ec",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "96840be59255dc19fb1470510e6ce5a9",
+      "duplicate_of_input_index": 188
+    },
+    {
+      "input_index": 190,
+      "reference": "ce3da5b6907c9cce56a2903f3376c5b5",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5.5+ Years",
+        "Experience:\n5.5+ Years"
+      ],
+      "mandatory_minimum_years": 5.5
+    },
+    {
+      "input_index": 191,
+      "reference": "b2e9973b44c131b393141ca417798cea",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, rest."
+    },
+    {
+      "input_index": 192,
+      "reference": "e82195a701a669131714efdbd1adc201",
+      "original_title": "Python Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5 - 10 Years",
+        "5-10 years",
+        "Experience:\n5 - 10 Years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 193,
+      "reference": "e4be73a41729bf41732c29a665a19c94",
+      "original_title": "Python Backend Developer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "0–5 years",
+        "Experience:\n0–5 years"
+      ],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, backend, api, rest, automation, microservice."
+    },
+    {
+      "input_index": 194,
+      "reference": "d9625e1d692b8b180450f0ac6ff1b01b",
+      "original_title": "Senior Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "13+ years",
+        "5+ years",
+        "Experience:\n13+ years in software engineering"
+      ],
+      "mandatory_minimum_years": 13.0
+    },
+    {
+      "input_index": 195,
+      "reference": "842850125fd38cf8150045c5b12f5b46",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "7+ Years",
+        "7+ years",
+        "Experience: 7+ Years in Python"
+      ],
+      "mandatory_minimum_years": 7.0
+    },
+    {
+      "input_index": 196,
+      "reference": "3cf5977ebe1b66d4f9079606f1539165",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5+ Years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 197,
+      "reference": "9cba43fb462858a48dddc39e1691ee98",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "2+ years",
+        "Experience: 2+ years preferred"
+      ],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, fastapi, flask, django, backend, api."
+    },
+    {
+      "input_index": 198,
+      "reference": "655d29e1a185ab3b04c286d64bfee118",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "3cf5977ebe1b66d4f9079606f1539165",
+      "duplicate_of_input_index": 196
+    },
+    {
+      "input_index": 199,
+      "reference": "6a150708dc392521ca109b84b22aa0a6",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "9cba43fb462858a48dddc39e1691ee98",
+      "duplicate_of_input_index": 197
+    },
+    {
+      "input_index": 200,
+      "reference": "180db48dbe5cab1d19b8f3741d14cbad",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "3cf5977ebe1b66d4f9079606f1539165",
+      "duplicate_of_input_index": 196
+    },
+    {
+      "input_index": 201,
+      "reference": "6e8ad30d467f3d052a1774c1499486dd",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8+ Years",
+        "8+ years"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 202,
+      "reference": "10e53205ed841fec9b6d743aed66cf4e",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "12+ Years",
+        "12+ years",
+        "5+ years",
+        "Experience: 12+ Years",
+        "Experience:\n12+ years of overall software development experience with a strong"
+      ],
+      "mandatory_minimum_years": 12.0
+    },
+    {
+      "input_index": 203,
+      "reference": "f11f043a90f43d99eba6e19f328fd24d",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5–10 Years",
+        "Experience:\n5–10 Years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 204,
+      "reference": "fd550e7b551737fc121be8c7c4a65564",
+      "original_title": "DataEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8 to 10 Years"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 205,
+      "reference": "e778de268443a042aac9ea0cd017c51c",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "6+ Years",
+        "Experience: 6+ Years"
+      ],
+      "mandatory_minimum_years": 6.0
+    },
+    {
+      "input_index": 206,
+      "reference": "0ea2f8fce93d7dfea5a463100ecade74",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8+ years"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 207,
+      "reference": "06c8dc78c1add48d82e80cb7a38ebdef",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "e778de268443a042aac9ea0cd017c51c",
+      "duplicate_of_input_index": 205
+    },
+    {
+      "input_index": 208,
+      "reference": "afda2b2e957d1098ec53748c7bdb2061",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "0ea2f8fce93d7dfea5a463100ecade74",
+      "duplicate_of_input_index": 206
+    },
+    {
+      "input_index": 209,
+      "reference": "f5bd3f0290856004ef4fd221ee7e470b",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "0b23373ce65d54f84ce4102936db5430",
+      "duplicate_of_input_index": 162
+    },
+    {
+      "input_index": 210,
+      "reference": "1bdb2735e705b112b86e63fb2d7182a5",
+      "original_title": "AI Developer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "aiengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "3+ years"
+      ],
+      "classification_reason": "Primary vacancy delivers AI/ML, GenAI, RAG or agent-enabled systems; JD evidence: mcp."
+    },
+    {
+      "input_index": 211,
+      "reference": "b355fe1def732ba263a526f913c7a031",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, fastapi, flask, django, backend, api."
+    },
+    {
+      "input_index": 212,
+      "reference": "7103f4086bcc3082960a578c84a9489a",
+      "original_title": "Senior Python Developer",
+      "original_company": "Sai",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8+ years",
+        "3+ years"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 213,
+      "reference": "5597ab40459b9e26e3ef9188bcc77a27",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "f5bd3f0290856004ef4fd221ee7e470b",
+      "duplicate_of_input_index": 209
+    },
+    {
+      "input_index": 214,
+      "reference": "622f793033e56d035b79b8b25e3afe94",
+      "original_title": "Python Backend Developer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, flask, backend, rest."
+    },
+    {
+      "input_index": 215,
+      "reference": "605f9236f2b060f6ef3128a11e57ee42",
+      "original_title": "PythonDeveloper",
+      "original_company": "Sai",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "7103f4086bcc3082960a578c84a9489a",
+      "duplicate_of_input_index": 212
+    },
+    {
+      "input_index": 216,
+      "reference": "4fb7b1fdfb066c095a3c2d8f2d1b86af",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "not_verifiable_hiring_ad",
+      "details": "Generic aggregate entry-level opportunities without a named employer or identifiable opening"
+    },
+    {
+      "input_index": 217,
+      "reference": "2625ebdf5382ac6dc5ac0bcde717608d",
+      "original_title": "PythonDeveloper",
+      "original_company": "Rahul",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "10+ years",
+        "5+ years",
+        "experience\n5+ years of experience with AWS services: EMR, Lambda, EventBridge"
+      ],
+      "mandatory_minimum_years": 10.0
+    },
+    {
+      "input_index": 218,
+      "reference": "3daecea48281bd90ec2ebb769c1ce48f",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5+ Years",
+        "Experience: 5+ Years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 219,
+      "reference": "5d8a946e68b05f917c601a1edf9db9f6",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "2 years"
+      ],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, backend, api, rest, microservice, full stack."
+    },
+    {
+      "input_index": 220,
+      "reference": "a006880426f18e337b2c6c55fca6a6ea",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "7+ Years",
+        "7+ years",
+        "Experience: 7+ Years"
+      ],
+      "mandatory_minimum_years": 7.0
+    },
+    {
+      "input_index": 221,
+      "reference": "58bd4acfa8f5c2cd41dd19f879728a2b",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "5d8a946e68b05f917c601a1edf9db9f6",
+      "duplicate_of_input_index": 219
+    },
+    {
+      "input_index": 222,
+      "reference": "96dab34f47989d36d19121faeffad426",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "a006880426f18e337b2c6c55fca6a6ea",
+      "duplicate_of_input_index": 220
+    },
+    {
+      "input_index": 223,
+      "reference": "36747cfa57696718d52bc9b3bac0503b",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, flask, django, api, rest."
+    },
+    {
+      "input_index": 224,
+      "reference": "8bf48e1924f5303a021751703b843d13",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "3+ Years"
+      ],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, fastapi, django, backend, api, rest."
+    },
+    {
+      "input_index": 225,
+      "reference": "86cb55f70d5000c4779df9deb867d0a3",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "job_seeker_or_non_hiring",
+      "details": "Consultant hotlist, not hiring"
+    },
+    {
+      "input_index": 226,
+      "reference": "23229b79dd529eb20609ea3e3e6922d8",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5–10 Years",
+        "Experience: 5–10 Years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 227,
+      "reference": "69e5c1c5121dd8a8cec2a96e886a20e7",
+      "original_title": "Senior Python Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "7+ Years",
+        "Experience: 7+ Years"
+      ],
+      "mandatory_minimum_years": 7.0
+    },
+    {
+      "input_index": 228,
+      "reference": "73c5aea91bf8eb700657268f0cbcf416",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, flask, api, rest, automation."
+    },
+    {
+      "input_index": 229,
+      "reference": "0ff06fd2066b8438c9516f0b9bb0cd55",
+      "original_title": "Python Developer",
+      "original_company": "MNC: Python Developer",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "6+ Years",
+        "Experience:\n6+ Years"
+      ],
+      "mandatory_minimum_years": 6.0
+    },
+    {
+      "input_index": 230,
+      "reference": "f6ed96efd4f33177ace4673927e2df76",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "13+ Years",
+        "Experience: 13+ Years Must"
+      ],
+      "mandatory_minimum_years": 13.0
+    },
+    {
+      "input_index": 231,
+      "reference": "29a45fdec05d2375ee4f2e30fc30e5ff",
+      "original_title": "Python Developer",
+      "original_company": "MNC: Python Developer",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "0ff06fd2066b8438c9516f0b9bb0cd55",
+      "duplicate_of_input_index": 229
+    },
+    {
+      "input_index": 232,
+      "reference": "d08803684883e7fcba115bd271966409",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "f6ed96efd4f33177ace4673927e2df76",
+      "duplicate_of_input_index": 230
+    },
+    {
+      "input_index": 233,
+      "reference": "e8d600b7a77b99ff6305790375bb711d",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "job_seeker_or_non_hiring",
+      "details": "Consultant hotlist, not hiring"
+    },
+    {
+      "input_index": 234,
+      "reference": "81eaee4e670460dcb8e149f2bbe33a2e",
+      "original_title": "AI/ML Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "job_seeker_or_non_hiring",
+      "details": "Hotlist of available US IT candidates, not hiring"
+    },
+    {
+      "input_index": 235,
+      "reference": "a16d8992fbb6ea9d710165af768c280b",
+      "original_title": "AI/ML Engineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "81eaee4e670460dcb8e149f2bbe33a2e",
+      "duplicate_of_input_index": 234
+    },
+    {
+      "input_index": 236,
+      "reference": "eadea6674d2f44afff7b1f134ef70a5f",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, fastapi, flask, django, backend, api."
+    },
+    {
+      "input_index": 237,
+      "reference": "8a58792919b5311d534eadff23c3939a",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python, rest."
+    },
+    {
+      "input_index": 238,
+      "reference": "f266bec41d5ca0551b1e3140f3f22d7f",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "15+ Years",
+        "Experience:\n15+ Years"
+      ],
+      "mandatory_minimum_years": 15.0
+    },
+    {
+      "input_index": 239,
+      "reference": "2eefcd54b2ed0d333838e591cceef9cd",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "aiengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "3–5 years"
+      ],
+      "classification_reason": "Primary vacancy delivers AI/ML, GenAI, RAG or agent-enabled systems; JD evidence: agentic, agents, rag, llm, genai, ai/."
+    },
+    {
+      "input_index": 240,
+      "reference": "e6d3ccf5ff2d086f1fd4e80229403062",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "pythondeveloper",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve Python software, backend/API or automation engineering; JD evidence: python."
+    },
+    {
+      "input_index": 241,
+      "reference": "900ca2a6e34ec147d50ea01ef6d41685",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "e6d3ccf5ff2d086f1fd4e80229403062",
+      "duplicate_of_input_index": 240
+    },
+    {
+      "input_index": 242,
+      "reference": "d7b848ff03b593ab0bdc38745033a99c",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "e6d3ccf5ff2d086f1fd4e80229403062",
+      "duplicate_of_input_index": 240
+    },
+    {
+      "input_index": 243,
+      "reference": "3a024fafe12b712cf267c71a54b59f1b",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "f6ed96efd4f33177ace4673927e2df76",
+      "duplicate_of_input_index": 230
+    },
+    {
+      "input_index": 244,
+      "reference": "8113d3a43b32659602fa84478481683c",
+      "original_title": "AI ENGINEER",
+      "original_company": "Fluid AI",
+      "decision": "included",
+      "group": "aiengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [
+        "0–5 Years",
+        "Experience: 0–5 Years"
+      ],
+      "classification_reason": "Primary vacancy delivers AI/ML, GenAI, RAG or agent-enabled systems; JD evidence: agents, llm, ai/, autonomous agents."
+    },
+    {
+      "input_index": 245,
+      "reference": "a2ca49c21dbd8e84969e8522164eea55",
+      "original_title": "PYTHON DEVELOPER",
+      "original_company": "unknown",
+      "decision": "included",
+      "group": "dataengineer",
+      "reason": "eligible_hiring_vacancy",
+      "experience_requirement_extracted": [],
+      "classification_reason": "Primary duties involve data engineering, ETL/ELT, data integration, modeling or pipelines; JD evidence: etl, data integration, sql. Despite Python Developer title, mandatory SQL Server, SSIS/ETL, data mapping and data integration dominate the actual responsibilities."
+    },
+    {
+      "input_index": 246,
+      "reference": "f4a3652515bedb198fc35607352504a3",
+      "original_title": "AI Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "6+ Years",
+        "Experience:\n6+ Years"
+      ],
+      "mandatory_minimum_years": 6.0
+    },
+    {
+      "input_index": 247,
+      "reference": "322ef1ed66811886a5f98a8726e327d0",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8+ Years",
+        "Experience: 8+ Years Required"
+      ],
+      "mandatory_minimum_years": 8.0
+    },
+    {
+      "input_index": 248,
+      "reference": "b1b98e164971cca4d5d778f3b70e9361",
+      "original_title": "AIEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "6+ Years",
+        "Experience: 6+ Years"
+      ],
+      "mandatory_minimum_years": 6.0
+    },
+    {
+      "input_index": 249,
+      "reference": "05aa27f178c107d789b81896f78b8f93",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "15+ Years",
+        "Experience: 15+ Years"
+      ],
+      "mandatory_minimum_years": 15.0
+    },
+    {
+      "input_index": 250,
+      "reference": "12c0125fd235958131d72f8fa1f8122e",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "5+ years",
+        "5+ Years",
+        "Exp: 5+ Years"
+      ],
+      "mandatory_minimum_years": 5.0
+    },
+    {
+      "input_index": 251,
+      "reference": "9f8afee7f46af344a6c903a1d5799bba",
+      "original_title": "PYTHON DEVELOPER",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "a2ca49c21dbd8e84969e8522164eea55",
+      "duplicate_of_input_index": 245
+    },
+    {
+      "input_index": 252,
+      "reference": "0385c7e1968ca35edb5f5e6f73dda2ab",
+      "original_title": "AI Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "f4a3652515bedb198fc35607352504a3",
+      "duplicate_of_input_index": 246
+    },
+    {
+      "input_index": 253,
+      "reference": "5849d9a0e9120aa90be1d57f29803e68",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "322ef1ed66811886a5f98a8726e327d0",
+      "duplicate_of_input_index": 247
+    },
+    {
+      "input_index": 254,
+      "reference": "e8af0fbec0dc1156159c708f5d3de41b",
+      "original_title": "AIEngineer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "b1b98e164971cca4d5d778f3b70e9361",
+      "duplicate_of_input_index": 248
+    },
+    {
+      "input_index": 255,
+      "reference": "e234bff47590c597494bc666440ad465",
+      "original_title": "PythonDeveloper",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "05aa27f178c107d789b81896f78b8f93",
+      "duplicate_of_input_index": 249
+    },
+    {
+      "input_index": 256,
+      "reference": "8f5c69d724dfb2745a6868c6cd84c937",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "12c0125fd235958131d72f8fa1f8122e",
+      "duplicate_of_input_index": 250
+    },
+    {
+      "input_index": 257,
+      "reference": "ace4f6e9a2d56752f96362aa8c1865a5",
+      "original_title": "Python Developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "duplicate_record",
+      "details": "Identical or demonstrably repeated recruiting post / vacancy",
+      "duplicate_of_reference": "8a58792919b5311d534eadff23c3939a",
+      "duplicate_of_input_index": 237
+    },
+    {
+      "input_index": 258,
+      "reference": "95f789495af92294a0089d0c19e31040",
+      "original_title": "Senior Python developer",
+      "original_company": "unknown",
+      "decision": "excluded",
+      "reason": "mandatory_experience_above_max",
+      "details": "The advertised mandatory minimum experience exceeds 4 years.",
+      "experience_requirement_extracted": [
+        "8+ Years",
+        "Experience: 8+ Years"
+      ],
+      "mandatory_minimum_years": 8.0
+    }
+  ]
+}

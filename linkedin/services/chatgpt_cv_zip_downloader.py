@@ -6,7 +6,7 @@ Save to:
 Run from the JobBots project root:
     python -m linkedin.services.chatgpt_cv_zip_downloader --dry-run
     python -m linkedin.services.chatgpt_cv_zip_downloader
-    python -m linkedin.services.chatgpt_cv_zip_downloader --role pythondeveloper
+    python -m linkedin.services.chatgpt_cv_zip_downloader --role dataengineer
     python -m linkedin.services.chatgpt_cv_zip_downloader --date 2026-10-18
 
 Only roles with a nonempty <role>_jd.txt or jd.txt under today's date folder

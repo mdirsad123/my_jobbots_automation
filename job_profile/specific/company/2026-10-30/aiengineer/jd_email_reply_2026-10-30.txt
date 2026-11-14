@@ -1,0 +1,20 @@
+Subject: Application for AI Engineer / GenAI Application Developer
+
+Dear Hiring Team,
+
+I am applying for an AI Engineer or GenAI Application Developer opportunity. I have 3+ years of experience in Python backend engineering, AWS-based data pipelines, API integrations, and workflow automation, with practical exposure to LLM APIs, prompt-driven automation, and RAG concepts.
+
+- Developed Python APIs and business workflows using Flask, FastAPI, SQL, and REST integrations.
+- Built AWS Lambda/SQS/S3 and Glue/PySpark automation for finance-data processing, validation, and document generation.
+- Bring an application-engineering foundation relevant to LLM-enabled services, cloud integration, and reliable data flows.
+
+I would welcome the opportunity to discuss how my backend, data, and automation experience could support your team. I can share more detail on my AI-related exposure and areas I am currently developing.
+
+Please find my updated CV attached.
+
+Best regards,
+Md Irsad
++91-8409718735
+mdirsadtech7305@gmail.com
+
+Note before sending: Customize the role title and employer for the specific vacancy; check location, work authorization, and required experience. Do not bulk-send this template to every posting in the aggregated JD.

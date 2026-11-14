@@ -1,0 +1,298 @@
+# Role Group: Others
+# Emails: anitha.devalla@teamlease.com, karan.chaudhary@conov8.com, new.shashank.kashyap@gmail.com, kanika.sharma1@evontech.com, smit.thakkar@mindinventory.com, sanjot@brucode.com, PampatiS@lancesoft.com
+# postedbyurl: https://www.linkedin.com/in/anitha-devalla-041116270/, https://www.linkedin.com/in/chandrashekhar1596/, https://www.linkedin.com/in/karan-chaudhary-412224339/, https://www.linkedin.com/in/bhautik-m-284486362/, https://www.linkedin.com/in/kanika-sharma-2368571b9/, https://www.linkedin.com/in/harisha-e-746006186/, https://www.linkedin.com/in/smit-thakkar-5b5b81351/, https://www.linkedin.com/in/brucode-hr-5ab710426/, https://www.linkedin.com/in/santhosh-pampati-6a4a21137/
+# Jobs included: 10
+======================================================================
+
+## Job 1: Data Engineer | Employer not specified
+Job reference: 1784f5245ba79b9703100f3a93704bbe
+Input record: 19
+Poster profile: https://www.linkedin.com/in/anitha-devalla-041116270/
+
+Job description / posting:
+
+We're Hiring
+Position: Data Engineer (BI) – L1
+Experience:
+4–10 Years
+Location:
+Chennai
+Work Mode:
+Work from Office (5 Days)
+Shift:
+General Day Shift
+We are looking for skilled
+BI Data Engineers
+with strong experience in Power BI, IBM Cognos, and TM1.
+Primary Skills:
+Power BI (PBI)
+IBM Cognos
+Planning Analytics (TM1)
+Secondary Skills:
+IBM DataStage
+Java / JDK
+Interested candidates can share their updated resumes at
+anitha.devalla@teamlease.com
+or 8522964316
+#Hiring
+#DataEngineer
+#PowerBI
+#IBMCognos
+#TM1
+#PlanningAnalytics
+#DataStage
+#Java
+#BIJobs
+#ChennaiJobs
+#ITJobs
+
+----------------------------------------------------------------------
+
+## Job 2: Data Engineer | Employer not specified
+Job reference: e4f8c486dbc4794d2219cfbaa5e59ea9
+Input record: 34
+Posted By: Chandra Shekhar B
+Poster profile: https://www.linkedin.com/in/chandrashekhar1596/
+
+Job description / posting:
+
+🚀
+We’re Hiring: Data Engineer (#Scala + #PlayFramework)
+📍
+Location:
+Hyderabad
+💼
+Experience:
+#4–7 Years
+We are looking for a skilled #
+Data Engineer
+with strong programming fundamentals, problem-solving abilities, and hands-on experience in Scala and Play Framework.
+Required Skills & Qualifications:
+👉 Strong fundamentals in programming, algorithms, and data structures.
+👉 Proficiency in
+Scala and Play Framework
+.
+👉 Excellent software design, problem-solving, and debugging skills.
+👉 Knowledge of
+Scala, Spark, and Play Framework
+.
+👉 Exposure to Big Data technologies such as Spark, NoSQL, Cassandra, Kafka, MapReduce, and Hadoop ecosystem is an added advantage.
+👉 Experience in data analytics and deriving meaningful insights from data is a plus.
+👉 Ability to quickly learn and adapt to new technologies.
+📩
+Interested candidates:
+Please share your updated resume via DM.
+Know someone who could be a good fit? Please share this opportunity!
+Chandra Shekhar B
+Navya Dhanasri Madala
+#Hiring
+#DataEngineer
+#Scala
+#PlayFramework
+#ApacheSpark
+#BigData
+#Kafka
+#Cassandra
+#HyderabadJobs
+#TechHiring
+
+----------------------------------------------------------------------
+
+## Job 3: Data Engineer | Employer not specified
+Job reference: 98c8ea8e50ed2cdf1999dd55e420bc86
+Input record: 81
+Poster profile: https://www.linkedin.com/in/karan-chaudhary-412224339/
+
+Job description / posting:
+
+Hiring: Senior Power BI / Data Engineer
+Boston, MA (Hybrid – 4 Days Onsite) | Local Candidates Only
+6+ Months | Final Interview – In Person
+Must Have:
+Power BI, Paginated Reports, DAX, Power Query, Power Automate, dbt, Snowflake, Advanced SQL, AWS S3, REST APIs, and AI Tools (Copilot/Claude).
+Active LinkedIn required. Genuine, hands-on experience only.
+Interested candidates, please share your updated resume.
+karan.chaudhary@conov8.com
+#PowerBI
+#DataEngineer
+#Snowflake
+#BostonJobs
+#Hiring
+
+----------------------------------------------------------------------
+
+## Job 4: DataEngineer | Employer not specified
+Job reference: dda714e86247fba6db87fc27fcb16340
+Input record: 114
+Poster profile: https://www.linkedin.com/in/bhautik-m-284486362/
+
+Job description / posting:
+
+🚀 We're Hiring: Senior Sigma Computing & Power BI Developer
+📍 Location: (Remote/WFH)
+💼 Experience: 4–10+ Years in BI/Analytics
+Looking for a hands-on BI expert to lead Power BI → Sigma Computing migrations and build advanced Sigma dashboards from scratch.
+🔑 What you'll do:
+• Migrate Power BI dashboards (DAX, Power Query, semantic models) to Sigma
+• Build advanced Sigma workbooks, calculated fields & interactive dashboards
+• Write advanced SQL (CTEs, window functions, star schemas)
+• Work with Snowflake/Databricks
+• Own client communication & technical delivery end-to-end
+✅ Must-haves:
+• Strong Sigma Computing + Power BI hands-on experience (2+ yrs Sigma preferred)
+• Advanced SQL & data modeling
+• Excellent client-facing communication
+📍 Only for remotely candidates No Hybrid or WFO
+Please apply only if you’re currently working in fully remote role as it is freelancing or contract job for 1 year, which you can work along side with current organization.
+Please send your resume to 📩
+new.shashank.kashyap@gmail.com
+Know someone who’d be a great fit? Tag them below!
+#DataEngineer
+#RemoteJobs
+#Hiring
+#AWS
+#Python
+#TechJobs
+#Hiring
+#SigmaComputing
+#PowerBI
+#BusinessIntelligence
+#DataAnalytics
+#RemoteJobs
+#SQL
+#Snowflake
+#Databricks
+
+----------------------------------------------------------------------
+
+## Job 5: Eligible non-Python vacancies (Oracle ERP, Design, SEO, Trainee) | Evon Technologies
+Job reference: 09e83947aad91c11b3cb0d8b36d621d8
+Input record: 144
+Source URL: https://www.linkedin.com/safety/go/?url=http%3A%2F%2FB%2ETech%2FM%2ETech&urlhash=XJAP&mt=uXHcMrsXa5nJnWA8_572hFmiRONQzz3KZemd1aQELc5vNpNhJViDoKfU_z0A3ru-Wdc5SMh9N5i7U4QSzNzBYd9hrCT9rQ5dokkuxG6RYH4t5_qQcaISUPIVVq63IxiRzxfTndKi1gsDk2MdHQaHhRiAEzagrIZvXgbIDyGGytYIZCgf4rs8WXucQq7u7YE&isSdui=true
+Poster profile: https://www.linkedin.com/in/kanika-sharma-2368571b9/
+
+Job description / posting:
+
+Evon Technologies — Dehradun — eligible openings from the multi-position recruitment notice:
+- Oracle ERP Functional Consultant — 3–5 years
+- Graphic Designer & UI/UX Designer — 2–3 years
+- SEO Content Writer — 2–3 years
+- Trainee Programmer (IITs) — 0–1 year; IIT candidates only (B.E./B.Tech/M.Tech in CS/IT or MCA, with 60% minimum throughout).
+Apply: kanika.sharma1@evontech.com
+Separate Python Developer (LLM) 5–8 years vacancy is outside the experience cutoff and not included.
+
+----------------------------------------------------------------------
+
+## Job 6: PythonDeveloper | Employer not specified
+Job reference: 84078324604b581dfe036b4377d2966c
+Input record: 151
+Poster profile: https://www.linkedin.com/in/harisha-e-746006186/
+
+Job description / posting:
+
+🚀 We're Hiring: Workfront + Fusion Consultant | Hyderabad
+Are you passionate about workflow automation and enterprise integrations? Join our team as a
+Workfront + Fusion Consultant
+and help organizations streamline their project management and business processes with Adobe solutions.
+📍 Location: Hyderabad
+💼 Experience: 4-10 Years
+🔹 Key Responsibilities: ✅ Implement and configure Adobe Workfront & Fusion integrations
+✅ Design and develop workflow automation solutions
+✅ Gather business requirements and deliver scalable solutions
+✅ Integrate Workfront with enterprise applications and third-party platforms
+✅ Troubleshoot, optimize, and enhance existing integrations
+🔹 Required Skills: ✔ Adobe Workfront ✔ Adobe Fusion ✔ Workflow Automation ✔ API Integrations ✔ Project Management Systems
+🎯 If you have strong expertise in Workfront, Fusion, and building seamless automated workflows, we'd love to connect with you!
+#Hiring
+#PythonDeveloper
+#PythonJobs
+#BengaluruJobs
+#EngineeringJobs
+#SoftwareDeveloper
+#BackendDeveloper
+#Django
+#Flask
+#FastAPI
+#APIDevelopment
+#ITJobs
+#TechCareers
+#NowHiring
+#CareerOpportunity
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 7: SEO Executive | Mind Inventory
+Job reference: 4b9aad37fb820a3070fdb3921c0ac918
+Input record: 194
+Poster profile: https://www.linkedin.com/in/smit-thakkar-5b5b81351/
+
+Job description / posting:
+
+Mind Inventory – hiring SEO Executive.
+Experience: 3+ Years
+Employer: Mind Inventory.
+The original announcement also lists Python Developer (5+ Years) and Full-Stack Developer (5+ Years); those two postings are excluded under the experience cap.
+Apply: smit.thakkar@mindinventory.com | +91 70169 52378.
+
+----------------------------------------------------------------------
+
+## Job 8: BDE and DevOps openings | Employer not specified
+Job reference: 9b8f89977c889e349a29605a37422acf
+Input record: 233
+Poster profile: https://www.linkedin.com/in/brucode-hr-5ab710426/
+
+Job description / posting:
+
+Brucode Technologies Pvt. Ltd. — other eligible vacancies
+Location: Mohali, Punjab; five days working
+Business Development Executive / Online Bidder — experience 6 months–2 years (night shift); skills include lead generation, Upwork, Freelancer, Fiverr, Guru, proposal writing and client communication.
+DevOps Engineer — experience 6 months–1 year (day shift); AWS/Azure, Docker, Kubernetes, CI/CD, Linux and Git.
+Interview mode: walk-in only.
+Apply: sanjot@brucode.com | +91 7009008101.
+The source hashtags mention Python/AI, but these are not among the described vacancies.
+
+----------------------------------------------------------------------
+
+## Job 9: Multi-role IT openings (limited AWS DE detail) | Employer not specified
+Job reference: f3b832a05e551fa348267c09b7b7bc00
+Input record: 258
+Poster profile: https://www.linkedin.com/in/santhosh-pampati-6a4a21137/
+
+Job description / posting:
+
+Multiple IT hiring openings (source: HOT C2C REQUIREMENTS)
+Contact: PampatiS@lancesoft.com
+Positions in the announcement with no mandatory >4-year minimum specified include Senior Oracle CPQ Developer (Exton, PA, onsite 3 days/week), Oracle HCM Cloud ORC Techno-Functional Consultant (New York, remote; at least two ORC implementations), Oracle OLC Functional Lead (New York, remote), AWS Data Engineer (Redmond, WA; no specific AWS-pipeline responsibilities given), Senior Java Full Stack Application Architect (Plano, TX), Senior ServiceNow Architect (Dallas, TX), Salesforce Technical Lead and Senior Business Analyst (Mount Laurel, NJ), Senior Workday HCM Core Consultant (Menlo Park, CA).
+The separate Senior Informatica MDM Consultant vacancy (10+ years overall / 7+ MDM) is excluded.
+Note: description does not establish AWS data-pipeline expertise for the AWS-named post, so record is grouped as Others rather than assigned on its title alone.
+
+----------------------------------------------------------------------
+
+## Job 10: DataEngineer | Employer not specified
+Job reference: 72aa95553aa3066cba8e8326ed547b6f
+Input record: 369
+Source URL: https://www.linkedin.com/groups/2571473/?q=highlightedFeedForGroups&highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7526255894112718848
+
+Job description / posting:
+
+🌟 Exciting Opportunity Alert! 🌟
+We’re hiring for an incredible role that could be the next big step in your career! 🚀
+📢 Position: Data architect
+Ready to make an impact and grow your expertise?
+👉 Apply Now:
+https://lnkd.in/gTjfgtzG
+💡 Know someone who’d be a perfect fit? Tag them or share this post to spread the word!
+#Databricks
+#DataEngineer
+#AzureDatabricks
+#AIEngineer
+#UnityCatalog
+#LakehouseArchitecture
+#GenerativeAI
+#Dynamics365FO
+#DataMesh
+#DeltaLake
+
+----------------------------------------------------------------------

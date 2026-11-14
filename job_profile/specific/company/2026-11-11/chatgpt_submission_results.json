@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-11",
+  "roles": {
+    "aiengineer": {
+      "status": "sent",
+      "jd_filename": "aiengineer_jd.txt",
+      "jd_path": "D:\\ird-projects\\sahil_projects\\my_jobbots_automation\\job_profile\\specific\\company\\2026-11-11\\aiengineer\\aiengineer_jd.txt",
+      "project_url": "https://chatgpt.com/g/g-p-6ad4d288ac7c81918f8a37d44b485efa/project",
+      "required_attachments": [
+        "aiengineer_jd.txt"
+      ],
+      "chat_url": "https://chatgpt.com/g/g-p-6ad4d288ac7c81918f8a37d44b485efa-aiengineer-cv-generation/c/6af4231a-b3dc-83e8-878e-2d940bd8853a",
+      "timestamp_local": "2026-11-11T13:41:37+05:30"
+    },
+    "awsdataengineer": {
+      "status": "failed",
+      "jd_filename": "awsdataengineer_jd.txt",
+      "jd_path": "D:\\ird-projects\\sahil_projects\\my_jobbots_automation\\job_profile\\specific\\company\\2026-11-11\\awsdataengineer\\awsdataengineer_jd.txt",
+      "project_url": "https://chatgpt.com/g/g-p-6ad4d3df646481919b57dc116e98be5b/project",
+      "required_attachments": [
+        "awsdataengineer_jd.txt"
+      ],
+      "chat_url": "https://chatgpt.com/g/g-p-6ad4d3df646481919b57dc116e98be5b/project",
+      "timestamp_local": "2026-11-11T13:41:56+05:30",
+      "error": "RuntimeError: SEND BLOCKED: attachment chip(s) missing: ['awsdataengineer_jd.txt']. Expected attachment: ['awsdataengineer_jd.txt']. Check this ChatGPT tab."
+    },
+    "dataengineer": {
+      "status": "failed",
+      "jd_filename": "dataengineer_jd.txt",
+      "jd_path": "D:\\ird-projects\\sahil_projects\\my_jobbots_automation\\job_profile\\specific\\company\\2026-11-11\\dataengineer\\dataengineer_jd.txt",
+      "project_url": "https://chatgpt.com/g/g-p-6ad4d3eb4e3881918beb94639237e5fb/project",
+      "required_attachments": [
+        "dataengineer_jd.txt"
+      ],
+      "chat_url": "https://chatgpt.com/g/g-p-6ad4d3eb4e3881918beb94639237e5fb-dataengineer-cv-generation/c/6af42357-27b4-83ee-971a-ed66c670947a",
+      "timestamp_local": "2026-11-11T13:43:11+05:30",
+      "error": "TimeoutException: Message: ChatGPT Send button not enabled or not found.\n"
+    },
+    "pythondeveloper": {
+      "status": "failed",
+      "jd_filename": "pythondeveloper_jd.txt",
+      "jd_path": "D:\\ird-projects\\sahil_projects\\my_jobbots_automation\\job_profile\\specific\\company\\2026-11-11\\pythondeveloper\\pythondeveloper_jd.txt",
+      "project_url": "https://chatgpt.com/g/g-p-6ad4d3d115b88191a0927cd7080b617d/project",
+      "required_attachments": [
+        "pythondeveloper_jd.txt"
+      ],
+      "chat_url": "https://chatgpt.com/g/g-p-6ad4d3d115b88191a0927cd7080b617d/project",
+      "timestamp_local": "2026-11-11T13:43:54+05:30",
+      "error": "RuntimeError: SEND BLOCKED: attachment chip(s) missing: ['pythondeveloper_jd.txt']. Expected attachment: ['pythondeveloper_jd.txt']. Check this ChatGPT tab."
+    }
+  }
+}

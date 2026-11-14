@@ -1,0 +1,2401 @@
+# Role Group: AI Engineer
+# Emails: opscloudtechnologies@gmail.com, saikumari@enfluenceit.com, rfh@hepl.com, Bhavya.sharma@mamsys.com, rahul.kokku@primetechpartners.in, jay.bairagi@bravensinc.com, sheetal.k@inspironlabs.com, hr@mindlyticai.com, pradeep@dizercorp.com, peerbhi@technipros.com, sharmila.b@voltoconsulting.com, Khusboo.Vij@rulesiq.com, amolw@aptask.com, careers@vextarainfo.com, shifa@sourcebae.com, monika.pandey@statusneo.com, swathi.suroju@avktechinc.com, Nalini.a@intellectdesign.com, sweety.chavan@bravensinc.com, meghna.ghosh@decision-tree.com, samuel@ipartnerstaffing.com, Shahed@dataqinc.com, rakeshm@vorizoit.com, ishikarawat3003@gmail.com, vaishnav.premanandan@successpact.com, vaishnavidubey565@gmail.com, Tanyakharb47@gmail.com, aakriti@inov8-solutions.com, jnanatalent@gmail.com, venkatesh@skaps.co.in, ishamor76@gmail.com, saicharan.mallu@global-csg.com, gopiraj.n@venpep.com, hr@venpep.com, mehak.bansal@programming.com, pavan.a@logicplanet.com, muskan@healoriq.com
+# postedbyurl: https://www.linkedin.com/in/varshini-j0428/, https://www.linkedin.com/in/purna-chander-racha/, https://www.linkedin.com/in/jayasankar-m-845717243/, https://www.linkedin.com/in/sai-kumari-8789092a4/, https://www.linkedin.com/in/revathy-alagesan-3203393b0/, https://www.linkedin.com/in/%D8%B4%DB%8C%D8%AE-%D8%A7%D8%B4%D9%81%D8%A7%D9%82-469220144/, https://www.linkedin.com/in/bhavya-sharma-91b4aa215/, https://www.linkedin.com/company/inspironlabsindia/, https://www.linkedin.com/in/nkshrivas/, https://www.linkedin.com/in/uttlooripc/, https://www.linkedin.com/in/sheik-peerbhi-953894399/, https://www.linkedin.com/in/sharmila-bala-656b67224/, https://www.linkedin.com/in/ron-k-93b649a1/, https://www.linkedin.com/in/amol-waghmare-789442235/, https://www.linkedin.com/in/sai-kumar-shivarathri-4a432b258/, https://www.linkedin.com/in/shifa-hr/, https://www.linkedin.com/in/tarunhr1/, https://www.linkedin.com/in/vamshi-krishna-mandapuri-83863716b/, https://www.linkedin.com/company/statusneo/, https://www.linkedin.com/in/swathi-s-971b5a17b/, https://www.linkedin.com/in/nalini-c-235726123/, https://www.linkedin.com/in/jyotsna-lokhande-bravensinc/, https://www.linkedin.com/company/apple/, https://www.linkedin.com/in/mukesh-kannan-m-77267020b/, https://www.linkedin.com/in/meghnaghosh02/, https://www.linkedin.com/in/rajesh-kunchala-a33141295/, https://www.linkedin.com/in/aditi-duvvuri-b9075937/, https://www.linkedin.com/in/navitha-m-bb92a6364/, https://www.linkedin.com/in/rakesh-bharadwaj-2850a4b/, https://www.linkedin.com/in/ishika-rawat-6397a3419/, https://www.linkedin.com/in/vinay-naik/, https://www.linkedin.com/in/vaishnav-premanandan-11774a178/, https://www.linkedin.com/in/vaishnavi-dubey-06b16741a/, https://www.linkedin.com/in/tanu-kharb-b22547326/, https://www.linkedin.com/in/aakriti-0a2479193/, https://www.linkedin.com/in/jnana-ranjan-hati-5b1b00206/, https://www.linkedin.com/in/akash-dasari-44691622a/, https://www.linkedin.com/in/isha-mor-a8b785446/, https://www.linkedin.com/in/sai-charan-reddy-0a9125268/, https://www.linkedin.com/in/gopiraj-n-2a114320b/, https://www.linkedin.com/in/mehak-bansal-999352153/, https://www.linkedin.com/in/pavan-p-7a461b232/, https://www.linkedin.com/in/garima-t-a77146405/
+# Jobs included: 50
+======================================================================
+
+## Job 1: Snowflake Cortex AI + Snowpark
+Job reference: b030941677ddf99e1f291de6dd403790
+Posted By URL: https://www.linkedin.com/in/varshini-j0428/
+
+🚀
+WE ARE HIRING! | WALK-IN / F2F INTERVIEW DRIVE | PUNE
+📢 Exciting career opportunities for experienced IT professionals!
+We are conducting a
+Face-to-Face Interview Drive on Saturday, 14th November 2026, in Pune.
+We are looking for skilled professionals across Data Engineering, Snowflake, Microsoft Fabric, AI, BI and L3 Support Engineering.
+🔥 OPEN POSITIONS
+1️⃣ Snowflake + Informatica + SQL
+Experience: 8+ / 9+ Years
+CTC: ₹20.5 LPA (8+ yrs) / ₹25.2 LPA (9+ yrs)
+Skills: Snowflake, Informatica, SQL
+2️⃣ Microsoft Fabric Data Engineer
+Experience: 10+ Years
+CTC: ₹25.2 LPA
+Skills: Microsoft Fabric
+3️⃣ L3 Support Engineer – ADB + Kubernetes
+Experience: 6+ Years
+CTC: ₹20.5 LPA
+Skills: ADB, Kubernetes, Python, SQL
+4️⃣ Snowflake + Python + SQL Developer
+Experience: 6+ Years
+CTC: ₹20.5 LPA
+Skills: Snowflake, Python, SQL
+5️⃣ Snowflake Cortex AI + Snowpark
+Experience: 4+ / 8+ Years
+CTC: ₹17.4 LPA (4+ yrs) / ₹26.6 LPA (8+ yrs)
+Skills: Snowflake Cortex AI, Snowpark, AI-enabled solutions
+6️⃣ Power BI Copilot + AI Visuals + Azure OpenAI
+Experience: 8.6+ / 14+ / 15+ Years
+CTC:
+8.6+ Years – ₹24.4 LPA
+14+ Years – ₹26.8 LPA
+15+ Years – ₹30.5 LPA
+Skills: Power BI Copilot, AI Visuals, Azure OpenAI
+📍 INTERVIEW DETAILS
+📅 Date: Saturday, 14th November 2026
+📍 Location: Pune
+🤝 Interview Mode: Face-to-Face
+⏳ Notice Period: Immediate Joiners Preferred
+📩 INTERESTED CANDIDATES
+If you have relevant experience and are looking for your next career opportunity, share your updated resume.
+📧
+Apply / Share CV:
+varshinij@sharpgts.com
+📢
+REFERRALS ARE HIGHLY APPRECIATED!
+Know someone who could be a perfect fit? Tag them in the comments or share this post with your professional network.
+Let's connect talented professionals with exciting career opportunities!
+#Hiring
+#PuneJobs
+#WalkInInterview
+#F2FDrive
+#ImmediateJoiners
+#Snowflake
+#Informatica
+#SQL
+#MicrosoftFabric
+#DataEngineer
+#SnowflakeCortexAI
+#Snowpark
+#GenerativeAI
+#AzureOpenAI
+#PowerBI
+#PowerBICopilot
+#Kubernetes
+#PythonJobs
+#L3Support
+#ITJobs
+#DataEngineering
+#AIJobs
+#HiringNow
+#JobOpportunity
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 2: Senior Python Developer
+Job reference: b3ffad1d2db2ef3f18f962b825a89d44
+Apply URL: https://www.linkedin.com/jobs/view/4489419969/
+Posted By URL: https://www.linkedin.com/in/purna-chander-racha/
+
+🚨 HIRING | Senior Python Developer
+🔥 Python | Machine Learning | PyTorch | FastAPI | MLOps
+📍 Hyderabad, Telangana | 💼 Senior Python Developer | 🏢 On-Site
+🚀 Join a high-impact engineering team building scalable AI and Machine Learning solutions using modern Python frameworks, deep learning technologies, cloud-native deployments, and data-driven applications.
+✅ Key Skills: Python, Machine Learning, PyTorch, TensorFlow, FastAPI, Flask
+⭐ Preferred: Hugging Face, Streamlit, Docker, Kubernetes, PostgreSQL, REST APIs
+💡 Build production-grade ML applications, develop scalable APIs, deploy AI solutions with Kubernetes, create interactive data products, and work across the entire ML application lifecycle.
+⚠️ Please apply only if your experience closely aligns with Python Development, Machine Learning Engineering, Deep Learning, API Development, MLOps, or AI Application Development.
+📩 Referral Opportunity
+Professionals with relevant experience in the core skills listed above may share:
+✅ Updated Resume + LinkedIn Profile URL
+📧 Email:
+mailtochander1996@gmail.com
+📌 Subject: Senior Python Developer – Hyderabad
+Relevant profiles may be considered for referral. Only shortlisted candidates will be contacted.
+🔄 Shares and referrals are appreciated.
+https://lnkd.in/dJsMzhRb
+#Hiring
+#PythonDeveloper
+#MachineLearning
+#PyTorch
+#TensorFlow
+#FastAPI
+#MLOps
+#ArtificialIntelligence
+#DeepLearning
+#Kubernetes
+#HyderabadJobs
+
+----------------------------------------------------------------------
+
+## Job 3: AI Engineer
+Job reference: a2cd4e7d973538534ba42d007b3c2e3f
+Apply URL: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FeW_h7EG6&urlhash=ZKI7&mt=TdZlgNFGHyY1nOWbRvIt4JtJD5fkGZBpmAEFdLGKmFswXZHxzbivJk16SQMSjNCyNiAffmuTAu-EG9aI9ToNuxrKzRrq4LCqVNSMYVGfbYDDOZ3IChzR91gZVJvgnJm_031Ifsuls6G-fS4F0lYX8UkTZmtZ4-qK4SdDLit4sE64JZ61tVcKe-lENPE8o48&isSdui=true
+Posted By URL: https://www.linkedin.com/in/jayasankar-m-845717243/
+
+We're Hiring – Python AI Engineer
+📍 Location: Infopark, Kochi
+💼 Experience: 2–4 Years
+Looking for skilled Python developers with hands-on AI/ML experience to join our growing team.
+We also welcome aspiring talent and are open to mentoring and training interns.
+📩 Send your resume to:
+opscloudtechnologies@gmail.com
+🌐
+https://lnkd.in/eW_h7EG6
+#Hiring
+#PythonAI
+#PythonDeveloper
+#AIJobs
+#KochiJobs
+#Infopark
+#OpsCloudTechnologies
+
+----------------------------------------------------------------------
+
+## Job 4: Generative AI Engineer
+Job reference: 8de134ad70f193574215c9ad54201c5a
+Posted By URL: https://www.linkedin.com/in/sai-kumari-8789092a4/
+
+WE ARE HIRING | Python & Generative AI Engineer
+Are you passionate about building intelligent applications and exploring the future of AI? We are looking for talented professionals with hands-on experience in Python, Generative AI, and Agentic AI.
+Position:Python & Generative AI Engineer
+Experience: 4+ Years
+Location: Hyderabad
+Employment Type: Hybrid
+Key Skills Required:
+- Strong experience in Python Programming.
+- Hands-on experience with Generative AI and LLMs.
+- Experience in Agentic AI and Multi-Agent Systems.
+- Knowledge of RAG (Retrieval-Augmented Generation).
+- Experience with LangChain and Microsoft Agent Framework.
+- Hands-on experience with FastAPI and REST APIs.
+- Knowledge of Vector Databases and Semantic Search.
+- Experience with Microsoft Azure.
+- Good understanding of SQL and PySpark.
+What We Are Looking For:
+- Strong problem-solving and analytical skills.
+- Experience developing and deploying AI-powered applications.
+- Ability to build scalable AI solutions and automation workflows.
+Interested candidates can share their updated resumes at
+saikumari@enfluenceit.com
+Know someone who would be a great fit? Tag them or share this opportunity within your network!
+#Hiring
+#PythonDeveloper
+#GenerativeAI
+#AgenticAI
+#ArtificialIntelligence
+#MachineLearning
+#LLM
+#LangChain
+#RAG
+#Azure
+#TechHiring
+#ITJobs
+#AIJobs
+
+----------------------------------------------------------------------
+
+## Job 5: AI/ML ENGINEER
+Job reference: f93225c36297c709fd7306b1d8970080
+Posted By URL: https://www.linkedin.com/in/revathy-alagesan-3203393b0/
+
+🤖
+AI is shaping the future. Are you ready to be part of the innovation?
+From building intelligent models to exploring the possibilities of Generative AI, we're looking for someone who loves turning data into intelligent solutions!
+If Python, Machine Learning and Generative AI excite you, this opportunity could be your next career move!
+AI/ML ENGINEER
+💼
+Experience:
+4+ Years
+📍
+Location:
+Chennai
+📩
+Ready to turn your AI knowledge into real-world impact?
+Send your updated resume to
+rfh@hepl.com
+💡 Know someone who speaks the language of AI? Tag them or share this opportunity!
+#Hiring
+#AIML
+#ArtificialIntelligence
+#MachineLearning
+#GenerativeAI
+#PythonDeveloper
+#DeepLearning
+#ChennaiHiring
+#AIJobs
+
+----------------------------------------------------------------------
+
+## Job 6: AI Engineer | Quantin
+Job reference: eefeb0e812b8947eed0446aafcc04784
+Apply URL: https://www.linkedin.com/jobs/view/4487179736/
+Posted By URL: https://www.linkedin.com/in/%D8%B4%DB%8C%D8%AE-%D8%A7%D8%B4%D9%81%D8%A7%D9%82-469220144/
+
+🚀 **HIRING | AI ENGINEER – PYTHON, LLMs, RAG & AI AGENTS** 🚀
+🏢 **Company:** Quantin
+📍 **Location:** Dubai, UAE
+🏢 **Work Mode:** On-site
+💼 **Employment Type:** Full-time
+🎯 **Experience:** Not specified
+Quantin.ai
+, an early-stage AI startup building intelligent products powered by language models, AI agents and connected data, is expanding its technical team!
+The company is looking for a hands-on **AI Engineer with strong Python skills** who enjoys solving practical problems, experimenting with emerging technologies and turning ideas into production-ready AI products.
+🔹 **Key Responsibilities**
+- Develop backend services and APIs using Python and FastAPI.
+- Build RAG pipelines for document retrieval and grounded response generation.
+- Integrate LLMs and AI agents with databases, tools and application services.
+- Evaluate and improve AI response quality, inference speed and system reliability.
+- Collaborate with the team on product development, testing and technical decisions.
+🔹 **Required Skills & Qualifications**
+- Strong proficiency in **Python** and hands-on software/API development experience.
+- Practical understanding of LLMs, embeddings, vector search and RAG architectures.
+- Experience with **LangChain or LlamaIndex**.
+- Familiarity with Hugging Face and Transformers.
+- Experience with PostgreSQL and Redis.
+- Familiarity with vector search technologies such as Qdrant, pgvector or FAISS.
+- Confidence using Git, Docker and Linux.
+- Clear communication skills, curiosity and ability to take ownership in a growing startup.
+🔹 **Good to Have**
+- Experience with PyTorch.
+- Deploying open-source models using vLLM or llama.cpp.
+- Knowledge of inference optimisation and GPU memory management.
+📍 **Work Location:** Dubai, UAE — this is an on-site position.
+📝 **How to Apply**
+Interested candidates should send a **LinkedIn direct message** containing:
+1. A Google Docs link to your résumé.
+2. Your phone number, including country code.
+3. GitHub profile or relevant project portfolio links, if available.
+⚠️ **Important:** Set your Google Docs sharing permission to **“Anyone with the link → Viewer”** so the recruitment team can access your résumé.
+**Mention this subject in your message: “AI Engineer – Python”**
+Interviews can be arranged online or in person by prior agreement.
+🔗 **Company Careers:**
+https://quantin.ai/jobs/
+🔗 **LinkedIn Job Post:**
+https://lnkd.in/geDpaPRy
+🔁 Tag or share this opportunity with Python Developers, AI Engineers and LLM enthusiasts who may be interested in joining an early-stage AI startup in Dubai!
+#Hiring
+#DubaiJobs
+#UAEJobs
+#AIEngineer
+#PythonJobs
+#PythonDeveloper
+#GenerativeAI
+#LLM
+#RAG
+#AIAgents
+#LangChain
+#LlamaIndex
+#HuggingFace
+#FastAPI
+#MachineLearning
+#VectorDatabase
+#AIJobs
+#TechJobs
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 7: AI ENGINEER
+Job reference: a1db1e8f25200e25e56eb3517379f11e
+Posted By URL: https://www.linkedin.com/in/bhavya-sharma-91b4aa215/
+
+Hello
+#Linkedin
+🚀
+HIRING: AI ENGINEER | AGENTIC AI (Local Candidates only)
+📍
+Location:
+Austin, TX / Fort Mill, NC (Hybrid)
+🔥
+Key Skills:
+Need 14+ Strong candidates on this role with hands on Experince.
+Python & Agentic AI Development
+OpenAI Agents SDK / Claude Agent SDK / LangGraph
+MCP Servers & Tool Integration
+Claude Code, Cursor IDE & GitHub Copilot
+AWS (EKS, S3, IAM)
+Terraform, Helm, Docker & CI/CD
+LLM, RAG & Prompt Engineering
+Looking for hands-on AI Engineers passionate about building and deploying next-generation AI agents!
+📩
+Interested candidates, please share your updated resume.
+Email-
+Bhavya.sharma@mamsys.com
+#Hiring
+#UrgentHiring
+#AIEngineer
+#AgenticAI
+#ArtificialIntelligence
+#PythonDeveloper
+#Python
+#OpenAIAgentsSDK
+#ClaudeAI
+#ClaudeCode
+#LangGraph
+#MCP
+#ModelContextProtocol
+#CursorAI
+#GitHubCopilot
+#AWS
+#AmazonEKS
+#Terraform
+#Helm
+#Docker
+#Kubernetes
+#CICD
+#LLM
+#RAG
+#PromptEngineering
+#AICareers
+#TechJobs
+#ITJobs
+#C2C
+#HybridJobs
+#AustinTX
+#FortMillNC
+#LPLFinancial
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 8: AI Engineer
+Job reference: 1926491711a4451848c7bcf65b8e441b
+Apply URL: https://www.linkedin.com/groups/10545463/?q=highlightedFeedForGroups&highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7526095238713630721
+
+🚨 Urgent Hiring | AI Engineer – Genie, Conversational Analytics & Integration Lead
+📍 100% Remote
+✅ Recent Healthcare and Genie Exp Is Mandatory
+We are looking for an experienced AI Engineer with hands-on expertise in Databricks Genie Agent Development and Healthcare domain experience (Mandatory) for a high-impact AI initiative.
+✅ Recent Healthcare and Genie Exp Is Mandatory
+✅ Strong Python Development & Enterprise API Integration
+✅ Hands-on Databricks Genie Agents, Genie One MCP & MCP Clients
+✅ REST APIs, OAuth, Service Identities
+✅ Prompt Engineering & Context Engineering
+✅ Conversational State Management & Context Propagation
+✅ Unity Catalog Permissions & Tenant Context Management
+✅ Intelligent AI Agent Routing & Conversational Analytics
+✅ Controlled Text-to-SQL & AI Safety Patterns
+✅ Experience integrating AI capabilities into enterprise portals and backend services
+rahul.kokku@primetechpartners.in
+#UrgentHiring
+#AIEngineer
+#Databricks
+#DatabricksGenie
+#GenAI
+#AgenticAI
+#ConversationalAI
+#HealthcareAI
+#PythonDeveloper
+#RemoteJobs
+#HealthcareAnalytics
+#MCP
+#UnityCatalog
+#LangGraph
+#HiringNow
+
+----------------------------------------------------------------------
+
+## Job 9: Sr. .NET Full Stack Engineer – AI Platform
+Job reference: aad3b37bd111ebf72ad935679f5d0571
+Apply URL: https://www.linkedin.com/groups/9384794/?q=highlightedFeedForGroups&highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7525937970412150784
+
+🚀 HOT REQUIREMENT | Sr. .NET Full Stack Engineer (Angular + Python + AI) | Chicago, IL🚀
+📍 Location: Chicago, IL
+🏢 Hybrid: 3 Days Onsite (Tue/Wed/Thu)
+⏳ Contract Opportunity
+📧 Interested candidates can share resumes at:
+jay.bairagi@bravensinc.com
+🤖 We're hiring a Senior .NET Full Stack Engineer to help transform an innovative Healthcare Data Insights AI Platform from Proof-of-Concept into a Production-Ready Application. If you're passionate about Angular, .NET, Python, AI Agents, LLMs, RAG, Azure Cloud, and Healthcare Analytics, this opportunity is for you!
+✅ Must Have Skills 🔥 Angular (Latest Versions)
+🔥 .NET Core / .NET Web APIs
+🔥 Python Development
+🔥 Azure Cloud
+🔥 AI/LLM Applications
+🔥 Agentic AI Workflows
+🔥 RAG (Retrieval Augmented Generation)
+🔥 SQL & Data Modeling
+🔥 CI/CD & DevOps
+🔥 Authentication & Security
+⭐ Preferred
+✔ Healthcare Analytics Experience
+✔ Azure OpenAI / LangChain / Semantic Kernel
+✔ Prompt Engineering
+✔ AI Evaluation & Testing Pipelines
+✔ Production AI Systems
+#Hiring
+#DotNetDeveloper
+#AngularDeveloper
+#PythonDeveloper
+#AIEngineer
+#GenAI
+#LLM
+#OpenAI
+#AgenticAI
+#RAG
+#Azure
+#HealthcareIT
+#HealthcareAnalytics
+#FullStackDeveloper
+#DotNetCore
+#Angular
+
+----------------------------------------------------------------------
+
+## Job 10: AI Engineer
+Job reference: a5e912b77ca9c8c2d000682d6b6658e6
+Posted By URL: https://www.linkedin.com/company/inspironlabsindia/
+Posted By: InspironLabs
+
+🚀
+We're Hiring | AI Engineer – Generative AI & Agentic AI
+Are you passionate about Artificial Intelligence and excited to build the next generation of intelligent applications? Here's an opportunity to turn your AI knowledge into real-world solutions!
+InspironLabs
+is looking for AI Engineers
+who are enthusiastic about Generative AI, LLMs, Agentic AI and Python Backend Development.
+🎯
+Experience:
+0–2 Years
+🎓
+Freshers with relevant AI/ML training, certifications, internships or hands-on projects are welcome!
+💡 What We're Looking For:
+Strong Python programming and backend development skills.
+Knowledge of FastAPI/Flask, REST APIs and databases.
+Understanding of Generative AI, LLMs and Prompt Engineering.
+Hands-on exposure to RAG pipelines, embeddings and vector databases.
+Knowledge of Agentic AI, AI agents and tool orchestration.
+Familiarity with frameworks such as LangChain, LangGraph, LlamaIndex or CrewAI.
+Understanding of Machine Learning, Deep Learning and model fine-tuning.
+Awareness of MCP, AI evaluation, observability and AI security.
+🌟
+Why Join Us?
+Be part of an exciting journey where you get to work on emerging AI technologies, build intelligent solutions and solve real-world business problems.
+📩
+Interested or know someone who would be a great fit?
+Share your updated resume at
+sheetal.k@inspironlabs.com
+🔁 Tag someone who might be interested and help us spread the word!
+#Hiring
+#AIEngineer
+#GenerativeAI
+#AgenticAI
+#PythonDeveloper
+#LLM
+#RAG
+#MachineLearning
+#FreshersHiring
+#TechCareers
+#InspironLabs
+
+----------------------------------------------------------------------
+
+## Job 11: Python / AI Developer
+Job reference: 3ab251e08f44028db537dea43346b02c
+Apply URL: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FevUQbxNS&urlhash=njb0&mt=V_th8OWWDw8kIhQ0RHZblJkk3QVt0MvG0ybJYKeMnAt92ZllS8DTcz0b2YjFDHBBCGvvgAnBzERnVgmI3TG8XuEZ3zvcOgE4la1s-iXhHAvD4WAO7mb95bMKxRrPXCxfezagp6ruTDYNpt9Ys-YrTCUXDwC3X_kZBcEbE8OholbAIdTyYDm4KIQ2tBFKGjU&isSdui=true
+Posted By URL: https://www.linkedin.com/in/nkshrivas/
+
+Mindlytic AI is Hiring Python / AI Developers
+https://lnkd.in/evUQbxNS
+(Join TalentXminds community - your Gateway to your Job hunt)
+📍 Surat, Gujarat | 2 Years
+Skills: Python, Artificial Intelligence, Machine Learning, Generative AI, NLP, FastAPI, Flask, REST APIs, AWS, GCP
+📧 Apply:
+hr@mindlyticai.com
+📌 Surat-based candidates are encouraged to apply.
+Applying everywhere but not getting interview calls? Stop guessing. Get expert guidance and a personalized job search plan at TalentXminds and land your next offer faster:
+https://lnkd.in/gNdFk7Nr
+#Hiring
+#SuratJobs
+#PythonDeveloper
+#AIDeveloper
+#MachineLearning
+
+----------------------------------------------------------------------
+
+## Job 12: Senior AI Engineer
+Job reference: f90176e623325c09931523e45997db4b
+Posted By URL: https://www.linkedin.com/in/uttlooripc/
+
+🚀
+HIRING NOW | SENIOR AI ENGINEER – AGENTIC AI | NYC, NY
+We are looking for an experienced
+Senior AI Engineer
+with strong hands-on expertise in
+Python, LangGraph, and Agentic AI
+to work on enterprise AI applications within a leading Firm Risk Management (FRM) Technology team.
+📍
+Location:
+New York City, NY (Local Candidates Only – In-person Interview Required)
+⏳
+Duration:
+11 Months
+🛂
+Visa:
+H1B Only
+🔑 Required Technical Skills:
+Strong hands-on Python development and software engineering.
+Proven experience building Agentic AI applications using
+LangGraph
+.
+Expertise in LLMs, RAG, embeddings, and vector databases.
+Strong knowledge of Context Engineering, Prompt Engineering, and Agent Memory.
+Experience with LLM evaluation, testing, and observability using
+Galileo or similar tools
+.
+Strong SQL and data engineering skills.
+Experience with AI guardrails, workflow orchestration, and production deployment.
+⭐ Good to Have:
+Financial Risk Management / Model Risk Management experience.
+Credit Risk or Market Risk domain knowledge.
+Snowflake, Databricks, MCP, and cloud technologies.
+Important Requirements:
+✅ H1B visa holders only.
+✅ Must be local to the NYC area.
+✅ Must be available for an in-person interview in NYC.
+✅ Strong practical LangGraph and Python development experience is mandatory.
+📩
+Interested candidates:
+Please share your updated resume at
+pradeep@dizercorp.com
+#Hiring
+#SeniorAIEngineer
+#AgenticAI
+#LangGraph
+#PythonDeveloper
+#LLM
+#RAG
+#GenerativeAI
+#AIJobs
+#NYCHiring
+#NewYorkJobs
+#H1BJobs
+#MachineLearning
+#ArtificialIntelligence
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 13: AI/ML Engineer
+Job reference: 1b3b30b15b179f5b05ef4723b9ee6674
+Posted By URL: https://www.linkedin.com/in/sheik-peerbhi-953894399/
+
+Sure Shot Closer Position🔔
+#GrabTheOpportunity
+Note: Looking for W2 Only
+Job Title: AI/ML Engineer
+Location: Boston, MA, Hartford, CT, Princeton, NJ, Newark, NJ, New York City, NY.
+Contract: 12+ Months
+Looking for W2 candidates. No C2C
+Job Summary
+We are hiring an AI/ML Engineer with expertise in Google Cloud Platform (GCP) to develop enterprise AI solutions using Vertex AI, BigQuery ML, Generative AI, and cloud-native machine learning technologies.
+Key Responsibilities
+Develop AI/ML applications using Vertex AI.
+Build ML pipelines using Vertex Pipelines.
+Train and deploy models using TensorFlow and PyTorch.
+Implement Generative AI and RAG solutions.
+Develop BigQuery ML applications.
+Deploy scalable Kubernetes workloads.
+Build AI APIs using FastAPI.
+Implement model monitoring and AI observability.
+Optimize cloud-native AI infrastructure.
+Support production AI applications.
+Required Skills
+Python
+SQL
+Google Cloud Platform
+Vertex AI
+BigQuery
+Generative AI
+LLMs
+RAG
+Docker
+Kubernetes
+FastAPI
+Git
+Mandatory Skills
+Python
+GCP
+Vertex AI
+Machine Learning
+TensorFlow
+PyTorch
+BigQuery
+Kubernetes
+FastAPI
+#AIEngineer
+#MLEngineer
+#MachineLearningEngineer
+#ArtificialIntelligence
+#AIJobs
+#MLJobs
+#HiringNow
+#ImmediateHiring
+#TechJobs
+#ITJobs
+#W2Jobs
+#W2Only
+#NoC2C
+#ContractJobs
+#12MonthsContract
+#BostonJobs
+#HartfordJobs
+#PrincetonJobs
+#NewarkJobs
+#NYCJobs
+#NewYorkJobs
+#NewJerseyJobs
+#ConnecticutJobs
+#MassachusettsJobs
+#DataScience
+#DeepLearning
+#PythonDeveloper
+#GenerativeAI
+#LLM
+#NLP
+#OpenAI
+#AICareers
+Best Regards:
+Peerbhi SK
+Phone: +1-469-673-3312
+Email:
+peerbhi@technipros.com
+
+----------------------------------------------------------------------
+
+## Job 14: JUNIOR AI ENGINEER
+Job reference: add8cf41decc3ba087c32fd8b5f7e869
+Posted By URL: https://www.linkedin.com/in/sharmila-bala-656b67224/
+
+🚀
+WE ARE HIRING | JUNIOR AI ENGINEER
+📍
+Location:
+Hyderabad
+💼
+Experience:
+1–2 Years
+⏳
+Contract Duration:
+3 Months
+We are looking for a passionate
+Junior AI Engineer
+to support the development of AI/ML solutions for engineering drawing automation, document intelligence, and 2D manufacturing drawing validation.
+🔹 Required Skills:
+Strong Python programming skills.
+Machine Learning fundamentals – Scikit-learn, TensorFlow, PyTorch.
+Hands-on exposure to LLMs, RAG and Prompt Engineering.
+Data preprocessing and model evaluation.
+OCR and document processing tools.
+Basic knowledge of SQL and Data Analytics.
+Familiarity with Azure AI / Azure OpenAI and LangChain.
+🔹 Preferred Skills:
+Exposure to Engineering / CAD data.
+Knowledge of Manufacturing or Product Engineering.
+Familiarity with Vector Databases.
+Exposure to On-premise AI deployments.
+🔹 Key Responsibilities:
+Develop AI models for engineering drawing analysis and validation.
+Build RAG-based knowledge retrieval solutions.
+Support model training using historical drawing datasets.
+Develop POCs for AI agents in engineering use cases.
+Collaborate with CAD and PLM teams.
+🎯
+Looking for candidates with hands-on AI/ML project experience and a strong interest in Generative AI.
+📩
+Interested candidates:
+Share your updated resume at
+sharmila.b@voltoconsulting.com
+.
+🤝 Know someone who fits this opportunity? Tag them or share this post!
+#Hiring
+#JuniorAIEngineer
+#AIJobs
+#MachineLearning
+#PythonDeveloper
+#GenerativeAI
+#LLM
+#RAG
+#PromptEngineering
+#AzureOpenAI
+#LangChain
+#OCR
+#HyderabadJobs
+#TechJobs
+#JobOpportunity
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 15: GenAI Engineer
+Job reference: ea0e886f754eb4ba265b9e5cfa438cea
+Posted By URL: https://www.linkedin.com/in/ron-k-93b649a1/
+
+🚀
+Hiring: GenAI Engineer – Full Stack / Backend
+📍
+Location:
+Remote – USA
+💰
+Rate:
+Open / DOE
+🏥
+Domain:
+Healthcare
+💼
+Employment Type:
+Contract (C2C / 1099)
+We are looking for an experienced
+GenAI Engineer
+to build scalable, production-ready AI applications and APIs. The ideal candidate should have strong hands-on experience with Python, FastAPI, FastMCP, Agentic Workflows, LLM/GenAI, and Microsoft Azure.
+Key Responsibilities:
+Design and develop production-grade GenAI applications and APIs using Python, FastAPI, and FastMCP.
+Build and implement agentic workflows and LLM-powered solutions.
+Integrate LLMs such as OpenAI GPT and Anthropic Claude.
+Develop and deploy applications within Microsoft Azure.
+Manage the complete application lifecycle, including development, deployment, monitoring, and observability.
+Implement containerization and CI/CD using Docker, Kubernetes/AKS, and GitHub Actions.
+Leverage AI-assisted development tools such as Claude, Codex, and VS Code.
+Mandatory Skills:
+Strong Python development experience.
+Hands-on experience with
+FastAPI and FastMCP
+.
+Practical experience building
+Agentic Workflows
+.
+Strong understanding and implementation experience with
+LLM / Generative AI
+.
+Experience with
+Microsoft Azure
+.
+Good to Have:
+Azure AKS, Cosmos DB, and Azure Cache for Redis.
+Docker, Kubernetes, and GitHub Actions.
+OpenAI GPT and Anthropic Claude integrations.
+Experience with Claude, Codex, and VS Code.
+Strong communication and problem-solving skills.
+📩
+Interested candidates:
+Please share your updated resume along with your current location, work authorization, availability, and expected rate.
+Please share or refer suitable profiles at
+Khusboo.Vij@rulesiq.com
+#Hiring
+#GenAIEngineer
+#GenerativeAI
+#PythonDeveloper
+#FastAPI
+#FastMCP
+#AgenticAI
+#LLM
+#OpenAI
+#ClaudeAI
+#MicrosoftAzure
+#HealthcareIT
+#RemoteJobs
+#USJobs
+
+----------------------------------------------------------------------
+
+## Job 16: Artificial Intelligence Engineer | ApTask
+Job reference: a1e22f02bb9c15310bb30aaefda6ffa3
+Apply URL: https://www.linkedin.com/jobs/view/4487818972/
+Posted By URL: https://www.linkedin.com/in/amol-waghmare-789442235/
+
+🚀 We're Hiring: AI Engineer (Agent Development Kit / ADK) |
+#Remote
+– USA
+💼 Contract Opportunity | Visa-independent candidates only
+Key Skills:
+Python, AI Agents & Agentic AI
+Google ADK / LangGraph / AutoGen / CrewAI
+LLMs (Gemini, OpenAI, Claude)
+Multi-Agent Architecture & Tool Calling
+RAG, REST APIs & GCP / Vertex AI
+Production AI Deployment
+Looking for experienced AI Engineers with strong software engineering and hands-on production Agentic AI experience.
+📩 Interested candidates, please share your updated resume at
+amolw@aptask.com
+#Hiring
+#AIEngineer
+#AgenticAI
+#GenAI
+#Python
+#GoogleADK
+#LangGraph
+#RemoteJobs
+#USAJobs
+https://lnkd.in/dYkRRSae
+
+----------------------------------------------------------------------
+
+## Job 17: AI Engineer – AI Platform | Kharon
+Job reference: 2db97549075422b2564b41569717a0e9
+Apply URL: https://www.linkedin.com/jobs/view/4487801609/
+Posted By URL: https://www.linkedin.com/in/purna-chander-racha/
+
+🚨 HIRING | AI Engineer, AI Platform
+🔥 Agentic AI | LangGraph | MCP | RAG | AI Platforms
+📍 Denver, CO | 💰 $130K–$160K | 🔄 Hybrid
+🚀 Join Kharon and build production-grade AI systems that help global organizations navigate financial crime, sanctions, geopolitical risk, and international security challenges through advanced AI capabilities.
+✅ Key Skills: Python, LangGraph, LangChain, MCP, RAG, AI Agents
+⭐ Preferred: Claude Agent SDK, AutoGPT, Pydantic, PySpark, AWS, Multi-Agent Systems
+💡 Build AI applications from concept to production, develop MCP servers and clients, implement multi-agent workflows, architect RAG systems, deploy cloud-native AI platforms, and create scalable AI solutions for high-stakes decision-making.
+⚠️ Please apply only if your experience closely aligns with Agentic AI, AI Platforms, LangGraph, MCP, RAG, Multi-Agent Systems, or Production AI Engineering.
+📩 Referral Opportunity
+Professionals with relevant experience in the core skills listed above may share:
+✅ Updated Resume + LinkedIn Profile URL
+📧 Email:
+mailtochander1996@gmail.com
+📌 Subject: AI Engineer, AI Platform – Kharon
+Relevant profiles may be considered for referral. Only shortlisted candidates will be contacted.
+🔄 Shares and referrals are appreciated.
+https://lnkd.in/dMq-vecU
+#Hiring
+#AIEngineer
+#AgenticAI
+#LangGraph
+#MCP
+#RAG
+#LangChain
+#GenerativeAI
+#ArtificialIntelligence
+#Python
+#DenverJobs
+
+----------------------------------------------------------------------
+
+## Job 18: AI/ML Engineer
+Job reference: 60d16570236a5af48a68b1463213b008
+Posted By URL: https://www.linkedin.com/in/sai-kumar-shivarathri-4a432b258/
+
+We are hiring for a client: AI/ML Engineer — Risk & Fraud
+📍 North Delhi | Work from office
+💼 Full-time
+👨‍💻 Experience: 1–3 years
+Skills:
+• Python, NumPy, Pandas, PyTorch and TensorFlow.
+• Classical ML, neural networks and sequence modelling.
+• SQL, exploratory data analysis and computer vision.
+• Feature engineering, reproducible ML pipelines and time-based splits.
+• Imbalanced dataset evaluation, precision, recall and false-positive analysis.
+• Fraud detection, account takeover detection, bot detection and trust scoring.
+• SHAP, model drift monitoring, retraining and shadow deployment.
+• Agentic AI coding tools.
+📩 Apply:
+careers@vextarainfo.com
+Subject: AI ML Engineer — Risk Fraud
+#Hiring
+#MachineLearning
+#AIEngineer
+#FraudDetection
+#Python
+#Delhi
+
+----------------------------------------------------------------------
+
+## Job 19: AI/ML Engineer
+Job reference: 8daa77da1254740a07fbb6ea9177ca41
+Posted By URL: https://www.linkedin.com/in/shifa-hr/
+
+🚀 EXCITING FREELANCING OPPORTUNITY – ML/AI SYSTEMS ENGINEER!
+Are you an experienced AI Engineer looking to earn extra income apart from your regular job? Here's an exciting opportunity! 💰
+We are hiring Senior AI Systems Engineers for an innovative AI/LLM research and evaluation project.
+Share your cv to :
+shifa@sourcebae.com
+✨ What's in it for you?
+💵 $25 per approved task
+⏱️ Average task duration: 45–60 minutes
+🏡 Freelancing opportunity
+📅 8 hours daily (4 hours fixed + 4 hours flexible)
+🕢 Fixed Login: 7:30 PM – 11:30 PM IST
+Remaining 4 hours are flexible within 24 hours.
+What will you do?
+Design and build advanced multi-step AI agent workflows.
+Develop systems for multi-hop reasoning and hypothesis generation.
+Collaborate with mathematical researchers to convert complex proofs into technical workflows.
+Build reusable AI frameworks, tools and memory systems.
+Evaluate and optimize AI agent performance, accuracy and reliability.
+Required Skills:
+Strong experience building production-grade agentic AI systems.
+Hands-on experience with LangGraph, AutoGen, CrewAI or similar frameworks.
+Advanced Python programming skills.
+Experience with LLM orchestration, structured outputs and tool integration.
+Background in AI/ML applications involving Mathematics, Physics, Computer Science or Quantitative Finance.
+Strong problem-solving and technical architecture skills.
+✨ If you're passionate about building intelligent AI agents and working on advanced research projects, this opportunity is for you!
+📩 Interested? Share your CV at:
+shifa@sourcebae.com
+Tag your AI/ML Engineer friends who might be interested! 🔥
+#AIEngineer
+#MLSystemsEngineer
+#AgenticAI
+#Python
+#LangGraph
+#LLM
+#ArtificialIntelligence
+#Freelancing
+#AIProjects
+#Hiring
+
+----------------------------------------------------------------------
+
+## Job 20: AI Engineer
+Job reference: 2514713c5cde13fa4a739a23d29ce5a6
+Posted By URL: https://www.linkedin.com/in/tarunhr1/
+
+🚀
+We're Hiring | AI Engineer – UAE
+Looking for AI Engineers who can bring together Artificial Intelligence and Construction Technology!
+Experience:
+3–6 Years
+Location:
+UAE (UAE-based candidates only)
+Candidates must have experience working with Real Estate, Construction, Contracting or PMC companies.
+Interested candidates or referrals can DM me.
+#Hiring
+#AIEngineer
+#UAEJobs
+#ArtificialIntelligence
+#ConstructionTechnology
+#GenAI
+
+----------------------------------------------------------------------
+
+## Job 21: AI/ML Engineer
+Job reference: d9dee993cbb44b9f75463a8d752dcd27
+Apply URL: https://www.linkedin.com/safety/go/?url=http%3A%2F%2FB%2ETech&urlhash=4dZl&mt=G8cdwYGPvSG9R5rg6L3ukCija08T7TMtbz18ihQ1XtWSgf0YdfNQxHJnE2xeT82Wo9q2MHcmgctZYynG5_Rj4rzMIy_yP5aCZ8XzHDm9tlp3-1Cgw0AVrzUWJG4b8InPyO7iKN04oVSLM84W5GrpUC4M6CmQVwTe8sDs-JHAS-L4Y2vLzLAqbhSSy7qmCAU&isSdui=true
+Posted By URL: https://www.linkedin.com/in/vamshi-krishna-mandapuri-83863716b/
+
+We are hiring for a client: AI/ML Engineer — GEO/AEO Projects
+📍 Pune | In office, 5 days a week
+👥 Openings: 5
+Experience clarification: The summary lists 1–6 years; the detailed JD requires 2+ years overall, including 1+ year in GEO/AEO/SGE.
+Skills:
+• AI/ML, Generative AI, LLMs, NLP, GEO, AEO and SGE.
+• Prompt engineering, embeddings, vector search/databases and RAG.
+• Semantic search, entity-based optimisation, AI search and conversational queries.
+• Search-intent analysis, retrieval patterns, content structuring, schema and knowledge representation.
+• ChatGPT and Google Gemini.
+Build production AI solutions, optimise visibility across generative interfaces, analyse responses/citations, and measure accuracy, relevance, latency and user experience.
+Qualification: BE/
+B.Tech
+, dual degree or integrated MSc/MS.
+📩 Apply:
+careers@vextarainfo.com
+Subject: AI ML Engineer — GEO AEO
+#Hiring
+#AIEngineer
+#GEO
+#AEO
+#GenerativeAI
+#Pune
+
+----------------------------------------------------------------------
+
+## Job 22: AI Engineer
+Job reference: 4b203f5ce82bc50ea7fcef9b3e54e265
+Posted By URL: https://www.linkedin.com/company/statusneo/
+Posted By: StatusNeo
+
+🚀
+We're Hiring: AI Engineer | Bengaluru (Hybrid) | 3-6 Years
+Ready to build the future of AI?
+StatusNeo
+is looking for passionate
+AI Engineers
+with hands-on experience in
+Python, LangGraph, RAG, PgVector, and Pydantic AI
+to build production-grade GenAI solutions for global enterprises.
+✨ Work on Agentic AI
+✨ Build scalable RAG applications
+✨ Solve real-world business challenges with GenAI
+📍 Bengaluru (Hybrid)
+💼 Experience: 3-6 Years
+If cutting-edge AI excites you, let's connect!
+📩 Share your profile at
+monika.pandey@statusneo.com
+#Hiring
+#AIEngineer
+#GenAI
+#AgenticAI
+#LangGraph
+#RAG
+#PgVector
+#Python
+#BangaloreJobs
+#HybridJobs
+#StatusNeo
+#HiringNow
+🚀
+
+----------------------------------------------------------------------
+
+## Job 23: AI Engineer
+Job reference: 96cddc8e98a7f4711aca66305a706911
+Posted By URL: https://www.linkedin.com/in/swathi-s-971b5a17b/
+
+🚀
+Hiring: AI Engineer | Hyderabad
+We are looking for an
+AI Engineer with 2+ years of experience
+with strong hands-on expertise in:
+🔹
+Python 3.11+ & Software Engineering
+🔹
+Generative AI, LLMs & Agentic AI
+🔹
+LangGraph / CrewAI / AutoGen / MCP
+🔹
+RAG, Embeddings, Vector DBs, Retrieval & Reranking
+🔹
+AWS Bedrock, AgentCore & SageMaker
+🔹
+Machine Learning – PyTorch / TensorFlow / Scikit-learn
+🔹
+MLOps, Evaluation & Observability – LangSmith / MLflow / OpenTelemetry
+🔹
+AI Security, Governance & Cost Optimization
+🔹
+DevOps, CI/CD & Cloud Integration
+📍
+Location:
+Hyderabad
+⏱️
+Experience:
+2+ Years
+⚡
+Immediate joiners preferred
+📩 Interested candidates can share their updated resume at
+swathi.suroju@avktechinc.com
+🚫
+Please do not share resumes if your notice period is more than 15 days.
+#Hiring
+#AIEngineer
+#GenerativeAI
+#AgenticAI
+#LLM
+#RAG
+#Python
+#AWS
+#HyderabadJobs
+#ImmediateJoiner
+
+----------------------------------------------------------------------
+
+## Job 24: AI/ML Engineer
+Job reference: a7dea7cedfaaf19d393ef3d785da0d39
+Posted By URL: https://www.linkedin.com/in/nalini-c-235726123/
+
+🚀
+We're Hiring | AI/ML Engineer
+Ready to build the next generation of intelligent AI solutions?
+We're looking for hands-on AI engineers with strong expertise in:
+Python | NLP | GenAI | LLM | Agentic AI | RAG | LangChain | LangGraph
+Seeking professionals who can translate AI innovation into scalable, production-ready solutions.
+📍 Location: Hyderabad/Chennai
+| 💼 Experience: [3–10 Years] | Full-time
+Interested? Share your profile
+Nalini.a@intellectdesign.com
+or connect with us!
+#Hiring
+#AIEngineer
+#GenAI
+#AgenticAI
+#NLP
+#LLM
+#RAG
+
+----------------------------------------------------------------------
+
+## Job 25: Senior AI/ML Engineer
+Job reference: 98bfb20a092298734a93b334208c2612
+Posted By URL: https://www.linkedin.com/in/sai-kumar-shivarathri-4a432b258/
+
+We are hiring for a client: Senior AI/ML Engineer — LLM & Python
+📍 Hyderabad / Indore / Ahmedabad | Work from office
+💼 Full-time
+👨‍💻 Experience: 3–5 years
+Skills:
+• Python, SQL, machine learning and NLP.
+• LLMs, RAG, Generative AI and Agentic AI.
+• LangChain, LangGraph, CrewAI, PyTorch and TensorFlow.
+• Vector databases and embeddings.
+• AWS SageMaker, AWS Bedrock and Azure AI Foundry.
+• MLOps, MLflow, Docker, Kubernetes and CI/CD.
+• REST APIs, Prometheus and Grafana.
+📩 Apply:
+careers@vextarainfo.com
+Subject: Senior AI ML Engineer — LLM Python
+#Hiring
+#AIEngineer
+#MachineLearning
+#LLM
+#Python
+#GenerativeAI
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 26: AI Engineer
+Job reference: aff6729a4a81eeefa9c0603f325b0193
+Posted By URL: https://www.linkedin.com/in/jyotsna-lokhande-bravensinc/
+Posted By: Jyotsna Lokhande
+
+Dear Connections,
+We are hiring for "AI Engineer" for a Fulltime opportunity for- location- Tampa FL (Hybrid)
+If you are looking for change, please share your resume on
+sweety.chavan@bravensinc.com
+If you are not open to any job change currently, please do refer your colleagues or share it with your community who would be interested.
+#Hiring
+#AIEngineer
+#GenerativeAI
+#MachineLearning
+#LLM
+#Python
+#ArtificialIntelligence
+#OpenAI
+#AzureAI
+#AWSBedrock
+#DataScience
+#HiringNow
+Jyotsna Lokhande
+Akram Sayyed
+Avesh Sayyed
+Saim Ansari
+Shaumita Das
+Faiz Khan
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 27: AI Engineer
+Job reference: e40f52bf358ebf0dd5aec0c2a533eebc
+Apply URL: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FddTQ-pvi&urlhash=-Nsm&mt=67E75bKT1BSVpRob1Xs5TxUwReRQbKIjvG-tvlqBdGajHxIR-VEE7ccfVl7-OTS32oGgAVKcqAMeTp-5oSHzFtqUchRFjhcqDVXfbkchjf8Hl0lBC_W02n8tpEoxKGwt6EbzYs5jpriUF_NI49KvorrQEGxbiBr0SaQm5SPmRw0xZ0ZX4f21t2AjKqFhWEU&isSdui=true
+Posted By URL: https://www.linkedin.com/company/apple/
+Posted By: Apple
+
+🚨
+Apple
+is
+#hiring
+Applied AI Engineer
+🧑‍💻 YOE: 3+ years
+💼 Role: Applied AI Engineer
+📍 Location: Bengaluru
+🛠️ Skills: Python, LLM serving and inference, RAG and fine-tuning, agent frameworks and tool calling, distributed systems (Kafka / Spark)
+🔗 Apply here:
+https://lnkd.in/ddTQ-pvi
+For engineers with about three years of experience who have shipped LLM or agent features to production. Show how you measured quality and handled failures, not only what you built.
+#hiring
+#apple
+#aiengineer
+#llm
+#machinelearning
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 28: AIEngineer
+Job reference: 67c5b01127ee11afe26a3e97802324af
+Apply URL: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FgDsyGqeW&urlhash=m1Ac&mt=68laM8P-YKFTFF8JYBC_0DWsdepP-l8yeM-mP-zJKxYCA1PktVyOG9cVSdIMw5wfzn-Tok09oDKOE72xwLuxlIkKu2ic0M1mZqXcG29aUtj7Buv9cXinuzXbEAoZm2yyW3gfbMM60Ei_FA-KwSTZvvle8WUW2OEXRQ1E_Ql2PodSfCZ1g0nNbx6r0ZqosUM&isSdui=true
+Posted By URL: https://www.linkedin.com/in/mukesh-kannan-m-77267020b/
+Posted By: Mukesh Kannan M
+
+🚀 **WE’RE HIRING | AI ENGINEER – GENERATIVE AI / LLM**
+**Novacis Digital is conducting a Saturday Recruitment Drive in Chennai!**
+Are you passionate about AI, LLMs and building intelligent applications? Here's your opportunity to kick-start your career with an innovative, product-based R&D company!
+💻 **Key Skills:**
+- Python
+- Generative AI & LLMs
+- LangChain / LangGraph
+- RAG & Vector Databases
+- Prompt Engineering
+- Agentic AI
+🎯 **Experience:** 0–2 Years
+🎓 **Eligible Batches:** 2023, 2024, 2025 & 2026
+📍 **Location:** IIT Madras Research Park, Taramani, Chennai
+📅 **Recruitment Drive:** Saturday
+🔗 **Register Here:**
+https://lnkd.in/gDsyGqeW
+📩 Shortlisted candidates will be contacted by our team with further details regarding the recruitment drive.
+Know someone passionate about Generative AI? Tag them or share this opportunity with your network!
+**Let's build a brighter tomorrow together!**
+#Hiring
+#AIEngineer
+#GenerativeAI
+#LLM
+#PythonJobs
+#FreshersHiring
+#ChennaiJobs
+#RecruitmentDrive
+#NovacisDigital
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 29: AI Engineer
+Job reference: 1ff065da4b8d8863a1f0406c69b7e339
+Posted By URL: https://www.linkedin.com/in/meghnaghosh02/
+
+while (curious_about_AI) { build(); experiment(); deploy(); }
+Not just building models. Building intelligent systems.
+At
+DecisionTree Analytics & Services
+, we're looking for an
+AI Engineer (2–3 years)
+who enjoys getting hands-on with the evolving world of AI.
+From LLM-powered applications to agentic workflows, this role is about turning complex ideas into working solutions.
+Your playground:
+→ Python | FastAPI | REST APIs
+→ Machine Learning | Deep Learning | NLP
+→ LLMs | Prompt Engineering | RAG
+→ LangChain | LangGraph | LlamaIndex | DSPy | CrewAI
+→ Agentic AI | Tool Calling | MCP
+→ PyTorch | TensorFlow | Scikit-learn
+→ SQL | Vector Databases
+→ LLM Evaluation | Guardrails | Hallucination Mitigation
+The details:
+📍 Gurgaon | 2–3 years of experience
+🕙 11 AM – 7 PM | 5-day working week
+We're interested in people who like experimenting, questioning, learning and taking AI solutions beyond the prototype stage.
+Think this is your kind of work?
+Let's connect.
+📩 Share your profile at
+meghna.ghosh@decision-tree.com
+or drop a DM.
+And if someone in your network fits the bill, you know what to do. 👀
+#AIEngineer
+#GenerativeAI
+#AgenticAI
+#LLM
+#RAG
+#LangGraph
+#Python
+#Hiring
+#GurgaonJobs
+
+----------------------------------------------------------------------
+
+## Job 30: AI Engineer
+Job reference: 8d5454c6ba69a0970314b5e489d203a5
+Apply URL: https://www.linkedin.com/groups/10529815/?q=highlightedFeedForGroups&highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7525937038697742337
+
+🚨 AI ENGINEER | HYBRID | AUSTIN, TX or FORT MILL, NC 🚨
+Everyone is talking about AI. Very few engineers are building production-ready AI agents that actually transform how software gets built.
+We're hiring an AI Engineer to build the next generation of agentic AI solutions across the Product Development Lifecycle (PDLC).
+✅ Python
+✅ OpenAI Agents SDK / Claude Agent SDK / LangGraph
+✅ MCP (Model Context Protocol)
+✅ GitHub Copilot, Cursor, Claude Code
+✅ AWS, EKS, Terraform, Docker
+✅ CI/CD & AI Application Deployment
+📍 Austin, TX or Fort Mill, NC (Hybrid)
+📄 Contract Opportunity
+If you've built AI agents, custom AI tools, MCP integrations, or developer productivity platforms, we'd love to connect.
+📧 Send your resume to:
+samuel@ipartnerstaffing.com
+#AIEngineer
+#HiringNow
+#GenerativeAI
+#AgenticAI
+#OpenAI
+#ClaudeAI
+#LangGraph
+#MCP
+#GitHubCopilot
+#CursorAI
+#PythonDeveloper
+#AWS
+#AmazonEKS
+#Terraform
+#Docker
+#CICD
+#LLM
+#ArtificialIntelligence
+#TechJobs
+#SoftwareEngineering
+#HybridJobs
+#AustinTX
+#FortMillNC
+#NowHiring
+#ContractJobs
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 31: AI Engineer
+Job reference: bf89334bab1504e26e5af92e33d420d1
+Apply URL: https://www.linkedin.com/safety/go/?url=http%3A%2F%2FB%2ETech%2FM%2ETech&urlhash=XJAP&mt=jRy2I6iObR2_fovnzkNr2gNPPu26YggRpUhC084TZwYa53jlnvXjCYD6jRU05P-vF7fSmC-_5jowMNcAXWrgWIhzqvHTRguyJW1ZzSds3kIndM5w-IJV23ciXkP--6g9ugPiE2mAzXNfIsdEmxB4oLHHZflBK3V3R54sHZOgvodtg02pdKLNsaEj1LeNMv4&isSdui=true
+Posted By URL: https://www.linkedin.com/in/vamshi-krishna-mandapuri-83863716b/
+
+We are hiring for a client: Data Scientist / AI Engineer — Python, ML, RAG
+📍 Pune | In office, 5 days + alternate Saturdays
+👨‍💻 Experience: 3–6 years | 15 openings
+Requirements:
+• 3+ years of hands-on AI/ML, Data Science, NLP or GenAI.
+• Python, SQL, FastAPI/Flask and REST APIs.
+• ML/DL, PyTorch, TensorFlow, Keras and Scikit-learn.
+• GPT, LLaMA, Mistral, Claude, Gemini, RAG, LangChain, LangGraph, AI agents and prompt engineering.
+• Semantic/hybrid search, embeddings, vector databases, Elasticsearch, FAISS, Pinecone and Weaviate.
+• NER, text classification, sentiment analysis and document understanding.
+•
+B.Tech/M.Tech
+from IIT, NIT, BITS, IIIT, DTU or NSUT.
+Build production AI applications and financial-data RAG pipelines. Deliver question-answering, summarisation and search, and optimise accuracy, relevance and latency.
+Preferred: LLMOps/MLOps, Azure OpenAI, Kubernetes, cloud deployments and scalable data platforms.
+📩 Apply:
+careers@vextarainfo.com
+Subject: Data Scientist / AI Engineer
+#Hiring
+#DataScience
+#AIEngineer
+#Python
+#RAG
+#PuneJobs
+
+----------------------------------------------------------------------
+
+## Job 32: AIEngineer
+Job reference: 82904480860e0b29523a6679b03223b5
+Posted By URL: https://www.linkedin.com/in/rajesh-kunchala-a33141295/
+
+Azure AI Engineers – Ready to Turn Your GenAI Expertise Into Your Next Big Opportunity?
+If Azure AI Foundry, Copilot, Python & RAG are your strengths, this opportunity could be your next career milestone!
+Build impactful enterprise AI solutions. Work remotely. Make your expertise count!
+Let's get you connected!
+DM me or send your updated resume to
+Shahed@dataqinc.com
+today.
+CST | MST | PST ONLY – NO EST CANDIDATES
+#AzureAI
+#AIEngineer
+#GenAI
+#Copilot
+#Python
+#RAG
+#AzureAIFoundry
+#RemoteJobs
+#Hiring
+#LTM
+
+----------------------------------------------------------------------
+
+## Job 33: AIEngineer
+Job reference: 283e30c509af87ac369d747070681ab9
+Posted By URL: https://www.linkedin.com/in/aditi-duvvuri-b9075937/
+
+Hiring: AI Engineers & Software Developers – USA (Remote/Contract) 🇺🇸
+We are looking to connect with talented U.S.-based AI Engineers and Software Developers for exciting AI and software development opportunities.
+📌 Requirements:
+2+ years of professional software development experience.
+Bachelor's degree or higher in Computer Science or a related field.
+Must be a U.S. Citizen or Green Card holder.
+Must currently reside in the United States.
+Skills in Python, JavaScript, TypeScript, Java, or C++.
+Experience with AI tools, LLMs, AI Agents, or AI-assisted development.
+💼 Employment Type: Remote / Contract
+🛠 Responsibilities:
+Develop and maintain software applications.
+Build and integrate AI-powered solutions.
+Work on AI and software engineering projects.
+Debug and optimize existing applications.
+📩 Interested candidates:
+Connect directly with me on LinkedIn and send me a DM to discuss this opportunity.
+Please share your updated resume, LinkedIn profile, and GitHub/Portfolio link (if available).
+Know someone who fits? Tag them or share this post with your network!
+#Hiring
+#USAJobs
+#AIEngineer
+#SoftwareDeveloper
+#ArtificialIntelligence
+#RemoteJobs
+#ContractJobs
+#PythonDeveloper
+#JavaDeveloper
+#LLM
+#AIAgents
+#TechRecruitment
+#USRecruitment
+#SoftwareEngineering
+#TechJobs
+
+----------------------------------------------------------------------
+
+## Job 34: AI Engineer
+Job reference: aab3e64b1fe2ab105a0440441fd99ffe
+Apply URL: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FdZEC88dW&urlhash=kGlt&mt=QUslEsMC5HH9a0j4ulIXyRvoyi1bs3cZARf3uUJ3bzYu1EO55DbhaZJUzHvU1e-rrU9BH6OToDkuGvOLGKvACrANfZW1p_FIV07KxDlIF3Z-NZENGgYWhhqU79kTkQwGtrG9jAxpcHHji_u7j8I1KVT1TV0Hv3R_bsX65dE6gS81uCpuYTMyIhMxV2Sif8w&isSdui=true
+Posted By URL: https://www.linkedin.com/in/navitha-m-bb92a6364/
+
+🎉 We’re Hiring! 🚀
+🏢 Title: Medior AI Engineer
+📍 Location: Brussel,Flanders Belgium
+🏢 Company: Sansaone
+🔗 Apply Now :
+https://lnkd.in/dZEC88dW
+#Hiring
+#JobOpening
+#AIEngineer
+#Azure
+#Python
+#Brussels
+
+----------------------------------------------------------------------
+
+## Job 35: Applied AI Engineer (Multi-Agent Document Intelligence)
+Job reference: 35a96e1a8e4d93850f0476d843cf78c9
+Posted By URL: https://www.linkedin.com/in/rakesh-bharadwaj-2850a4b/
+Eligible role selection: AI Engineer 4+ overall is eligible, senior/lead variants not all eligible
+
+We’re hiring: Applied AI Engineers (AI Engineer, Senior AI Engineer, Lead) | Hyderabad, Indore, Ahmedabad
+Vorizo Infotech is looking for hands-on Applied AI Engineers to build an enterprise multi-agent AI platform for document intelligence. You will build agents, RAG pipelines and integrations, and ship secure, production-ready solutions with the architect, DevOps and QA teams. The focus is practical implementation, not research.
+📍
+Location:
+Hyderabad, Indore and Ahmedabad
+Open levels
+🔹
+AI Engineer:
+3+ years overall, with 2 years of practical AI / GenAI work
+🔹
+Senior AI Engineer:
+5 to 8 years (Java + Python), with 3+ years of strong hands-on AI / GenAI
+🔹
+Lead Engineer:
+8+ years (Java + Python), with 4+ years of strong hands-on AI / GenAI
+What you’ll do
+🔹 Build and maintain AI agents (proofreader, formatter, document converter, reviewer, document router)
+🔹 Implement multi-agent orchestration, tool / function calling and agent communication with LangChain / LangGraph
+🔹 Build RAG pipelines: chunking, embeddings and vector store integration
+🔹 Integrate agents with tools and systems using Model Context Protocol (MCP)
+Must-have skills
+✅ Strong Python or Java, with enterprise APIs, microservices and integration layers
+✅ Hands-on multi-agent / agentic AI systems, including agent orchestration
+✅ Agent frameworks: LangChain, LangGraph or Semantic Kernel, plus MCP
+✅ RAG pipelines with vector databases (Azure AI Search, Qdrant, Pinecone or similar)
+✅ RBAC, SSO / authentication, audit logging and secure coding
+✅ REST APIs, Git, CI/CD and Agile delivery
+✅ Working understanding of how LLMs work and core ML concepts
+Good to have:
+document intelligence (parsing, OCR), legal or compliance-driven domains, Databricks, multi-provider LLM routing (OpenAI, Azure OpenAI, Anthropic), LLM evaluation, and Azure AI Engineer certification
+📧
+Email:
+rakeshm@vorizoit.com
+Subject: Applied AI Engineer | EXP Level | Location
+📲
+WhatsApp:
+7032046739
+Please include your level, total and GenAI experience, preferred location, notice period and expected CTC.
+Know someone who fits? Please share or tag them.
+#AIEngineer
+#GenAI
+#AgenticAI
+#LangChain
+#LangGraph
+#RAG
+#MCP
+#Python
+#LLM
+#HyderabadJobs
+#IndoreJobs
+#AhmedabadJobs
+#NowHiring
+#ITJobs
+#VorizoInfotech
+
+----------------------------------------------------------------------
+
+## Job 36: Generative AI Engineer
+Job reference: 8af3350a59f51471f7186c85e936e024
+Posted By URL: https://www.linkedin.com/in/ishika-rawat-6397a3419/
+
+🚀 WE'RE HIRING | Generative AI Engineer | USA-Based Candidates Only
+We are looking for enthusiastic Generative AI Engineers interested in developing AI-powered applications and working with Large Language Models (LLMs).
+📍 Location: Remote / Hybrid – USA
+🇺🇸 Eligibility: Only candidates currently residing in the United States
+💼 Employment Type: Full-Time / Contract
+⏳ Start Date: Immediate
+✅ Mandatory Skills:
+Strong fundamentals of Python programming
+Basic understanding of Generative AI and LLMs
+Familiarity with Prompt Engineering
+Understanding of APIs and REST services
+Basic knowledge of NLP concepts
+Understanding of Machine Learning fundamentals
+Problem-solving and analytical abilities
+🌟 Preferred Skills:
+Familiarity with OpenAI or Hugging Face models
+Basic knowledge of LangChain or LlamaIndex
+Understanding of RAG architecture
+Academic or personal Generative AI projects
+Familiarity with Vector Databases
+⚠️ Important Eligibility Criteria:
+This opportunity is STRICTLY for candidates currently residing in the USA.
+Applications from candidates based in India will NOT be considered.
+Bench Sales profiles and third-party submissions are NOT accepted.
+Only direct candidate applications will be considered.
+📩 How to Apply: Share your updated resume at:
+📧
+ishikarawat3003@gmail.com
+🚀 Immediate interviews and quick onboarding!
+#GenerativeAI
+#LLMJobs
+#AIEngineer
+#PromptEngineering
+#LangChain
+#RAG
+#OpenAI
+#PythonJobs
+#USAJobs
+#TechHiring
+#AIJobsUSA
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 37: AI Engineer | CommVersion
+Job reference: 14ca387382808256e34170bbd73f7b6a
+Apply URL: https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FdiCXrE5R&urlhash=uHoe&mt=p4H9UHVVKbgOo4lf7xex5ett1hnYMUWODTA950mlR0tWb3G_K4lL9IQsbphZsRTLsfcX_OzBguGdhCxMwenEywVMZdEwBrAGgdFfYOnYh3knHYr4yPCu-Uh3EO4pbw2YFy72xrvJN00Z2PJEQeDPZHp3WE-OEEIrmvU8klSsM1X69YAt6EQuo3JFbNRCW9E&isSdui=true
+Posted By URL: https://www.linkedin.com/in/vinay-naik/
+Posted By: Vinay Naik
+
+🚀
+DON’T JUST FOLLOW THE AI REVOLUTION. BUILD IT.
+We're hiring an
+AI Engineer – Generative AI & Agentic Systems
+at CommVersion!
+If you enjoy building with
+LLMs, RAG, AI Agents and Python
+, this is your chance to work on real-world AI solutions used by global brands.
+Someone who:
+✅ Has 3+ years of software/AI engineering experience
+✅ Is strong in Python and backend/API development
+✅ Has hands-on experience building LLM applications
+✅ Understands RAG, embeddings and vector databases
+✅ Has practical experience with AI agents and tool calling
+✅ Has worked with LangGraph, LangChain, LlamaIndex or equivalent
+✅ Understands prompt engineering, evaluation and AI guardrails
+✅ Cares about reliability, performance and production-quality code
+🔥 ONE QUESTION FOR YOU:
+Are you building with AI, or just keeping up with what's happening in AI?
+If you're ready to take the next step in your AI engineering journey, we'd love to connect.
+📩
+Interested? Send us your updated CV via DM or apply through our hiring channel.
+https://lnkd.in/diCXrE5R
+;
+Know someone who lives and breathes Generative AI?
+Tag them. Share this post. Let's find our next AI builder!
+👇
+#Hiring
+#AIEngineer
+#GenerativeAI
+#AgenticAI
+#GenAI
+#ArtificialIntelligence
+#LLM
+#RAG
+#AIAgents
+#Python
+#LangGraph
+#LangChain
+#MachineLearning
+#TechJobs
+#EngineeringJobs
+#CommVersion
+Vinay Naik
+Kevin Chetti
+Kevin Menezes
+Rohit Venkatesan
+
+----------------------------------------------------------------------
+
+## Job 38: AIEngineer
+Job reference: ca99ef15121667a7cff42f6102014743
+Posted By URL: https://www.linkedin.com/in/vaishnav-premanandan-11774a178/
+Posted By: VAISHNAV PREMANANDAN
+
+🚀 𝐖𝐞’𝐫𝐞 𝐡𝐢𝐫𝐢𝐧𝐠: 𝐁𝐚𝐜𝐤𝐞𝐧𝐝 / 𝐀𝐈 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫 – 𝐈𝐧𝐭𝐞𝐥𝐥𝐢𝐠𝐞𝐧𝐜𝐞 𝐋𝐚𝐲𝐞𝐫
+📍 𝐃𝟐𝐂 / 𝐁𝟐𝐂 𝐁𝐫𝐚𝐧𝐝 | 𝐁𝐚𝐧𝐠𝐚𝐥𝐨𝐫𝐞
+Build the core platform that powers multiple 𝐜𝐨𝐧𝐬𝐮𝐦𝐞𝐫 𝐛𝐫𝐚𝐧𝐝𝐬 — 𝐟𝐫𝐨𝐦 𝟎→𝟏.
+You’ll work on:
+🔹 𝐃𝐚𝐭𝐚 𝐩𝐢𝐩𝐞𝐥𝐢𝐧𝐞𝐬 & 𝐛𝐚𝐜𝐤𝐞𝐧𝐝 𝐬𝐲𝐬𝐭𝐞𝐦𝐬
+🔹 𝐀𝐈/𝐌𝐋 𝐢𝐧𝐭𝐞𝐠𝐫𝐚𝐭𝐢𝐨𝐧𝐬 (𝐋𝐋𝐌𝐬, 𝐚𝐧𝐚𝐥𝐲𝐭𝐢𝐜𝐬, 𝐫𝐞𝐜𝐨𝐦𝐦𝐞𝐧𝐝𝐚𝐭𝐢𝐨𝐧𝐬)
+🔹 𝐒𝐜𝐚𝐥𝐚𝐛𝐥𝐞 𝐀𝐏𝐈𝐬 & 𝐢𝐧𝐟𝐫𝐚𝐬𝐭𝐫𝐮𝐜𝐭𝐮𝐫𝐞
+🔹 𝐓𝐮𝐫𝐧𝐢𝐧𝐠 𝐝𝐚𝐭𝐚 𝐢𝐧𝐭𝐨 𝐜𝐨𝐦𝐩𝐨𝐮𝐧𝐝𝐢𝐧𝐠 𝐢𝐧𝐬𝐢𝐠𝐡𝐭𝐬
+✅ Requirements:
+3–6 years backend | Strong Python / Node | AI/ML or data systems experience
+We’re building a system where every brand makes the next one better.
+💡Interested? Comment, DM, or write to
+vaishnav.premanandan@successpact.com
+#Hiring
+#JobOpening
+#BackendEngineer
+#AIEngineer
+#Python
+#NodeJS
+#BangaloreJobs
+#D2C
+#StartupJobs
+#TechJobs
+
+----------------------------------------------------------------------
+
+## Job 39: Generative AI Engineer
+Job reference: 69eb246c19b7ad13c477203c8f04a806
+Posted By URL: https://www.linkedin.com/in/vaishnavi-dubey-06b16741a/
+
+🤖 Immediate Hiring | Generative AI Engineer
+AVAILABLE FOR CANDIDATES BASED IN USA 🇺🇸
+🇺🇸 USA | 💼 Full-Time | W2 | C2C | Contract
+⏳ Immediate Start | ⚡ Quick Interview Process
+We’re looking for a skilled Generative AI Engineer to develop and deploy AI-powered applications using cutting-edge Generative AI technologies.
+🔹 Responsibilities:
+- Develop and deploy Generative AI applications.
+- Build and optimize LLM-based solutions.
+- Work with OpenAI and GPT models.
+- Develop RAG-based applications.
+- Implement AI agents and prompt engineering.
+- Integrate AI models with enterprise applications.
+- Optimize AI model performance and scalability.
+🔹 Required Skills:
+- Python
+- Generative AI & LLMs
+- OpenAI API / GPT Models
+- LangChain / LangGraph
+- RAG Architecture
+- Prompt Engineering
+- Hugging Face
+- Vector Databases (Pinecone, FAISS, ChromaDB)
+- FastAPI & REST APIs
+- Machine Learning & Deep Learning
+- AWS / Azure / GCP
+📩 Interested Candidates: Share your updated resume + current visa status at
+vaishnavidubey565@gmail.com
+#GenerativeAI
+#AIEngineer
+#LLM
+#OpenAI
+#Python
+#LangChain
+#LangGraph
+#RAG
+#H1B
+#OPT
+#CPT
+#STEM
+#USAJobs
+#TechJobs
+#ImmediateHiring
+
+----------------------------------------------------------------------
+
+## Job 40: Generative AI Engineer
+Job reference: 7cd6aa74a3a3489c6f8858d344edae22
+Posted By URL: https://www.linkedin.com/in/tanu-kharb-b22547326/
+
+🤖
+EXCITING OPPORTUNITY | Generative AI Engineer | USA
+Interested in Large Language Models, AI-powered applications, and the future of intelligent software?
+We're looking for passionate Generative AI Engineers who want to work with modern AI technologies.
+📍 Location: USA – Remote / Hybrid
+💼 Job Type: Full-Time / Contract
+⏰ Start Date: Immediate
+Required Skills:
+Python programming
+Generative AI fundamentals
+Large Language Models (LLMs)
+Prompt Engineering
+REST APIs
+Basic NLP concepts
+Machine Learning fundamentals
+Preferred Skills:
+LangChain or LlamaIndex
+OpenAI APIs
+Retrieval-Augmented Generation (RAG)
+Vector Databases
+Hugging Face
+AI-based academic or personal projects
+🇺🇸
+IMPORTANT CANDIDATE REQUIREMENTS:
+USA-based candidates only.
+India-based applications will not be considered.
+No Bench Sales profiles.
+No third-party submissions.
+Direct candidates only.
+📩
+How to Apply:
+Send your updated resume and current visa status. Visa status is MANDATORY.
+📧
+Tanyakharb47@gmail.com
+#GenerativeAI
+#LLM
+#AIEngineer
+#PromptEngineering
+#LangChain
+#RAG
+#ArtificialIntelligence
+#USAJobs
+#Hiring
+#Connections
+#F1
+#OPT
+#CPT
+#STEM
+#H1B
+#ITJobs
+#USA
+#Hybrid
+#Remote
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 41: Senior AI Engineer
+Job reference: 650f41e86fa84f9eb97f24146fb416e3
+Posted By URL: https://www.linkedin.com/in/aakriti-0a2479193/
+
+🚀
+WE ARE HIRING |
+AI Forward Deployed Engineer
+We are looking for an experienced
+Senior AI Engineer
+passionate about building production-grade Generative AI and Agentic AI solutions.
+📍 Location:
+Mumbai
+💼 Experience:
+4–8 Years
+🛠️ Role:
+Senior AI Engineer
+⏳ Notice Period:
+Immediate / Short Notice Preferred
+Key Skills Required:
+Strong hands-on experience in
+Python
+and
+C#/.NET or TypeScript
+Practical experience building
+GenAI, LLM-based applications and Agentic AI workflows
+Expertise in
+RAG, LangChain, LangGraph, LLM Function/Tool Calling
+Experience with document processing, information extraction and structured LLM outputs
+Strong SQL knowledge and experience with APIs, microservices and backend engineering
+Experience deploying and supporting production AI applications
+Cloud experience with
+Azure, AKS, Docker and Kubernetes
+Knowledge of AI evaluation, validation and monitoring frameworks
+📩
+Interested candidates can share their updated resumes at:
+aakriti@inov8-solutions.com
+#Hiring
+#AIJobs
+#SeniorAIEngineer
+#GenerativeAI
+#GenAI
+#AgenticAI
+#ArtificialIntelligence
+#LLM
+#PythonJobs
+#DotNetJobs
+#LangChain
+#LangGraph
+#RAG
+#AzureAI
+#MachineLearning
+#AIAgents
+#TechHiring
+#ITJobs
+#IndiaHiring
+#Recruitment
+#Hiring
+#UrgentHiring
+#ImmediateJoiners
+#SeniorAIEngineer
+#AIEngineer
+#GenAIEngineer
+#GenerativeAI
+#AgenticAI
+#ArtificialIntelligence
+#MachineLearning
+#DeepLearning
+#LLM
+#LargeLanguageModels
+#LLMEngineering
+#AIAgents
+#AutonomousAgents
+#RAG
+#RetrievalAugmentedGeneration
+#LangChain
+#LangGraph
+#SemanticKernel
+#PromptEngineering
+#PromptEngineeringJobs
+#PythonDeveloper
+#PythonJobs
+#DotNetDeveloper
+#CSharpDeveloper
+#TypeScriptDeveloper
+#BackendDeveloper
+#FullStackDeveloper
+#Microservices
+#RESTAPI
+#SQL
+#Snowflake
+#Azure
+#AzureAI
+#AzureOpenAI
+#AKS
+#Kubernetes
+#Docker
+#CloudNative
+#AWS
+#AWSBedrock
+#MLOps
+#LLMOps
+#AIApplications
+#AIInnovation
+#AIJobs
+#TechJobs
+#ITJobs
+#SoftwareEngineering
+#SoftwareDeveloper
+#TechHiring
+#ITRecruitment
+#IndiaHiring
+#HiringNow
+#JobOpening
+#CareerOpportunity
+#TechnologyJobs
+📞 [Contact Number]
+
+----------------------------------------------------------------------
+
+## Job 42: AI Engineer
+Job reference: 0c92ab0c8c523f7af583cfa1aa798267
+Apply URL: https://www.linkedin.com/safety/go/?url=http%3A%2F%2FB%2ETech&urlhash=4dZl&mt=I3cW-_G9rNep6cKOLCVLIiOleLzo5eW2VVBdlZKcZA3Ktomk3b8d7SxjjgpKhCkL-3b13DVpPvNKw31opA26H37GsgAeDKtc0YjQlSJ2CbXrl-vTC9PalYKZgItEisJkfySVkYwDDLEc9fe5Lnux94KBiWzCV1gTWC9LQlhKSswoVkfWW9XlcQLihH994jE&isSdui=true
+Posted By URL: https://www.linkedin.com/in/jnana-ranjan-hati-5b1b00206/
+
+🚀 WE ARE HIRING: Strong Data Scientist | AI Engineer | Generative AI Engineer
+📍 Location: [Pune] | Hybrid/Remote
+🎓 Education:
+B.Tech
+/
+M.Tech
+ONLY from Tier 1 – IIT, NIT, BITS, IIIT, DTU, NSUT
+💼 Experience: 3 - 6 Years
+🎂 Age: Below 28 Years – Mandatory
+💰 CTC:
+₹19–31.25 LPA ,
+75% Fixed + 25% Variable (as per company policy)
+🔍 Key Skills:
+Data ScienceGen-AINatural Language Processing (NLP)PythonSQL
+🔥 MANDATORY EXPERIENCE (8 Must Have):1. Core AI/DS Exp (3+ Years):
+Must have 3+ years hands-on in Data Science, AI, Machine Learning, Deep Learning, NLP, or Generative AI application development.2. Python & Backend:
+Must have strong hands-on in Python programming, backend development, API development, and production-grade application support.3. ML/DL Frameworks:
+Must have experience with PyTorch, TensorFlow, Keras, Scikit-learn.4. NLP Expertise:
+Must have hands-on in NLP use cases – text classification, sentiment analysis, entity recognition (NER), semantic search, embeddings, document understanding.5. LLMs:
+Must have experience with Large Language Models – GPT, LLaMA, Mistral, Phi, Claude, Gemini, or similar.6. RAG & Vector Search:
+Must have hands-on building/implementing Retrieval Augmented Generation (RAG), vector search, semantic search, knowledge-based AI applications.7. GenAI Frameworks:
+Must have experience with Prompt Engineering & Generative AI frameworks – LangChain, LangGraph, AI Agents, Azure OpenAI, or similar.8. API Development:
+Must have experience developing/consuming/integrating APIs using Python – FastAPI, Flask, or similar.
+⭐ PREFERRED EXPERIENCE:LLMOps / MLOps: monitoring, evaluation, experimentation, versioning of AI modelsCloud AI: Azure OpenAI, Azure Kubernetes Service (AKS), Kubernetes, cloud-native AI deployments, distributed systemsDatabases & Scale: PostgreSQL, MongoDB, Redis, Kafka, large-scale data platformsDevOps: Docker, Kubernetes, cloud platforms, scalable deployment architectureBackground: Candidates from AI-first startups, product companies, SaaS, fintech, or data-driven technology companies
+📌 MANDATORY REQUIREMENTS:Age: Candidate should be BELOW 28 YEARS – StrictEducation:
+B.TECH
+/
+M.TECH
+from Tier 1 Colleges ONLY – IIT, NIT, BITS, IIIT, DTU, NSUT are consideredCTC Breakup: 75% Fixed + 25% Variable as per company policy
+🔹 WHAT YOU WILL BUILD:
+Next-gen Generative AI systems, RAG pipelines, LLM-powered applications, AI Agents, production-grade AI platforms
+📩 APPLY NOW:
+📧
+jnanatalent@gmail.com
+📱 9658766733
+#Hiring
+#DataScientist
+#AIEngineer
+#GenerativeAI
+#GenAI
+#LLM
+#RAG
+#LangChain
+#Python
+#MachineLearning
+#DeepLearning
+#NLP
+#PyTorch
+#TensorFlow
+#FastAPI
+#IIT
+#NIT
+#BITS
+#IIIT
+#DTU
+#NSUT
+#AIJobs
+#GenAIJobs
+#AIFirst
+#LLMOps
+#AzureOpenAI
+…
+more
+
+----------------------------------------------------------------------
+
+## Job 43: AI/ML Engineer
+Job reference: bab54c7e00be5a1965901c7972698409
+Posted By URL: https://www.linkedin.com/in/akash-dasari-44691622a/
+Posted By: Akash Dasari
+
+🚀
+WE ARE HIRING | IMMEDIATE JOINERS PREFERRED!
+SKAPS HR Solutions is expanding its technology team and looking for talented professionals for the following positions:
+🔹
+1. QA Automation Engineer
+🔹
+2. .NET Full Stack Developer (AI/GenAI Experience)
+🔹
+3. AI/ML Engineer (GenAI & Agentic AI)
+📌
+Job Details:
+Experience: 3+ Years
+Work Mode: Full-Time | Work From Office
+Working Days: 5 Days a Week
+Working Hours: 6:30 AM – 2:30 PM
+Location: Hyderabad
+Joining: Immediate Joiners Preferred
+What We Are Looking For:
+Strong technical and problem-solving skills.
+Relevant hands-on experience in the respective technologies.
+Good communication and interpersonal skills.
+Candidates comfortable working from the office.
+📩
+Interested candidates can share their updated resumes at:
+venkatesh@skaps.co.in
+You can also share this opportunity with your network or tag someone who might be a good fit!
+Let's connect and build great technology teams together.
+#Hiring
+#HyderabadJobs
+#QAAutomation
+#DotNetDeveloper
+#FullStackDeveloper
+#AIEngineer
+#MLJobs
+#GenerativeAI
+#AgenticAI
+#ImmediateJoiners
+#WorkFromOffice
+#SKAPSHRSolutions
+Akash Dasari
+
+----------------------------------------------------------------------
+
+## Job 44: Generative AI Engineer
+Job reference: c181a520db61b87aa13ce5661cc176c4
+Posted By URL: https://www.linkedin.com/in/isha-mor-a8b785446/
+
+🤖 NOW HIRING | Generative AI Engineer | USA ONLY
+Passionate about Artificial Intelligence, Large Language Models, and building next-generation AI applications? We're looking for talented Generative AI Engineers who are excited to work with cutting-edge AI technologies and develop intelligent solutions!
+📍 USA – Remote / Hybrid
+💼 Full-Time / Contract
+⏰ Immediate Start
+Required Skills:
+- Strong knowledge of Python Programming
+- Generative AI Fundamentals
+- Large Language Models (LLMs)
+- Prompt Engineering
+- OpenAI API Integration
+- Retrieval-Augmented Generation (RAG)
+- Natural Language Processing (NLP)
+- REST API Development
+- Machine Learning Fundamentals
+- Strong Analytical and Problem-Solving Skills
+Preferred Skills:
+- LangChain or LlamaIndex
+- Vector Databases (Pinecone, FAISS, ChromaDB)
+- Hugging Face Transformers
+- Fine-Tuning and Model Optimization
+- TensorFlow or PyTorch
+- AI Agents and Agentic AI
+- AWS, Azure, or Google Cloud
+- Docker and Git/GitHub
+- Experience with AI-based projects
+🇺🇸 IMPORTANT CANDIDATE REQUIREMENTS:
+USA-based candidates only.
+India-based applications will not be considered.
+No Bench Sales profiles.
+No third-party submissions.
+Direct candidates only.
+📩 How to Apply:
+Interested candidates, DM me directly!
+Updated Resume + Current Visa Status (MANDATORY)
+📧
+ishamor76@gmail.com
+🚀 Immediate interviews and quick onboarding!
+#GenerativeAI
+#GenerativeAIEngineer
+#AIEngineer
+#LLM
+#Python
+#PromptEngineering
+#LangChain
+#RAG
+#OpenAI
+#ArtificialIntelligence
+#MachineLearning
+#NLP
+#VectorDatabase
+#AgenticAI
+#USAJobs
+#TechHiring
+#Hiring
+#Connections
+#F1
+#OPT
+#CPT
+#STEM
+#H1B
+#ITJobs
+#USA
+#Hybrid
+#Remote
+
+----------------------------------------------------------------------
+
+## Job 45: AI/ML Engineer
+Job reference: 10d4031e3c6e3b0ce6018f7fd4857954
+Posted By URL: https://www.linkedin.com/in/sai-charan-reddy-0a9125268/
+
+🚀
+We're Hiring: AI/ML Engineer – Digital Engineering & CAD Integration
+Are you passionate about leveraging
+Artificial Intelligence, Machine Learning, and Digital Engineering
+to solve real-world engineering and manufacturing challenges? We are looking for a talented
+AI/ML Engineer
+to design and develop innovative solutions that transform engineering workflows through automation, intelligence, and data-driven insights.
+Key Responsibilities
+✅ Develop AI/ML solutions for engineering and manufacturing use cases, including:
+Classification, Prediction, Similarity Analysis
+Optimization Algorithms
+Computer Vision
+Natural Language Processing (NLP)
+Generative AI Applications
+✅ Build end-to-end digital solutions by integrating AI/ML models with:
+Backend Services
+REST APIs
+Databases
+User-facing Applications
+✅ Integrate AI/ML solutions with CAD and Engineering Platforms to:
+Automate Engineering Workflows
+Extract and Process Engineering Data
+Enable Digital Engineering Use Cases
+✅ Work with CAD-related data including:
+3D Geometry
+Engineering Metadata
+Assemblies
+Drawings
+Product Attributes
+✅ Develop Prototypes, MVPs, Reusable Components, Backend Services, and Production-Ready Applications.
+✅ Deploy, Monitor, and Maintain Digital Solutions using Cloud and DevOps practices, preferably on Microsoft Azure.
+✅ Research emerging AI, Digital Engineering, and Automation technologies and build PoCs to validate high-value business opportunities.
+✅ Collaborate with Cross-functional Teams including Engineering Experts, Data Scientists, Software Developers, Business Stakeholders, and IT Teams.
+Required Skills
+✔ Strong experience in AI/ML model development, data processing, model evaluation, and implementation.
+✔ Excellent Python programming skills with expertise in developing scalable and maintainable software solutions.
+✔ Hands-on experience building REST APIs and backend applications using:
+FastAPI
+Flask
+Django
+✔ Experience with CAD Integration, CAD Automation, API/SDK Development, or Engineering Software Customization.
+✔ Preferred experience with:
+Siemens NX
+Bentley MicroStation
+Other Engineering/CAD Platforms
+✔ Strong understanding of Engineering Data such as:
+CAD Models
+Drawings
+Assemblies
+Metadata
+Product Structure Information
+✔ Experience with SQL and Relational Databases:
+PostgreSQL
+SQL Server
+Azure SQL
+✔ Knowledge of Cloud & DevOps:
+Docker
+Git
+CI/CD Pipelines
+Microsoft Azure
+Preferred Qualifications
+⭐ Experience in Digital Engineering, Manufacturing Automation, or Engineering Software Development.
+⭐ Exposure to Generative AI, LLMs, Retrieval-Augmented Generation (RAG), AI Agents, or Engineering AI Applications.
+⭐ Strong problem-solving skills and ability to work in a fast-paced innovation-driven environment.
+Location
+📍 Bangalore
+📩 Apply now or share your profile with us
+saicharan.mallu@global-csg.com
+or 6302210438
+#Hiring
+#AIEngineer
+#MachineLearning
+#GenerativeAI
+#Python
+#SiemensNX
+#MicroStation
+#CADAutomation
+#DigitalEngineering
+#Azure
+#FastAPI
+#Manufacturing
+#EngineeringJobs
+#BangaloreJobs
+#MLJobs
+#ArtificialIntelligence
+#HiringNow
+#ImmediateJoiners
+
+----------------------------------------------------------------------
+
+## Job 46: AI Engineer | VenPep Solutions Private Limited
+Job reference: edb9977c2d14a5d38e3a48059f3c93f5
+Apply URL: https://www.linkedin.com/safety/go/?url=http%3A%2F%2FB%2ETech&urlhash=4dZl&mt=saYgT0IBpRi660AQbad1b5Bx0YMjHU2O5GLbL8ED6zxlYncPXZrEYqGPJDhjly1Rspa4oq3sdWhoYih3402BIox-KMr1_YNaPp5kridgcrN5D9uaJVnlAVwweKRvNW4C8QrKXYGuGgVouKRB9hMJVOSt0P3flaaAbc86KweiuM7MXQIaYYGyhVL4Zp-MffM&isSdui=true
+Posted By URL: https://www.linkedin.com/in/gopiraj-n-2a114320b/
+
+🌟
+Greetings from VenPep !
+🌟
+🚀
+We're Hiring | AI Engineer – Freshers
+Are you passionate about Artificial Intelligence, Machine Learning, and Generative AI? Do you enjoy exploring new technologies and building intelligent solutions?
+VenPep Solutions Private Limited is looking for enthusiastic and talented AI Engineer Freshers to join our growing team in Coimbatore!
+📌 JOB DETAILS
+Position: AI Engineer
+Experience: 0–1 Year (Freshers)
+Location: Coimbatore, Tamil Nadu
+Employment Type: Full-Time
+Company: VenPep Solutions Private Limited
+💼 ROLES & RESPONSIBILITIES
+• Assist in designing, developing, and implementing AI/ML-based applications.
+• Work with Large Language Models (LLMs) and Generative AI technologies.
+• Explore and implement AI tools, APIs, and frameworks.
+• Develop AI-powered chatbots and automation solutions.
+• Use Python for AI/ML model development and integration.
+• Perform data preprocessing, analysis, and model evaluation.
+• Collaborate with development teams to integrate AI solutions.
+• Stay updated with emerging AI technologies and industry trends.
+🛠️ REQUIRED SKILLS
+• Strong knowledge of Python programming.
+• Basic understanding of AI and Machine Learning concepts.
+• Knowledge of Generative AI and Large Language Models (LLMs).
+• Familiarity with NumPy, Pandas, Scikit-learn, TensorFlow, or PyTorch.
+• Basic understanding of REST APIs and database concepts.
+• Good analytical, logical thinking, and problem-solving skills.
+• Passion for learning and exploring new technologies.
+⭐ PREFERRED SKILLS
+• Hands-on experience with ChatGPT, OpenAI APIs, or other AI platforms.
+• Basic knowledge of LangChain or LlamaIndex.
+• Understanding of Prompt Engineering and RAG (Retrieval-Augmented Generation).
+• Academic projects, certifications, or internships related to AI/ML.
+🎓 EDUCATIONAL QUALIFICATION
+• B.E /
+B.Tech
+– Computer Science, Information Technology, Artificial Intelligence, Data Science, or related disciplines.
+•
+M.Sc
+/ MCA graduates with relevant technical knowledge are also welcome.
+🎯 WHAT WE OFFER
+• Opportunity to work on real-time AI projects.
+• Hands-on experience with emerging AI technologies.
+• Continuous learning and career development opportunities.
+• Collaborative and supportive work environment.
+• Opportunity to grow your career in the AI domain.
+📩 INTERESTED IN JOINING US?
+If you are an aspiring AI Engineer eager to turn innovative ideas into real-world solutions, we would love to hear from you!
+📧 Share your updated resume:
+gopiraj.n@venpep.com
+/
+hr@venpep.com
+🌐 Website:
+www.venpep.com
+📍 Location: Coimbatore, Tamil Nadu
+Be part of the future of AI. Let's innovate and build something amazing together! 🚀
+#Hiring
+#AIEngineer
+#FreshersHiring
+#ArtificialIntelligence
+#MachineLearning
+#GenerativeAI
+#PythonDeveloper
+#LLM
+#OpenAI
+#RAG
+#CoimbatoreJobs
+#TamilNaduJobs
+#FreshersJobs
+#VenPepSolutions
+
+----------------------------------------------------------------------
+
+## Job 47: AI/ML Engineer
+Job reference: 27c0d3288d35723df39b08b23be23cdd
+Apply URL: https://www.linkedin.com/safety/go/?url=http%3A%2F%2FB%2ETech%2FM%2ETech&urlhash=XJAP&mt=BQ33_f-psMv--FwTF5vrsOX4Th2xcYP_mCnu3NadbdkEfY-r5Jy2RR2kkF2mw7YOSMxjrdEXxiyVgugjE01MZn7cYU7tm7RgEdkJdo1CkCMcdUrKzguGPaLdOEXW7oclMvS2CKmY7LHUjoXpPOEtUgaFXYFu28LR4yUGgUhXI4XbYnWq2nCQJel11GWLIis&isSdui=true
+Posted By URL: https://www.linkedin.com/in/sai-kumar-shivarathri-4a432b258/
+
+We are hiring for a client: Associate Lead — AI/ML Engineer, Python / ML / DL
+📍 Pune | In office, 5 days + alternate Saturdays
+👨‍💻 Experience: 3–6 years | 15 openings
+Required:
+• 3+ years in Data Science/ML/Applied AI/NLP/Deep Learning/GenAI.
+• Production Python, SQL, data analysis and feature engineering.
+• PyTorch, TensorFlow, Keras, Scikit-learn and NLP.
+• Embeddings, semantic search, text classification, document understanding and recommendations.
+• GPT, Llama, Mistral, Claude, Gemini, RAG, vector search, knowledge retrieval, chunking and indexing.
+• Git, CI/CD and production ML systems.
+•
+B.Tech/M.Tech
+from IIT, NIT or BITS.
+Relevant technologies: MLOps, LLMOps, MLflow, Kubeflow, Airflow, Prefect, feature stores, model registry, Spark, PySpark, Docker, Kubernetes, Azure, AWS and GCP.
+Develop enterprise search, ranking, personalisation and recommendation systems; improve taxonomy, ontology, metadata, relevance and scalable delivery.
+Preferred: MLOps/LLMOps, distributed ML, cloud deployments and fintech/banking/risk analytics.
+📩 Apply:
+careers@vextarainfo.com
+Subject: Associate Lead — AI ML Engineer
+#Hiring
+#MachineLearning
+#AIEngineer
+#Python
+#NLP
+#Pune
+
+----------------------------------------------------------------------
+
+## Job 48: AI Engineer
+Job reference: 54fc664f8ca48614dda799706852fab1
+Posted By URL: https://www.linkedin.com/in/mehak-bansal-999352153/
+
+#Hiring: AI Engineer | Generative AI | Python | Azure | Chatbot Developer
+Want to build AI chatbots that real employees use every day?
+We’re looking for an
+AI Engineer / Python Developer
+to build a smart
+AI agent inside Microsoft Teams
+. It will take employee requests, create tickets automatically in
+ServiceNow
+, and help reviewers decide faster.
+What you’ll do
+Build an AI chatbot and AI agent for Microsoft Teams
+Connect it to ServiceNow using REST APIs
+Automate ticket routing and approvals
+Use LLMs and Generative AI to summarise requests for reviewers
+What you need
+#Python
+or TypeScript/JavaScript, with REST API and backend experience
+#LLM
+, Generative AI or AI agent projects (OpenAI, LangChain, function calling)
+#Azure
+experience (Azure AI Foundry, Azure Functions, Entra ID)
+Microsoft Teams
+#bot
+or Adaptive Cards experience
+#ServiceNow
+, Jira or similar API integration
+Git, CI/CD, OAuth 2.0 and secure APIs
+Bonus:
+Copilot Studio, Power Platform, multi-agent AI, ServiceNow Flow Designer.
+Interested? Send me a message or share resume at
+mehak.bansal@programming.com
+Subject Line : "AI Chatbot developer- Your name"
+#AIEngineer
+#GenerativeAI
+#AgenticAI
+#Python
+#Azure
+#MicrosoftTeams
+#ServiceNow
+#Chatbot
+#LLM
+#OpenAI
+#LangChain
+#AIJobs
+#Hiring
+
+----------------------------------------------------------------------
+
+## Job 49: Agentic AI Engineer
+Job reference: 99311eb74c6e51c4a5177fdd39087d2e
+Posted By URL: https://www.linkedin.com/in/pavan-p-7a461b232/
+
+#
+Hiring
+Python Agentic AI Engineer – Vulnerability Management
+📍
+Location:
+New York, NY
+·         Strong Python development and Agentic AI automation experience.
+·         LLMs, RAG, LangChain and LangGraph.
+·         Multi-agent architecture and AI-driven workflow automation.
+·         Cybersecurity and Vulnerability Management.
+·         Integration with Qualys, Tenable, Rapid7 and Snyk.
+·         CVE analysis, CVSS scoring and threat intelligence.
+·         SIEM, SOAR, CI/CD and security platform integration.
+·         FastAPI and REST API development.
+·         Automated patch management and remediation workflows.
+·         Human-in-the-loop approval and compliance reporting.
+Must Have:
+Hands-on experience in Python, Agentic AI and cybersecurity/vulnerability management automation.
+📩
+pavan.a@logicplanet.com
+#Hiring
+#PythonDeveloper
+#AgenticAI
+#GenerativeAI
+#LLM
+#RAG
+#LangChain
+#LangGraph
+#CyberSecurity
+#VulnerabilityManagement
+#PythonJobs
+#AIEngineer
+#NewYorkJobs
+#ContractJobs
+#USITJobs
+
+----------------------------------------------------------------------
+
+## Job 50: AI Engineer
+Job reference: 9424d7b770629a65f78254a1f45c6786
+Apply URL: https://www.linkedin.com/safety/go/?url=http%3A%2F%2Fwww%2Ehealoriq%2Ecom&urlhash=vgyX&mt=ecKRDVRjWT0gxuPYxJm_i3LuKMDRDRHutVSdm3muuGt7M48uB2Z9u7oX2fxAg7UyT0p3FQX0fcpXKoDZedmHzFATZBd2_ET7eHAUBKyXANmECVE90EDg3v2pxaW3-XfrEj5xLUNArwH6adyn-iB6mEyCLFaoWhkx2QyPCgEATrDNMkrL&isSdui=true
+Posted By URL: https://www.linkedin.com/in/garima-t-a77146405/
+
+We're hiring: Applied AI Engineer, US Finance & Accounting (Remote)
+HealorIQ AI builds custom AI agents for US finance teams: CFOs, Controllers, CPA firms and AP/AR teams.
+Here are a few of the agents our team builds:
+1. Reconciliation Agent
+Matches bank, Stripe and ERP transactions to the general ledger and explains every unmatched item: timing difference, fee, partial payment or missing entry. The Controller reviews exceptions instead of matching line by line.
+2. Variance Commentary Agent
+Compares actuals to budget, forecast and prior periods, finds what moved, and writes plain-English notes on why. CFOs get the "what changed and why" for the monthly review and the board deck.
+3. 13-Week Cash Forecast Agent
+Builds a rolling 13-week cash forecast from AR, AP, payroll and bank data, and flags the weeks where cash gets tight so the CFO can act early.
+4. Collections & Dispute Agent
+Prioritizes open AR, reads customer emails and remittances, tags disputes like short pays or missing POs, and routes each one to the right person with context attached.
+5. Audit PBC & Payment Control Agent
+Matches auditor requests to the right invoices, contracts and support, and checks payment runs for duplicates, changed vendor bank details and other fraud red flags.
+And many more: accruals, intercompany, vendor onboarding, 1099 prep, close checklists, flux analysis and whatever painful process a finance team brings to us next.
+What you'll do:
+Build, test and ship these agents with real US finance data, working closely with Controllers and CFOs to solve their actual problems.
+What we're looking for:
+• 2–6 years building AI/ML systems with US finance or accounting data
+• Strong Python, SQL, LLMs (RAG, agents) and document extraction
+• You understand the GL, reconciliations, AR/AP and the month-end close
+• Experience with QuickBooks, NetSuite, Sage Intacct or Xero is a big plus
+Fully remote, with some overlap with US (EST) hours.
+Send your resume to
+muskan@healoriq.com
+#Hiring
+#AIEngineer
+#FinanceAI
+#CFO
+
+----------------------------------------------------------------------
