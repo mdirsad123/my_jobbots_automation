@@ -134,3 +134,7 @@ The system successfully:
 cd ~/ird-projects/my_jobbots_automation/linkedin/bat_file
 chmod +x start_linkedin_fastapi.sh
 ./start_linkedin_fastapi.sh
+
+# activate environement
+cd ~/ird-projects/my_jobbots_automation
+source .venv/bin/activate

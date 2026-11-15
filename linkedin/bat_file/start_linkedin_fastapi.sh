@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 # Ubuntu (Oracle ARM64) equivalent of start_linkedin_fastapi.bat.
-# Put this file at ~/ird-projects/my_jobbots_automation/start_linkedin_fastapi.sh
-# Starts/reuses the shared Chromium DevTools session (9222) and runs LinkedIn FastAPI (8000).
+# Put this file at ~/ird-projects/my_jobbots_automation/linkedin/bat_file/start_linkedin_fastapi.sh
+# Starts/reuses the shared Chromium DevTools session (9222) and runs LinkedIn FastAPI (8010 by default).
 set -Eeuo pipefail
 
-PROJECT_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+# Script lives in PROJECT_ROOT/linkedin/bat_file; go up two directories.
+PROJECT_ROOT="$(cd -- "$SCRIPT_DIR/../.." && pwd)"
 VENV_PYTHON="$PROJECT_ROOT/.venv/bin/python"
 CHROME_PORT="9222"
 API_HOST="127.0.0.1"
-API_PORT="8000"
+API_PORT="${LINKEDIN_API_PORT:-8010}"
 CHROME_HELPER="$HOME/ird-projects/auto-email-recruiter-reply/start_chromium_debug.sh"
 
 info() { printf '[JobBots] %s\n' "$*"; }
@@ -58,6 +60,25 @@ info '[3/4] Checking existing project .venv ...'
   fail "FastAPI/Uvicorn missing in project .venv. Run: cd '$PROJECT_ROOT' && poetry add fastapi uvicorn (or install via your existing Poetry dependency setup)."
 info "Python: $("$VENV_PYTHON" --version 2>&1)"
 info 'Existing Poetry .venv ready.'
+
+# Check port before starting so we do not collide with AlgoAgentX (8000).
+"$VENV_PYTHON" - "$API_HOST" "$API_PORT" <<'PY_CHECK_PORT'
+import socket
+import sys
+host, port_raw = sys.argv[1:]
+try:
+    port = int(port_raw)
+    if not 1 <= port <= 65535:
+        raise ValueError
+except ValueError:
+    print(f"[JobBots] ERROR: Invalid port: {port_raw}", file=sys.stderr)
+    sys.exit(1)
+with socket.socket() as sock:
+    sock.settimeout(1)
+    if sock.connect_ex((host, port)) == 0:
+        print(f"[JobBots] ERROR: Port {port} already in use. Choose another LINKEDIN_API_PORT.", file=sys.stderr)
+        sys.exit(1)
+PY_CHECK_PORT
 
 info "[4/4] Starting LinkedIn FastAPI on ${API_HOST}:${API_PORT} ..."
 info "API docs: http://${API_HOST}:${API_PORT}/docs"
