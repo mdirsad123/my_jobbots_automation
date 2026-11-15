@@ -128,3 +128,9 @@ The system successfully:
 **For detailed documentation, configuration, and usage instructions, please refer to [ONBOARDING_GUIDE.md](ONBOARDING_GUIDE.md)**
 
 *Version: 2.0.0 | Last Updated: December 30, 2025*
+
+--------------------------------------
+# start fastapi of linkedin in oracle buntu
+cd ~/ird-projects/my_jobbots_automation/linkedin/bat_file
+chmod +x start_linkedin_fastapi.sh
+./start_linkedin_fastapi.sh
