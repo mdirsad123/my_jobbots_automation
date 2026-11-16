@@ -1,9 +1,50 @@
 {
   "search_keywords": [
     "#dataengineer",
-    "#pythondeveloper",
+    "#dataengineering",
+    "#dataengineerjobs",
+    "#bigdataengineer",
+    "#etlengineer",
+    "#datapipeline",
+
     "#awsdataengineer",
-    "#aiengineer"
+    "#awsglue",
+    "#awsgluedeveloper",
+    "#awsjobs",
+    "#awscloudjobs",
+
+    "#pythondeveloper",
+    "#pythonjobs",
+    "#pythonengineer",
+    "#pythonhiring",
+    "#fastapideveloper",
+    "#flaskdeveloper",
+    "#djangodeveloper",
+    "#backenddeveloper",
+
+    "#aiengineer",
+    "#machinelearningengineer",
+    "#mlengineer",
+    "#genaiengineer",
+    "#generativeai",
+    "#llmengineer",
+    "#agenticai",
+
+    "#hiring",
+    "#wearehiring",
+    "#nowhiring",
+    "#techhiring",
+    "#ithiring",
+    "#remotehiring",
+    "#jobopenings",
+
+    "data engineer hiring",
+    "aws data engineer hiring",
+    "python developer hiring",
+    "AI engineer hiring",
+    "GenAI engineer hiring",
+    "FastAPI developer hiring",
+    "ML engineer hiring"
   ],
   "target_roles": {
     "awsdataengineer": [
@@ -97,7 +138,7 @@
   ],
   "date_filter": "past-24h",
   "job_only": true,
-  "max_scrolls": 6,
+  "max_scrolls": 5,
   "pacing_seconds": {
     "action": [1.0, 2.5],
     "scroll": [2.0, 4.0],
