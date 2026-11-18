@@ -404,7 +404,7 @@ def scrape_feed_posts(driver):
             "origin": "FACETED_SEARCH",
             # "sortBy": '["date_posted"]',
             "datePosted": date_map.get(DATE_FILTER, '["past-24h"]'),
-            # "contentType": '["jobs"]',
+            "contentType": '["jobs"]',
         }
 
         return (
