@@ -63,7 +63,7 @@ def _keyword_pattern(phrase):
     words = re.findall(r"[a-z0-9]+", phrase.casefold())
     if not words:
         return None
-    pattern = r"(?<![a-z0-9])" + r"[\s_./\-]*".join(
+    pattern = r"(?<![a-z0-9])" + r"[\s_./\-’'‘]*".join(
         re.escape(word) for word in words
     ) + r"(?![a-z0-9])"
     return re.compile(pattern, re.IGNORECASE)
@@ -134,6 +134,96 @@ def _match_role_title(candidate, filters):
     return title, role
 
 
+def extract_mandatory_min_years(post_text):
+    """Conservative experience floor extraction from a hiring post.
+
+    Recognizes explicit 5+ years, 6-9 years, Experience: 8 years, etc.
+    Preferred/bonus years are not treated as mandatory. Ambiguous cases
+    remain for downstream human/full-JD classification rather than rejected.
+    Returns (highest_explicit_mandatory_minimum, example_evidence).
+    """
+    if not post_text:
+        return None, None
+    lines = [re.sub(r"\s+", " ", line).strip() for line in post_text.splitlines()]
+    patterns = (
+        r"\b(\d{1,2})\s*[-\u2013\u2014]\s*\d{1,2}\s*\+?\s*(?:years?|yrs?)\b",
+        r"(?<![\d\-\u2013\u2014])(\d{1,2})\s*\+\s*(?:years?|yrs?)\b",
+        r"\b(?:at least|minimum|min\.?|more than|over)\s*[:\-]?\s*(\d{1,2})\s*(?:years?|yrs?)\b",
+        r"\b(?:experience|exp\.?|work experience)\s*[:\-]\s*(\d{1,2})\s*(?:years?|yrs?)\b",
+        r"(?<![\d\-\u2013\u2014])(\d{1,2})\s*(?:years?|yrs?)\s+(?:of\s+)?(?:relevant\s+|professional\s+|total\s+|industry\s+)?experience\b",
+        r"(?<![\d\-\u2013\u2014])(\d{1,2})\s*(?:years?|yrs?)\s+(?:required|mandatory)\b",
+    )
+    matches = []
+    for idx, line in enumerate(lines):
+        if not line:
+            continue
+        # Experience is frequently on a new line in social post formatting.
+        preceding = lines[idx - 1] if idx else ""
+        candidate = (preceding + " " + line) if re.fullmatch(
+            r"(?i)(?:required\s+)?(?:minimum\s+)?experience\s*[:\-]?", preceding
+        ) else line
+        low = candidate.casefold()
+        for pattern in patterns:
+            for m in re.finditer(pattern, candidate, flags=re.IGNORECASE):
+                # For mixed lines (e.g., 5+ preferred; 3+ required), use
+                # the closest qualifier to each figure independently.
+                qualifiers = list(re.finditer(
+                    r"\b(?:preferred|nice to have|bonus|good to have|optional|"
+                    r"ideally|required|mandatory|must have)\b", low
+                ))
+                if qualifiers:
+                    def distance(q):
+                        if q.start() < m.end() and q.end() > m.start():
+                            return 0  # qualifier explicitly inside this match
+                        if q.end() <= m.start():
+                            return m.start() - q.end()
+                        return q.start() - m.end()
+                    nearest = min(qualifiers, key=distance)
+                    if nearest.group(0) in ('preferred', 'nice to have', 'bonus',
+                                            'good to have', 'optional', 'ideally'):
+                        continue
+                years = int(m.group(1))
+                if not 0 <= years <= 40:
+                    continue
+                # 'More than 4 years' excludes a 4-year applicant.
+                if re.search(r"(?i)\b(?:more than|over)\s*\d", m.group(0)):
+                    years += 1
+                matches.append((years, candidate[:220]))
+    return max(matches, key=lambda pair: pair[0]) if matches else (None, None)
+
+
+def canonical_job_url(url):
+    """Stable URL identity; strip LinkedIn safety wrappers and tracking."""
+    if not url or not str(url).strip().startswith(("http://", "https://")):
+        return ""
+    parsed = urllib.parse.urlsplit(str(url).strip())
+    host = parsed.netloc.casefold().removeprefix('www.')
+    if host == 'linkedin.com' and parsed.path.startswith('/safety/go'):
+        target = urllib.parse.parse_qs(parsed.query).get('url', [''])[0]
+        return canonical_job_url(target)
+    match = re.search(r'/jobs/view/(\d+)', parsed.path, re.IGNORECASE)
+    if host == 'linkedin.com' and match:
+        return 'linkedin-job:' + match.group(1)
+    path = parsed.path.rstrip('/')
+    if host == 'lnkd.in':
+        return 'https://lnkd.in' + path  # Shortlink slug identifies an apply route.
+    # Preserve meaningful job-identifying parameters, remove only trackers.
+    query = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
+    query = sorted((k, v) for k, v in query if not (
+        k.casefold().startswith('utm_') or k.casefold() in {
+            'trk', 'trackingid', 'ref', 'refid', 'campaign', 'source',
+        }
+    ))
+    return urllib.parse.urlunsplit((parsed.scheme.casefold(), host, path,
+                                   urllib.parse.urlencode(query), ''))
+
+
+def normalized_post_description(description):
+    text = re.sub(r'\s+', ' ', description or '').strip().casefold()
+    text = re.sub(r'(?:\s*\u2026\s*more)+\s*$', '', text)
+    return text
+
+
 def identify_target_job(post_text, linked_title, config, filters=None):
     """Require hiring intent AND a target *position*, not just tech mentions.
 
@@ -143,50 +233,62 @@ def identify_target_job(post_text, linked_title, config, filters=None):
     """
     filters = filters or _compile_role_filters(config)
     text = post_text or ""
-    if config.get("job_only", True) and not any(
-        pattern.search(text) for pattern in filters["hiring"]
-    ):
+    # Only hashtags at the bottom do not establish hiring intent.
+    # Preserve inline #Hiring within a legitimate recruiting sentence.
+    substantive_text = "\n".join(
+        line for line in text.splitlines()
+        if not re.fullmatch(r"\s*(?:#[\w-]+[\s,]*)+", line)
+    )
+    if any(pattern.search(substantive_text) for pattern in filters["blocked_post"]):
         return None
-    if any(pattern.search(text) for pattern in filters["blocked_post"]):
+    linked_target = _match_role_title(linked_title, filters) if linked_title else None
+    # A real linked job card is positive vacancy evidence even if wrapper
+    # contains no standard hiring verb. Otherwise require hiring text.
+    if config.get("job_only", True) and not linked_target and not any(
+        pattern.search(substantive_text) for pattern in filters["hiring"]
+    ):
         return None
 
     if linked_title:
-        match = _match_role_title(linked_title, filters)
-        if match:
-            return match
+        if linked_target:
+            return linked_target
         # A linked job explicitly titled Data Analyst/Cloud Engineer wins over
         # a coincidental target-role skill or hashtag in the post body.
         if any(pattern.search(linked_title) for pattern in filters["blocked_title"]):
             return None
 
     lines = [re.sub(r"\s+", " ", line).strip()
-             for line in text.splitlines() if line.strip()]
+             for line in substantive_text.splitlines() if line.strip()]
     label = re.compile(
         r"(?i)^(?:[•*\-]\s*)?"
         r"(?:job title|job role|role|position|designation|vacancy|"
         r"open position|hiring for|we are hiring for|we're hiring for)"
-        r"\s*[:\-–|]?\s*(.+)$"
+        r"(?:\s*[:\-–|]\s*|\s+)(\S.*)$"
     )
     explicit_labels = []
     for line in lines:
         found = label.match(line)
         if found:
-            explicit_labels.append(found.group(1))
+            explicit_labels.append((line, found.group(1)))
 
     if explicit_labels:
-        for title in explicit_labels:
-            match = _match_role_title(title, filters)
+        for _original_line, title in explicit_labels:
+            match = _match_role_title(title[:180], filters)
             if match:
                 return match
-        # Do not mistake 'Skills: #PythonDeveloper' for a second job when
-        # 'Role: Data Analyst' was explicitly declared.
-        return None
+        # A real 'Role: Data Analyst' outranks incidental Python hashtags,
+        # but a vague 'we are hiring for cloud pipelines' must not prevent
+        # an explicit 'Data Engineer' heading being checked below.
+        if any(re.match(r"(?i)^\s*(?:job title|job role|role|position|"
+                        r"designation|vacancy|open position)\b", original)
+               for original, _value in explicit_labels):
+            return None
 
     # Hiring headlines can put the title on the same line or the next line.
     hiring_prefix = re.compile(
         r"(?i)\b(?:we are hiring|we're hiring|now hiring|hiring for|"
         r"we are looking for|we're looking for|urgent requirement for|"
-        r"openings? for|looking to hire)\b"
+        r"openings? for|looking to hire|hiring alert|hiring)\b"
     )
     for index, line in enumerate(lines):
         signal = hiring_prefix.search(line)
@@ -202,6 +304,21 @@ def identify_target_job(post_text, linked_title, config, filters=None):
                 match = _match_role_title(next_line, filters)
                 if match:
                     return match
+
+    # 'Acme is hiring an AI/ML Engineer ...' or 'hiring for the role of'
+    # may appear inside sentences rather than in a standalone heading.
+    sentence_hiring = re.compile(
+        r"(?i)\b(?:is hiring|are hiring|currently hiring|hiring for the role of|"
+        r"hiring for|recruiting for)\b\s*(?:for\s+)?"
+        r"(?:the role of\s+)?(?:an?\s+)?"
+    )
+    for line in lines[:30]:
+        found = sentence_hiring.search(line)
+        if not found:
+            continue
+        match = _match_role_title(line[found.end():][:150], filters)
+        if match:
+            return match
 
     # Some recruiters post 'Senior Data Engineer' as its own heading followed
     # by experience, location and application details.
@@ -258,6 +375,14 @@ def scrape_feed_posts(driver):
     ))
     DATE_FILTER = CONFIG.get("date_filter", "past-24h")
     MAX_SCROLLS = max(0, int(CONFIG.get("max_scrolls", 6)))
+    STAGNANT_SCROLLS = max(2, int(CONFIG.get("max_stagnant_scrolls", 3)))
+    CONTENT_FILTER = CONFIG.get("search_content_type", "job_posts")
+    if CONTENT_FILTER not in ("job_posts", "all_posts"):
+        raise ValueError("search_content_type must be 'job_posts' or 'all_posts'")
+    MAX_REQUIRED_YEARS = CONFIG.get("max_required_years", 4)
+    ENFORCE_EXPERIENCE = bool(CONFIG.get("enforce_max_required_years", True))
+    if not isinstance(MAX_REQUIRED_YEARS, (int, float)) or MAX_REQUIRED_YEARS < 0:
+        raise ValueError("max_required_years must be a nonnegative number")
     pacing = CONFIG.get("pacing_seconds", {})
     waits = CONFIG.get("wait_seconds", {})
     ACTION_PAUSE = tuple(pacing.get("action", (1.0, 2.5)))
@@ -404,8 +529,9 @@ def scrape_feed_posts(driver):
             "origin": "FACETED_SEARCH",
             # "sortBy": '["date_posted"]',
             "datePosted": date_map.get(DATE_FILTER, '["past-24h"]'),
-            "contentType": '["jobs"]',
         }
+        if CONTENT_FILTER == "job_posts":
+            params["contentType"] = '["jobs"]'
 
         return (
             f"{base}?"
@@ -833,7 +959,7 @@ def scrape_feed_posts(driver):
 
             if (
                 round_number >= MAX_SCROLLS
-                or unchanged_rounds >= 2
+                or unchanged_rounds >= STAGNANT_SCROLLS
             ):
                 break
 
@@ -984,7 +1110,7 @@ def scrape_feed_posts(driver):
 
         return card_title, company, href
 
-    def extract_apply_link(post, preferred_url=None):
+    def extract_apply_link(post, preferred_url=None, post_text=None):
         if preferred_url:
             return preferred_url
 
@@ -1054,6 +1180,15 @@ def scrape_feed_posts(driver):
 
             return href.split("#")[0]
 
+        # URLs in plain LinkedIn post text may not be DOM anchors.
+        for url in re.findall(r"https?://[^\s<>]+", post_text or ""):
+            candidate = url.rstrip(".,;:)>]\"'")
+            host = urllib.parse.urlsplit(candidate).netloc.casefold()
+            if (host in ("lnkd.in", "www.lnkd.in") or
+                    "/jobs/view/" in candidate or
+                    any(token in candidate.casefold() for token in
+                        ("/careers/", "/career/", "/apply/", "/job/"))):
+                return candidate
         return None
 
     def fast_navigate(url):
@@ -1159,18 +1294,20 @@ def scrape_feed_posts(driver):
             return False
 
     def make_hash(title, company, url, description):
-        raw = "::".join(
-            [
-                normalise_space(title).lower(),
-                normalise_space(company).lower(),
-                normalise_space(url).lower(),
-                normalise_space(description).lower(),
-            ]
-        )
-
-        return hashlib.md5(
-            raw.encode("utf-8")
-        ).hexdigest()
+        stable_url = canonical_job_url(url)
+        if stable_url:
+            # One apply/job URL => one vacancy, even if scraped with '...more'
+            # or LinkedIn safety/tracking variants across different queries.
+            identity = 'apply::' + stable_url
+        else:
+            # Keep an employer marker to avoid merging real distinct employers
+            # using the same generic recruitment template.
+            company_name = normalise_space(company).casefold()
+            if company_name in ('unknown', 'n/a') or company_name == normalise_space(title).casefold():
+                company_name = ''
+            identity = 'content::' + normalized_post_description(description) + '::' + company_name
+        # Preserve legacy 32-character job_hashkey shape for consumers.
+        return hashlib.md5(identity.encode('utf-8')).hexdigest()
 
     # ------------------------------------------------------------------
     # Scraping
@@ -1178,6 +1315,8 @@ def scrape_feed_posts(driver):
     jobs = []
     seen_hashes = set()
     search_errors = 0
+    metrics = {"candidate_posts": 0, "rejected_post_filter": 0,
+               "rejected_experience": 0, "duplicates": 0, "with_email": 0}
 
     for search_index, search_query in enumerate(SEARCH_QUERIES):
         # Also pause after an empty or failed search before starting the next.
@@ -1209,8 +1348,10 @@ def scrape_feed_posts(driver):
                 f"{search_query}"
             )
 
+            accepted_before = len(jobs)
             for post in posts:
                 try:
+                    metrics["candidate_posts"] += 1
                     post_text = clean_text(
                         post_text_from_tag(post)
                     )
@@ -1226,8 +1367,14 @@ def scrape_feed_posts(driver):
                         post_text, linked_title, CONFIG, ROLE_FILTERS
                     )
                     if target is None:
+                        metrics["rejected_post_filter"] += 1
                         continue
                     title, target_role = target
+                    exp_min, exp_evidence = extract_mandatory_min_years(post_text)
+                    if (ENFORCE_EXPERIENCE and exp_min is not None and
+                            exp_min > MAX_REQUIRED_YEARS):
+                        metrics["rejected_experience"] += 1
+                        continue
 
                     poster_name, poster_url = extract_poster(
                         post
@@ -1254,6 +1401,7 @@ def scrape_feed_posts(driver):
                     apply_url = extract_apply_link(
                         post,
                         preferred_url=linked_job_url,
+                        post_text=post_text,
                     )
 
                     job_hash = make_hash(
@@ -1264,9 +1412,12 @@ def scrape_feed_posts(driver):
                     )
 
                     if job_hash in seen_hashes:
+                        metrics["duplicates"] += 1
                         continue
 
                     seen_hashes.add(job_hash)
+                    if emails:
+                        metrics["with_email"] += 1
 
                     job = {
                         "job_hashkey": job_hash,
@@ -1283,6 +1434,8 @@ def scrape_feed_posts(driver):
                             poster_name or "N/A"
                         ),
                         "job_description": post_text[:10000],
+                        "min_required_years": exp_min,
+                        "experience_evidence": exp_evidence,
                         "hashtags": generate_hashtags(
                             post_text
                         ),
@@ -1303,6 +1456,8 @@ def scrape_feed_posts(driver):
                         "[scraper] Post parsing error: "
                         f"{post_error}"
                     )
+            print(f"[scraper] Accepted {len(jobs) - accepted_before} unique "
+                  f"eligible jobs from: {search_query}")
 
         except LinkedInRestrictionError as restriction:
             print(
@@ -1357,9 +1512,11 @@ def scrape_feed_posts(driver):
             continue
         # Re-apply CURRENT config to today's existing JSON, otherwise old
         # broad/unwanted jobs would survive every same-day rerun forever.
+        # Old stored titles were sometimes inferred from hashtags, not
+        # real LinkedIn job cards. Re-evaluate the body without trusting them.
         target = identify_target_job(
             job.get("job_description", ""),
-            job.get("title", ""),
+            None,
             CONFIG,
             ROLE_FILTERS,
         )
@@ -1368,6 +1525,12 @@ def scrape_feed_posts(driver):
                 removed_old_jobs += 1
             continue
         job["title"], job["target_role"] = target
+        years, evidence = extract_mandatory_min_years(job.get("job_description", ""))
+        if ENFORCE_EXPERIENCE and years is not None and years > MAX_REQUIRED_YEARS:
+            removed_old_jobs += 1
+            continue
+        job["min_required_years"] = years
+        job["experience_evidence"] = evidence
         job_hash = make_hash(
             job.get("title", ""),
             job.get("company", ""),
@@ -1404,7 +1567,12 @@ def scrape_feed_posts(driver):
         f"New jobs: {len(jobs)}, "
         f"total jobs in today's file: {len(merged)}, "
         f"previous jobs removed by filters: {removed_old_jobs}, "
-        f"search errors: {search_errors}"
+        f"search errors: {search_errors}; "
+        f"candidate posts: {metrics['candidate_posts']}; "
+        f"filtered post/title: {metrics['rejected_post_filter']}; "
+        f"filtered experience: {metrics['rejected_experience']}; "
+        f"duplicate detections: {metrics['duplicates']}; "
+        f"jobs with contact emails: {metrics['with_email']}"
     )
 
     print(

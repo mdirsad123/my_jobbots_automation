@@ -1,63 +1,64 @@
 {
   "search_keywords": [
-    "#dataengineer",
-    "#dataengineering",
-    "#dataengineerjobs",
-    "#bigdataengineer",
-    "#etlengineer",
-    "#datapipeline",
-
-    "#awsdataengineer",
-    "#awsglue",
-    "#awsgluedeveloper",
-    "#awsjobs",
-    "#awscloudjobs",
-
-    "#pythondeveloper",
-    "#pythonjobs",
-    "#pythonengineer",
-    "#pythonhiring",
-    "#fastapideveloper",
-    "#flaskdeveloper",
-    "#djangodeveloper",
-    "#backenddeveloper",
-
+    "#aiengineer AND #hiring",
+    "\"AI Engineer\" AND hiring",
+    "\"GenAI Engineer\" AND hiring",
+    "\"Generative AI Engineer\" AND hiring",
+    "\"Agentic AI Engineer\" AND hiring",
+    "\"Machine Learning Engineer\" AND hiring",
+    "\"LLM Engineer\" AND hiring",
+    "\"RAG Engineer\" AND hiring",
     "#aiengineer",
-    "#machinelearningengineer",
-    "#mlengineer",
-    "#genaiengineer",
-    "#generativeai",
-    "#llmengineer",
-    "#agenticai",
-
-    "#hiring",
-    "#wearehiring",
-    "#nowhiring",
-    "#techhiring",
-    "#ithiring",
-    "#remotehiring",
-    "#jobopenings",
-
-    "data engineer hiring",
-    "aws data engineer hiring",
-    "python developer hiring",
-    "AI engineer hiring",
-    "GenAI engineer hiring",
-    "FastAPI developer hiring",
-    "ML engineer hiring"
+    "#awsdataengineer AND #hiring",
+    "\"AWS Data Engineer\" AND hiring",
+    "\"AWS Glue Developer\" AND hiring",
+    "\"AWS ETL Developer\" AND hiring",
+    "\"Redshift Developer\" AND hiring",
+    "\"AWS Data Engineer\"",
+    "#dataengineer AND #hiring",
+    "\"Data Engineer\" AND hiring",
+    "\"ETL Engineer\" AND hiring",
+    "\"Databricks Engineer\" AND hiring",
+    "\"Snowflake Developer\" AND hiring",
+    "\"Azure Data Engineer\" AND hiring",
+    "\"GCP Data Engineer\" AND hiring",
+    "#dataengineer",
+    "#pythondeveloper AND #hiring",
+    "\"Python Developer\" AND hiring",
+    "\"Python Backend\" AND hiring",
+    "\"FastAPI Developer\" AND hiring",
+    "\"Flask Developer\" AND hiring",
+    "\"Django Developer\" AND hiring",
+    "\"Python Engineer\" AND hiring",
+    "#pythondeveloper"
   ],
   "target_roles": {
     "awsdataengineer": [
       "aws data engineer",
       "awsdataengineer",
       "aws glue developer",
-      "aws etl developer"
+      "aws etl developer",
+      "aws glue engineer",
+      "aws data pipeline engineer",
+      "aws data engineering",
+      "redshift data engineer",
+      "aws data engineers"
     ],
     "dataengineer": [
       "data engineer",
       "dataengineer",
       "big data engineer",
-      "etl engineer"
+      "etl engineer",
+      "data platform engineer",
+      "databricks engineer",
+      "databricks developer",
+      "snowflake data engineer",
+      "snowflake developer",
+      "pyspark developer",
+      "azure data engineer",
+      "gcp data engineer",
+      "data engineers",
+      "azure data engineers"
     ],
     "pythondeveloper": [
       "python developer",
@@ -68,7 +69,16 @@
       "python software developer",
       "fastapi developer",
       "flask developer",
-      "django developer"
+      "django developer",
+      "python backend engineer",
+      "backend python engineer",
+      "fastapi engineer",
+      "python full stack developer",
+      "python fullstack developer",
+      "python developers",
+      "python and embedded software engineer",
+      "python embedded software engineer",
+      "embedded python engineer"
     ],
     "aiengineer": [
       "ai engineer",
@@ -83,7 +93,16 @@
       "agentic ai engineer",
       "ai agent engineer",
       "ai developer",
-      "machine learning developer"
+      "machine learning developer",
+      "applied ai engineer",
+      "rag engineer",
+      "llm application engineer",
+      "gen ai engineer",
+      "mlops engineer",
+      "ai application engineer",
+      "ai software engineer",
+      "ai engineers",
+      "machine learning engineers"
     ]
   },
   "blocked_title_keywords": [
@@ -116,7 +135,11 @@
     "not hiring",
     "we are not hiring",
     "join our paid course",
-    "register for our webinar"
+    "register for our webinar",
+    "not confirmation of active vacancies",
+    "top companies to explore",
+    "top companies & career portals",
+    "market their resumes"
   ],
   "hiring_keywords": [
     "hiring",
@@ -134,20 +157,57 @@
     "send your resume",
     "share your cv",
     "send your cv",
-    "email your resume"
+    "email your resume",
+    "we’re hiring",
+    "we are hiring",
+    "we're hiring",
+    "is hiring",
+    "looking to hire",
+    "hiring for",
+    "recruiting",
+    "join our team",
+    "open roles",
+    "we have openings",
+    "apply here",
+    "apply directly",
+    "share your resume",
+    "submit your resume",
+    "send your profile",
+    "submit your cv",
+    "dm your resume",
+    "job opportunity",
+    "apply today",
+    "opportunity for",
+    "join their team"
   ],
   "date_filter": "past-24h",
   "job_only": true,
-  "max_scrolls": 5,
+  "max_scrolls": 6,
   "pacing_seconds": {
-    "action": [1.0, 2.5],
-    "scroll": [2.0, 4.0],
-    "expand": [0.8, 1.5],
-    "between_searches": [4.0, 7.0]
+    "action": [
+      1.0,
+      2.5
+    ],
+    "scroll": [
+      2.0,
+      4.0
+    ],
+    "expand": [
+      0.8,
+      1.5
+    ],
+    "between_searches": [
+      4.0,
+      7.0
+    ]
   },
   "wait_seconds": {
-    "results": 6.0,
+    "results": 8.0,
     "results_poll": 0.25,
     "route": 2.5
-  }
+  },
+  "max_required_years": 4,
+  "enforce_max_required_years": true,
+  "max_stagnant_scrolls": 3,
+  "search_content_type": "all_posts"
 }
