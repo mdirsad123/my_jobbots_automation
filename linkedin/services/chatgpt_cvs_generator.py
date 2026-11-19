@@ -5,8 +5,11 @@ Each role opens a new chat in its OWN ChatGPT Project.
 Each new chat receives ONE attachment: its current role JD.
 The master prompt and resume files are already in each ChatGPT Project's Sources.
 The JD attachment MUST be verified inside the composer before Send.
-The script waits for uploads to finish, verifies the Send result and stops if
-submission cannot be confirmed. Existing unsent dated drafts can be resumed.
+The script waits for uploads, then attempts guarded Send fallbacks (Selenium click,
+mouse ActionChains, JavaScript click, Ctrl+Enter, Enter). It verifies the result
+after EACH method; it never retries once submission may have started.
+A failed role is reported and remaining independent roles can still be attempted.
+Existing unsent dated drafts can be resumed.
 
 Project landing pages can reopen with an UN-SENT old prompt draft. Before attaching
 new files, this script backs up old draft text locally and clears just the new-chat
@@ -86,20 +89,21 @@ ROLE_PROJECT_URLS: dict[str, str] = {
 }
 CHROME_DEBUGGER_ADDRESS = "127.0.0.1:9222"
 
-# Submit one role at a time. Advance ONLY after a confirmed successful Send.
+# Submit one role at a time. Independent failed roles do not block later roles.
 # Use --dry-run to inspect the attachments and prompts without sending.
 SEND_REQUESTS = True
 
 PAGE_LOAD_TIMEOUT_SECONDS = 60
 ELEMENT_TIMEOUT_SECONDS = 60
 ATTACHMENT_TIMEOUT_SECONDS = 120
-SEND_TIMEOUT_SECONDS = 240          # Wait for ChatGPT to enable Send after JD upload
-AFTER_UPLOAD_SECONDS = 3.0           # Upload chip may appear before upload completes
-SEND_READY_STABLE_SECONDS = 2.0      # Button should remain enabled briefly
-SEND_CONFIRM_SECONDS = 22           # Inspect navigation after each click
-SEND_FINAL_CONFIRM_SECONDS = 75     # If composer clears, do not retry sending
-SEND_CLICK_ATTEMPTS = 3             # Retry ONLY while original unsent draft remains
+SEND_TIMEOUT_SECONDS = 75           # Wait for a disabled Send button to become enabled
+SEND_BUTTON_LOOKUP_SECONDS = 22      # Then try keyboard if no Send button was found
+AFTER_UPLOAD_SECONDS = 4.0           # Upload chip may appear before upload completes
+SEND_READY_STABLE_SECONDS = 1.5      # Button should remain enabled briefly
+SEND_CONFIRM_SECONDS = 22           # Observe each fallback before trying another
+SEND_FINAL_CONFIRM_SECONDS = 75     # Once submission begins, NEVER retry Send
 BETWEEN_REQUESTS_SECONDS = 5.0
+CONTINUE_ON_ROLE_FAILURE = True      # Independent projects: try next role on failure
 
 RESULTS_FILENAME = "chatgpt_submission_results.json"
 DRAFT_BACKUP_FILENAME = "chatgpt_replaced_drafts.json"
@@ -281,41 +285,33 @@ UPLOAD_MENU_SELECTORS: tuple[tuple[str, str], ...] = (
     (By.XPATH, "//*[self::button or @role='menuitem'][contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'from computer')]") ,
 )
 
-# Send-button lookup is scoped to the current composer (not sidebar/global buttons).
-# A single CSS selector cannot handle all ChatGPT UI variants. The browser-side
-# locator checks data-testid, accessible labels, submit buttons and arrow icons.
+# Explicit Selenium CSS/XPath lookups supplement the DOM/geometry probe below.
+SEND_BUTTON_SELECTORS: tuple[tuple[str, str], ...] = (
+    (By.CSS_SELECTOR, 'button[data-testid="send-button"]'),
+    (By.CSS_SELECTOR, 'button[data-testid="composer-send-button"]'),
+    (By.CSS_SELECTOR, 'button[aria-label="Send prompt"]'),
+    (By.CSS_SELECTOR, 'button[aria-label="Send message"]'),
+    (By.CSS_SELECTOR, 'button[title="Send"]'),
+    (By.XPATH, "//button[contains(translate(@aria-label,'ABCDEFGHIJKLMNOPQRSTUVWXYZ',"
+               "'abcdefghijklmnopqrstuvwxyz'),'send') and not(contains("
+               "translate(@aria-label,'ABCDEFGHIJKLMNOPQRSTUVWXYZ',"
+               "'abcdefghijklmnopqrstuvwxyz'),'resend'))]"),
+    (By.XPATH, "//form//button[@type='submit']"),
+)
+
+
+# The ChatGPT send button can move outside <form>, change its testid,
+# or be represented by an icon-only <button>. Search ancestors progressively.
+# Never guess a global page button: candidates must be near THIS editor.
 SEND_BUTTON_PROBE_JS = r"""
     const editor = arguments[0];
-    let root = editor.closest('form');
-    if (!root) {
-        let node = editor;
-        for (let i = 0; i < 9 && node; i++, node = node.parentElement) {
-            if (node.querySelector && node.querySelector(
-                'button[data-testid="composer-plus-btn"], input[type="file"], ' +
-                'button[aria-label="Attach files"], button[aria-label="Add files"]'
-            )) { root = node; break; }
-        }
-    }
-    if (!root || root === document.body) return {element:null, ready:false,
-        info:'Composer form/container not located'};
-
-    const buttons = Array.from(root.querySelectorAll('button'));
-    const isVisible = b => b.getClientRects().length > 0 &&
-        getComputedStyle(b).visibility !== 'hidden' &&
-        getComputedStyle(b).display !== 'none';
-    const candidates = buttons.filter(b => {
-        if (!isVisible(b)) return false;
-        const testid = (b.getAttribute('data-testid') || '').toLowerCase();
-        const label = (b.getAttribute('aria-label') || '').trim().toLowerCase();
-        const title = (b.getAttribute('title') || '').trim().toLowerCase();
-        const icon = b.querySelector('svg');
-        const iconClass = icon ? (icon.getAttribute('class') || '') : '';
-        return /(?:^|[-_])(send|submit)(?:[-_]|$)/.test(testid) ||
-               /^(send|send prompt|send message|submit)$/.test(label) ||
-               /^(send|send prompt|send message)$/.test(title) ||
-               b.getAttribute('type') === 'submit' ||
-               /(?:lucide-)?arrow-up/.test(iconClass);
-    });
+    const rect = editor.getBoundingClientRect();
+    const isVisible = b => {
+        const r = b.getBoundingClientRect();
+        const css = getComputedStyle(b);
+        return r.width >= 10 && r.height >= 10 &&
+               css.visibility !== 'hidden' && css.display !== 'none';
+    };
     const describe = b => [
         (b.getAttribute('data-testid') || ''),
         (b.getAttribute('aria-label') || ''),
@@ -323,15 +319,76 @@ SEND_BUTTON_PROBE_JS = r"""
         ('disabled=' + Boolean(b.disabled)),
         ('aria-disabled=' + (b.getAttribute('aria-disabled') || 'false'))
     ].join(' / ');
-    const ready = b => !b.disabled && b.getAttribute('aria-disabled') !== 'true' &&
-        !b.hasAttribute('inert') && getComputedStyle(b).pointerEvents !== 'none';
-    const chosen = candidates.find(ready) || candidates[0];
-    return chosen
-        ? {element:chosen, ready:ready(chosen), info:describe(chosen)}
-        : {element:null, ready:false,
-           info:'No Send button; composer buttons: ' + buttons.filter(isVisible)
-                .map(describe).slice(0, 8).join(' | ')};
+    const ready = b => !b.disabled && b.getAttribute('aria-disabled') !== 'true'
+        && !b.hasAttribute('inert') && getComputedStyle(b).pointerEvents !== 'none';
+    const score = b => {
+        const testid = (b.getAttribute('data-testid') || '').toLowerCase();
+        const label = (b.getAttribute('aria-label') || '').toLowerCase().trim();
+        const title = (b.getAttribute('title') || '').toLowerCase().trim();
+        const tooltip = (b.getAttribute('data-tooltip') || '').toLowerCase().trim();
+        const svg = b.querySelector('svg');
+        const svgClasses = (svg && svg.getAttribute('class') || '').toLowerCase();
+        const path = (svg && svg.getAttribute('data-lucide') || '').toLowerCase();
+        if (/(stop|cancel|dictat|voice|microphone)/.test(testid + ' ' + label)) return -1;
+        if (/(^|[-_])(send|submit)([-_]|$)/.test(testid)) return 100;
+        if (/^(send|send message|send prompt|submit|send now)(?:\s*\(.*\))?$/.test(label)) return 95;
+        if (/^(send|send message|send prompt|submit)$/.test(title)) return 90;
+        if (/^send/.test(tooltip)) return 85;
+        if (b.getAttribute('type') === 'submit') return 75;
+        if (/arrow-up|send-horizontal|send-icon/.test(svgClasses + ' ' + path)) return 55;
+        // Icon-only buttons sometimes have no class or aria-label. An SVG whose
+        // accessible name references Send is still a candidate.
+        if (svg && /send|arrow-up/.test((svg.getAttribute('aria-label') || '').toLowerCase())) return 50;
+        return -1;
+    };
+    const nearEditor = b => {
+        const r = b.getBoundingClientRect();
+        const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+        return cx >= rect.left - 160 && cx <= rect.right + 190 &&
+               cy >= rect.top - 120 && cy <= rect.bottom + 160;
+    };
+    let root = editor;
+    let best = [];
+    for (let depth = 0; root && depth < 12; depth++, root = root.parentElement) {
+        if (root === document.body || root === document.documentElement) break;
+        const candidates = Array.from(root.querySelectorAll('button,[role="button"]'))
+            .filter(b => isVisible(b) && nearEditor(b))
+            .map(b => ({b, weight:score(b)}))
+            .filter(x => x.weight >= 0)
+            .sort((a, b) => b.weight - a.weight);
+        if (candidates.length) { best = candidates; break; }
+    }
+    if (!best.length) return {element:null, ready:false,
+        info:'No near-composer Send control located (icon/label may have changed)'};
+    const chosen = best.find(x => ready(x.b)) || best[0];
+    return {element:chosen.b, ready:ready(chosen.b),
+        info:'score=' + chosen.weight + ' / ' + describe(chosen.b)};
 """
+
+
+def upload_busy(driver: webdriver.Chrome) -> bool:
+    """Avoid keyboard submission while ChatGPT still reports an upload spinner."""
+    editor = first_visible(driver, COMPOSER_SELECTORS)
+    if editor is None:
+        return True
+    try:
+        return bool(driver.execute_script(r"""
+            const editor = arguments[0];
+            let node = editor;
+            for (let i=0; i<9 && node; i++, node=node.parentElement) {
+                if (node.querySelector && node.querySelector(
+                    'button[data-testid="composer-plus-btn"], input[type="file"]'
+                )) {
+                    return Boolean(node.querySelector(
+                        '[role="progressbar"], [aria-label*="Uploading"], '
+                        + '[data-testid*="upload-progress"], [data-state="uploading"]'
+                    ));
+                }
+            }
+            return false;
+        """, editor))
+    except WebDriverException:
+        return True
 
 
 def normalized_prompt(text: str) -> str:
@@ -631,54 +688,83 @@ def probe_send_button(driver: webdriver.Chrome) -> tuple[WebElement | None, bool
         element = state.get('element')
         ready = bool(state.get('ready'))
         info = str(state.get('info', ''))
+        if element is None:
+            # Use literal Selenium selectors and XPath if the icon/DOM probe misses.
+            for by, selector in SEND_BUTTON_SELECTORS:
+                for candidate in driver.find_elements(by, selector):
+                    try:
+                        if not candidate.is_displayed():
+                            continue
+                        near = driver.execute_script(r"""
+                            const e = arguments[0].getBoundingClientRect();
+                            const b = arguments[1].getBoundingClientRect();
+                            const cx=b.left+b.width/2, cy=b.top+b.height/2;
+                            return cx >= e.left-160 && cx <= e.right+190 &&
+                                   cy >= e.top-120 && cy <= e.bottom+160;
+                        """, editor, candidate)
+                        if near:
+                            element = candidate
+                            ready = candidate.is_enabled()
+                            ready = ready and candidate.get_attribute('aria-disabled') != 'true'
+                            info = f'Selenium {by}: {selector}'
+                            break
+                    except (StaleElementReferenceException, WebDriverException):
+                        continue
+                if element is not None:
+                    break
         if element is not None and ready:
             ready = element.is_displayed() and element.is_enabled()
         return element, ready, info
     except (StaleElementReferenceException, WebDriverException) as exc:
-        return None, False, f'Send-button locator still loading: {type(exc).__name__}'
+        return None, False, f'Send locator loading: {type(exc).__name__}'
 
 
-def wait_for_send_enabled(driver: webdriver.Chrome, prompt: str, jd_name: str,
-                          seconds: float = SEND_TIMEOUT_SECONDS) -> WebElement:
-    """Wait for upload processing to finish; verify prompt/JD while waiting."""
+def wait_for_send_enabled(driver: webdriver.Chrome, project_url: str,
+                          prompt: str, jd_name: str,
+                          seconds: float = SEND_BUTTON_LOOKUP_SECONDS) -> WebElement | None:
+    """Find a stable button; return None if no button exists (keyboard fallback)."""
     end = time.monotonic() + seconds
     stable_since: float | None = None
     next_log = 0.0
+    saw_button = False
     detail = 'not found'
     while time.monotonic() < end:
-        # Don't click Send if the draft was modified or detached while uploading.
+        state = check_send_state(driver, project_url, prompt)
+        if state != 'draft':
+            raise SubmissionUnconfirmed(
+                f'Composer state changed to {state!r} during Send lookup; inspect before retry.'
+            )
         editor = first_visible(driver, COMPOSER_SELECTORS)
         if editor is None:
             stable_since = None
-        elif normalized_prompt(composer_text(editor)) != normalized_prompt(prompt):
-            raise SubmissionUnconfirmed(
-                'Prompt changed/disappeared while waiting for Send. '
-                'Check the current ChatGPT tab before retrying.'
-            )
         else:
             button, enabled, detail = probe_send_button(driver)
-            if button is not None and enabled:
+            if button is not None:
+                saw_button = True
+            if button is not None and enabled and not upload_busy(driver):
                 if stable_since is None:
                     stable_since = time.monotonic()
                 elif time.monotonic() - stable_since >= SEND_READY_STABLE_SECONDS:
-                    if not attachment_visible(driver, jd_name):
-                        raise RuntimeError(f'JD attachment disappeared: {jd_name}')
+                    verify_all_attachments(driver, (Path(jd_name),))
                     return button
             else:
                 stable_since = None
         if time.monotonic() >= next_log:
-            remaining = int(max(0, end - time.monotonic()))
-            print(f'  Waiting for Send button / JD upload... remaining {remaining}s ({detail})', flush=True)
-            next_log = time.monotonic() + 15
-        time.sleep(0.6)
-    raise TimeoutException(
-        f'ChatGPT Send did not become enabled within {int(seconds)}s. '
-        f'Last button state: {detail}. The unsent draft is still in this tab.'
-    )
+            print(f'  Send lookup ({int(max(0, end-time.monotonic()))}s left): {detail}', flush=True)
+            next_log = time.monotonic() + 10
+        time.sleep(0.5)
+    if saw_button:
+        # The UI is explicitly disabling Send. Keyboard shortcuts must NOT bypass it.
+        raise TimeoutException(
+            f'Send control was found but NOT enabled within {int(seconds)}s: {detail}. '
+            'Keep the unsent draft; check the JD upload and browser UI.'
+        )
+    print('  Send button not found near composer; using keyboard fallback.', flush=True)
+    return None
 
 
 def check_send_state(driver: webdriver.Chrome, project_url: str, prompt: str) -> str:
-    """A new conversation /c/<id> in the same project proves Send went through."""
+    """Only a fresh conversation URL within the right Project confirms delivery."""
     current = urlparse(driver.current_url)
     target_id = re.search(r'g-p-[a-z0-9]+', urlparse(project_url).path)
     if current.hostname not in {'chatgpt.com', 'www.chatgpt.com'} or not target_id:
@@ -692,89 +778,144 @@ def check_send_state(driver: webdriver.Chrome, project_url: str, prompt: str) ->
         return 'transitioning'
     current_text = normalized_prompt(composer_text(editor))
     if current_text == normalized_prompt(prompt):
+        # A Stop control means the request may already be in flight.
+        try:
+            active = driver.execute_script(r"""
+                const editor = arguments[0];
+                const root = editor.closest('form') || editor.parentElement?.parentElement;
+                if (!root) return false;
+                return Boolean(root.querySelector(
+                    'button[data-testid="stop-button"], button[aria-label="Stop generating"], '
+                    + 'button[aria-label="Stop streaming"]'
+                ));
+            """, editor)
+            if active:
+                return 'transitioning'
+        except WebDriverException:
+            pass
         return 'draft'
     return 'cleared' if not current_text else 'modified'
 
 
-def click_send_button(driver: webdriver.Chrome, button: WebElement) -> None:
-    """Click one real, enabled button; never use Enter or global coordinates."""
-    try:
-        driver.execute_script("arguments[0].scrollIntoView({block:'center'});", button)
-        button.click()
-    except ElementClickInterceptedException:
-        # Intercepted means that WebDriver did not dispatch its click.
-        # Try a normal mouse action rather than clicking a random overlay.
-        ActionChains(driver).move_to_element(button).click().perform()
+def assert_safe_to_send(driver: webdriver.Chrome, project_url: str,
+                        prompt: str, jd_filename: str) -> None:
+    state = check_send_state(driver, project_url, prompt)
+    if state != 'draft':
+        raise SubmissionUnconfirmed(
+            f'Send fallback blocked because the prompt is no longer an unsent draft '
+            f'(state={state}). Inspect the tab before retrying.'
+        )
+    verify_all_attachments(driver, (Path(jd_filename),))
+    if upload_busy(driver):
+        raise RuntimeError('JD upload still shows progress; Send fallback is blocked.')
+
+
+def perform_send_method(driver: webdriver.Chrome, method: str,
+                        button: WebElement | None) -> None:
+    """One input method at a time; never force-click disabled controls."""
+    if method in {'selenium_click', 'actionchains_click', 'javascript_click'}:
+        # Re-probe in case the React control was replaced after the previous attempt.
+        element, enabled, info = probe_send_button(driver)
+        if element is None or not enabled:
+            raise RuntimeError(f'Send button no longer enabled: {info}')
+        driver.execute_script("arguments[0].scrollIntoView({block:'nearest'});", element)
+        if method == 'selenium_click':
+            element.click()
+        elif method == 'actionchains_click':
+            ActionChains(driver).move_to_element(element).click().perform()
+        else:
+            # JavaScript dispatch is last among mouse methods. Some React UIs may
+            # ignore synthetic clicks; the next keyboard method can still work.
+            driver.execute_script("arguments[0].click();", element)
+    elif method in {'ctrl_enter', 'enter'}:
+        editor = wait_for_composer(driver)
+        editor.click()
+        editor = wait_for_composer(driver)
+        if method == 'ctrl_enter':
+            editor.send_keys(Keys.CONTROL, Keys.ENTER)
+        else:
+            editor.send_keys(Keys.ENTER)
+    else:
+        raise ValueError(f'Unknown Send method: {method}')
+
+
+def observe_send(driver: webdriver.Chrome, project_url: str, prompt: str) -> str:
+    """Wait after EVERY attempt. Never repeat if the editor was altered."""
+    deadline = time.monotonic() + SEND_CONFIRM_SECONDS
+    last_state = 'draft'
+    while time.monotonic() < deadline:
+        try:
+            last_state = check_send_state(driver, project_url, prompt)
+        except WebDriverException:
+            last_state = 'transitioning'
+        if last_state == 'sent':
+            return 'sent'
+        if last_state != 'draft':
+            break
+        time.sleep(0.55)
+    if last_state == 'draft':
+        return 'draft'
+    print(f'  Send may have started (state={last_state}); waiting without re-sending...', flush=True)
+    deadline = time.monotonic() + SEND_FINAL_CONFIRM_SECONDS
+    while time.monotonic() < deadline:
+        try:
+            state = check_send_state(driver, project_url, prompt)
+        except WebDriverException:
+            state = 'transitioning'
+        if state == 'sent':
+            return 'sent'
+        time.sleep(0.7)
+    raise SubmissionUnconfirmed(
+        'Composer changed or navigation started, but a new Project /c/ URL was '
+        f'not confirmed. No more attempts (avoids duplicate requests). URL: {driver.current_url}'
+    )
 
 
 def submit_prompt(driver: webdriver.Chrome, project_url: str,
                   prompt: str, jd_filename: str) -> str:
-    """Submit with bounded retries only if the exact original draft is still unsent.
+    """Try Selenium, mouse, JS, Ctrl+Enter, Enter in order, each with verification.
 
-    Never retry once the composer has cleared, navigation started, or submission
-    may be underway: a duplicate CV request would be worse than a clear error.
+    Fallback is allowed ONLY while the unchanged prompt/JD are still staged.
+    Never claim success without the new conversation URL.
     """
     time.sleep(AFTER_UPLOAD_SECONDS)
-    for attempt in range(1, SEND_CLICK_ATTEMPTS + 1):
-        state = check_send_state(driver, project_url, prompt)
-        if state == 'sent':
-            return 'sent'
-        if state != 'draft':
-            raise SubmissionUnconfirmed(
-                f'Cannot safely click Send; composer state is {state!r}. '
-                'Inspect this tab before retrying.'
-            )
+    assert_safe_to_send(driver, project_url, prompt, jd_filename)
+    try:
         button = wait_for_send_enabled(
-            driver, prompt, jd_filename,
-            seconds=SEND_TIMEOUT_SECONDS if attempt == 1 else min(60, SEND_TIMEOUT_SECONDS),
+            driver, project_url, prompt, jd_filename, seconds=SEND_BUTTON_LOOKUP_SECONDS
         )
-        print(f'  Clicking Send ({attempt}/{SEND_CLICK_ATTEMPTS})...', flush=True)
-        try:
-            click_send_button(driver, button)
-        except (StaleElementReferenceException, WebDriverException) as exc:
-            # The DOM may have moved just as a request was dispatched.
-            # Observe state before deciding whether a retry is safe.
-            print(f'  Send click returned {type(exc).__name__}; verifying...', flush=True)
-        deadline = time.monotonic() + SEND_CONFIRM_SECONDS
-        last_state = 'draft'
-        while time.monotonic() < deadline:
-            try:
-                last_state = check_send_state(driver, project_url, prompt)
-            except WebDriverException:
-                last_state = 'transitioning'
-            if last_state == 'sent':
-                print(f'  Confirmed sent: {driver.current_url}', flush=True)
-                return 'sent'
-            if last_state in {'cleared', 'modified', 'transitioning'}:
-                break
-            time.sleep(0.6)
+    except TimeoutException:
+        # Disabled button usually indicates upload/stale state; give it more time.
+        button = wait_for_send_enabled(
+            driver, project_url, prompt, jd_filename, seconds=SEND_TIMEOUT_SECONDS
+        )
 
-        if last_state != 'draft':
-            # Once the draft changes, clicking again could create two chats.
-            print('  Send initiated; waiting for conversation URL...', flush=True)
-            deadline = time.monotonic() + SEND_FINAL_CONFIRM_SECONDS
-            while time.monotonic() < deadline:
-                try:
-                    state = check_send_state(driver, project_url, prompt)
-                except WebDriverException:
-                    state = 'transitioning'
-                if state == 'sent':
-                    print(f'  Confirmed sent: {driver.current_url}', flush=True)
-                    return 'sent'
-                time.sleep(0.7)
+    methods = (["selenium_click", "actionchains_click", "javascript_click"]
+               if button is not None else []) + ["ctrl_enter", "enter"]
+    for i, method in enumerate(methods, start=1):
+        assert_safe_to_send(driver, project_url, prompt, jd_filename)
+        found_button, enabled_now, button_info = probe_send_button(driver)
+        if found_button is not None and not enabled_now:
             raise SubmissionUnconfirmed(
-                'The Send click changed the composer, but ChatGPT did not '
-                'confirm a new /c/ conversation. NOT retrying to avoid duplicates. '
-                f'Check this tab: {driver.current_url}'
+                f'Send button turned disabled during fallbacks: {button_info}. '
+                'Refusing keyboard bypass; inspect the tab.'
             )
-        # Still exactly the original unsent draft: it is safe to try again.
-        if attempt < SEND_CLICK_ATTEMPTS:
-            print('  Original prompt still unsent; retrying button click...', flush=True)
+        print(f'  Send fallback {i}/{len(methods)}: {method}', flush=True)
+        try:
+            perform_send_method(driver, method, button)
+        except (StaleElementReferenceException, WebDriverException, RuntimeError) as exc:
+            print(f'  {method} raised {type(exc).__name__}: {str(exc)[:200]}; verifying...', flush=True)
+            # Even a WebDriver exception can occur immediately after the click fired.
+        result = observe_send(driver, project_url, prompt)
+        if result == 'sent':
+            print(f'  CONFIRMED SENT by {method}: {driver.current_url}', flush=True)
+            return result
+        # A previously unsuccessful click may leave the editor visibly unchanged.
+        # Re-validate JD, prompt and upload before trying the next independent method.
     raise TimeoutException(
-        f'After {SEND_CLICK_ATTEMPTS} clicks, the original draft is still present '
-        'and no new conversation was created. Leaving this role unsent and stopping.'
+        'All guarded Send methods were tried but the original prompt/JD remain '
+        'unsent. Keeping the tab for manual review; not claiming success.'
     )
-
 
 
 # ============================ RESULTS / MAIN =============================
@@ -796,7 +937,8 @@ def save_results(path: Path, data: dict) -> None:
     tmp.replace(path)
 
 
-def run(daily_folder: Path, *, send: bool, force: bool) -> int:
+def run(daily_folder: Path, *, send: bool, force: bool,
+        continue_on_failure: bool = CONTINUE_ON_ROLE_FAILURE) -> int:
     daily_folder = daily_folder.expanduser().resolve()
     if not daily_folder.is_dir():
         raise NotADirectoryError(f"Daily JD folder not found: {daily_folder}")
@@ -927,6 +1069,25 @@ def run(daily_folder: Path, *, send: bool, force: bool) -> int:
                     except WebDriverException:
                         pass
             finally:
+                if status in {'failed', 'needs_review'} and driver is not None:
+                    # Browser evidence is only stored locally; never uploaded or emailed.
+                    try:
+                        debug_dir = daily_folder / 'cv_submit_debug'
+                        debug_dir.mkdir(exist_ok=True)
+                        screenshot_path = debug_dir / f'{req.role}_send_failure.png'
+                        driver.save_screenshot(str(screenshot_path))
+                        diagnostic = {
+                            'role': req.role,
+                            'url': url,
+                            'status': status,
+                            'error': details,
+                            'button_probe': probe_send_button(driver)[2],
+                        }
+                        (debug_dir / f'{req.role}_send_failure.json').write_text(
+                            json.dumps(diagnostic, indent=2) + '\n', encoding='utf-8')
+                        print(f'  Diagnostic screenshot: {screenshot_path}', flush=True)
+                    except Exception as debug_exc:
+                        print(f'  Diagnostic screenshot unavailable: {debug_exc}', flush=True)
                 report["roles"][req.role] = {
                     "status": status,
                     "jd_filename": req.jd_path.name,
@@ -939,12 +1100,17 @@ def run(daily_folder: Path, *, send: bool, force: bool) -> int:
                 }
                 save_results(results_path, report)
             if send and status != 'sent':
-                print(
-                    f'  STOPPED on {req.role}: Send was NOT confirmed. '
-                    'The tab remains open for inspection; other roles were not opened.',
-                    flush=True,
-                )
-                break
+                if continue_on_failure:
+                    print(
+                        f'  FAILED {req.role}: Send not confirmed; preserving this tab. '
+                        'Continuing to the next INDEPENDENT role.', flush=True,
+                    )
+                else:
+                    print(
+                        f'  STOPPED on {req.role}: Send not confirmed. '
+                        'Other roles not attempted (--stop-on-failure).', flush=True,
+                    )
+                    break
             if idx < len(pending) - 1:
                 time.sleep(BETWEEN_REQUESTS_SECONDS)
     finally:
@@ -954,8 +1120,11 @@ def run(daily_folder: Path, *, send: bool, force: bool) -> int:
                 driver.service.stop()
             except Exception:
                 pass
-    print(f"\nCompleted submission pass; failed={fail_count}; results={results_path}")
-    print("Browser tabs remain open. Roles advance only after confirmed Send.")
+    counts = {state: sum(1 for item in report['roles'].values()
+                         if item.get('status') == state)
+              for state in ('sent', 'failed', 'needs_review', 'draft_ready')}
+    print(f"\nCompleted submission pass: {counts}; results={results_path}")
+    print('Browser tabs remain open; failures retain their exact status in JSON.')
     return 1 if fail_count else 0
 
 
@@ -984,10 +1153,12 @@ def main(argv: list[str] | None = None) -> int:
                         help="Path to job_profile/specific/company/YYYY-MM-DD")
     parser.add_argument("--dry-run", action="store_true", help="Attach and fill; do not send")
     parser.add_argument("--force", action="store_true", help="Resend roles already logged as sent")
+    parser.add_argument("--stop-on-failure", action="store_true",
+                        help="Do not try the other roles if one role fails")
     args = parser.parse_args(argv)
     daily_folder = args.daily_folder or latest_daily_folder(Path.cwd())
     return run(daily_folder, send=SEND_REQUESTS and not args.dry_run,
-               force=args.force)
+               force=args.force, continue_on_failure=not args.stop_on_failure)
 
 
 if __name__ == "__main__":
